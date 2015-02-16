@@ -1,0 +1,28 @@
+BEGIN:VCARD
+VERSION:3.0
+SOURCE:http://johnsy.com/contact/paj.vcf
+X-PHONETIC-FIRST-NAME:Pete
+X-PHONETIC-LAST-NAME:Johns
+N:Johns;Peter;A;Mr;
+FN:Pete Johns
+NICKNAME:johnsyweb, paj
+TITLE:Technology Enthusiast
+ORG:Envato
+TEL;TYPE=Mobile;TYPE=voice;TYPE=pref:+61 400 211 876
+ADR;TYPE=Mail:PO Box 178;Coburg;VIC;3058;Australia
+URL;TYPE=Home:http://www.johnsy.com/
+URL;TYPE=Other:http://en.gravatar.com/johnsyweb/
+BDAY:19760901
+EMAIL;TYPE=Home;TYPE=pref:pete@johnsy.com
+EMAIL;TYPE=Other:johnsyweb@gmail.com
+IMPP;X-SERVICE-TYPE=AIM;TYPE=Home:aim:johnsyweb
+IMPP;X-SERVICE-TYPE=ICQ;TYPE=Home:aim:61363909
+IMPP;X-SERVICE-TYPE=MSN;TYPE=Home:msnim:johnsyweb@hotmail.com
+IMPP;X-SERVICE-TYPE=Skype;TYPE=Home;TYPE=pref:skype:johnsyweb
+IMPP;X-SERVICE-TYPE=Yahoo;TYPE=Home:ymsgr:johnsyweb
+KEY;TYPE=PGP:http://johnsy.com/pajpgppublickeyblock.asc
+LANG:en-AU
+PHOTO;TYPE=JPEG:http://en.gravatar.com/userimage/3138611/c955409532840991bb5f4908aad483a2.jpg
+TZ;VALUE=utc-offset:+1000
+REV:20140410T012425Z
+END:VCARD
