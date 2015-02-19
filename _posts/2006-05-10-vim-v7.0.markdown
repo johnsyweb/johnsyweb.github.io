@@ -1,0 +1,25 @@
+---
+layout: post
+title: Vim v7.0
+---
+
+
+After some years of development, [Bram Moolenaar](http://www.moolenaar.net/) has
+[released](http://groups.yahoo.com/group/vimannounce/message/161) version seven
+of [Vim](http://www.vim.org/). I've been beta-testing it for a while now and
+recommend upgrading to the new version as soon as you can!
+
+
+I've updated my
+[Primitive](http://www.johnsy.org/dotfiles/.vim/colors/primitive.vim)
+colour-scheme (should anyone want to use it). I need to do some work on my
+[.vimrc](http://www.johnsy.org/dotfiles/.vimrc) script (which started off life
+as [gjvc](http://www.gjvc.com/)'s .vimrc) to iron out a couple of niggles, but
+you're more than welcome to use it.
+
+
+If you like using Vim (or if you just want to help out the kids in
+[Uganda](http://iccf-holland.org/)), you can [sponsor
+Vim](http://www.vim.org/sponsor/). Now that Bram's got himself a job, all of the
+money goes to charity!
+
