@@ -41,18 +41,18 @@ to protect the guilty but otherwise this is genuine:
 //  Postconditions:     this->getString() == value
 //  Exceptions:         none
 
-void
-CProtocolField::setValue(const string&amp; value)
-{
-myLength = value.length();
-myValue = new char[myLength+1];
-if (myValue != 0)
-{
-memcpy(myValue, value.c_str(), myLength);
-}
-myValue[myLength] = '\0';
-myBuffer = NULL;
-}
+    void
+    CProtocolField::setValue(const string& value)
+    {
+        myLength = value.length();
+        myValue = new char[myLength+1];
+        if (myValue != 0)
+        {
+            memcpy(myValue, value.c_str(), myLength);
+        }
+        myValue[myLength] = '\0';
+        myBuffer = NULL;
+    }
 //  --------------------------------------------------------------------------
 {% endhighlight %}
 
