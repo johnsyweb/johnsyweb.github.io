@@ -10,4 +10,5 @@ hilighter: pygments
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 gems:
+  - jekyll-sitemap
   - jemoji
