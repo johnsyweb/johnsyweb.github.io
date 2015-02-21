@@ -2,7 +2,7 @@ name: johnsy.com
 url: http://johnsy.com
 description: Based on a true story
 
-permalink: /:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blog/page:num/"
 hilighter: pygments

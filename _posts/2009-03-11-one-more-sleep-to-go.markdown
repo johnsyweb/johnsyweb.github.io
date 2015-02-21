@@ -9,9 +9,9 @@ The [Leukaemia Foundation World's Greatest Shave](http://www.worldsgreatestshave
 
 To bring you up-to-date:
 
-1. [I thought I'd raise a few bucks by shaving my head.](/2009/02/15/please-sponsor-me-in-world's-greatest-shave-2009/)
+1. [I thought I'd raise a few bucks by shaving my head.](/blog/2009/02/15/please-sponsor-me-in-world's-greatest-shave-2009/)
 1. People wanted more to give more, so I offered to shave my legs as well as my head for $500.
-1. [You called for my legs to be waxed, so I asked for $1,000.](/2009/02/25/$500-target-reached-$1000-for-the-wax/)
+1. [You called for my legs to be waxed, so I asked for $1,000.](/blog/2009/02/25/$500-target-reached-$1000-for-the-wax/)
 1. [I'm now sponsored to the tune of $1,782](http://my.imisfriendraising.com.au/personalPage.aspx?SID=54895)!
 1. [Claire Fran&ccedil;oise Salon in Melbourne's CBD are going to wax my legs tomorrow (Friday) lunchtime!](http://www.clairefrancoise.com.au/awareness-campaign.htm)
 1. [If I raise $2,000 by Friday, I shall shave my arms and my chest, too.](https://secure.imisfriendraising.com.au/registrant/donate.aspx?EventID=9529&amp;LangPref=en-CA&amp;SPID=1239819)

@@ -29,7 +29,7 @@ example](http://www.xprogramming.com/xpmag/acsBowling.htm) and then
 version.
 
 
-[My first post of 2009](/2009/01/01/tdd-in-vim/) was on
+[My first post of 2009](/blog/2009/01/01/tdd-in-vim/) was on
 doing TDD in Python using [Vim](http://www.vim.org/). Unfortunately, not all of
 the Python code owned by ${PETES_EMPLOYER} was written using the same editor or
 coding standards. I love the fact that Python uses indentation to determine code

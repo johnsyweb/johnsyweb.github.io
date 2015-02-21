@@ -7,7 +7,7 @@ title: On Textpattern, Apache and Git
 
 This weekend I've re-started on a website that I was meant to have finished ages
 ago. Now that I have all of those extra minutes per day having [extracted myself
-from Facebook's clutches](/2008/12/27/facebook-no-more/), I've resolved to get
+from Facebook's clutches](/blog/2008/12/27/facebook-no-more/), I've resolved to get
 it finished and get it finished I shall.
 
 

@@ -5,9 +5,9 @@ title: How to shave?
 
 I forget if I mentioned that [I'm taking part in the Leukaemia Foundation
 World's Greatest Shave on 14 March
-2009](/2009/02/15/please-sponsor-me-in-world's-greatest-shave-2009/), but I am,
-so there and I'm looking at [ways to raise more
-money](http://localhost:4000/2009/02/18/wax-on.-wax-off/).
+2009](/blog/2009/02/15/please-sponsor-me-in-world's-greatest-shave-2009/), but I
+am, so there and I'm looking at [ways to raise more
+money](/blog/2009/02/18/wax-on.-wax-off/).
 
 
 Yesterday [my delightful wife](http://thribble.blogspot.com.au/) asked me if I

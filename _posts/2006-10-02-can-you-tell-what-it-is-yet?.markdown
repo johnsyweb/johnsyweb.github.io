@@ -38,7 +38,7 @@ that as a small boy he was [the Australian junior backstroke
 champion](http://www.abc.net.au/gnt/people/Transcripts/s1072655.htm). Out of all
 of the entertainers in the World, Rolf is the only one who I can think of who
 has entertained me all the way through my life, including the time [I saw him
-perform live](/2004/07/19/well/).
+perform live](/blog//2004/07/19/well/).
 
 
 My favourite Rolf memory (so far) is that he was kind enough to autograph a

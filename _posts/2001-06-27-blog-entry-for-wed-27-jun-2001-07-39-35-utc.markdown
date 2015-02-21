@@ -4,7 +4,7 @@ title: Memories of Tokyo, Japan
 ---
 
 After the delayed blog entry about [my time in
-Sydney](/2001/06/21/blog-entry-for-thu-21-jun-2001-09-21-11-utc/), I have
+Sydney](/blog//2001/06/21/blog-entry-for-thu-21-jun-2001-09-21-11-utc/), I have
 finally gotten around to writing a bit about <a
 href="http://www.jnto.go.jp/english/regions/kanto/tokyo/index.html">Tokyo</a>
 for you. The week was amazing from start to finish. We arrived at <a
