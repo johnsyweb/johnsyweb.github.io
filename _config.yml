@@ -6,6 +6,7 @@ permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blog/page:num/"
 hilighter: pygments
+keep_files: index.html
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
