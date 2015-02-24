@@ -9,7 +9,21 @@ hilighter: pygments
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
+jekyll-archives:
+  enabled: all
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+  permalinks:
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    day: '/blog/:year/:month/:day/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
+
 gems:
+  - jekyll-archives
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
