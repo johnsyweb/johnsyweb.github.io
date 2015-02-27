@@ -11,10 +11,10 @@ height="150"
 
 
 Last week, after I hit the $1,000 target that would mean that I have to wax my
-legs, [I mentioned](2009/02/22/how-to-shave%3F/) that I am dreading
-it. I've been hearing many tales of home-waxing and also have had the scene from
-[The 40 Year Old Virgin](http://www.imdb.com/title/tt0405422/)
-recounted to me more times than I would like.
+legs, [I mentioned](/2009/02/22/how-to-shave%3F/) that I am dreading it. I've
+been hearing many tales of home-waxing and also have had the scene from [The 40
+Year Old Virgin](http://www.imdb.com/title/tt0405422/) recounted to me more
+times than I would like.
 
 Yesterday evening I had a very nice email from
 [Claire Fran&ccedil;oise](http://www.clairefrancoise.com.au/),
