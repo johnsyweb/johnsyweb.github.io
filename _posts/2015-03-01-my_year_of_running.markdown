@@ -45,19 +45,19 @@ preferring early morning runs.
 
 ## April
 
-Towards the end of the Couch to 5K still doing four-point-something kilometres
-in a session, never quite reaching the target. Rather than get frustrated by
-this, I just keep running past the end of the programme. On 8 April I did an
-extra lap of the local high school grounds to clock up 5.18 km and felt pretty
-happy. I completed the distance twice more that week to prove it wasn't a fluke.
-The following week, I clocked up 6 km in about the same time I'd run my first 5
-km. Not speedy, but getting faster! On Easter Monday I headed out for an early
-morning run before Kirsty and Eamonn were awake. I couldn't find my earphones
-and decided that rather than wake them up tearing the house apart to find the
-earphones, I'd try running without them. I'd heard that people run better
-without music. All I could hear as I ran along my usual route was the wheezing
-of an old bloke who'd overindulged over the long weekend. It was horrible and I
-vowed <a name="vow"></a>never to run without music again.
+Towards the end of the Couch to 5K I was still doing just four-point-something
+kilometres in a session, never quite reaching the target. Rather than get
+frustrated by this, I just kept running past the end of the programme. On 8
+April I did an extra lap of the local high school grounds to clock up 5.18 km
+and felt pretty happy. I completed the distance twice more that week to prove it
+wasn't a fluke. The following week, I clocked up 6 km in about the same time I'd
+run my first 5 km. Not speedy, but getting faster! On Easter Monday I headed out
+for an early morning run before Kirsty and Eamonn were awake. I couldn't find my
+earphones and decided that rather than wake them up tearing the house apart to
+find the earphones, I'd try running without them. I'd heard that people run
+better without music. All I could hear as I ran along my usual route was the
+wheezing of an old bloke who'd overindulged over the long weekend. It was
+horrible and I vowed <a name="vow"></a>never to run without music again.
 
 For most of the Couch to 5K, Kirsty had been on at me to sign up for a run, the
 [Mother’s Day Classic](http://www.mothersdayclassic.com.au/). The MDC includes a
@@ -259,7 +259,7 @@ for Summer, I ran into work with another Coburger. It has become a fairly
 regular thing since then. Unfortunately towards the end of this first run I
 started to get some pain in my left shin. The next day I ran at Westerfolds
 parkrun and the pain came back quickly and just didn't go away. I read up about
-"RICE", Rest, Ice, Compression & Elevation. The City2Sea was only 9 days away
+"RICE", Rest, Ice, Compression & Elevation. The City2Sea was only 8 days away
 and I really wanted to get that medal so I did everything in my power to get my
 leg ready to run the following Sunday. Compression socks are ace (once you get
 the things on). Kirsty spent most of the following week trying to talk me out of
@@ -286,7 +286,7 @@ treated. And I wanted to do one more run this year!
 
 The physio allowed me to ease back into running gently at the beginning of
 December. I went for a 1 km run with Eamonn to celebrate and was completely
-pain free. That Saturday I did a slow return to my home parkrun. Again,
+pain-free. That Saturday I did a slow return to my home parkrun. Again,
 pain-free. I'd wanted to run the 10 km Christmas Run at Albert Park, but the
 physio advised me to stick to 5 km as a limit for now and so I ran [my best-ever
 5 km](https://www.strava.com/activities/228015874/overview) at Emma and Tom's
