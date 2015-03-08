@@ -13,21 +13,21 @@
         <meta name="MSSmartTagsPreventParsing" content="TRUE">
         <meta name="description" content="johnsy.com -- the occasionally updated website of an English Irishman living Down Under!">
         <meta name="keywords" content="Pete Johns, Peter Johns, paj, johnsy, johnsyweb, pajLog, blog, weblog, personal, journal, jjj, Software Engineer, England, GB, UK, Curriculum Vitae, Official Website. blogger, ex-pat, Melbourne, Victoria, Australia, ...">
-        <link rel="shortcut icon" title="pajIcon" href="http://johnsy.com/favicon.ico">
+        <link rel="shortcut icon" title="pajIcon" href="{{ site.url }}/favicon.ico">
 
-        <link href="/assets/css/style-20150308.css" rel="stylesheet" />
-        <link href="/assets/css/colors-light.css" rel="stylesheet" title="Light" />
-        <link href="/assets/css/colors-dark.css" rel="alternate stylesheet" title="Dark" />
+        <link href="{{ site.url }}/assets/css/style-20150308.css" rel="stylesheet" />
+        <link href="{{ site.url }}/assets/css/colors-light.css" rel="stylesheet" title="Light" />
+        <link href="{{ site.url }}/assets/css/colors-dark.css" rel="alternate stylesheet" title="Dark" />
 
-        <link rel="Start" href="http://johnsy.com/" title="Back to the start" />
-        <link rel="Help" href="http://johnsy.com/about/" title="What is the point of this website?" />
-        <link rel="alternate" type="text/xml" title="RSS v2" href="/feed.xml" />
+        <link rel="Start" href="{{ site.url }}/" title="Back to the start" />
+        <link rel="Help" href="{{ site.url }}/about/" title="What is the point of this website?" />
+        <link rel="alternate" type="text/xml" title="RSS v2" href="{{ site.url }}/feed.xml" />
     </head>
 
     <body>
         {% include google_analytics.html %}
         <header id="header">
-            <h1><a href="/">{{ site.name }}</a></h1>
+            <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
             <p>{{ site.description }}</p>
         </header>
 
@@ -35,10 +35,10 @@
             <div id="sidebar">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ site.url }}/">Home</a></li>
+                        <li><a href="{{ site.url }}/about">About</a></li>
+                        <li><a href="{{ site.url }}/blog">Blog</a></li>
+                        <li><a href="{{ site.url }}/contact">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -112,7 +112,7 @@
         <footer id="footer">
             <p>
                 Copyright &copy; 2000-{{ site.time | date: '%Y' }}
-                <a rel="author" href="/about/"><em><acronym title="Peter Alexander Johns">paj</acronym></em></a>
+                <a rel="author" href="{{ site.url }}/about/"><em><acronym title="Peter Alexander Johns">paj</acronym></em></a>
                 All rights (and some wrongs) reserved.
             </p>
             <p>
