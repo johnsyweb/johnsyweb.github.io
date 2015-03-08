@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Comments Are Lies!
+redirect_from:
+ - /blog/entry/20121031130012
 ---
 
 I recently came across a blog entry on [Importance of Writing Code Comments in
