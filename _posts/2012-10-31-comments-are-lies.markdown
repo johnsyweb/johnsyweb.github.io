@@ -75,7 +75,7 @@ this method is used to set a member variable (or three!), it's pretty obviously
 nether of the first two. According to the declaration in the header-file, it's
 non-`virtual` but... `CProtocolField` is derived from
 `IProtocolField`, which declares `setValue(const
-string&amp;)` as _pure `virtual`_, making
+string&)` as _pure `virtual`_, making
 _this_ method `virtual`. A lie!
 
 
@@ -84,7 +84,7 @@ Helpfully we're told that this set-function has a `public` access
 specifier. I'm not sure what use a private setter would be, but we'll move right
 along to the blatant lie: "`Parameters:         double value`"! Why would
 any programmer write that? This method clearly takes one argument and it's a
-`const string&amp;`!
+`const string&`!
 
 
 
