@@ -8,7 +8,7 @@ date: 2015-04-22 20:07:59
 I haven't looked back since [I ran my first
 parkrun](http://www.parkrun.com.au/westerfolds/results/weeklyresults/?runSeqNumber=35)
 last June. You may remember I mentioned [parkrun](http://www.parkrun.com/) once
-or twice in [my year of running](/blog/2015/03/02/my_year_of_running/). It gets
+or twice in [my year of running](/blog/2015/03/01/my_year_of_running/). It gets
 me out of bed of a Saturday morning (hence encouraging me not to over-indulge
 after work on a Friday), it has helped me improve my running and I've made
 some good friends through it.
