@@ -27,7 +27,7 @@ a social chat with the tail-runner. And there is everybody in between.
 At my former home parkrun at Westerfolds Park, I met a lot of social runners who
 were always pushing the limits of their achievements: working hard to beat their
 own 5km personal bests and setting goals to run further than ever before and
-always encouraging other to join them. Most weeks, after our run, there'd be
+always encouraging others to join them. Most weeks, after our run, there'd be
 talk of the next big run on the local running calendar and all distances were in
 the mix from 5km to ultra marathons! It was easy to get caught up in the wave of
 enthusiasm for these events and this was a part of the reason I ended up pushing
@@ -48,7 +48,7 @@ run a half, would I be capable of running a "full"? Shortly after I crossed the
 line last year, I bumped into my Engineering Director and one of the first
 things he said to me, after "congratulations", was, "can you imagine feeling
 this tired and realising that you were only half-way?". I couldn't imagine
-running another kilometre at that juncture. However tow of my friends who had
+running another kilometre at that juncture. However two of my friends who had
 run marathons assured me that if I could run 21.1km, _with enough training_, I
 could run 42.2! My friend Gary had planted the seed of a thought that I might be
 able to tackle a marathon as we stood chatting at the start of October's half
@@ -90,13 +90,13 @@ over the horizon, and find that I had friends waiting for me ready to run a few
 5km laps before breakfast. Over the next five months I continued to take my long
 runs around Westerfolds at 7 o'clock on Sunday morning and friends I'd met
 through parkrun joined me, kept me company and kept me going. Thank you to
-Alison, Barney (who coined the terms "Lapsterfolds" and "Lapsterfoldians", Chris,
-Dougall, Elisa, Gary, Kerryn, Lee, Martin, Matt, Narelle (who also went on to run
-the marathon), Nicole, Olivier, Rohan, Simon, Scott S, Scott T, Tim and Wendy
-(and anyone I've inadvertently missed).
+Alison, Barney (who coined the terms "Lapsterfolds" and "Lapsterfoldians"),
+Chris, Dougall, Elisa, Gary, Kerryn, Lee, Martin, Matt, Narelle (who also went
+on to run the marathon), Nicole, Olivier, Rohan, Simon, Scott S, Scott T, Tim
+and Wendy (and anyone I've inadvertently missed).
 
 Aside from my Lapsterfoldian endeavours, I would regularly run before work with
-Adrian (until he go himself injured), Natalia, Ronja and Peter. These people,
+Adrian (until he got himself injured), Natalia, Ronja and Peter. These people,
 too, rock! Indeed, I ran very few of my training kilometres solo.
 
 My running buddies really helped me complete my training and I'm very grateful
@@ -155,7 +155,7 @@ Eamonn and Dara. The sight of them gave me a very welcome boost, as would the
 drink and the jelly beans they handed me. Shortly afterwards I was heading north
 back up St Kilda Rd full of energy. I smiled as I saw the 17km flag for the
 half-marathon event... I recalled how exhausted I felt the last time I saw that.
-I saw follow Lapsterfoldian Martin speculating (having blitzed the 10km event);
+I saw follow Lapsterfoldian Martin spectating (having blitzed the 10km event);
 seeing familiar faces along the way was surprisingly refreshing for the spirits!
 
 The next familiar face I would see was Scott T. He was entered into the race
@@ -195,7 +195,7 @@ four-hour pacer group and that it was mostly downhill to
 another boost and I managed to pick up the pace a little more. The Sun had
 started to break through and after three-and-a-half hours of running, I was
 getting quite thirsty. I'd been sipping water along the way but now I was
-gulping down the supplies I'd carried with me all the way. I stopped at an water
+gulping down the supplies I'd carried with me all the way. I stopped at a water
 station on the final section up St Kilda Rd to guzzle down a cup of the sports
 drink they were handing out and then I was ready to push hard for the finish.
 The crowds at Federation Square were cheering loudly and that made me smile,
@@ -213,7 +213,7 @@ spotted was Narelle's husband, there with his camera (a familiar sight to my
 parkrunning friends)! I gave him a wave and then I saw the clock above the
 finish line, it started with "3:57" and I knew if I kept going, not only would I
 have run 42.2km, I would have done so in under four hours and that would be the
-icing on the cake. The is [a video of me crossing the
+icing on the cake. There is [a video of me crossing the
 line](https://flic.kr/p/z48Mp4) and in it you can see just how overjoyed I was
 with this.
 
@@ -229,9 +229,9 @@ a swim and cycled lots. The second week I felt really lethargic and did next to
 nothing. I jogged around parkrun both weekends [with Dara in the
 pram](http://on.fb.me/1NhRvdB), just to keep the legs moving, but it'll be
 another week or so before I risk going for a run. Going from 60+km per week to
-nothing is very strange. I've found myself feeling grumpy (more so than usual),
-lazy but still as hungry! I imagine Kirsty will be kicking me out of the house
-with my running gear before long to get the endorphins flowing again!
+nothing is very strange. I've found myself feeling grumpy (more so than usual)
+and lazy but still as hungry! I imagine Kirsty will be kicking me out of the
+house with my running gear before long to get the endorphins flowing again!
 
 I've been asked a lot when the next marathon will be. I don't know. _23 weeks_,
 3 hours, 57 minutes and 48 seconds is a lot of time out of family life and I
