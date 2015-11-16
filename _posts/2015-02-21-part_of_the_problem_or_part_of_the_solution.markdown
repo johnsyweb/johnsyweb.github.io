@@ -42,10 +42,10 @@ code. But it's not. Their job is to solve problems. Don't celebrate the creation
 of code, celebrate the creation of solutions. We have way too many coders
 addicted to doing just one more line of code already.
  
-When we write code, particularly code for an solved problem, we are not really
-contributing a solution but adding to the problem! Now we have more code that
-needs to be tested and maintained. Furthermore it must be understood by the next
-developer who has to solve an adjacent problem. 
+When we write code, particularly code for an already-solved problem, we are not
+really contributing a solution but adding to the problem! Now we have more code
+that needs to be tested and maintained. Furthermore it must be understood by the
+next developer who has to solve an adjacent problem. 
 
 By creatively reusing an existing solution, not only are we not adding to our
 colossal codebase, we're actually saving our company time and effort in testing
