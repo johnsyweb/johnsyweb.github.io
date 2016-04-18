@@ -27,10 +27,10 @@ app](http://www.active.com/mobile/couch-to-5k-app), and told
 [Kirsty](http://thribble.blogspot.com/) I was going to give it a shot. She
 didn't laugh. That night, armed with some tunes and an iPhone app, I set off
 towards [Merri Creek](https://en.wikipedia.org/wiki/Merri_Creek) on my first
-jog. I was out-of-breath and ready to stop a very short period, but just then
-the app told me to walk. It kept me going. After about a half-an-hour and 2 km,
-I returned home out-of-breath and sweating profusely but felt like I had started
-something...
+jog. I was out-of-breath and ready to stop after a very short period, but just
+then the app told me to walk. It kept me going. After about a half-an-hour and 2
+km, I returned home out-of-breath and sweating profusely but felt like I had
+started something...
 
 ## March
 
@@ -82,8 +82,8 @@ There's the Anderson Street Hill to consider, but how hard can a hill be, eh? It
 turns out... it _is_ hard!
 
 Race day came around quickly and I'm standing near the start line in Alexandra
-Gardens. I'd got there very early, because it was my first running event I had
-no idea what to expect. I'm wearing my race number (11564) and have some new
+Gardens. I'd got there very early, because it was my first running event and I
+had no idea what to expect. I'm wearing my race number (11564) and have some new
 tunes lined up to listen to on the clockwise circuit. I'm not sure whether I'm
 nervous or excited. My friend Ross' advice was echoing in my ear, "There will be
 marathon runners: don't try to keep up with them and go at your own pace. And
