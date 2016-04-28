@@ -49,12 +49,12 @@ From that day on, each time I have stopped at a junction, I have paid particular
 attention to motorists at that junction to ensure that they have seen me.
 
 *On every single commute, bar none, I have seen a motorist handling a
-smartphonee*.
+smartphone*.
 
 Some days it's just one or two, but I have counted double digits on numerous
 occasions and my commute is under 10km.
 
-[It is illegal in all Australian states and territories to use a hand-held mobile phone while driving.](https://www.vicroads.vic.gov.au/safety-and-road-rules/driver-safety/mobile-phones-and-driving).
+[It is illegal in all Australian states and territories to use a hand-held mobile phone while driving.](https://www.vicroads.vic.gov.au/safety-and-road-rules/driver-safety/mobile-phones-and-driving)
 
 I have asked motorists to put down their phones on some commutes but I only ever
 get abuse in return.
