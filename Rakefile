@@ -1,9 +1,9 @@
-desc "Given a title as an argument, create a new post file"
+desc 'Given a title as an argument, create a new post file'
 task :write, [:title, :category] do |_t, args|
-  NOW = Time.now
+  NOW = Time.now.utc.freeze
   filename = "#{NOW.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.markdown"
-  path = File.join("_posts", filename)
-  raise RuntimeError.new("Won't clobber #{path}") if File.exist?(path)
+  path = File.join('_posts', filename)
+  fail "Won't clobber #{path}" if File.exist?(path)
   File.open(path, 'w') do |file|
     file.write <<-EOS
 ---

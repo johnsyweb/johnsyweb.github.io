@@ -2,7 +2,7 @@
 layout: post
 category: cycling
 title: My last cycling commute
-date: 2016-04-28 19:52:51
+date: 2016-04-28 09:52:51
 ---
 
 It's a sad day. Today I rode to work for the last time. I still love bicycles. I
@@ -86,7 +86,7 @@ was made up.
 I would like to hope so, but I think it unlikely. There is a
 ["Towards Zero"](https://www.towardszero.vic.gov.au/) campaign running but
 already in April
-[twice as many cyclists have been killed on Victorian roads this year than in the whole of 2015.](http://www.tac.vic.gov.au/road-safety/statistics/road-toll-year-to-date),
+[twice as many cyclists have been killed on Victorian roads this year than in the whole of 2015](http://www.tac.vic.gov.au/road-safety/statistics/road-toll-year-to-date),
 so it is not working.
 
 I cannot see myself riding to work until the number of deaths on Melbourne's
