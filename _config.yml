@@ -9,7 +9,8 @@ hilighter: pygments
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-gems:
+plugins:
+  - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
