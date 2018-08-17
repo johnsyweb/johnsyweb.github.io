@@ -1,18 +1,22 @@
+# frozen_string_literal: true
+
 desc 'Given a title as an argument, create a new post file'
 task :write, [:title, :category] do |_t, args|
   NOW = Time.now.utc.freeze
-  filename = "#{NOW.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.markdown"
+  post_date = NOW.strftime('%Y-%m-%d')
+  post_title = args.title.gsub(/\s/, '-').downcase
+  filename = "#{post_date}-#{post_title}.markdown"
   path = File.join('_posts', filename)
-  fail "Won't clobber #{path}" if File.exist?(path)
+  raise "Won't clobber #{path}" if File.exist?(path)
   File.open(path, 'w') do |file|
-    file.write <<-EOS
----
-layout: post
-category: #{args.category}
-title: #{args.title}
-date: #{NOW.strftime('%Y-%m-%d %k:%M:%S')}
----
-EOS
+    file.write <<~FRONT_MATTER
+      ---
+      layout: post
+      category: #{args.category}
+      title: #{args.title}
+      date: #{NOW.strftime('%Y-%m-%d %k:%M:%S')}
+      ---
+FRONT_MATTER
   end
   puts "Now open #{path} in an editor."
 end
