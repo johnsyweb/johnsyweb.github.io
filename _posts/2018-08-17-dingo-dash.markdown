@@ -34,7 +34,7 @@ enough of the road ahead of me to pick out any unevenness in the road and my
 [Million Mile Lights](https://www.batteryfree.co.uk/) ensured I was visible to
 the couple of passing vehicles along the way but I had no peripheral vision.
 
-Approximately 2.5km into my run I thought I heard a tapping sound ahead of me. I
+Approximately 2.5km into my run I thought I heard a tapping sound behind me. I
 turned around and the light from my head torch bounced off the eyes of a small
 animal on the other side of the road. I quickened my pace and heard the animal
 do the same, so I stopped. And it stopped. I turned and was faced with a [black
