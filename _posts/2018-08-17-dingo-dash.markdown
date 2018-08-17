@@ -100,6 +100,6 @@ the other direction to make my long, illuminated way back to bed.
 I was utterly, utterly unprepared for what I might meet in Outback Australia and
 will certainly not be making the mistake of attempting to run alone in the
 outback again, I can tell you! Still, I'm unharmed and have what I think is a
-great holiday tale. I'm looking forward to being back running with my mates back
-in Melbourne in a few days and continuing my training towards my fourth
-Melbourne Marathon on 14 October.
+great holiday tale. I'm looking forward to running with my mates back in
+Melbourne in a few days and continuing my training towards my fourth Melbourne
+Marathon on 14 October.
