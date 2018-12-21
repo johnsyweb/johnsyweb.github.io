@@ -76,8 +76,8 @@ repository:
 This is a fairly common practice around the web, indeed it is defined:
 
 > The 404 (Not Found) status code indicates that the origin server did not find
-> a current representation for the target resource or *is not willing to
-> disclose that one exists.*
+> a current representation for the target resource or **is not willing to
+> disclose that one exists.**
 
 --[6.5.4. 404 Not Found, RFC 7231 HTTP/1.1 Semantics and Content](https://tools.ietf.org/html/rfc7231#section-6.5.4) (emphasis mine)
 
