@@ -65,13 +65,21 @@ is _slightly_ better, I use HTTPS remotes over SSH because
 
 I understand that GitHub uses "Not Found" where it means "Forbidden" in some
 circumstances to prevent inadvertently reveling the existence of a private
-repository. This is a fairly common practice around the web.
+repository:
 
 > Requests that require authentication will return `404 Not Found`, instead of
 > `403 Forbidden`, in some places. This is to prevent the accidental leakage of
 > private repositories to unauthorized users.
 
 --[GitHub](https://developer.github.com/v3/#authentication)
+
+This is a fairly common practice around the web, indeed it is defined:
+
+> The 404 (Not Found) status code indicates that the origin server did not find
+> a current representation for the target resource or *is not willing to
+> disclose that one exists.*
+
+--[6.5.4. 404 Not Found, RFC 7231 HTTP/1.1 Semantics and Content](https://tools.ietf.org/html/rfc7231#section-6.5.4) (emphasis mine)
 
 What makes no sense to me is when I am authenticated with GitHub using a
 [credential helper](https://help.github.com/articles/caching-your-github-password-in-git/)
