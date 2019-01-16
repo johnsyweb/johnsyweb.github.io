@@ -1,5 +1,5 @@
 name: johnsy.com
-url: http://johnsy.com
+url: https://johnsy.com
 description: Based on a true story of an English Irishman living Down Under
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
