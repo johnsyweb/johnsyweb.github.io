@@ -24,3 +24,7 @@ Chrome](https://www.google.com/chrome/) on your computer (I haven't found an iOS
 version) and set your home parkrun in the preferences.
 
 ![NENDY]({{ site.baseurl }}{% link /images/2019-03-09-nendy.png %})
+
+The Running Challenges extension displays a whole host of fun statistics about
+our parkrun participation but I'm finding the NENDY to be the most enjoyable to
+chase!
