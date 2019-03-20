@@ -128,6 +128,8 @@ engine stopped.
 &quot;Amazing!&quot;, I say to anyone who'll listen as I vacate the seat for the
 next lucky passenger. It took me hours to come down from that high.
 
+[![Vacating the Seat]({{ site.baseurl }}{% link /images/2012-03-18-formula-1.jpg %})](https://flic.kr/p/buDwnY)
+*[F1_2Seater_Day3_CL036](https://flic.kr/p/buDwnY) by [Pete Johns](https://www.flickr.com/photos/johnsyweb/), on Flickr*
 
 It was only as I caught a Melbourne taxi home that night when I realised quite
 how astonishingly _safe_ I had felt with Zsolt Baumgartner driving me in
