@@ -3,7 +3,9 @@ layout: post
 category: running
 title: My year of running
 date: 2015-03-01 15:04:31
-redirect_from: /blog/2015/03/02/my_year_of_running/
+redirect_from:
+ - /blog/2015/03/01/my_year_of_running/
+ - /blog/2015/03/02/my_year_of_running/
 ---
 
 Today, [I ran](http://www.strava.com/activities/261246096) as part of a
