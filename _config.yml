@@ -13,3 +13,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
+
+whitelist:
+  - jekyll-redirect-from

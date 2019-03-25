@@ -7,7 +7,7 @@ date: 2019-03-25 01:29:12
 
 ## The Story
 
-I completed my first run commute in [November 2015]({{ site.baseurl }}{% post_url /2015-03-02-my_year_of_running %}) but it wasn't until after [my last cycling commute]({{ site.baseurl }}{% post_url /2016-04-28-my-last-cycling-commute %}) the following April that running to work became my preferred start to the working day.
+I completed my first run commute in [November 2015]({{ site.baseurl }}{% post_url /2015-03-01-my-year-of-running %}) but it wasn't until after [my last cycling commute]({{ site.baseurl }}{% post_url /2016-04-28-my-last-cycling-commute %}) the following April that running to work became my preferred start to the working day.
 
 These days I run to work on Mondays, Wednesdays and Fridays, with the latter usually being a long run (over 21km). I'd like to share some thoughts on my active commutes with you. My journey is a little shy of 12km, which is a nice distance to start the day. Run commutes allow me to keep a base level of fitness without me taking too much time away from my family... it's mostly time I'd be travelling anyway!
 
