@@ -14,7 +14,6 @@ Frankly, I'm not a fan of these sites and where once I had accounts on just abou
 
 
  - [Facebook](http://facebook.com/johnsyweb)
- - [Google+](https://profiles.google.com/johnsyweb)
  - [LinkedIn](http://linkedin.com/in/johnsyweb)
  - [Twitter](http://twitter.com/johnsyweb)
 
