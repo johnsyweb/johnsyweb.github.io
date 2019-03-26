@@ -13,7 +13,7 @@ These days I run to work on Mondays, Wednesdays and Fridays, with the latter usu
 
 ## Logistics
 
-One question I get asked a lot is "do you run home?". I don't usually. I'm a morning runner for preference and I've had a couple of bad experiences of "doing the double" (_i.e._ running both ways), which have ended up with minor injuries, so I catch public transport home on the days that I run to work. 
+One question I get asked a lot is "do you run home?". I don't usually. I'm a morning runner for preference and I've had a couple of bad experiences of "doing the double" (_i.e._ running both ways), which have ended up with minor injuries. So I catch public transport home on the days that I run to work. 
 
 I habitually work from home on Tuesdays, which facilitates me taking the kids to where they need to be (Kirsty kindly does this on my run-to-work days).
 
@@ -32,6 +32,10 @@ It doesn't take a lot of motivation to run through the Melbourne Spring or Autum
 Running with friends makes the commute go so much faster, which is a bonus. We often finish our run at one of Melbourne's many excellent coffee shops for a post-run coffee (or gelati if we've run 21.1km or more, but that's another story).
 
 On the rare occasion that nobody is available to run, I know that my announcement in the group will mean somebody will be watching [Strava](https://www.strava.com/clubs/merricreekrc) to hold me accountable! For these mornings there are podcasts for company (and the [Apple AirPods](https://www.apple.com/au/airpods/) are splendid for running with).
+
+## Nutrition
+
+While I prefer to run fasted, I was advised by my GP not to do this. Over the past six months or so I have been eating a slice of toast or a banana about 30 minutes before leaving home. For the long runs (anything over two hours) I've been taking [bags of honey](https://youtu.be/lPdhw8NW3Pw) -- one bag per 30 minutes is my rule-of-thumb; I typically stop at a water fountain to have one of these.
 
 ## End-of-trip facilities
 
