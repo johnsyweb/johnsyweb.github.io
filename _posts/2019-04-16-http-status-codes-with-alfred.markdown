@@ -20,3 +20,15 @@ I tried to share the URL in a tweet but Twitter mangled it.
 I hope this little tip helps improve your productivity.
 
 What's your favourite Alfred custom search?
+
+### Addendum (2019-04-22)
+
+I am glad I shared this tip. It led to Ricky sending me this knowledge upgrade:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">i use alfred + dash! works with a bunch more useful things, including headers, bash stuff, other programming language lookups<a href="https://t.co/S7tKttN9XM">https://t.co/S7tKttN9XM</a><br>(http status codes and headers are under &quot;cheat sheets&quot;) <a href="https://t.co/MgLIYvjPrz">pic.twitter.com/MgLIYvjPrz</a></p>&mdash; Ricky Cook (@ThatPandaDev) <a href="https://twitter.com/ThatPandaDev/status/1118326449151205376?ref_src=twsrc%5Etfw">April 17, 2019</a></blockquote>
+
+One `brew cask install dash` and a couple of clicks later and I found myself with an even easier workflow than I'd had before. No need for web browsers (or even an Internet connection):
+
+![Alfred and Dash FTW](/images/2019-04-16-http-status-codes-with-alfred-and-dash.jpg "Alfred and Dash FTW")
+
+Thanks Ricky!
