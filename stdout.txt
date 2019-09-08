@@ -1,14 +1,15 @@
 Fetching gem metadata from https://rubygems.org/...........
 Fetching gem metadata from https://rubygems.org/.
-Resolving dependencies....
+Resolving dependencies...
 Using concurrent-ruby 1.1.5
 Using i18n 0.9.5
 Using minitest 5.11.3
 Using thread_safe 0.3.6
 Using tzinfo 1.2.5
 Using activesupport 4.2.11.1
-Using public_suffix 3.1.1 (was 3.1.0)
-Using addressable 2.6.0
+Using public_suffix 3.1.1
+Fetching addressable 2.7.0 (was 2.6.0)
+Installing addressable 2.7.0 (was 2.6.0)
 Using bundler 1.17.3
 Using coffee-script-source 1.11.1
 Using execjs 2.7.0
@@ -16,8 +17,8 @@ Using coffee-script 2.4.1
 Using colorator 1.1.0
 Using ruby-enum 0.7.2
 Using commonmarker 0.17.13
-Fetching dnsruby 1.61.3 (was 1.61.2)
-Installing dnsruby 1.61.3 (was 1.61.2)
+Fetching dnsruby 1.61.3
+Installing dnsruby 1.61.3
 Using eventmachine 1.2.7
 Using http_parser.rb 0.6.0
 Using em-websocket 0.5.1
@@ -55,17 +56,18 @@ Using jekyll-feed 0.11.0
 Using jekyll-gist 1.5.0
 Using jekyll-github-metadata 2.12.1
 Using mini_portile2 2.4.0
-Fetching nokogiri 1.10.4 (was 1.10.3)
-Installing nokogiri 1.10.4 (was 1.10.3) with native extensions
-Fetching html-pipeline 2.12.0 (was 2.11.0)
-Installing html-pipeline 2.12.0 (was 2.11.0)
+Fetching nokogiri 1.10.4
+Installing nokogiri 1.10.4 with native extensions
+Fetching html-pipeline 2.12.0
+Installing html-pipeline 2.12.0
 Using jekyll-mentions 1.4.1
 Using jekyll-optional-front-matter 0.3.0
 Using jekyll-paginate 1.1.0
 Using jekyll-readme-index 0.2.0
 Using jekyll-redirect-from 0.14.0
 Using jekyll-relative-links 0.6.0
-Using rubyzip 1.2.3
+Fetching rubyzip 1.2.4 (was 1.2.3)
+Installing rubyzip 1.2.4 (was 1.2.3)
 Using jekyll-remote-theme 0.3.1
 Using jekyll-seo-tag 2.5.0
 Using jekyll-sitemap 1.2.0
