@@ -20,7 +20,7 @@ and wondered whether others would find this list useful. So I'm publishing it.
  
 Shorten, measure, and optimize your links. 
  
-[https://bitly.com/](https://bitly.com/)
+[https://bitly.com/pages/tools#extension](https://bitly.com/pages/tools#extension)
  
 ## DuckDuckGo Privacy Essentials
 
