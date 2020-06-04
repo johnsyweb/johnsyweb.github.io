@@ -44,7 +44,7 @@ Apparently I realised pretty quickly I'd missed [World Whisky
 Day](https://www.worldwhiskyday.com/) but I don't recall saying this out loud.
 Funny how the brain works!
 
-I wad tired and drowsy after becoming conscious. _K_ helped me eat some cold
+I was tired and drowsy after becoming conscious. _K_ helped me eat some cold
 custard in the Coronary Care Unit (CCU) ward to try to boost my energy levels. I
 slept well that night.
 
