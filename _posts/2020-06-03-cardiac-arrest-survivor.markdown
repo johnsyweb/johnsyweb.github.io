@@ -124,6 +124,13 @@ attention to in the coming months.
 There were a few other things I want to share with you that my family and I have
 learned over the past few weeks. I hope you find them useful.
 
+### Learn CPR
+
+The survival rate for out-of-hospital sudden cardiac arrests is terrifyingly
+low. Effective CPR saved my life. Please learn how to do this properly: lock
+your elbows (don't bend them like actors do) and don't be afraid of cracking a
+rib or two, the casualty won't mind. Trust me!
+
 ### Know the location of your nearest defibrillator
 
 [There's an app for that](https://aedlocator.com.au/). If you don't have one in
