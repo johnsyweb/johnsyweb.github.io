@@ -166,16 +166,6 @@ h3 {
 	font-size: 1.0em;
 }
 
-#social {
-    padding-left: 25px;
-    text-align: center;
-}
-
-#social li {
-    display: inline;
-    font-size: large;
-}
-
 /*** Posts ***/
 article {
 	margin-bottom: 40px;
@@ -259,30 +249,4 @@ img.center {
 		margin-bottom: 15px;
 	}
 
-}
-
-@font-face {
-    font-family: 'Mono Social Icons Font';
-    src: url('/assets/fonts/MonoSocialIconsFont-1.10.eot');
-    src: url('/assets/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('/assets/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('/assets/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('/assets/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.symbol, a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
 }
