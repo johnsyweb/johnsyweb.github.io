@@ -54,8 +54,7 @@ I turn them all off!
 
 I read messages when it suits me, not when it suits Slack or the sender.
 
-
-### Sidebar
+### The Sidebar
 
 ![Sidebar 1](/images/2022-04-02-slack-sidebar-1.png)
 
@@ -80,7 +79,7 @@ Work
 Ruby Australia
 #FFFFFF,#452842,#FFFFFF,#8C5888,#FFFFFF,#F71264,#8C5888,#F71264,#F71264,#FFFFFF
 
-The Complete Guide to Rails Performance 
+The Complete Guide to Rails Performance
 #052041,#350D36,#052041,#EA5E42,#052041,#FFFFFF,#EA5E42,#EA5E42,#052041,#FFFFFF
 
 parkrun
@@ -178,25 +177,25 @@ following channels each with meaningful descriptions:
 - 🔒foo-chitchat (private), a safe space for team members to talk between themselves
 
     - Bookmarks to video chat, working agreements and maybe a team shared playlist for fun
-    
+
 - #foo-team (public), a place for the team to work transparently, allowing
    others to see what's going on and perhaps a [Chatops] bot
-   
+
    - Bookmarks to the team's sprint board, playbooks and shared documents
-   
+
    - Use the channel topic for reserving team resources, such as staging
      environments. I like to use the 🆓 emoji and personal emoji for team
      members for reservations.
-     
+
 - #foo-helpline (public), a place for anyone in the organisation to ask
   questions of the team and get timely answers. Some answers may be automated
   using Slackbot or the team's own bot user.
-  
+
   - Bookmarks to the teams's help centre articles or frequently asked questions (FAQs)
-  
+
 - #foo-notifications (public), for any automated posts, so that they do not
   interrupt conversations in the #foo-team channel.
-  
+
   - Bookmarks to any dashboards which show the current state of systems this
     team cares about and the sources of any incoming notifications.
 
@@ -339,7 +338,7 @@ from my phone). The URL for this is
 
 ## Conclusion
 
-🍫 You've read everything you need to. 
+🍫 You've read everything you need to.
 
 ~~Take a little break.~~
 
