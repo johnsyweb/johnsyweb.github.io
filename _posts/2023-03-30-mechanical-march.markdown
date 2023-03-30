@@ -2,11 +2,11 @@
 layout: post
 category: programming
 title: Mechanical March
-date: 2023-03-31  9:37:04
+date: 2023-03-30 23:17:21
 ---
 
 Hot on the heels of [Functional February] came [Mechanical March] in [Exercism's
-# 12in23 challenge]. There was a veritable feast of languages from which to
+#12in23 challenge]. There was a veritable feast of languages from which to
 choose and I opted for [Go] (apparently it's [not] _[Golang]_ despite all of the
 easier-to-find on the web references to the contrary. Go is one of the
 dominant languages in my domain at work, where tools like [Docker] and
@@ -122,7 +122,7 @@ func GetUnit(units map[string]int, item string) (int, bool) {
 
 ```go
 func GetUnit(units map[string]int, item string) (int, bool) {
- i, ok := units[item] 
+ i, ok := units[item]
  return i, ok
 }
 ```
@@ -132,7 +132,7 @@ OK Go!
 ## Named Captures in Regular expressions
 
 One of the many things I like about Ruby is how easy it is to use regular
-expressions to get things done. I guess it gets this from Perl and AWK.  
+expressions to get things done. I guess it gets this from Perl and AWK.
 
 For example to get a couple of words:
 
@@ -180,7 +180,7 @@ While I am glad I have enough familiarity with its syntax to be able to review
 Go code at work, it is not a language I'll be rushing to for solving hobby
 programming problems.
 
-Okay, April, what have you got for me?
+Okay, April, what do you have in store for me?
 
 <!-- Bookmarks for this post -->
 [Alfred]: https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/
