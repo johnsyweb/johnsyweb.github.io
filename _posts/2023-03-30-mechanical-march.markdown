@@ -185,6 +185,7 @@ Okay, April, what do you have in store for me?
 <!-- Bookmarks for this post -->
 [Alfred]: https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/
 [Booking up for Beauty]: https://exercism.org/tracks/go/exercises/booking-up-for-beauty/solutions/johnsyweb
+[Comments Are Lies!]: /blog/2012/10/31/comments-are-lies/
 [Dash]: https://kapeli.com/dash
 [Docker]: https://www.docker.com
 [Documenting this module]: https://exercism.org/tracks/go/exercises/weather-forecast/solutions/johnsyweb
