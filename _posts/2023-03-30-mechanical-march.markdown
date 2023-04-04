@@ -95,7 +95,7 @@ a zero value for the stored type.
 
 First I checked out [Map types] in the The Go Programming Language
 Specification. Nothing there. Next I went to [Index expressions] and failed to
-spot the pertinent text (hence "[doc: defragment index expresions spec for map
+spot the pertinent text (hence "[doc: defragment index expressions spec for map
 types]"). From there I ended up on a blog post, [Go maps in action], which has
 the answer:
 
@@ -206,7 +206,7 @@ Okay, April, what do you have in store for me?
 [`strftime(3)`]: https://man7.org/linux/man-pages/man3/strftime.3.html
 [asdf-plugins]: https://github.com/asdf-vm/asdf-plugins
 [asdf]: https://asdf-vm.com/
-[doc: defragment index expresions spec for map types]: https://go-review.googlesource.com/c/go/+/480315/1
+[doc: defragment index expressions spec for map types]: https://go-review.googlesource.com/c/go/+/480315/1
 [maps]: https://go.dev/doc/effective_go#maps
 [multiple-returns]: https://go.dev/doc/effective_go#multiple-returns
 [not]: https://go.dev/doc/faq#go_or_golang
