@@ -4,7 +4,7 @@ url: https://johnsy.com
 description: |
   Pete Johns (/piːt ʤɒnz/ - he/him/his): Human being; just like you.
 description_html: |
-  Pete Johns (<a href="https://nmdrp.me/petejohns"><em>/piːt ʤɒnz/</em></a> -
+  Pete Johns (<a href="https://namedrop.io/petejohns"><em>/piːt ʤɒnz/</em></a> -
   <a href="https://pronouns.org/he">he/him/his</a>): Human being; just like you.
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
