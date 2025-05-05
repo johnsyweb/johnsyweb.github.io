@@ -22,7 +22,7 @@ _Getting active with my family in Dublin, October 2019, also the last photo take
 
 ## When Is This Happening?
 
-I'll be on my career break from 1 July 2025 to 30 June 2026. a neat 12-month window and also the financial year for those in Australia.
+I'll be on my career break from 1 July 2025 to 30 June 2026. A neat 12-month window and also the financial year for those in Australia.
 
 ## What Will I Be Doing?
 
@@ -36,7 +36,7 @@ I'm also training for my seventh Melbourne Marathon, brushing up on some tech sk
 
 ## What About Work?
 
-Work's in good shape. They'll cope without me for a year.
+Work's in good shape. They'll cope without me for a year. And I am grateful that the leadership team support my decision.
 
 ## Will I Return?
 
