@@ -1,108 +1,224 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width" />
 
-        <!--[if lt IE 9]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-        <meta http-equiv="Window-Target" content="_top">
-        <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-        <meta name="MSSmartTagsPreventParsing" content="TRUE">
-        <meta name="description" content="{{ site.description }}">
-        <meta name="keywords" content="Pete Johns, Peter Johns, paj, johnsy, johnsyweb, pajLog">
-        <link rel="shortcut icon" title="pajIcon" href="{{ site.url }}/favicon.ico">
+    <meta http-equiv="Window-Target" content="_top" />
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta
+      name="keywords"
+      content="Pete Johns, Peter Johns, paj, johnsy, johnsyweb, pajLog"
+    />
+    <link
+      rel="shortcut icon"
+      title="pajIcon"
+      href="{{ site.url }}/favicon.ico"
+    />
 
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/icons/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/icons/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/icons/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/icons/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.url }}/icons/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/icons/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/icons/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/icons/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="pajLog"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="{{ site.url }}/icons/mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="{{ site.url }}/icons/mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="{{ site.url }}/icons/mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="{{ site.url }}/icons/mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="{{ site.url }}/icons/mstile-310x310.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="{{ site.url }}/icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="{{ site.url }}/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="{{ site.url }}/icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="{{ site.url }}/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="{{ site.url }}/icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{{ site.url }}/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="{{ site.url }}/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{ site.url }}/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}/icons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}/icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}/icons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="pajLog" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="{{ site.url }}/icons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="{{ site.url }}/icons/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="{{ site.url }}/icons/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="{{ site.url }}/icons/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="{{ site.url }}/icons/mstile-310x310.png"
+    />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@johnsyweb" />
-        <meta name="twitter:site" content="@johnsyweb" />
-        <meta property="og:description" content="{{ site.description }}" />
-        <meta property="og:image" content="{{ site.url }}/icons/favicon-196x196.png" />
-        <meta property="og:title" content="{{ page.title }}" />
-        <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:description" content="{{ site.description }}" />
 
-        <link href="{{ site.url }}/assets/css/style-20150308.css" rel="stylesheet" />
-        <link href="{{ site.url }}/assets/css/colors-light.css" rel="stylesheet" title="Light" />
-        <link href="{{ site.url }}/assets/css/colors-dark.css" rel="alternate stylesheet" title="Dark" />
+    {%- assign default_image = site.url | append: '/icons/favicon-196x196.png'
+    -%} {%- if page.content contains '<img' -%} {%- assign first_img_block =
+    page.content | split: '<img' | last -%} {%- assign raw_src = first_img_block
+    | split:'src="' | last | split:'"' | first -%} {%- if raw_src contains '//'
+    -%} {%- assign image_url = raw_src -%} {%- else -%} {%- assign image_url =
+    site.url | append: raw_src -%} {%- endif -%} {%- else -%} {%- assign
+    image_url = default_image -%} {%- endif -%}
 
-        <link rel="Start" href="{{ site.url }}/" title="Back to the start" />
-        <link rel="Help" href="{{ site.url }}/about/" title="What is the point of this website?" />
-        <link rel="alternate" type="text/xml" title="Atom" href="{{ site.url }}/feed.xml" />
-    </head>
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:image" content="{{ image_url }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ image_url }}" />
 
-    <body>
-        <header id="header">
-            <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
-            <p>{{ site.description_html }}</p>
-        </header>
+    <link
+      href="{{ site.url }}/assets/css/style-20150308.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ site.url }}/assets/css/colors-light.css"
+      rel="stylesheet"
+      title="Light"
+    />
+    <link
+      href="{{ site.url }}/assets/css/colors-dark.css"
+      rel="alternate stylesheet"
+      title="Dark"
+    />
 
-        <div id="page">
-            <div id="sidebar">
-                <nav>
-                    <ul>
-                        <li><a href="{{ site.url }}/">Home</a></li>
-                        <li><a href="{{ site.url }}/about">About</a></li>
-                        <li><a href="{{ site.url }}/blog">Blog</a></li>
-                        <li><a href="{{ site.url }}/contact">Contact</a></li>
-                        <li><a href="{{ site.url }}/eventuate">Eventuate</a></li>
-                        <li><a href="{{ site.url }}/ambassy">Ambassy</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <link rel="Start" href="{{ site.url }}/" title="Back to the start" />
+    <link
+      rel="Help"
+      href="{{ site.url }}/about/"
+      title="What is the point of this website?"
+    />
+    <link
+      rel="alternate"
+      type="text/xml"
+      title="Atom"
+      href="{{ site.url }}/feed.xml"
+    />
+  </head>
 
-            <div id="content">
-                {{ content }}
-            </div>
-        </div>
+  <body>
+    <header id="header">
+      <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
+      <p>{{ site.description_html }}</p>
+    </header>
 
-        <footer id="footer">
-            <p>
-                Copyright &copy; 2000-{{ site.time | date: '%Y' }}
-                <a rel="author" href="{{ site.url }}/about/"><em><acronym title="Peter Alexander Johns">paj</acronym></em></a>
-                (<a rel="me"
-                    alt="@pete.johnsy.com"
-                    title="Alas, poor Twitter"
-                    href="https://bsky.app/profile/pete.johnsy.com">@pete.johnsy.com</a>)
-                All rights (and some wrongs) reserved.
-            </p>
-            <p>
-                Hosted by <a href="https://github.com">GitHub</a>,
-                powered by <a href="https://jekyllrb.com">Jekyll</a>,
-                theme by <a href="https://www.webmaster-source.com">Matt Harzewski</a>.
-            </p>
-        </footer>
+    <div id="page">
+      <div id="sidebar">
+        <nav>
+          <ul>
+            <li><a href="{{ site.url }}/">Home</a></li>
+            <li><a href="{{ site.url }}/about">About</a></li>
+            <li><a href="{{ site.url }}/blog">Blog</a></li>
+            <li><a href="{{ site.url }}/contact">Contact</a></li>
+            <li><a href="{{ site.url }}/eventuate">Eventuate</a></li>
+            <li><a href="{{ site.url }}/ambassy">Ambassy</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+      <div id="content">{{ content }}</div>
+    </div>
 
-        <script>
-            $(document).ready(function(){
-                $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
-                });
-        </script>
-    </body>
+    <footer id="footer">
+      <p>
+        Copyright &copy; 2000-{{ site.time | date: '%Y' }}
+        <a rel="author" href="{{ site.url }}/about/"
+          ><em><acronym title="Peter Alexander Johns">paj</acronym></em></a
+        >
+        (<a
+          rel="me"
+          alt="@pete.johnsy.com"
+          title="Alas, poor Twitter"
+          href="https://bsky.app/profile/pete.johnsy.com"
+          >@pete.johnsy.com</a
+        >) All rights (and some wrongs) reserved.
+      </p>
+      <p>
+        Hosted by <a href="https://github.com">GitHub</a>, powered by
+        <a href="https://jekyllrb.com">Jekyll</a>, theme by
+        <a href="https://www.webmaster-source.com">Matt Harzewski</a>.
+      </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https:/assets/js/jquery.mobilemenu.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#sidebar nav ul").mobileMenu({
+          topOptionText: "Menu",
+          prependTo: "#sidebar nav",
+        });
+      });
+    </script>
+  </body>
 </html>
