@@ -116,25 +116,45 @@
       content="{{ site.url }}/icons/mstile-310x310.png"
     />
 
-    <meta property="og:description" content="{{ site.description }}" />
+<meta property="og:description" content="{{ site.description }}" />
 
-    {%- assign default_image = site.url | append: '/icons/favicon-196x196.png'
-    -%} {%- if page.content contains '<img' -%} {%- assign first_img_block =
-    page.content | split: '<img' | last -%} {%- assign raw_src = first_img_block
-    | split:'src="' | last | split:'"' | first -%} {%- if raw_src contains '//'
-    -%} {%- assign image_url = raw_src -%} {%- else -%} {%- assign image_url =
-    site.url | append: raw_src -%} {%- endif -%} {%- else -%} {%- assign
-    image_url = default_image -%} {%- endif -%}
+{% assign default_image = site.url | append: '/icons/favicon-196x196.png' %}
+{% if page.content contains '<img' %}
+  {% assign first_img_block = page.content | split: '<img' | last %}
+  {% assign raw_src = first_img_block | split:'src="' | last | split:'"' | first %}
+  {% if raw_src contains '//' %}
+    {% assign image_url = raw_src %}
+  {% else %}
+    {% assign image_url = site.url | append: raw_src %}
+  {% endif %}
+{% else %}
+  {% assign image_url = default_image %}
+{% endif %}
 
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="{{ site.name }}" />
-    <meta property="og:image" content="{{ image_url }}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ page.title }}" />
-    <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="{{ image_url }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:image" content="{{ image_url }}" />
+
+{% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date: '%d %B %Y' }}" />
+{% endif %}
+{% if page.updated %}
+  <meta property="article:modified_time" content="{{ page.updated | date: '%d %B %Y' }}" />
+{% endif %}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ site.description }}" />
+<meta name="twitter:image" content="{{ image_url }}" />
+
+{% if page.date %}
+  <meta name="twitter:data1" content="Published: {{ page.date | date: '%d %B %Y' }}" />
+{% endif %}
+{% if page.updated %}
+  <meta name="twitter:data2" content="Updated: {{ page.updated | date: '%d %B %Y' }}" />
+{% endif %}
 
     <link
       href="{{ site.url }}/assets/css/style-20150308.css"
