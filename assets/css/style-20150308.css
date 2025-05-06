@@ -441,3 +441,36 @@ img.center {
 	max-width: 100%;
 	height: auto;
 }
+
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+	position: relative;
+	margin-left: -1.5em;
+	padding-left: 1.5em;
+}
+
+#content h1>a.anchor,
+#content h2>a.anchor,
+#content h3>a.anchor,
+#content h4>a.anchor,
+#content h5>a.anchor,
+#content h6>a.anchor {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	visibility: hidden;
+}
+
+#content h1:hover>a.anchor,
+#content h2:hover>a.anchor,
+#content h3:hover>a.anchor,
+#content h4:hover>a.anchor,
+#content h5:hover>a.anchor,
+#content h6:hover>a.anchor {
+	visibility: visible;
+}

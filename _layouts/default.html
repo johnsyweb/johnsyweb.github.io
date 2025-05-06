@@ -207,7 +207,11 @@
         </nav>
       </div>
 
-      <div id="content">{{ content }}</div>
+      <div id="content">
+        {% include anchor_headings.html html=content beforeHeading=true
+        anchorClass="anchor" anchorBody="#" anchorTitle="link to subheading"
+        h_min=2 %}
+      </div>
     </div>
 
     <footer id="footer">
