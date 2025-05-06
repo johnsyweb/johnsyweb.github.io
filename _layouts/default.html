@@ -141,6 +141,7 @@
   <meta property="article:published_time" content="{{ page.date | date: '%d %B %Y' }}" />
 {% endif %}
 {% if page.updated %}
+  <meta property="og:title" content="{{ page.title }} (updated {{ page.updated | date: '%d %B %Y' }})" />
   <meta property="article:modified_time" content="{{ page.updated | date: '%d %B %Y' }}" />
 {% endif %}
 
@@ -153,7 +154,8 @@
   <meta name="twitter:data1" content="Published: {{ page.date | date: '%d %B %Y' }}" />
 {% endif %}
 {% if page.updated %}
-  <meta name="twitter:data2" content="Updated: {{ page.updated | date: '%d %B %Y' }}" />
+ <meta name="twitter:title" content="{{ page.title }} (updated {{ page.updated | date: '%d %B %Y' }}" />
+ <meta name="twitter:data2" content="Updated: {{ page.updated | date: '%d %B %Y' }}" />
 {% endif %}
 
     <link
