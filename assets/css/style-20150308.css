@@ -474,3 +474,17 @@ img.center {
 #content h6:hover>a.anchor {
 	visibility: visible;
 }
+
+.image-left {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  width: 120px;
+}
+
+.image-right {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 120px;
+}
