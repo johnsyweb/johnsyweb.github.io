@@ -57,21 +57,58 @@ def date_from_filename(filename)
   end
 end
 
+# Extract date parts from filename (YYYY-MM-DD-title.md)
+def format_jekyll_url(filename, site_url, permalink_format = nil)
+  base = File.basename(filename, ".*")
+  
+  # Default formatting if no custom permalink structure is provided
+  if base =~ /^(\d{4})-(\d{2})-(\d{2})-(.*)/
+    year, month, day, slug = $1, $2, $3, $4
+    
+    # Check for custom permalink format in config or use Jekyll default
+    if permalink_format
+      url = permalink_format
+        .gsub(':year', year)
+        .gsub(':month', month)
+        .gsub(':day', day)
+        .gsub(':title', slug)
+    else
+      # Jekyll's default permalink structure
+      url = "/#{year}/#{month}/#{day}/#{slug}/"
+    end
+    
+    return "#{site_url}#{url}"
+  end
+  
+  # Fallback for non-standard filenames
+  "#{site_url}/blog/#{base}/"
+end
+
+# Get permalink format from config or use default
+permalink_format = site_config["permalink"]
+puts "Using permalink format: #{permalink_format || 'default'}"
+
 posts = Dir.glob("#{posts_dir}/*.{md,markdown}")
            .map do |file|
-          front_matter = parse_front_matter(file)
-          date = normalize_date(front_matter["date"]) || date_from_filename(File.basename(file))
-          post_slug = File.basename(file, ".*").sub(/^\d{4}-\d{2}-\d{2}-/, "")
-          {
-            title: front_matter["title"] || "Untitled",
-            date: date,
-            date_str: date ? date.strftime("%Y-%m-%d") : "No date",
-            url: "#{site_url}/blog/#{post_slug}/",
-            filename: file
-          }
-rescue StandardError => e
-  puts "Error parsing #{file}: #{e.message}"
-  nil
+          begin
+            front_matter = parse_front_matter(file)
+            date = normalize_date(front_matter["date"]) || date_from_filename(File.basename(file))
+            
+            # Use permalink from front matter if available, otherwise generate from filename
+            permalink = front_matter["permalink"]
+            url = permalink ? "#{site_url}#{permalink}" : format_jekyll_url(file, site_url, permalink_format)
+            
+            {
+              title: front_matter["title"] || "Untitled",
+              date: date,
+              date_str: date ? date.strftime("%Y-%m-%d") : "No date",
+              url: url,
+              filename: file
+            }
+          rescue StandardError => e
+            puts "Error parsing #{file}: #{e.message}"
+            nil
+          end
         end
            .compact
            .select { |post| post[:date] }
