@@ -1,0 +1,57 @@
+name: Update README TOC
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_posts/**"
+      - "_config.yml"
+      - "scripts/update_readme.rb"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Create scripts directory if it doesn't exist
+        run: mkdir -p scripts
+
+      - name: Make script executable
+        run: chmod +x scripts/update_readme.rb
+
+      - name: Update README with TOC
+        run: ruby scripts/update_readme.rb
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          if git diff --exit-code README.md; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes to README.md"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in README.md"
+          fi
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update README.md with latest blog posts [skip ci]"
+          git push

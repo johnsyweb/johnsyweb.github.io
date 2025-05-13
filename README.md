@@ -1,2 +1,3 @@
 # johnsyweb.github.io
-Messing about on a Sunday Morn
+
+A complete waste of cyberspace.
