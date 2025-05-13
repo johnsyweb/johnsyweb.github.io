@@ -21,7 +21,7 @@ One of my earliest memories is of the radio playing in the small kitchen in our 
 
 Ironically, I don't think I ever heard Rush on the radio. I discovered their music many years later and there are so many Rush songs that I love now. The lyrics to this one really speak to me.
 
-### Track 2: It's The End of the World As We Know It (And I Feel Fine) - R.E.M&period;
+### Track 2: It's The End of the World As We Know It (And I Feel Fine) - R.E.M.
 
 I first saw R.E.M. perform live in Milton Keynes in 1995. It was one of the first concerts I attended and I saw them on two consecutive nights. I feel very lucky that (unlike Rush) I got to see R.E.M. many times over the years and I absolutely love their music.
 
