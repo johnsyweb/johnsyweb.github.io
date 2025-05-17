@@ -79,16 +79,16 @@
     {% if page.date %}
     <meta
       property="article:published_time"
-      content="{{ page.date | date: '%d %B %Y' }}"
+      content="{{ page.date | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %} {% if page.updated %}
     <meta
       property="og:title"
-      content="{{ page.title }} (updated {{ page.updated | date: '%d %B %Y' }})"
+      content="{{ page.title }} (updated {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       property="article:modified_time"
-      content="{{ page.updated | date: '%d %B %Y' }}"
+      content="{{ page.updated | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %}
 
@@ -100,16 +100,16 @@
     {% if page.date %}
     <meta
       name="twitter:data1"
-      content="Published: {{ page.date | date: '%d %B %Y' }}"
+      content="Published: {{ page.date | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %} {% if page.updated %}
     <meta
       name="twitter:title"
-      content="{{ page.title }} (updated {{ page.updated | date: '%d %B %Y' }}"
+      content="{{ page.title }} (updated {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       name="twitter:data2"
-      content="Updated: {{ page.updated | date: '%d %B %Y' }}"
+      content="Updated: {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %}
 
