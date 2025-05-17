@@ -1,11 +1,43 @@
 ---
 name: johnsy.com
 url: https://johnsy.com
-description: |
-  Pete Johns (/piːt ʤɒnz/ - he/him/his): Human being; just like you.
+description: "Pete Johns (/piːt ʤɒnz/ - he/him/his): Human being; just like you."
 description_html: |
   Pete Johns (<a href="https://namedrop.io/petejohns"><em>/piːt ʤɒnz/</em></a> -
   <a href="https://pronouns.org/he">he/him/his</a>): Human being; just like you.
+keywords:
+  - Pete Johns
+  - Peter Johns
+  - paj
+  - johnsy
+  - johnsyweb
+  - pajLog
+  - johnsy.com
+  - parkrun
+
+apple_touch_icon_sizes:
+  - 57
+  - 60
+  - 72
+  - 76
+  - 114
+  - 120
+  - 144
+  - 152
+
+favicon_sizes:
+  - 16
+  - 32
+  - 96
+  - 128
+  - 196
+
+mstile_sizes:
+  - { type: square70x70logo, dimensions: "70x70" }
+  - { type: square150x150logo, dimensions: "150x150" }
+  - { type: wide310x150logo, dimensions: "310x150" }
+  - { type: square310x310logo, dimensions: "310x310" }
+
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blog/page:num/"
