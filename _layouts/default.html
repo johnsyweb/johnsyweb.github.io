@@ -16,14 +16,14 @@
     <meta name="keywords" content="{{ site.keywords | join: ', ' }}" />
 
     <!-- Default icons -->
-    <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}" />
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
     <link
       rel="apple-touch-icon"
-      href="{{ 'icons/apple-touch-icon.png' | relative_url }}"
+      href="{{ site.url }}/icons/apple-touch-icon.png"
     />
     <link
       rel="apple-touch-icon-precomposed"
-      href="{{ 'icons/apple-touch-icon-precomposed.png' | relative_url }}"
+      href="{{ site.url }}/icons/apple-touch-icon-precomposed.png"
     />
 
     <!-- Sized apple touch icons -->
@@ -31,7 +31,7 @@
     <link
       rel="apple-touch-icon"
       sizes="{{ size }}x{{ size }}"
-      href="{{ 'icons/apple-touch-icon-' | append: size | append: 'x' | append: size | append: '.png' | relative_url }}"
+      href="{{ site.url }}/icons/apple-touch-icon-{{ size }}x{{ size }}.png"
     />
     {% endfor %}
 
@@ -41,7 +41,7 @@
       rel="icon"
       type="image/png"
       sizes="{{ size }}x{{ size }}"
-      href="{{ 'icons/favicon-' | append: size | append: 'x' | append: size | append: '.png' | relative_url }}"
+      href="{{ site.url }}/icons/favicon-{{ size }}x{{ size }}.png"
     />
     {% endfor %}
 
@@ -50,13 +50,13 @@
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta
       name="msapplication-TileImage"
-      content="{{ 'icons/mstile-144x144.png' | relative_url }}"
+      content="{{ site.url }}/icons/mstile-144x144.png"
     />
 
     {% for size in site.mstile_sizes %}
     <meta
       name="msapplication-{{ size.type }}"
-      content="{{ 'icons/mstile-' | append: size.dimensions | append: '.png' | relative_url }}"
+      content="{{ site.url }}/icons/mstile-{{ size.dimensions }}.png"
     />
     {% endfor %}
 
@@ -191,7 +191,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="https:/assets/js/jquery.mobilemenu.min.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery.mobilemenu.min.js"></script>
 
     <script>
       $(document).ready(function () {

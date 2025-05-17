@@ -43,7 +43,16 @@ paginate: 10
 paginate_path: "blog/page:num/"
 hilighter: pygments
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+exclude:
+  - ".*"
+  - ".*/"
+  - "Gemfile*"
+  - "package*.json"
+  - LICENSE
+  - README.md
+  - node_modules/
+  - scripts/
+  - vendor/
 
 plugins:
   - jekyll-paginate
