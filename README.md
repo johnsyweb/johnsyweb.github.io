@@ -12,6 +12,7 @@ A complete waste of cyberspace.
 
 ## Recent Blog Posts
 
+- 2025-06-01: [The First Law of Signs](https://johnsy.com/blog/2025/06/01/the-first-law-of-signs/)
 - 2025-05-17: [Defibrillators save lives!](https://johnsy.com/blog/2025/05/17/defibrillators-save-lives/)
 - 2025-05-13: [Desert Island Discs: My Eight Tracks, Book, and Luxury Item](https://johnsy.com/blog/2025/05/13/desert-island-discs/)
 - 2025-05-05: [Taking a career break](https://johnsy.com/blog/2025/05/05/career-break/)
@@ -21,6 +22,5 @@ A complete waste of cyberspace.
 - 2023-02-28: [Functional February](https://johnsy.com/blog/2023/02/28/functional-february/)
 - 2023-01-31: [JavaScript January](https://johnsy.com/blog/2023/01/31/javascript-january/)
 - 2023-01-29: [Back-to-back meetings are tiring, let's not do those!](https://johnsy.com/blog/2023/01/29/back-to-back-meetings-are-tiring/)
-- 2022-11-13: [Pronouns-iation](https://johnsy.com/blog/2022/11/13/pronouns-iation/)
 
 <!-- END TOC -->
