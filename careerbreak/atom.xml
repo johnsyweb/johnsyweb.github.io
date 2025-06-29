@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /careerbreak/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Pete's Career Break Updates</title>
+  <description>{{ site.description | xml_escape }}</description>
+  <link href="{{ site.url }}/careerbreak/atom.xml" rel="self"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <icon>{{ site.url }}/icons/favicon-16x16.png</icon>
+  <logo>{{ site.url }}/icons/favicon-196x196.png</logo>
+  <id>{{ site.url }}/careerbreak/</id>
+  {% assign posts = site.categories.careerbreak | sort: 'date' | reverse %}
+  {% for post in posts limit:10 %}
+    <entry>
+      <title>{{ post.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ post.url }}"/>
+      <id>{{ site.url }}{{ post.id }}</id>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <summary>{{ post.excerpt | strip_html | xml_escape }}</summary>
+      <content type="html">{{ post.content | xml_escape }}</content>
+      <author>
+        <name>{{ site.author.name }}</name>
+        <uri>{{ site.author.url }}</uri>
+      </author>
+      {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+      {% endfor %}
+    </entry>
+  {% endfor %}
+</feed>
