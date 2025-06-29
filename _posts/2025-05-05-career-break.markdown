@@ -2,7 +2,9 @@
 layout: post
 title: Taking a career break
 date: 2025-05-05
-categories: personal career
+categories:
+ - personal
+ - careerbreak
 ---
 
 I'm taking a 12-month career break to spend more time with my family. And before anyone worries - I'm in perfect health! This is purely about making time for what matters most.

@@ -4,18 +4,18 @@ redirect_from:
 - /blog/atom/
 - /blog/rss/
 - /blog/rss2/
-
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
+    <title>{{ site.name | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
+    <icon>{{ site.url }}/icons/favicon-16x16.png</icon>
+    <logo>{{ site.url }}/icons/favicon-196x196.png</logo>
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
@@ -29,6 +29,10 @@ redirect_from:
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
+        <author>
+          <name>{{ site.author.name }}</name>
+          <uri>{{ site.author.url }}</uri>
+        </author>
       </item>
     {% endfor %}
   </channel>
