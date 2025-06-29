@@ -11,11 +11,16 @@ my first name at (@) this domain.
 ## Calendar
 
 If you'd like to book some time with me to talk about software development
-teams, [parkrun](https://www.parkrun.com.au/parkrunner/1001388/) or anything
-else, you can do so on [Calendly](https://calendly.com/johnsyweb/).
+teams, [parkrun] or anything else, you can do so on [Calendly][calendly].
 
 ## Social Media
 
 I have pretty much removed myself from all forms of social media. You may still
 find me around the Internet as @johnsyweb. I don't use any of Meta's messaging
-services. My preferred messaging service is [Signal](https://www.signal.org/).
+services. My preferred messaging service is [Signal][signal].
+
+<!-- Links -->
+
+[parkrun]: https://www.parkrun.com.au/parkrunner/1001388/
+[calendly]: https://calendly.com/johnsyweb/
+[signal]: https://signal.me/#eu/3XOS3lWi12hyZcRRcg6XmwkafhSDz
