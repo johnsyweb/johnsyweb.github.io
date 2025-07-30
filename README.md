@@ -12,6 +12,7 @@ A complete waste of cyberspace.
 
 ## Recent Blog Posts
 
+- 2025-07-30: [Formatting iOS email signatures is a pain](https://johnsy.com/blog/2025/07/30/formatting-ios-email-signatures-is-a-pain/)
 - 2025-06-30: [Career Break Eve](https://johnsy.com/blog/2025/06/30/career-break-eve/)
 - 2025-06-01: [The First Law of Signs](https://johnsy.com/blog/2025/06/01/the-first-law-of-signs/)
 - 2025-05-17: [Defibrillators save lives!](https://johnsy.com/blog/2025/05/17/defibrillators-save-lives/)
@@ -21,6 +22,5 @@ A complete waste of cyberspace.
 - 2023-05-01: [R! There you are!](https://johnsy.com/blog/2023/05/01/r!-there-you-are!/)
 - 2023-03-30: [Mechanical March](https://johnsy.com/blog/2023/03/30/mechanical-march/)
 - 2023-02-28: [Functional February](https://johnsy.com/blog/2023/02/28/functional-february/)
-- 2023-01-31: [JavaScript January](https://johnsy.com/blog/2023/01/31/javascript-january/)
 
 <!-- END TOC -->
