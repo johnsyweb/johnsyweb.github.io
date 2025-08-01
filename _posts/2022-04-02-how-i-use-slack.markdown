@@ -2,9 +2,11 @@
 layout: post
 category: productivity
 title: How I Use Slack
-date: 2022-04-02  3:36:52
+date: 2022-04-02 14:36:52.000000000 +11:00
+redirect_from:
+- "/bit.ly/HowIUseSlack/"
+- "/l/HowIUseSlack/"
 ---
-
 This blog post has been brewing for a while now. I first started [mind-mapping]
 it about a month ago. I was going to call this "Considerate Slack Use" but this
 is how _I_ use Slack and in no way a request that you do the same as me.

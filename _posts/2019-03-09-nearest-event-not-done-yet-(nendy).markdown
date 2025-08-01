@@ -2,9 +2,11 @@
 layout: post
 category: running
 title: Nearest Event Not Done Yet (NENDY)
-date: 2019-03-09  6:01:45
+date: 2019-03-09 17:01:45.000000000 +11:00
+redirect_from:
+- "/bit.ly/pajNENDY/"
+- "/l/NENDY/"
 ---
-
 Since handing over the [Event
 Director](https://wiki.parkrun.com/index.php/Event_Director) role at [Coburg
 parkrun](http://bit.ly/pajCp) to Marcus last year, I've been taking the

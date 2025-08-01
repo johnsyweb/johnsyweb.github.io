@@ -2,9 +2,11 @@
 layout: post
 category: Security
 title: Improving Online Security
-date: 2019-01-21  0:37:00
+date: 2019-01-21 11:37:00.000000000 +11:00
+redirect_from:
+- "/bit.ly/improving-online-security/"
+- "/l/improving-online-security/"
 ---
-
 The revelation of the ["Collection #1" data
 breach](https://www.troyhunt.com/the-773-million-record-collection-1-data-reach/)
 highlights, once again, that we do a poor job of keeping ourselves safe online.

@@ -2,9 +2,11 @@
 layout: post
 category: programming
 title: Functional February
-date: 2023-02-28  9:03:19
+date: 2023-02-28 20:03:19.000000000 +11:00
+redirect_from:
+- "/bit.ly/pajFunctionalFebruary/"
+- "/l/FunctionalFebruary/"
 ---
-
 Having really enjoyed [JavaScript January], I had absolutely no idea which language I was going to choose for [Month 2 of #12in23]. It wasn't until the morning of 1 February that I happened upon the relatively new [`jq` track] on [Exercism]. It had never occurred to me up until that point that as well as being a handy command-line tool for processing [JSON], [`jq`] implements a _language_. It turns out that I had underestimated it, much as I had [AWK] all those years ago.
 
 Did you know you can use `jq` as a simple command-line calculator, for instance?

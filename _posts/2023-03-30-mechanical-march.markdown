@@ -2,9 +2,11 @@
 layout: post
 category: programming
 title: Mechanical March
-date: 2023-03-30 23:17:21
+date: 2023-03-31 10:17:21.000000000 +11:00
+redirect_from:
+- "/bit.ly/pajGolang/"
+- "/l/Golang/"
 ---
-
 Hot on the heels of [Functional February] came [Mechanical March] in [Exercism's
 #12in23 challenge]. There was a veritable feast of languages from which to
 choose and I opted for [Go] (apparently it's [not] _[Golang]_ despite all of the

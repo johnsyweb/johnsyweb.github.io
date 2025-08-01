@@ -1,12 +1,14 @@
 ---
 layout: post
 categories:
-    - personal
+- personal
 title: Shoulder Injury
-date: 2025-04-28 03:17:27
-updated: 2025-06-03 02:30:00
+date: 2025-04-28 13:17:27.000000000 +10:00
+updated: 2025-06-03 12:30:00.000000000 +10:00
+redirect_from:
+- "/bit.ly/WhatHaveYouDoneToYourself/"
+- "/l/WhatHaveYouDoneToYourself/"
 ---
-
 Yes, my left arm is currently in a sling. Having described why this is multiple times, I thought I'd write it down.
 
 On Thursday morning, while running before work, I tripped and dislocated my shoulder. My caring running partner called an ambulance, and while the paramedics were assessing me, the shoulder joint was relocated with an audible click. After being evaluated at a local hospital, I received an official diagnosis of a chip on my shoulder!

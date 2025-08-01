@@ -2,9 +2,11 @@
 layout: post
 category: running
 title: Dingo Dash
-date: 2018-08-17  6:53:10
+date: 2018-08-17 16:53:10.000000000 +10:00
+redirect_from:
+- "/bit.ly/dingodash/"
+- "/l/dingodash/"
 ---
-
 Over the last few years I've come to really enjoy running. I typically run three
 or four times per week with one of these runs being a long run, at least 21.1km.
 After [my first marathon]({{ site.baseurl }}{% post_url 2015-11-01-my-first-marathon %}) I agreed with

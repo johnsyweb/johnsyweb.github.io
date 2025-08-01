@@ -2,9 +2,11 @@
 layout: post
 category: rant
 title: Buying Stuff in 2021
-date: 2021-10-02 21:42:54
+date: 2021-10-03 08:42:54.000000000 +11:00
+redirect_from:
+- "/bit.ly/3Db1Uom/"
+- "/l/3Db1Uom/"
 ---
-
 In The Before Times™ we used to like to go to restaurants. Of course, part of
 the restaurant dining experience is being asked, "how is your meal?" Just as a
 forkful of said meal has entered the diner's mouth. There's a polite nod with

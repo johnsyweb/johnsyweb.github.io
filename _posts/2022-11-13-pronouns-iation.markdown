@@ -2,9 +2,11 @@
 layout: post
 category: Allyship
 title: Pronouns-iation
-date: 2022-11-13  8:37:41
+date: 2022-11-13 19:37:41.000000000 +11:00
+redirect_from:
+- "/bit.ly/WhyTheseAreHere/"
+- "/l/WhyTheseAreHere/"
 ---
-
 In my last blog post, [Keeping in the Development
 Loop](/blog/2022/08/04/keeping-in-the-development-loop/), I listed a bunch of
 email newsletters that I enjoy as a technologist. Today I want to share one more
