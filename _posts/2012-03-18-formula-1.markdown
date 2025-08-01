@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Formula 1
+redirect_from:
+- "/bit.ly/pajf1x2/"
+- "/l/f1x2/"
 ---
-
 I've been a motorsport fan since I was a young boy. Formula 1 was and is a
 particular fascination. I didn't go to my first Grand Prix until the 2005
 Belgian Grand Prix, which was an amazing experience. A few months after that, I

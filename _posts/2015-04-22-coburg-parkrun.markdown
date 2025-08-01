@@ -2,9 +2,11 @@
 layout: post
 category: running
 title: Coburg parkrun
-date: 2015-04-22 20:07:59
+date: 2015-04-23 06:07:59.000000000 +10:00
+redirect_from:
+- "/bit.ly/pajCp/"
+- "/l/Cp/"
 ---
-
 I haven't looked back since [I ran my first
 parkrun](http://www.parkrun.com.au/westerfolds/results/weeklyresults/?runSeqNumber=35)
 last June. You may remember I mentioned [parkrun](http://www.parkrun.com/) once

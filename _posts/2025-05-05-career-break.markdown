@@ -46,4 +46,4 @@ I hope so. I expect the workplace will look quite different in twelve months tim
 
 <!-- Links -->
 
-[ABC News Article]: https://bit.ly/notparkrun
+[ABC News Article]: /bit.ly/notparkrun

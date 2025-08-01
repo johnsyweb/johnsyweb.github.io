@@ -2,9 +2,11 @@
 layout: post
 category: programming
 title: JavaScript January
-date: 2023-01-31  8:11:57
+date: 2023-01-31 19:11:57.000000000 +11:00
+redirect_from:
+- "/bit.ly/pajJavaScriptJanuary/"
+- "/l/JavaScriptJanuary/"
 ---
-
 One evening right at the beginning of 2023, I got an email from
 [Exercism](https://exercism.org/) inviting me to join 
 [The #12in23 Challenge](https://exercism.org/challenges/12in23). I was home

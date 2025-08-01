@@ -2,12 +2,13 @@
 layout: post
 category: running
 title: My year of running
-date: 2015-03-01 15:04:31
+date: 2015-03-02 02:04:31.000000000 +11:00
 redirect_from:
- - /blog/2015/03/01/my_year_of_running/
- - /blog/2015/03/02/my_year_of_running/
+- "/blog/2015/03/01/my_year_of_running/"
+- "/blog/2015/03/02/my_year_of_running/"
+- "/bit.ly/my-year-of-running/"
+- "/l/my-year-of-running/"
 ---
-
 Today, [I ran](http://www.strava.com/activities/261246096) as part of a
 [Corporate Triathlon](http://corptriseries.com.au/melbourne) relay team with my
 amazing colleagues. Had you told me a year ago that I would be doing this, I'm

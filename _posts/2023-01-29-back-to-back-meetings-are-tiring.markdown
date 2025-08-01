@@ -2,9 +2,11 @@
 layout: post
 category: productivity
 title: Back-to-back meetings are tiring, let's not do those!
-date: 2023-01-29 10:01:31
+date: 2023-01-29 21:01:31.000000000 +11:00
+redirect_from:
+- "/bit.ly/WhyThisMeetingIsShort/"
+- "/l/WhyThisMeetingIsShort/"
 ---
-
 Let’s start this post with the assumption that synchronous, face-to-face
 meetings are a part of how a successful organisation operates. Reaching any
 other position is outside of the scope of this post, although is certainly

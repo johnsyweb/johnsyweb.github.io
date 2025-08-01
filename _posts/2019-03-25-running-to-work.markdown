@@ -2,9 +2,11 @@
 layout: post
 category: running
 title: Running to Work
-date: 2019-03-25 01:29:12
+date: 2019-03-25 12:29:12.000000000 +11:00
+redirect_from:
+- "/bit.ly/running-to-work/"
+- "/l/running-to-work/"
 ---
-
 ## The Story
 
 I completed my first run commute in [November 2015]({{ site.baseurl }}{% post_url /2015-03-01-my-year-of-running %}) but it wasn't until after [my last cycling commute]({{ site.baseurl }}{% post_url /2016-04-28-my-last-cycling-commute %}) the following April that running to work became my preferred start to the working day.

@@ -2,9 +2,11 @@
 layout: post
 category: programming
 title: R! There you are!
-date: 2023-05-01 10:20:11
+date: 2023-05-01 20:20:11.000000000 +10:00
+redirect_from:
+- "/bit.ly/pajRThereYouAre/"
+- "/l/RThereYouAre/"
 ---
-
 Yesterday Analytics April came to an end in the [Exercism](https://exercism.org/dashboard) #12in23 challenge and I completed my fortieth exercise in [_R_](https://www.r-project.org). Given the choice of Julia, Python and R and a background including writing Python for years, I opted for the track with 30-something exercises over the one with 50-something as I had a chance of completing them all. There were a few new exercises added during the month, hence completing forty.
 
 ## Getting started

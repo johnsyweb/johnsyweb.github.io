@@ -2,9 +2,11 @@
 layout: post
 category: personal
 title: Cardiac Arrest Survivor
-date: 2020-06-03  1:22:28
+date: 2020-06-03 11:22:28.000000000 +10:00
+redirect_from:
+- "/bit.ly/pajCardiacArrest/"
+- "/l/CardiacArrest/"
 ---
-
 This year has thrown a lot at so many of us with the ongoing COVID-19 pandemic.
 My family and I have been observing the restrictions since they came in...
 indeed _K_ and I were working from home for a couple of weeks before the
