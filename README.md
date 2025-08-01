@@ -20,7 +20,7 @@ A complete waste of cyberspace.
 - 2025-05-05: [Taking a career break](https://johnsy.com/blog/2025/05/05/career-break/)
 - 2025-04-28: [Shoulder Injury](https://johnsy.com/blog/2025/04/28/shoulder-injury/)
 - 2023-05-01: [R! There you are!](https://johnsy.com/blog/2023/05/01/r!-there-you-are!/)
-- 2023-03-30: [Mechanical March](https://johnsy.com/blog/2023/03/30/mechanical-march/)
+- 2023-03-31: [Mechanical March](https://johnsy.com/blog/2023/03/30/mechanical-march/)
 - 2023-02-28: [Functional February](https://johnsy.com/blog/2023/02/28/functional-february/)
 
 <!-- END TOC -->
