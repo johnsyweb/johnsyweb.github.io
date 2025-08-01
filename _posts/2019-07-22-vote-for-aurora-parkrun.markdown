@@ -5,7 +5,7 @@ title: Vote For Aurora parkrun
 date: 2019-07-22  9:45:06
 ---
 
-[![Vote For Aurora parkrun]({{ site.baseurl }}{% link /images/2019-07-22-vote-4-aurora-parkrun1.jpg %})](https://bit.ly/vote4ap)
+[![Vote For Aurora parkrun]({{ site.baseurl }}{% link /images/2019-07-22-vote-4-aurora-parkrun1.jpg %})](/bit.ly/vote4ap)
 
 In January of this year, I joined the [parkrun Australia](https://www.parkrun.com.au/)
 Event Ambassador programme and I'm finding it's a great way to give something
@@ -35,7 +35,7 @@ Defibrillator (AED) in order to create the safest possible environment for our
 community to get together.
 
 Could you please help us to secure this essential funding? To vote for our event
-go to [The Aurora Seedling Fund](https://bit.ly/vote4ap) and click the "vote"
+go to [The Aurora Seedling Fund](/bit.ly/vote4ap) and click the "vote"
 under our event or (if you're nearby) head over to [Sprout Hub
 Aurora](https://aurora.sprouthub.com.au/) and grab a coffee, with every purchase
 you get a bean to put in the voting box of your choice!
@@ -44,4 +44,4 @@ Then share this link with your friends :-)
 
 Deep thanks.
 
-[![Vote For Aurora parkrun]({{ site.baseurl }}{% link /images/2019-07-22-vote-4-aurora-parkrun2.jpg %})](https://bit.ly/vote4ap)
+[![Vote For Aurora parkrun]({{ site.baseurl }}{% link /images/2019-07-22-vote-4-aurora-parkrun2.jpg %})](/bit.ly/vote4ap)

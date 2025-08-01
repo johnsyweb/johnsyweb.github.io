@@ -12,7 +12,7 @@ and wondered whether others would find this list useful. So I'm publishing it.
 
 ## 1Password extension (desktop app required)
 
-[You need a password manager. Really.](https://bit.ly/improving-online-security)
+[You need a password manager. Really.](/bit.ly/improving-online-security)
 
 [https://1password.com/browsers/](https://1password.com/browsers/)
  
@@ -58,7 +58,7 @@ really easy to block unwanted content!
 ## Running Challenges
 
 Adds challenge progress information to your parkrun athlete results page. I've
-written before about how I use this to track my [NENDY](https://bit.ly/pajNENDY)
+written before about how I use this to track my [NENDY](/bit.ly/pajNENDY)
 and since then I've helped to add the
 [v-index](https://running-challenges.co.uk/2019/06/09/v0.7.6-released.html).
 

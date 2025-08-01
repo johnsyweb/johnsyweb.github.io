@@ -9,7 +9,7 @@ redirect_from:
 ---
 Since handing over the [Event
 Director](https://wiki.parkrun.com/index.php/Event_Director) role at [Coburg
-parkrun](http://bit.ly/pajCp) to Marcus last year, I've been taking the
+parkrun](/bit.ly/pajCp) to Marcus last year, I've been taking the
 opportunity to enjoy being one of the [parkrun
 adventurers](https://www.facebook.com/parkrunadventurers/) and have been ticking
 off my _Nearest Event Not Done Yet_ (NENDY) as time permits.
