@@ -1,0 +1,47 @@
+---
+layout: post
+categories: 
+    - careerbreak
+    - cycling
+    - charity
+    - health
+title: I'm riding 496 km...
+date: 2025-08-04 15:49:30
+redirect_from: /l/gcc25
+---
+
+Inspired and encouraged by my good friend [Ross], I have signed up for the [2025 Great Cycle Challenge] and will be riding this October to fight kids' cancer! In the same month as running [Melbourne Marathon], because I don't like to do things by halves.
+
+<!-- more -->
+
+My goal is to pedal 496 km throughout the month. Why 496? I've not ridden my bicycle much since [my last cycling commute], so I figured I would build up gradually. 1km on the first of October, 2km on the second, and so on, up until the end of the month.
+
+Why am I doing this? Because cancer is the largest killer of children from disease in Australia: three children die of cancer every week. We all know somebody who has had to deal with this pernicious disease.
+
+My challenge will be tough, but it's nothing compared to what these brave kids and their families face every day of their lives as they battle this terrible disease.
+
+**Kids should be living life, NOT fighting for it.**
+
+That’s why I’m taking on this challenge to end childhood cancer and save young lives.
+
+Please support me by making a donation through [my 2025 Great Cycle Challenge fundraising page].
+
+All funds raised will support [Children's Medical Research Institute] to continue their work to develop innovative treatments and find a cure for childhood cancer.
+
+_Thank you for your support._ 
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/johnsyweb/15486389609/in/album-72157649059836835" title="I did it!">
+<img src="https://live.staticflickr.com/3939/15486389609_a0e00e91a4_n.jpg" width="240" height="320" alt="I did it!"/>
+</a>
+<script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+(When I was young and fit in 2014).
+
+<!-- Links -->
+
+[2025 Great Cycle Challenge]: https://greatcyclechallenge.com.au/
+[Children's Medical Research Institute]: https://www.cmrijeansforgenes.org.au
+[Melbourne Marathon]: https://melbournemarathon.com.au/
+[my 2025 Great Cycle Challenge fundraising page]: https://greatcyclechallenge.com.au/riders/johnsyweb/
+[my last cycling commute]: {% post_url 2016-04-28-my-last-cycling-commute %}
+[Ross]: https://greatcyclechallenge.com.au/riders/RossSparks
