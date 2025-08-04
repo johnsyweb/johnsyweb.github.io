@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "html-proofer"
+
 desc 'Given a title as an argument, create a new post file'
 task :write, [:title, :category] do |_t, args|
   NOW = Time.now.utc.freeze
@@ -19,4 +21,20 @@ task :write, [:title, :category] do |_t, args|
 FRONT_MATTER
   end
   puts "Now open #{path} in an editor."
+end
+
+task :test => :build do
+  options = { 
+    cache: 
+    { 
+      timeframe: { external: "2w", internal: "1w" },
+      cache_file: "html-proofer-cache.json",
+      storage_dir: "./tmp/html-proofer-cache" 
+   }
+       }
+  HTMLProofer.check_directory("./_site", options).run
+end
+
+task :build do
+  sh "bundle exec jekyll build"
 end

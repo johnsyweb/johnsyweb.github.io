@@ -1,6 +1,7 @@
+/_site/
 /.jekyll-metadata
 /.sass-cache/
-/_site/
 /bin/
 /error.txt
 /stdout.txt
+/tmp/*
