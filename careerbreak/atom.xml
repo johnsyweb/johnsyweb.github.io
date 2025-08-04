@@ -3,7 +3,7 @@ layout: null
 permalink: /careerbreak/atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
   <title>Pete's Career Break Updates</title>
   <description>{{ site.description | xml_escape }}</description>
   <link href="{{ site.url }}/careerbreak/atom.xml" rel="self"/>

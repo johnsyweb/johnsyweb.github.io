@@ -14,12 +14,12 @@ alive and well, Thank God.
 I was running late for work this morning as I had a couple of things that I
 needed to do, so I caught the tram from outside our door. This tram would
 normally drop me at almost exactly the point where [this morning's
-shootings](http://www.theage.com.au/articles/2007/06/18/1182018971854.html) took
+shootings](https://www.theage.com.au/articles/2007/06/18/1182018971854.html) took
 place. Shortly after the tram had left the stop, we were told that we would have
 to take an alternative route, due to an incident, believed to be a shooting on
 William Street. I got off at Flinders Street Station and walked along Flinders
 Street. There was a huge police presence near the [Immigration
-Museum](http://www.theage.com.au/articles/2007/06/18/1182018971854.html). I
+Museum](https://www.theage.com.au/articles/2007/06/18/1182018971854.html). I
 continued as I usually do across William St without joining the spectators and
 took the little lane past the coffee shops to the rear entrance to The Rialto.
 

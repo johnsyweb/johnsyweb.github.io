@@ -19,7 +19,7 @@ aware of motorists distracted by their smartphones. Bike lanes on our highways,
 where they exist, are too narrow, have uneven surfaces and usually contain a
 stationary vehicle or two.
 [Car doors](https://www.vicroads.vic.gov.au/safety-and-road-rules/cyclist-safety/car-doors-and-bike-riders) present a threat on every stretch. Since
-[Alberto Paulon was killed while cycling on Sydney Road](http://www.theage.com.au/victoria/italian-cyclist-alberto-paulon-killed-on-sydney-road-brunswick-remembered-by-work-colleagues-and-memorial-ride-20150302-13skbz.html)
+[Alberto Paulon was killed while cycling on Sydney Road](https://www.theage.com.au/victoria/italian-cyclist-alberto-paulon-killed-on-sydney-road-brunswick-remembered-by-work-colleagues-and-memorial-ride-20150302-13skbz.html)
 last year, VicRoads has painted new markings along the stretch warning cyclists
 and motorists about the risk of car doorings but segregated lanes that were
 talked about have not materialised. I don't really see what good these signs do:
@@ -68,9 +68,9 @@ to hear, "I'm sorry, I didn't see you!". Just like the evening when I was hit,
 visibility was not an issue, the sun was high in the sky. I was livid. I
 couldn't look the driver in the face or say anything.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/johnsyweb/25467827175/" title="Cyclist surprisingly well after a motorist &quot;didn&#x27;t see him&quot;"><img src="https://farm2.staticflickr.com/1641/25467827175_d467f254fa_z.jpg" width="640" height="480" alt="Cyclist surprisingly well after a motorist &quot;didn&#x27;t see him&quot;"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/johnsyweb/25467827175/" title="Cyclist surprisingly well after a motorist &quot;didn&#x27;t see him&quot;"><img src="https://farm2.staticflickr.com/1641/25467827175_d467f254fa_z.jpg" width="640" height="480" alt="Cyclist surprisingly well after a motorist &quot;didn&#x27;t see him&quot;"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/johnsyweb/24841098583/" title="That&#x27;s how far the cyclist landed from the cycle path!"><img src="https://farm2.staticflickr.com/1507/24841098583_1629132654_z.jpg" width="640" height="480" alt="That&#x27;s how far the cyclist landed from the cycle path!"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/johnsyweb/24841098583/" title="That&#x27;s how far the cyclist landed from the cycle path!"><img src="https://farm2.staticflickr.com/1507/24841098583_1629132654_z.jpg" width="640" height="480" alt="That&#x27;s how far the cyclist landed from the cycle path!"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 I called an ambulance (the second time I have called an ambulance on my way to
 work after a car has hit a cyclist within 2km of my home since I've lived in

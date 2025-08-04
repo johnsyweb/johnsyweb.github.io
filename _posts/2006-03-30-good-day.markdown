@@ -7,13 +7,13 @@ title: Good Day
 
 
 It's a good day, I can tell you, when you hear [The legendary Murray
-Walker](http://carpoint.ninemsn.com.au/car-review/1610248.aspx) being
+Walker](https://carpoint.ninemsn.com.au/car-review/1610248.aspx) being
 interviewed on Australian radio and talking about his &quot;very good
 friends&quot; Nigel Mansell and Damon Hill winning World Championships!
 
 
 Sadly, I cannot hear the F1 action from my office, it's about 14km from [Albert
-Park](http://cars.grandprix.com.au/). _K_ assures me that she can hear
+Park](https://cars.grandprix.com.au/). _K_ assures me that she can hear
 &quot;fast cars&quot; from her office. Life is unfair.
 
 
@@ -23,7 +23,7 @@ cannot get on and look up the program of events this lunchtime. Hey-ho, I'm sure
 it will be excellent, whatever.
 
 
-On an unrelated note, I'm now running v7.0 (Beta) of [Vim](http://www.vim.org/),
+On an unrelated note, I'm now running v7.0 (Beta) of [Vim](https://www.vim.org/),
 which has some very natty spell-checking. This may or may not improve the
 quality of my blog entries and emails.
 

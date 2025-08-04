@@ -7,7 +7,7 @@ Alas, my time in Perth draws to a close, tomorrow we leave for Sydney (NSW).
 This seems like a good opportunity to fill you in, dear reader, with what I've
 been up to. On Thursday, I was off to Fremantle just as I left you. In Freo I
 had lovely fresh fish and chips with <i>thm</i> and family. We then visited the
-<a href="http://www.mm.wa.gov.au/">Maritime Museum</a> before heading off to the
+<a href="https://www.mm.wa.gov.au/">Maritime Museum</a> before heading off to the
 tour of Fremantle Prison.
 
 Friday was great. Having done some shopping, we joined a wine-tasting tour,

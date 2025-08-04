@@ -17,7 +17,7 @@ off my _Nearest Event Not Done Yet_ (NENDY) as time permits.
 Visiting local [parkrun](https://www.parkrun.com.au/) events is a great way to
 experience [parkrun](https://www.parkrun.com/) and to discover hidden gems in
 our neighbourhood ([Newport Lakes
-parkrun](http://www.parkrun.com.au/newportlakes/) comes to mind).
+parkrun](https://www.parkrun.com.au/newportlakes/) comes to mind).
 
 If you want to find your NENDY, install the [Running
 Challenges](https://running-challenges.co.uk/) plugin in

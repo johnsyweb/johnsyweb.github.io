@@ -7,7 +7,7 @@ redirect_from:
 
 I recently came across a blog entry on [Importance of Writing Code Comments in
 Software
-Development](http://technoladder.blogspot.com.au/2012/10/importance-of-writing-code-comments-in.html).
+Development](https://technoladder.blogspot.com.au/2012/10/importance-of-writing-code-comments-in.html).
 It's a proposition I've heard many times before, so I took a read to see if
 there was some reasoning I may have missed. There wasn't.
 
@@ -18,9 +18,9 @@ writing it. _O tempora o mores_! Comments are not what I want to see, my
 friends, _Clean Code_ is what I want to see!
 
 
-[Robert C. "Uncle Bob" Martin](http://en.wikipedia.org/wiki/Robert_Cecil_Martin)
-[(more than)](http://coding.derkeiler.com/Archive/General/comp.object/2004-06/0342.html)
-once declared: [_Comments are lies_](http://agilepractices2010.blogspot.com.au/2010/06/solid-principles-of-object-oriented.html).
+[Robert C. "Uncle Bob" Martin](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)
+[(more than)](https://coding.derkeiler.com/Archive/General/comp.object/2004-06/0342.html)
+once declared: [_Comments are lies_](https://agilepractices2010.blogspot.com.au/2010/06/solid-principles-of-object-oriented.html).
 He is (partially) right!
 
 
@@ -177,6 +177,6 @@ concentrate on the _code_!
 
 
 Remember: Comments are a failure to express yourself clearly in your code. [Clean Code: A Handbook of Agile
-Software Craftsmanship (Robert C. Martin) ](http://tinyurl.com/CleanCodeBook) is recommended reading on the
+Software Craftsmanship (Robert C. Martin) ](https://tinyurl.com/CleanCodeBook) is recommended reading on the
 matter.
 

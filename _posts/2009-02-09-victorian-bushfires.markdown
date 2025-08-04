@@ -5,7 +5,7 @@ title: Victorian Bushfires
 
 
 
-I understand that reports of the local [bushfires](http://mapvisage.appspot.com/fires/FireMap.html) has reached the [international news](http://news.bbc.co.uk/2/hi/asia-pacific/7863622.stm).
+I understand that reports of the local [bushfires](https://mapvisage.appspot.com/fires/FireMap.html) has reached the [international news](https://news.bbc.co.uk/2/hi/asia-pacific/7863622.stm).
 
 
 Thank you to those from overseas who have been concerned for us. We're fine,
@@ -25,7 +25,7 @@ very fortunate.
 
 For those wondering what they can do to help those affected by these horrendous
 fires, please visit the [Australian Red
-Cross](http://www.redcross.org.au/default.asp) website and make a donation. If
-you can, [Donate Blood](http://www.donateblood.com.au/) (we cannot, because
+Cross](https://www.redcross.org.au/default.asp) website and make a donation. If
+you can, [Donate Blood](https://www.donateblood.com.au/) (we cannot, because
 we're POMs and may have Mad Cow Disease).
 

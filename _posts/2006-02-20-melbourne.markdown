@@ -25,7 +25,7 @@ retreat back to our vehicle.
 
 The town of Lorne was very busy as we drove through and so we had to stop and
 have a nosey. The activities on the beach were part of the [Rescue
-2006](http://www.rescue2006.com/) International Surf Lifesaving Competition. We
+2006](https://www.rescue2006.com/) International Surf Lifesaving Competition. We
 spent a while watching the beach flag races. A British guy won his final that
 involved lying face-down in the sand and jumping up at the sound of the
 starter's whistle and running in the direction his feet were pointing before

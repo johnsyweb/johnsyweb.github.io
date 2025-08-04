@@ -12,7 +12,7 @@ it finished and get it finished I shall.
 
 
 Rather than re-inventing wheels, like I did with my own website, I've opted to
-build this site using [Textpattern](http://textpattern.com/). So far it seems
+build this site using [Textpattern](https://textpattern.com/). So far it seems
 pretty straightforward. This is ideal as I don't intend to maintain the new
 website (another good reason not to hand-crafting my own Perl, PHP or Python).
 
@@ -20,7 +20,7 @@ website (another good reason not to hand-crafting my own Perl, PHP or Python).
 One thing that did take a while to get working, however, is getting 'Clean
 URLs', those without question marks and ampersands all over the place, to work.
 Thankfully like so many things, [this is a solved
-problem](http://textpattern.com/faq/66/404-error-when-linking-to-article-pages).
+problem](https://textpattern.com/faq/66/404-error-when-linking-to-article-pages).
 For future reference, the solution was easy for the virtual host on my MacBook
 Pro, with just one AllowOverride line needed in
 `/private/etc/apache2/extra/httpd-vhosts.conf`...
@@ -36,7 +36,7 @@ Pro, with just one AllowOverride line needed in
 
 
 Incidentally, I'm keeping both `/path/to/website` and `/private/etc/apache2`
-under source control with [Git](http://git-scm.com/), as I am doing with pretty
+under source control with [Git](https://git-scm.com/), as I am doing with pretty
 much everything I do these days. Git is version control done correctly. Thank
-you, [Linus](http://en.wikipedia.org/wiki/Linus_Torvalds)!
+you, [Linus](https://en.wikipedia.org/wiki/Linus_Torvalds)!
 

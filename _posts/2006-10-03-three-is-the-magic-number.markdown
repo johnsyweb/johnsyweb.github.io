@@ -4,17 +4,17 @@ title: Three is the Magic Number
 ---
 
 Most of yesterday was spent setting up
-([virtual](http://www.vmware.com/products/server/))
-[Linux](http://www.novell.com/linux/) servers, at work. This reminded me that
+([virtual](https://www.vmware.com/products/server/))
+[Linux](https://www.novell.com/linux/) servers, at work. This reminded me that
 some time ago [I published a list of
-applications](http://johnsy.com/blog/entry/20051130191827) that I couldn't live
+applications](https://johnsy.com/blog/entry/20051130191827) that I couldn't live
 without on a PC. My list for Linux / Unix is much shorter:
 
-1. [Vim](http://vim.org/) (of course)
-1. [Zsh](http://zsh.sunsite.dk/)
-1. [GNU Screen](http://www.gnu.org/software/screen/)
-1. [w3m](http://www.w3m.org/)
-1. [Mutt](http://www.mutt.org/)
+1. [Vim](https://vim.org/) (of course)
+1. [Zsh](https://zsh.sunsite.dk/)
+1. [GNU Screen](https://www.gnu.org/software/screen/)
+1. [w3m](https://www.w3m.org/)
+1. [Mutt](https://www.mutt.org/)
 
 That's about it.
 
@@ -34,6 +34,6 @@ responses back within minutes (presumably because you are all nosey buggers and
 wanted to see my photos). Amusingly, none of my friends who were on Ringo before
 me have uploaded any photographs whatsoever, which is fair enough because
 neither have I (except the standard profile one)! I think I shall be sticking
-with [Flickr](http://www.flickr.com/photos/johnsyweb/) for the foreseeable
+with [Flickr](https://www.flickr.com/photos/johnsyweb/) for the foreseeable
 future.
 

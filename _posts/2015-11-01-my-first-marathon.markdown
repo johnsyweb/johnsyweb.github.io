@@ -57,7 +57,7 @@ came that the entries opened for the 2015 Melbourne Marathon, I signed up and
 committed myself to taking on the biggest physical challenge I ever imagined
 putting myself through.
 
-I sat down with my friend [Adrian](http://scrumage.com/) one lunchtime and he
+I sat down with my friend [Adrian](https://scrumage.com/) one lunchtime and he
 put together a training plan for me: 23 weeks of running 45-60km per week. I was
 averaging about 20km per week at the beginning of the year, so I clearly needed
 to step it up but the increases were incremental and seemed utterly achievable.
@@ -166,7 +166,7 @@ along the way. I wished him a happy birthday and continued on my way.
 
 As I ran around the Arts Centre, 35km in, I felt my pace really start to drop.
 I'd be taking on [honey as a DIY energy
-gel](http://scrumage.com/blog/2012/09/diy-special-honey-as-good-as-sports-energy-gels/)
+gel](https://scrumage.com/blog/2012/09/diy-special-honey-as-good-as-sports-energy-gels/)
 every half-an-hour but 3 hours and 15 minutes into the run, I was really
 flagging. This was the furthest I had ever run ([my longest training
 run](https://www.strava.com/activities/359101038) was 34km and at a much slower
@@ -218,7 +218,7 @@ line](https://flic.kr/p/z48Mp4) and in it you can see just how overjoyed I was
 with this.
 
 It's still sinking in that in [February last
-year](http://johnsy.com/blog/2015/03/01/my_year_of_running/#february) I went for
+year](https://johnsy.com/blog/2015/03/01/my_year_of_running/#february) I went for
 my first run and in October this year
 [I ran a flipping marathon](https://www.strava.com/activities/415064809)!
 
@@ -227,7 +227,7 @@ was some muscle soreness for the first couple of days but it wasn't anywhere
 near as severe as I expected. I felt really fit for the first week and went for
 a swim and cycled lots. The second week I felt really lethargic and did next to
 nothing. I jogged around parkrun both weekends [with Dara in the
-pram](http://on.fb.me/1NhRvdB), just to keep the legs moving, but it'll be
+pram](https://on.fb.me/1NhRvdB), just to keep the legs moving, but it'll be
 another week or so before I risk going for a run. Going from 60+km per week to
 nothing is very strange. I've found myself feeling grumpy (more so than usual)
 and lazy but still as hungry! I imagine Kirsty will be kicking me out of the
@@ -238,12 +238,12 @@ I've been asked a lot when the next marathon will be. I don't know. _23 weeks_,
 don't really want to invest that kind of time in another marathon. Kirsty
 breathed an audible sigh of relief when I got the rejection email from the
 London Marathon for 2016 (it would have been absolutely great to run alongside
-[my "little" brother](http://teamg33k.blogspot.com.au/), but it wasn't to be
+[my "little" brother](https://teamg33k.blogspot.com.au/), but it wasn't to be
 this year). Having _actually enjoyed_ the experience this year, I'm sure there's
 another marathon in me but just not yet! I'm very happy to stick to some shorter
 runs and spending more time with the three very special people who supported me
 through this wonderful experience. Thank you, Kirsty, Eamonn and Dara; I love
 you and I could not have done it without you.
 
-<a data-flickr-embed="true" href="https://flic.kr/p/zJqh37" title="I could not have run a mile without these special people in my life"><img src="https://farm6.staticflickr.com/5695/22139802810_d3cf569f30_z.jpg" width="640" height="480" alt="I could not have run a mile without these special people in my life"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://flic.kr/p/zJqh37" title="I could not have run a mile without these special people in my life"><img src="https://farm6.staticflickr.com/5695/22139802810_d3cf569f30_z.jpg" width="640" height="480" alt="I could not have run a mile without these special people in my life"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 

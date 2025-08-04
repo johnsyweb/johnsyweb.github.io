@@ -5,7 +5,7 @@ title: "++career"
 
 Like a (publicly undisclosed) number of others around the globe, I left ITG on
 Tuesday as the company took measures [&quot;to reduce operating
-costs](http://investor.itg.com/phoenix.zhtml?c=100516&amp;p=RssLanding&amp;cat=news&amp;id=1764371)&quot;.
+costs](https://investor.itg.com/phoenix.zhtml?c=100516&amp;p=RssLanding&amp;cat=news&amp;id=1764371)&quot;.
 
 
 My rather sudden departure came as a surprise to many (it seems) and I've
@@ -51,10 +51,10 @@ January.
 What's next for me career-wise? I don't know for sure. I'm going to use this
 new-found spare time to tinker with some new (to me) technologies and see what's
 out there for me to play with. I want to contribute to some worthwhile
-open-source projects like [OpenMRS](http://openmrs.org/). I may revive this
+open-source projects like [OpenMRS](https://openmrs.org/). I may revive this
 sadly-neglected blog and write about my experiences as I play. I hope that this
 will help me form a clearer picture of what I want out of a job so that I can
-dust off my [r&eacute;sum&eacute;](http://careers.stackoverflow.com/johnsyweb)
+dust off my [r&eacute;sum&eacute;](https://careers.stackoverflow.com/johnsyweb)
 (or CV, if you prefer) and go out there and either find it or make it. It's an
 exciting time!
 

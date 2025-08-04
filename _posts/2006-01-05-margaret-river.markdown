@@ -16,7 +16,7 @@ in our tales of our journey around the South-West of Australia.
 
 
 Yesterday morning, we got up long, long before our breakfasts to dash down to
-the [Dolphin Discovery Centre](http://www.dolphindiscovery.com.au/) to try to
+the [Dolphin Discovery Centre](https://www.dolphindiscovery.com.au/) to try to
 catch a glimpse of the wild dolphins that are reported to visit the beach there
 and swim among their fans. It was a bright summer's morning, but the water
 seemed very cold as we waded in up to about our knees (or at least _my_ knees,
@@ -94,7 +94,7 @@ Today got off to a much lazier start than yesterday. I sat in the courtyard of
 the YHA and read though a Colin Dexter novel in the sun. Our wineries tour
 wasn't due to start until around noon. Today, though, we both hung up the car
 keys and allowed the nice lady from [Wine for
-Dudes](http://www.winefordudes.com.au/) do the driving. We stopped of at four
+Dudes](https://www.winefordudes.com.au/) do the driving. We stopped of at four
 wineries in total, each being very different. None of the wines at the first
 were to my palate. At the second winery we got to blend our own Cabernet
 Sauvignon Merlot. Having tested both the Cabernet and the Merlot, I opted for a

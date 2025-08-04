@@ -38,7 +38,7 @@ without me holding him back so it’s really lovely that we get that extra bit o
 time together each weekend.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/gp/johnsyweb/1BV00k" title="Much More than Just a Run in the Park!" ><img src="https://live.staticflickr.com/65535/51394299519_436aeeed5d_z.jpg" width="640" height="480" alt="Much More than Just a Run in the Park!"></a>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 I know after 18 months many people are tired of staying at home and even more
 tired of seeing the faces of people they love solely on a screen but I’m

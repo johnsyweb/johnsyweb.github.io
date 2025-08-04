@@ -5,13 +5,13 @@ title: Moving House
 
 
 
-[![Little Boxes by Johnsyweb, on Flickr](http://farm4.static.flickr.com/3037/2925582443_d8189012dc_t.jpg "Little Boxes by Johnsyweb, on Flickr")](http://www.flickr.com/photos/johnsyweb/2925582443/")
+[![Little Boxes by Johnsyweb, on Flickr](https://farm4.static.flickr.com/3037/2925582443_d8189012dc_t.jpg "Little Boxes by Johnsyweb, on Flickr")](https://www.flickr.com/photos/johnsyweb/2925582443/")
 
 Life is in boxes; about fifty boxes of purest cardboard. The removalists came
 this morning and in three hours the lovely apartment in which we have lived for
 the past year and a bit was a warehouse.
 
-[![One Last Look... by Johnsyweb, on Flickr](http://farm4.static.flickr.com/3120/2926435010_6faf8b5663_t.jpg "One Last Look... by Johnsyweb, on Flickr")](http://www.flickr.com/photos/johnsyweb/2926435010/)
+[![One Last Look... by Johnsyweb, on Flickr](https://farm4.static.flickr.com/3120/2926435010_6faf8b5663_t.jpg "One Last Look... by Johnsyweb, on Flickr")](https://www.flickr.com/photos/johnsyweb/2926435010/)
 
 Tomorrow we move 18km (11 miles) across Melbourne to take up residence in our
 new house, which will be, I think, my nineteenth &quot;permanent&quot; address
@@ -32,15 +32,15 @@ since we landed in Melbourne remains valid. You can thank me later.
 
 
 The bad news for those of you who like to keep in contact via electronic means,
-such as [Skype](http://share.skype.com/in/102/149282) or (the other
+such as [Skype](https://share.skype.com/in/102/149282) or (the other
 multitudinous instant mithering and social networks to which I am connected) is
 that it shall be a little while before we have broadband connected in the new
 abode. I shall sporadically check my email on the
-[iPhone](http://www.apple.com/au/iphone/), of course. I may even
-[tweet](http://en.wikipedia.org/wiki/Twitter), who knows.
+[iPhone](https://www.apple.com/au/iphone/), of course. I may even
+[tweet](https://en.wikipedia.org/wiki/Twitter), who knows.
 
 
-But first, we must celebrate [_K_](http://thribble.blogspot.com/)'s birthday.
+But first, we must celebrate [_K_](https://thribble.blogspot.com/)'s birthday.
 Just think of all of the presents (read: &quot;boxes&quot;) she'll get to unwrap
 tomorrow. Aren't you jealous?
 

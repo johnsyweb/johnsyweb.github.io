@@ -4,8 +4,8 @@ title: Understandable
 ---
 
 One of my favourite sections of [I'm Sorry I Haven't a
-Clue](http://www.bbc.co.uk/radio4/comedy/clue.shtml) is the [Uxbridge English
-Dictionary](http://www.amazon.co.uk/Uxbridge-English-Dictionary-Sorry-Havent/dp/0007203373),
+Clue](https://www.bbc.co.uk/radio4/comedy/clue.shtml) is the [Uxbridge English
+Dictionary](https://www.amazon.co.uk/Uxbridge-English-Dictionary-Sorry-Havent/dp/0007203373),
 where contestants suggest new meanings for old words.
 
 

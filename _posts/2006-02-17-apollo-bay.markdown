@@ -24,7 +24,7 @@ discussing the many fine things that there are to see in this very big country.
 While we were at a loose end in Adelaide, we also paid a visit to the Moonlight
 Cinema to watch a film. Continuing the theme of books that I read as a young(er)
 boy, we watched Charlie and the Chocolate Factory, which (and
-[Kris](http://cafe.jenkster.com/) would wholeheartedly disagree with me here)
+[Kris](https://cafe.jenkster.com/) would wholeheartedly disagree with me here)
 was nowhere near as good as the one with Gene Wilder in it (despite the creation
 of a role especially for Christopher Lee who can do no wrong). That's about all
 I have to say about that.

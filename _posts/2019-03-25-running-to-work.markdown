@@ -29,7 +29,7 @@ The light but powerful MacBook sits snuggly in the place of the removable reserv
 
 ## Motivation
 
-It doesn't take a lot of motivation to run through the Melbourne Spring or Autumn... those mornings are the best. The hot Summer mornings can be more of a struggle and when it's freezing cold and dark through the Winter it can be very difficult to get out of bed! My motivation for these mornings is simple, I promise my [Merri Creek Running Club](http://merricreekrunning.club/) friends that I'll meet them at a pre-arranged time and place via our [WhatsApp](https://www.whatsapp.com/) group the night before and that's enough to get me out the door on time!
+It doesn't take a lot of motivation to run through the Melbourne Spring or Autumn... those mornings are the best. The hot Summer mornings can be more of a struggle and when it's freezing cold and dark through the Winter it can be very difficult to get out of bed! My motivation for these mornings is simple, I promise my [Merri Creek Running Club](https://merricreekrunning.club/) friends that I'll meet them at a pre-arranged time and place via our [WhatsApp](https://www.whatsapp.com/) group the night before and that's enough to get me out the door on time!
 
 Running with friends makes the commute go so much faster, which is a bonus. We often finish our run at one of Melbourne's many excellent coffee shops for a post-run coffee (or gelati if we've run 21.1km or more, but that's another story).
 

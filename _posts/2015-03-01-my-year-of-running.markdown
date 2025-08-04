@@ -9,15 +9,15 @@ redirect_from:
 - "/bit.ly/my-year-of-running/"
 - "/l/my-year-of-running/"
 ---
-Today, [I ran](http://www.strava.com/activities/261246096) as part of a
-[Corporate Triathlon](http://corptriseries.com.au/melbourne) relay team with my
+Today, [I ran](https://www.strava.com/activities/261246096) as part of a
+[Corporate Triathlon](https://corptriseries.com.au/melbourne) relay team with my
 amazing colleagues. Had you told me a year ago that I would be doing this, I'm
 not sure I would have believed you. This is the story of how I got there...
 
 ## February
 
 I'd never heard of "[Couch to
-5K](http://www.nhs.uk/Livewell/c25k/Pages/get-running-with-couch-to-5k.aspx)"
+5K](https://www.nhs.uk/Livewell/c25k/Pages/get-running-with-couch-to-5k.aspx)"
 before and then I heard a few people talk about it in different contexts. I was
 on a tram home from work when I looked it up and wondered whether I'd be able to
 do it. I don't think I'd run more than about 100m in one go before; since my
@@ -27,8 +27,8 @@ being more selective with my diet and I was both keen to keep that weight off
 and to do more exercise. [Eamonn](/blog/2010/07/25/eamonn/) is a very energetic
 lad and keeping up with him around the local parks would often leave me
 breathless. I downloaded a [Couch to 5K
-app](http://www.active.com/mobile/couch-to-5k-app), and told
-[Kirsty](http://thribble.blogspot.com/) I was going to give it a shot. She
+app](https://www.active.com/mobile/couch-to-5k-app), and told
+[Kirsty](https://thribble.blogspot.com/) I was going to give it a shot. She
 didn't laugh. That night, armed with some tunes and an iPhone app, I set off
 towards [Merri Creek](https://en.wikipedia.org/wiki/Merri_Creek) on my first
 jog. I was out-of-breath and ready to stop after a very short period, but just
@@ -64,9 +64,9 @@ wheezing of an old bloke who'd overindulged over the long weekend. It was
 horrible and I vowed <a name="vow"></a>never to run without music again.
 
 For most of the Couch to 5K, Kirsty had been on at me to sign up for a run, the
-[Mother’s Day Classic](http://www.mothersdayclassic.com.au/). The MDC includes a
+[Mother’s Day Classic](https://www.mothersdayclassic.com.au/). The MDC includes a
 4km and an 8km run around Melbourne's iconic [Tan
-Track](http://scrumage.com/blog/2011/08/the-tan/). I can comfortably run 6km, so
+Track](https://scrumage.com/blog/2011/08/the-tan/). I can comfortably run 6km, so
 faced with the choice, I opt to stretch for 8km and book my place on 22 April
 for the run on 11 May. I start training the next day and the day after that, I
 rode to work from our home in Coburg for the first time (expect a cycling post
@@ -103,7 +103,7 @@ was much much harder. I kept as far to the left as I could manage as I climbed
 Anderson Street for the second time. It felt like Everest and I wanted to give
 other runners as much space as I could. I was struggling to put one foot in
 front of the other and was hugely relieved to reach the summit. According to
-[Endomondo's graph](http://app.endomondo.com/workouts/337722146/14938524), my
+[Endomondo's graph](https://app.endomondo.com/workouts/337722146/14938524), my
 pace dropped to 11:33 min/km... I walk faster than that! I was *so* pleased to
 reach the finish line three kilometres later.
 
@@ -114,16 +114,16 @@ I only ran once more that month and it wasn't even 5km.
 For the first couple of weeks of June I'd not even put on my running shoes.
 After completing the Couch to 5km and the MDC I think I'd lost motivation. I
 went in search of some targets and found The [Run
-Melbourne](http://www.runmelbourne.com.au/) was in about a month's time and had
+Melbourne](https://www.runmelbourne.com.au/) was in about a month's time and had
 a 10 km run. If I can do 8 km, I can do 10 km, right?
 
-I'd [registered](http://www.parkrun.com.au/register/) for
-[parkrun](http://www.parkrun.com.au/) back in May but had never actually
+I'd [registered](https://www.parkrun.com.au/register/) for
+[parkrun](https://www.parkrun.com.au/) back in May but had never actually
 attended a run. I decided that it was time I found out what all the fuss was
 about... it would serve as good training for my next event. There are were a few
 parkruns around Melbourne but I chose [Westerfolds
-parkrun](http://www.parkrun.com.au/westerfolds/) as [my first
-run](http://www.parkrun.com.au/westerfolds/results/weeklyresults/?runSeqNumber=35).
+parkrun](https://www.parkrun.com.au/westerfolds/) as [my first
+run](https://www.parkrun.com.au/westerfolds/results/weeklyresults/?runSeqNumber=35).
 Westerfolds parkrun was a lot more relaxed than the MDC. The organisers were
 welcoming and friendly and so were the runners. The course is lovely, too: there
 are beautiful views, flora and fauna. Sometimes I see kangaroos hopping around
@@ -149,7 +149,7 @@ run consistently under 6 minutes per kilometre and I finished comfortably in
 under the hour that I'd targeted. What's more, I was less tired at the end of
 this 10 km run than I had been after the 8 km one two months earlier. [Here is a
 photo that Kirsty snapped of me at about 7
-km](http://c4.staticflickr.com/4/3931/15444690895_fa99415c8f_h.jpg). I actually
+km](https://c4.staticflickr.com/4/3931/15444690895_fa99415c8f_h.jpg). I actually
 look like I'm enjoying myself!
 
 To keep the motivation going, I signed up for another 10 km run at the Melbourne
@@ -186,7 +186,7 @@ off this week's time).
 
 ## September
 
-With 10 weeks to go to the [City2Sea](http://www.thecity2sea.com.au/), the
+With 10 weeks to go to the [City2Sea](https://www.thecity2sea.com.au/), the
 organisers announced a new course... a new fifteen kilometre course. [I had
 signed up for a 14 km
 event](https://twitter.com/johnsyweb/status/508483062452068353). I'd not run
@@ -251,7 +251,7 @@ fun run](https://www.strava.com/activities/211642978): 1 km at a much faster
 pace than I could have managed back in February. He also [raised
 AU$160](https://www.mycause.com.au/page/83145/eamonnruns) for charity. Not bad
 for a four-year old. I'm not sure that [running makes me a better
-parent](http://amessagewithabottle.com/2014/07/21/how-running-makes-me-a-better-parent/),
+parent](https://amessagewithabottle.com/2014/07/21/how-running-makes-me-a-better-parent/),
 but I hope I've set a good example for my boys that exercise is "normal".
 
 ## November

@@ -14,7 +14,7 @@ key-presses needed to switch between unit test and production code:
 
 
 [toggle_unit_tests : plug-in for toggling between source and unit test files
-](http://www.vim.org/scripts/script.php?script_id=2500)
+](https://www.vim.org/scripts/script.php?script_id=2500)
 
 
 
@@ -29,7 +29,7 @@ page useful:
 
 
 [Integration with PyUnit testing
-framework](http://vim.wikia.com/wiki/Integration_with_PyUnit_testing_framework).
+framework](https://vim.wikia.com/wiki/Integration_with_PyUnit_testing_framework).
 
 
 

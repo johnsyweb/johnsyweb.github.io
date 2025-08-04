@@ -7,7 +7,7 @@ date: 2015-02-21 21:16:01
 
 I've decided to return to blogging in 2015 with something I wrote in May 2012.
 This was written for a publication of one of my former colleagues, ["Light Bulb
-Bites"](http://provensal.com/lbb/).
+Bites"](https://provensal.com/lbb/).
 
 -----
 
@@ -15,10 +15,10 @@ Light Bulb (or "Globe", as we say in Australia) Bites call on us to be more
 creative and more innovative. Oft-times, a developer's first instinct when
 faced with a technical problem is to reach for an editor and start putting a
 script together to automate a solution.
-[Jerome](http://provensal.com/lbb/the-author/) demonstrated this with Days!
+[Jerome](https://provensal.com/lbb/the-author/) demonstrated this with Days!
 
-In his '[EWD](http://www.cs.utexas.edu/users/EWD/)', 
-["On the cruelty of really teaching computing science"](http://www.cs.utexas.edu/users/EWD/ewd10xx/EWD1036.PDF), 
+In his '[EWD](https://www.cs.utexas.edu/users/EWD/)', 
+["On the cruelty of really teaching computing science"](https://www.cs.utexas.edu/users/EWD/ewd10xx/EWD1036.PDF), 
 [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra) wrote:
 
 > [...] if we wish to count lines of code, we should not regard them as "lines
@@ -33,8 +33,8 @@ measured on this productivity.
 
 Are calls for us to innovate and create in opposition with the mandate from the
 top to be productive? Thankfully not. In [Jeff
-Atwood](http://en.wikipedia.org/wiki/Jeff_Atwood)'s recent blog post ["Please
-Don't Learn to Code"](http://blog.codinghorror.com/please-dont-learn-to-code/)
+Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood)'s recent blog post ["Please
+Don't Learn to Code"](https://blog.codinghorror.com/please-dont-learn-to-code/)
 he reminds us:
 
 > Software developers tend to be software addicts who think their job is to write
@@ -68,7 +68,7 @@ something else.
 > You can be part of the problem, or part of the solution.
 
 [Phil
-Dunphy](http://en.wikipedia.org/wiki/List_of_Modern_Family_characters#Phil_Dunphy)
+Dunphy](https://en.wikipedia.org/wiki/List_of_Modern_Family_characters#Phil_Dunphy)
 and I happen to believe you can be both. The trick is in being just
 the latter.
 

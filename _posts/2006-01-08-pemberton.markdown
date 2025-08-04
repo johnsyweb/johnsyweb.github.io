@@ -45,7 +45,7 @@ where the roof was many metres above our heads. I forget now if that was before
 or after the ladder climbs. I tried with varying degrees of success to take
 photographs in the dark of the roots of the trees above us as well as the many
 calcium-based structures that had formed in the cave, I shall put them on
-[Flickr](http://flickr.com/photos/johnsyweb/) sometime for you to criticise.
+[Flickr](https://flickr.com/photos/johnsyweb/) sometime for you to criticise.
 
 
 We opted then to head to Australia's most South-Westerly point for a spot of
@@ -67,7 +67,7 @@ yesterday was probably the hottest day since we landed.  I'm glad that we have
 the iPod and relevant adaptors with us, as there are vast stretches of road
 where there is no radio reception. The GSM phones lose reception regularly in
 between towns, much like the radio. For this reason we have a CDMA phone in case
-of emergencies (thanks to [Mr Moore](http://www.thmoore.org/) for the tip!).
+of emergencies (thanks to [Mr Moore](https://www.thmoore.org/) for the tip!).
 About half of the journey was on an unsealed road. Kilometres of loose red
 gravel on which the car tends to find its own tracks. Thankfully this road was
 mostly straight meaning that it wasn't too much work keeping the car heading in

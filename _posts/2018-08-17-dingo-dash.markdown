@@ -12,7 +12,7 @@ or four times per week with one of these runs being a long run, at least 21.1km.
 After [my first marathon]({{ site.baseurl }}{% post_url 2015-11-01-my-first-marathon %}) I agreed with
 my family that I'd not spend such of my weekend doing long runs and formed a
 habit of getting up very early on a Friday morning for these runs, usually with
-a couple of my [Merri Creek Running Club](http://merricreekrunning.club/)
+a couple of my [Merri Creek Running Club](https://merricreekrunning.club/)
 friends.
 
 This week, we've driven from Melbourne to

@@ -7,13 +7,13 @@ Wow!
 
 
 We're just in from seeing [Roger
-Waters](http://en.wikipedia.org/wiki/Roger_Waters) perform [The Dark Side of the
+Waters](https://en.wikipedia.org/wiki/Roger_Waters) perform [The Dark Side of the
 Moon
-Live](http://en.wikipedia.org/wiki/Roger_Waters_-_The_Dark_Side_of_the_Moon_Live_%282006_tour%29)
-in an [arena](http://en.wikipedia.org/wiki/Rod_Laver_Arena) that hosted [the
-Australian Open](http://en.wikipedia.org/wiki/Australian_Open) finals last
+Live](https://en.wikipedia.org/wiki/Roger_Waters_-_The_Dark_Side_of_the_Moon_Live_%282006_tour%29)
+in an [arena](https://en.wikipedia.org/wiki/Rod_Laver_Arena) that hosted [the
+Australian Open](https://en.wikipedia.org/wiki/Australian_Open) finals last
 weekend and will contain very different
-[waters](http://www.theage.com.au/news/sport/swimmers-to-make-a-splash-at-rod-laver/2005/07/31/1122748526933.html)
+[waters](https://www.theage.com.au/news/sport/swimmers-to-make-a-splash-at-rod-laver/2005/07/31/1122748526933.html)
 next month.
 
 
@@ -27,7 +27,7 @@ first set!
 
 
 Must get some sleep now, the 6 nations rugby starts late tomorrow night and
-there's talk of going to see one [Eric Clapton](http://www.ericclapton.com/) on
+there's talk of going to see one [Eric Clapton](https://www.ericclapton.com/) on
 Sunday. Two legends in one weekend!
 
 

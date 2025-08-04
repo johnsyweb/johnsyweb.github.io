@@ -5,20 +5,20 @@ title: Perth, WA
 
 
 G'day! Well, I suppose it's about time I wrote something. It's Day 5 here in <a
-href="http://www.perthwa.com.au/">Perth</a> and I'm having a wonderful time.
+href="https://www.perthwa.com.au/">Perth</a> and I'm having a wonderful time.
 Perth is a fantastic city, not very big, but certainly very tall. It's clean
 too. Imagine my delight when the first barman to collect our glasses said to me
 "Nah worries, mate!" I've also seen Meat Pie Floaters on a menu. This really is
 The Last Continent!
 
 On Monday we hired a car and drove to <a
-href="http://www.cavershamwildlife.com.au/">Caversham Wildlife Park</a> (which,
+href="https://www.cavershamwildlife.com.au/">Caversham Wildlife Park</a> (which,
 incidentally is run by a couple who originally lived in my old hometown of
 Aylesbury). Here we saw all manner of Australian animals. I watched the koalas
 sleep, fed the kangaroos, cuddled a wombat and took photos of everything else!
 
 Tuesday was spent pottering around the City after having had a good night on the
-beers. Then we went to join <a href="http://www.thmoore.org/"><i>thm</i></a> and
+beers. Then we went to join <a href="https://www.thmoore.org/"><i>thm</i></a> and
 his family for an authentic Aussie Barbie, with prawns, 'roo and everything!
 Yesterday, after a trip to the Museum of Western Australia, we took a cab ride
 to the casino to watch <i>A</i> win, whilst pouring $1 coins into the slot,

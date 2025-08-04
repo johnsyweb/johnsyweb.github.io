@@ -24,5 +24,5 @@ work for me, thank you very much.
 
 Here's a YouTube video that highlights some of my many pet hates about Facebook.
 [FaceBook In Reality - idiotsofants.com and BBC's The
-Wall](http://www.youtube.com/watch?v=nrlSkU0TFLs).
+Wall](https://www.youtube.com/watch?v=nrlSkU0TFLs).
 

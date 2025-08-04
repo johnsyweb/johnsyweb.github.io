@@ -4,7 +4,7 @@ title: '"When are you two having kids?"'
 ---
 
 
-[_K_](http://thribble.blogspot.com.au/) and I have been together for nearly ten
+[_K_](https://thribble.blogspot.com.au/) and I have been together for nearly ten
 years now and have been married for seven of these. One question that we seem to
 get asked with increasing frequency and increasing volume is &quot;When are you
 two having kids?&quot;
@@ -58,7 +58,7 @@ we're expecting a baby? Come on, people!
 
 
 Since we have returned from [our twelve week
-scan](http://www.flickr.com/photos/johnsyweb/sets/72157623069339311/), I suppose
+scan](https://www.flickr.com/photos/johnsyweb/sets/72157623069339311/), I suppose
 now might be the appropriate time to share such a piece of information. I am
 absolutely delighted to announce that about the third week in July we expect to
 have a third (and only a third) member of the Johns household.

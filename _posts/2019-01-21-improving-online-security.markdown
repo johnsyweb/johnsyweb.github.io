@@ -101,7 +101,7 @@ browser has crashed or Google has logged me out in the middle of a Hangout (or
 
 I don't consider SMS-based MFA to be secure [due to the risk that SMS messages
 may be intercepted or
-redirected](http://fortune.com/2016/07/26/nist-sms-two-factor/) so prefer TOTP
+redirected](https://fortune.com/2016/07/26/nist-sms-two-factor/) so prefer TOTP
 or Universal 2nd Factor (U2F) devices, where available. When presented with
 backup codes, keep these safe as you would your birth certificate, passport or
 driving licence.

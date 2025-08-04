@@ -26,7 +26,7 @@ to be France's most successful lighthouse. Upon closer inspection, it was
 revealed that this lighthouse did not possess any great powers of illumination.
 Perhaps the reason for the lack of wrecks of unfortunate sea-faring vessels was
 due to it's location, approximately 250 km away from the sea! The building did,
-however, house an informative [museum](http://www.lepharedeverzenay.com/).
+however, house an informative [museum](https://www.lepharedeverzenay.com/).
 
 All in all, it was a tremendous weekend, for which I thank <em>D and M</em>
 enormously. 

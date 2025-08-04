@@ -4,7 +4,7 @@ title: Hong Kong
 ---
 
 As [reported
-elsewhere](http://thribble.blogspot.com/2008/02/petes-gone-to-hk.html), I'm in
+elsewhere](https://thribble.blogspot.com/2008/02/petes-gone-to-hk.html), I'm in
 Hong Kong (or more correctly, the Hong Kong Special Administrative Region) for
 work. It has been a long time since I last travelled for work and had to stay
 anywhere overnight (the last time I stayed in a Travelodge on the M1 motorway
@@ -13,7 +13,7 @@ near Sheffield).
 
 I arrived late on Friday night and was pretty bleary-eyed as I caught the hotel
 shuttle from the airport to [Causeway
-Bay](http://en.wikipedia.org/wiki/Causeway_Bay), having got up very early on
+Bay](https://en.wikipedia.org/wiki/Causeway_Bay), having got up very early on
 Friday morning to go to our office in Sydney _en route_. However, a few things
 struck me (and thankfully not the bus!) as we journeyed to the hotel. Firstly,
 it was the first time I had ever seen rows of identical skyscrapers. In fact I
@@ -45,5 +45,5 @@ shall not be seeing many stars here!
 I think it's too misty to bother going up to Victoria Peak today, so the City
 Centre beckons for a bit of exploration. I shall leave you with a link to a
 website I read about on the flight over: [We Are What We
-Do](http://www.wearewhatwedo.org/).
+Do](https://www.wearewhatwedo.org/).
 

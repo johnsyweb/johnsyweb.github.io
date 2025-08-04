@@ -20,23 +20,23 @@ relations and indeed, the land where Guinness comes from!
 Once we'd docked at Dublin Port and been sprayed (just in case my poor little
 car was carrying this foot and mouth disease that you may have heard mentioned
 on the news), our first port of call was the bed and breakfast into which we
-were booked for our stay. <a href="http://www.aishlinghouse.com/">Aishling
+were booked for our stay. <a href="https://www.aishlinghouse.com/">Aishling
 House</a>, in Clontarf was a wonderful B&amp;B, we couldn't have hoped for
 anything better. I would recommend it to anyone. Once settled in, it was time to
 make our way out to <a
-href="http://www.dublintourist.com/regional/howth/">Howth</a> on the <a
-href="http://www.irishrail.ie/html/travinfo/index.asp">Dart</a>. Here we met up
+href="https://www.dublintourist.com/regional/howth/">Howth</a> on the <a
+href="https://www.irishrail.ie/html/travinfo/index.asp">Dart</a>. Here we met up
 with my parents (who were also visiting) and my godmother's family. It was
 fantastic to meet up with some of my cousins whom I hadn't seen in years, and
 I'd like to thank both <em>gf</em> and <em>kf</em> (<a
-href="http://www.fotango.com/p/ebr00030681f00000038.jpg">pictured here</a>) for
+href="https://www.fotango.com/p/ebr00030681f00000038.jpg">pictured here</a>) for
 showing myself and the lads such a great time in Dublin. It was in Howth last a
 week ago tonight, that we experienced our first pint of Guinness in Dublin
 (followed by a few more ;-) ).
 
 On Sunday we went sight-seeing, down into Co. Wicklow to <a
-href="http://www.worldphotographer.com/ireland/glendalough.html">Glendalough</a>
-and <a href="http://www.powerscourt.ie/">Powerscourt</a>, both of which are
+href="https://www.worldphotographer.com/ireland/glendalough.html">Glendalough</a>
+and <a href="https://www.powerscourt.ie/">Powerscourt</a>, both of which are
 beautiful places, but quite closed at the moment, due to the aforementioned
 disease. Still, we managed to take some lovely pictures of the Wicklow mountains
 before following the roadsign that was marked, quite simply, &quot;Scenic
@@ -45,19 +45,19 @@ one point, when we were at the roadside, taking a few snaps, an English couple
 in a car coming the other way stopped and asked us, &quot;Do you know where the
 nearest main road is? There isn't one up there for hours!&quot;. Poor people!
 Anyway, we took our chances and carried on, finally making our way to the
-highest pub in Eire, <a href="http://www.johnniefoxs.com/">Johnnie Fox's</a>.
+highest pub in Eire, <a href="https://www.johnniefoxs.com/">Johnnie Fox's</a>.
 Well, it's a landmark, isn't it?
 
 Monday was possibly the high-point of last week with a visit to the <a
-href="http://www.guinness-hopstore.com/">Guinness Brewery</a>. Now, I've been to
+href="https://www.guinness-hopstore.com/">Guinness Brewery</a>. Now, I've been to
 a brewery or two in my time, but this was the ultimate. A fantastic visitor
 experience, followed by a pint of the black stuff in the Gravity Bar on the
 seventh floor, which offers possibly the best views in Dublin. In one of the
 bars in the brewery, I performed one of my little bar tricks, which seemed to
 catch the attention of a few of the other visitors who wanted to take some
-photos. Here are <a href="http://www.fotango.com/p/ebr00030681f00000009.jpg">a
+photos. Here are <a href="https://www.fotango.com/p/ebr00030681f00000009.jpg">a
 couple</a> of <a
-href="http://www.fotango.com/p/ebr00030681f00000010.jpg">shots</a>! After a good
+href="https://www.fotango.com/p/ebr00030681f00000010.jpg">shots</a>! After a good
 day's drinking, it was time for a great night's drinking in Templebar. Cousin
 <em>gf</em> and second-cousin <em>&quot;l&quot;</em> joined the terrible trio
 for the onslaught.
@@ -67,7 +67,7 @@ trip to Ireland was over. So soon, but the lads' week away was not. Oh no. Next
 stop, <i>cam</i>'s parental abode in deepest darkest, Herefordshire for a
 top-class meal in the local. Oh, and a pint of the black stuff! Time being
 short, first thing Wednesday, we began the voyage down to <a
-href="http://www.virtual-swanage.co.uk/">Swanage</a> on the south-coast of
+href="https://www.virtual-swanage.co.uk/">Swanage</a> on the south-coast of
 England, where we would spend the rest of the week engaging in, well, more of
 the same, really, taking it easy, enjoying a cold beverage or two, cracking the
 same jokes that we've been cracking since we first met over ten years ago and

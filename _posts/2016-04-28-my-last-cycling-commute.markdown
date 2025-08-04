@@ -11,7 +11,7 @@ still love cycling. But I love *life* more.
 ### The beginning of the end
 
 In my post [How do we stop this
-happening?](http://johnsy.com/blog/2016/03/03/how-do-we-stop-this-happening/), I
+happening?](https://johnsy.com/blog/2016/03/03/how-do-we-stop-this-happening/), I
 mentioned the death of Alberto Paulon on Sydney Road, Brunswick. That was a
 turning point for me. From that day I felt far more vulnerable on my bicycle
 than ever before. The realisation that a cyclist's life could be wiped out in an
@@ -86,7 +86,7 @@ was made up.
 I would like to hope so, but I think it unlikely. There is a
 ["Towards Zero"](https://www.towardszero.vic.gov.au/) campaign running but
 already in April
-[twice as many cyclists have been killed on Victorian roads this year than in the whole of 2015](http://www.tac.vic.gov.au/road-safety/statistics/road-toll-year-to-date),
+[twice as many cyclists have been killed on Victorian roads this year than in the whole of 2015](https://www.tac.vic.gov.au/road-safety/statistics/road-toll-year-to-date),
 so it is not working.
 
 I cannot see myself riding to work until the number of deaths on Melbourne's
