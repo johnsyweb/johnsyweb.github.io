@@ -1,6 +1,8 @@
 ---
 layout: default
 title: johnsy.com/home/ --A Complete Waste of Cyberspace
+og_image: /images/banner-og-compressed.jpg
+og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
 Congratulations! You have successfully found the front page of my website. Take
