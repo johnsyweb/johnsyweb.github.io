@@ -45,6 +45,15 @@ blockquote {
 	border-color: #073642;
 }
 
+.utility-card {
+	border-color: #073642;
+}
+
+.utility-meta {
+	background: #073642;
+	color: #839496;
+}
+
 
 /*** Pygments ***/
 .highlight{
