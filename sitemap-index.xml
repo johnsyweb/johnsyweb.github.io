@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://johnsy.com/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://johnsy.com/ambassy/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://johnsy.com/eventuate/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://johnsy.com/crashcourse/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://johnsy.com/tampermonkey-parkrun/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

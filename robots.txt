@@ -1,2 +1,26 @@
+# Disallow AI crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Allow all other search engines
 User-agent: *
 Disallow:
+
+# Sitemap locations
+Sitemap: https://johnsy.com/sitemap-index.xml
+Sitemap: https://johnsy.com/sitemap.xml
