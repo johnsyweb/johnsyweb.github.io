@@ -9,7 +9,6 @@ A complete waste of cyberspace.
 - [About](https://johnsy.com/about/)
 - [Blog](https://johnsy.com/blog/)
 - [Contact](https://johnsy.com/contact/)
-- [parkrun utility](https://johnsy.com/parkrun-utility/)
 
 ## Recent Blog Posts
 
