@@ -3,7 +3,7 @@ layout: post
 categories: 
  - running
  - personal
- - career break
+ - careerbreak
 title: What Running 10 Marathons Taught Me About Being a Social Media Influencer
 date: 2025-10-19  5:15:06
 ---
