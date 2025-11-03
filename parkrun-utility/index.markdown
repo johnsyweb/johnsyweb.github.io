@@ -55,4 +55,15 @@ Tools I created as a software engineer who loves parkrun to help me in various v
     </div>
     <p><a href="/tampermonkey-parkrun/">Visit Userscripts &rarr;</a></p>
   </div>
+
+  <div class="utility-card">
+    <h3><a href="/foretoken/">Foretoken</a></h3>
+    <img src="https://johnsy.com/foretoken/og-image.png" alt="Foretoken - parkrun Finish Token Generator" class="utility-preview" />
+    <p>Generate parkrun finish tokens for scanning when events run out of physical tokens. Supports both 1D and 2D QR codes.</p>
+    <div class="utility-meta">
+      <p><strong>Purpose:</strong> Generate finish tokens when physical tokens run out</p>
+      <p><strong>Features:</strong> 1D and 2D QR code support, printable format</p>
+    </div>
+    <p><a href="/foretoken/">Visit Foretoken &rarr;</a></p>
+  </div>
 </div>
