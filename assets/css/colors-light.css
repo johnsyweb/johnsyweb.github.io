@@ -1,18 +1,18 @@
 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
 html, body {
 	background-color: #fdf6e3;
-	color: #839496;
+	color: #657b83;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
+	color: #268bd2;
 	border-color: #eee8d5;
 }
 
 a:hover {
 	background-color: #eee8d5;
 	border-color: #eee8d5;
-	color: #2aa198;
+	color: #268bd2;
 }
 
 h1, h2, h3 {
@@ -29,7 +29,7 @@ h1 a:hover {
 }
 
 article h1 a.anchor {
-	color: #2aa198;
+	color: #268bd2;
 }
 
 blockquote {
@@ -37,7 +37,7 @@ blockquote {
 }
 
 #sidebar a:hover {
-	color: #2aa198;
+	color: #268bd2;
 	background-color: #eee8d5;
 }
 

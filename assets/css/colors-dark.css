@@ -1,18 +1,18 @@
 @media (prefers-color-scheme: dark) {
 html, body {
 	background-color: #002a35;
-	color: #839496;
+	color: #93a1a1;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
+	color: #268bd2;
 	border-color: #073642;
 }
 
 a:hover {
 	background-color: #073642;
 	border-color: #073642;
-	color: #2aa198;
+	color: #268bd2;
 }
 
 h1, h2, h3 {
@@ -30,7 +30,7 @@ h1 a:hover {
 }
 
 article h1 a.anchor {
-	color: #2aa198;
+	color: #268bd2;
 }
 
 blockquote {
@@ -38,7 +38,7 @@ blockquote {
 }
 
 #sidebar a:hover {
-	color: #2aa198;
+	color: #268bd2;
 	background-color: #073642;
 }
 
