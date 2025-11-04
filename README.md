@@ -12,6 +12,7 @@ A complete waste of cyberspace.
 
 ## Recent Blog Posts
 
+- 2025-11-04: [Switching to Atkinson Hyperlegible](https://johnsy.com/blog/2025/11/04/switching-to-atkinson-hyperlegible/)
 - 2025-10-19: [What Running 10 Marathons Taught Me About Being a Social Media Influencer](https://johnsy.com/blog/2025/10/19/what-running-10-marathons-taught-me-about-being-a-social-media-influencer/)
 - 2025-10-10: [Countdown Numbers Game Solver](https://johnsy.com/blog/2025/10/10/countdown-numbers-game-solver/)
 - 2025-08-04: [I'm riding 496 km...](https://johnsy.com/blog/2025/08/04/i'm-riding-496-km.../)
@@ -21,6 +22,5 @@ A complete waste of cyberspace.
 - 2025-05-17: [Defibrillators save lives!](https://johnsy.com/blog/2025/05/17/defibrillators-save-lives/)
 - 2025-05-13: [Desert Island Discs: My Eight Tracks, Book, and Luxury Item](https://johnsy.com/blog/2025/05/13/desert-island-discs/)
 - 2025-05-05: [Taking a career break](https://johnsy.com/blog/2025/05/05/career-break/)
-- 2025-04-28: [Shoulder Injury](https://johnsy.com/blog/2025/04/28/shoulder-injury/)
 
 <!-- END TOC -->
