@@ -342,14 +342,20 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 500px;
-	margin: 0 auto;
-	position: relative;
+    max-width: 65ch;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #header {
-	width: 500px;
-	margin: 40px auto 50px auto;
+    max-width: 65ch;
+    width: 100%;
+    margin: 40px auto 50px auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #header h1 {
@@ -362,16 +368,22 @@ h3 {
 }
 
 #footer {
-	width: 500px;
-	margin: 50px auto 20px auto;
-	padding-top: 10px;
-	font-size: 0.85em;
-	border-top: 1px solid #073642;
+    max-width: 65ch;
+    width: 100%;
+    margin: 50px auto 20px auto;
+    padding-top: 10px;
+    font-size: 0.85em;
+    border-top: 1px solid #073642;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #content {
-	width: 500px;
-	margin: 0 auto;
+    max-width: 65ch;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #sidebar {
