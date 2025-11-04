@@ -17,7 +17,7 @@ Atkinson Hyperlegible is specifically designed to increase character recognition
 
 [The change][font-commit] was straightforward to implement. I added the Google Fonts links for both the regular and monospace variants, updated the font-family declarations in the CSS, and adjusted the font sizes slightly (from 13px to 15px) to maintain good readability given that Atkinson Hyperlegible is more condensed than the previous Verdana font. I also increased the heading sizes proportionally to maintain the visual hierarchy.
 
-Sometimes the smallest changes can make a big difference in accessibility. Using a hyperlegible font is a simple way to make content more accessible to low-vision readers, and it can be something that benefits everyone.
+And while I was there, I consulted [Lighthouse] and made a few additional accessibility tweaks. Sometimes the smallest changes can make a big difference in accessibility. Using a hyperlegible font is a simple way to make content more accessible to low-vision readers, and it can be something that benefits everyone.
 
 <!-- Links -->
 
@@ -27,3 +27,4 @@ Sometimes the smallest changes can make a big difference in accessibility. Using
 [better-allies-oct-31-2025]: https://us19.campaign-archive.com/?u=cc808df089bf312fc1a37916d&id=01c442ba79
 [font-commit]: https://github.com/johnsyweb/johnsyweb.github.io/commit/b10ca51
 [font-comparison-image]: /images/2025-11-04-about-page-font-comparison.jpg
+[Lighthouse]: https://github.com/GoogleChrome/lighthouse
