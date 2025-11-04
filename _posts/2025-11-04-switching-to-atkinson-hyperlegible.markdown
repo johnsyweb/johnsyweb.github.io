@@ -25,5 +25,5 @@ Sometimes the smallest changes can make a big difference in accessibility. Using
 [atkinson-hyperlegible]: https://brailleinstitute.org/freefont
 [better-allies-website]: https://betterallies.com/more-content/
 [better-allies-oct-31-2025]: https://us19.campaign-archive.com/?u=cc808df089bf312fc1a37916d&id=01c442ba79
-[font-commit]: https://github.com/johnsyweb/johnsyweb.github.io/commit/0b33c79
+[font-commit]: https://github.com/johnsyweb/johnsyweb.github.io/commit/b10ca51
 [font-comparison-image]: /images/2025-11-04-about-page-font-comparison.jpg
