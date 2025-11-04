@@ -1,6 +1,6 @@
 ---
 layout: default
-title: johnsy.com/bit.ly/ --migrated
+title: bit.ly migration
 ---
 
 ## bit.ly

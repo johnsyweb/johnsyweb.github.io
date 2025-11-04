@@ -1,6 +1,6 @@
 ---
 layout: default
-title: johnsy.com/l/ --links
+title: Links
 ---
 
 ## Links

@@ -2,7 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
+    {% comment %} Format title: "Page Title | johnsy.com" or just "johnsy.com" for homepage {% endcomment %}
+    {% if page.url == '/' %}
+      <title>johnsy.com</title>
+    {% elsif paginator.page and paginator.page > 1 %}
+      {% comment %} Handle pagination pages {% endcomment %}
+      {% assign clean_title = page.title | split: ' --' | first %}
+      <title>{{ clean_title }} - Page {{ paginator.page }} | johnsy.com</title>
+    {% elsif page.title %}
+      {% comment %} Remove any "--" suffix from titles {% endcomment %}
+      {% assign clean_title = page.title | split: ' --' | first %}
+      <title>{{ clean_title }} | johnsy.com</title>
+    {% else %}
+      <title>johnsy.com</title>
+    {% endif %}
     <meta name="viewport" content="width=device-width" />
 
     <!--[if lt IE 9]>

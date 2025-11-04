@@ -1,6 +1,6 @@
 ---
 layout: default
-title: johnsy.com/home/ --A Complete Waste of Cyberspace
+title: 
 og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---

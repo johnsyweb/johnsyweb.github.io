@@ -1,6 +1,6 @@
 ---
 layout: default
-title: johnsy.com/parkrun-utility/ --parkrun utilities
+title: parkrun utilities
 description: Tools I created as a software engineer who loves parkrun to help me in various volunteer roles, shared for free for you to use and enjoy.
 og_image: https://johnsy.com/eventuate/images/eventuate-social-preview.png
 og_image_alt: parkrun utilities - Eventuate, Ambassy, Crash Course Simulator, and parkrun Userscripts

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: johnsy.com/contact/ --How to get in touch
+title: Contact
 ---
 
 ## Email
