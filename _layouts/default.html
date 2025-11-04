@@ -2,25 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    {% comment %} Format title: "Page Title | johnsy.com" or just "johnsy.com" for homepage {% endcomment %}
     {% if page.url == '/' %}
       <title>johnsy.com</title>
     {% elsif paginator.page and paginator.page > 1 %}
-      {% comment %} Handle pagination pages {% endcomment %}
       {% assign clean_title = page.title | split: ' --' | first %}
       <title>{{ clean_title }} - Page {{ paginator.page }} | johnsy.com</title>
     {% elsif page.title %}
-      {% comment %} Remove any "--" suffix from titles {% endcomment %}
       {% assign clean_title = page.title | split: ' --' | first %}
       <title>{{ clean_title }} | johnsy.com</title>
     {% else %}
       <title>johnsy.com</title>
     {% endif %}
-    <meta name="viewport" content="width=device-width" />
-
-    <!--[if lt IE 9]>
-      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fdf6e3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#002a35" media="(prefers-color-scheme: dark)" />
 
     <meta http-equiv="Window-Target" content="_top" />
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
@@ -137,12 +132,14 @@
     />
     {% endif %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Atkinson+Hyperlegible+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Mono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
     <link
       href="{{ site.url }}/assets/css/style.css"
       rel="stylesheet"
@@ -171,6 +168,7 @@
   </head>
 
   <body>
+    <a href="#content" class="skip-link">Skip to main content</a>
     <header id="header">
       <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
       <p>{{ site.description_html }}</p>
@@ -178,13 +176,13 @@
 
     <div id="page">
       <div id="sidebar">
-        <nav>
+        <nav aria-label="Main navigation">
           <ul>
-            <li><a href="{{ site.url }}/">Home</a></li>
-            <li><a href="{{ site.url }}/about">About</a></li>
-            <li><a href="{{ site.url }}/blog">Blog</a></li>
-            <li><a href="{{ site.url }}/contact">Contact</a></li>
-            <li><a href="{{ site.url }}/parkrun-utility">parkrun utility</a></li>
+            <li><a href="{{ site.url }}/" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
+            <li><a href="{{ site.url }}/about" {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a></li>
+            <li><a href="{{ site.url }}/blog" {% if page.url contains '/blog' %}aria-current="page"{% endif %}>Blog</a></li>
+            <li><a href="{{ site.url }}/contact" {% if page.url contains '/contact' %}aria-current="page"{% endif %}>Contact</a></li>
+            <li><a href="{{ site.url }}/parkrun-utility" {% if page.url contains '/parkrun-utility' %}aria-current="page"{% endif %}>parkrun utility</a></li>
           </ul>
         </nav>
       </div>
@@ -204,7 +202,7 @@
         >
         (<a
           rel="me"
-          alt="@pete.johnsy.com"
+          aria-label="@pete.johnsy.com on Bluesky"
           title="Alas, poor Twitter"
           href="https://bsky.app/profile/pete.johnsy.com"
           >@pete.johnsy.com</a
@@ -217,16 +215,6 @@
       </p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="{{ site.url }}/assets/js/jquery.mobilemenu.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $("#sidebar nav ul").mobileMenu({
-          topOptionText: "Menu",
-          prependTo: "#sidebar nav",
-        });
-      });
-    </script>
+    <script src="{{ site.url }}/assets/js/mobile-menu.js"></script>
   </body>
 </html>

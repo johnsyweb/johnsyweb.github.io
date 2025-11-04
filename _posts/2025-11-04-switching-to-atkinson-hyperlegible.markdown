@@ -13,7 +13,7 @@ As I've [mentioned before][pronouns-iation], I get a lot of value from the [Bett
 
 Atkinson Hyperlegible is specifically designed to increase character recognition, which improves readability for low-vision readers. The font is named after Braille Institute founder J. Robert Atkinson and is completely free to use.
 
-![Side-by-side comparison of the About page showing Verdana font on the left and Atkinson Hyperlegible font on the right. The comparison demonstrates the improved character distinction and readability of the hyperlegible font.][font-comparison-image]{:.responsive-img title="About page before and after font change: Verdana vs Atkinson Hyperlegible"}
+![Side-by-side comparison of the About page showing Verdana font on the left and Atkinson Hyperlegible font on the right. The comparison demonstrates the improved character distinction and readability of the hyperlegible font.][font-comparison-image]{:.responsive-img title="About page before and after font change: Verdana vs Atkinson Hyperlegible" width="500" height="571"}
 
 [The change][font-commit] was straightforward to implement. I added the Google Fonts links for both the regular and monospace variants, updated the font-family declarations in the CSS, and adjusted the font sizes slightly (from 13px to 15px) to maintain good readability given that Atkinson Hyperlegible is more condensed than the previous Verdana font. I also increased the heading sizes proportionally to maintain the visual hierarchy.
 

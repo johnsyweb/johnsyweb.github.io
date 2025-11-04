@@ -1,4 +1,58 @@
 /*** Reset ***/
+/* Self-hosted fonts: Atkinson Hyperlegible and Atkinson Hyperlegible Mono */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-Mono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src:
+    url("/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: optional;
+}
 html,
 body,
 div,
@@ -136,9 +190,10 @@ table {
 
 /*** Basics ***/
 body {
-	font-family: "Atkinson Hyperlegible", Verdana, serif;
+	font-family: "Atkinson Hyperlegible", Arial, Verdana, serif;
 	font-size: 15px;
 	line-height: 1.7;
+	font-size-adjust: 0.52;
 }
 
 a,
@@ -195,6 +250,7 @@ sub {
 
 code {
 	font: 0.85em "Atkinson Hyperlegible Mono", Monaco, Courier, Monospace;
+	font-size-adjust: 0.62;
 }
 
 blockquote {
@@ -333,7 +389,7 @@ h3 {
 
 #sidebar a {
 	border: none;
-	font-family: "Atkinson Hyperlegible", "Helvetica Neue", "Helvetica", serif;
+	font-family: "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
 	font-size: 1.2em;
 	padding: 2px 4px;
 }
@@ -341,7 +397,7 @@ h3 {
 
 #sidebar p {
 	border: none;
-	font-family: "Atkinson Hyperlegible", "Helvetica Neue", "Helvetica", serif;
+	font-family: "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
 	font-size: 1.0em;
 }
 
@@ -410,7 +466,11 @@ img.center {
 
 
 
-/*** Media Queries ***/
+/* Mobile menu select - hidden by default, shown on mobile via JavaScript */
+#sidebar nav select.mnav {
+	display: none;
+}
+
 @media all and (max-width: 870px) {
 
 	#page,
@@ -433,6 +493,9 @@ img.center {
 	#sidebar nav select.mnav {
 		display: block;
 		margin-bottom: 15px;
+		width: 100%;
+		padding: 8px;
+		font-size: 16px;
 	}
 
 }
@@ -440,6 +503,22 @@ img.center {
 .responsive-img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: #073642;
+	color: #eee8d5;
+	padding: 8px;
+	text-decoration: none;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
 }
 
 #content h1,
