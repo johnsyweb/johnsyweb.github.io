@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Three is the Magic Number
+updated: 2025-11-09
 ---
 
 Most of yesterday was spent setting up
 ([virtual](https://www.vmware.com/products/server/))
 [Linux](https://www.novell.com/linux/) servers, at work. This reminded me that
-some time ago [I published a list of
-applications](https://johnsy.com/blog/entry/20051130191827) that I couldn't live
+some time ago I published a list of that I couldn't live
 without on a PC. My list for Linux / Unix is much shorter:
 
 1. [Vim](https://vim.org/) (of course)
