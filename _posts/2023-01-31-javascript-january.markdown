@@ -4,8 +4,8 @@ category: programming
 title: JavaScript January
 date: 2023-01-31 19:11:57.000000000 +11:00
 redirect_from:
-- "/bit.ly/pajJavaScriptJanuary/"
-- "/l/JavaScriptJanuary/"
+- "/bit.ly/pajJavaScriptJanuary"
+- "/l/JavaScriptJanuary"
 ---
 One evening right at the beginning of 2023, I got an email from
 [Exercism](https://exercism.org/) inviting me to join 
@@ -13,7 +13,7 @@ One evening right at the beginning of 2023, I got an email from
 alone and thought that this sounded like fun (you should see the number of
 Rubik's cubes in this house to get an idea of how I define "fun"). I'd played
 with Exercism a few years ago to get myself up-to-speed in Elixir, which was
-looking like becoming popular when I was [Envato](https://www.envato.com) and I
+looking like becoming popular when I was at [Envato](https://www.envato.com) and I
 found it to be both educational and entertaining. I resolved to undertake one
 language per month and one exercise per day.
 
