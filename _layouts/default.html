@@ -216,17 +216,19 @@
     </footer>
 
     <script src="{{ site.url }}/assets/js/mobile-menu.js"></script>
-    <script src="{{ site.url }}/assets/js/blog-entry-flash.js"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/blog-entry-sw.js", { scope: "/" })
-          .catch(function (error) {
-            if (window && window.console && console.error) {
-              console.error("Service worker registration failed", error);
-            }
-          });
-      }
-    </script>
+    {% if page.url == '/blog/' %}
+      <script src="{{ site.url }}/assets/js/blog-entry-flash.js"></script>
+      <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("/blog-entry-sw.js", { scope: "/blog/" })
+            .catch(function (error) {
+              if (window && window.console && console.error) {
+                console.error("Service worker registration failed", error);
+              }
+            });
+        }
+      </script>
+    {% endif %}
   </body>
 </html>
