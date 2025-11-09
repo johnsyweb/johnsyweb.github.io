@@ -2,8 +2,7 @@
 /* Self-hosted fonts: Atkinson Hyperlegible and Atkinson Hyperlegible Mono */
 @font-face {
   font-family: "Atkinson Hyperlegible";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-Regular.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: optional;
@@ -11,8 +10,7 @@
 
 @font-face {
   font-family: "Atkinson Hyperlegible";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-Italic.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: optional;
@@ -20,8 +18,7 @@
 
 @font-face {
   font-family: "Atkinson Hyperlegible";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: optional;
@@ -29,8 +26,8 @@
 
 @font-face {
   font-family: "Atkinson Hyperlegible";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-BoldItalic.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: optional;
@@ -38,8 +35,8 @@
 
 @font-face {
   font-family: "Atkinson Hyperlegible Mono";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-Mono-Regular.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-Mono-Regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: optional;
@@ -47,8 +44,8 @@
 
 @font-face {
   font-family: "Atkinson Hyperlegible Mono";
-  src:
-    url("/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: optional;
@@ -134,12 +131,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 article,
@@ -153,384 +150,376 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ul {
-	list-style: disc;
+  list-style: disc;
 }
 
 ol {
-	list-style: bullet;
+  list-style: bullet;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
 
 /*** Basics ***/
 body {
-	font-family: "Atkinson Hyperlegible", Arial, Verdana, serif;
-	font-size: 15px;
-	line-height: 1.7;
-	font-size-adjust: 0.52;
+  font-family: "Atkinson Hyperlegible", Arial, Verdana, serif;
+  font-size: 15px;
+  line-height: 1.7;
+  font-size-adjust: 0.52;
 }
 
 a,
 a:active,
 a:visited {
-	text-decoration: none;
-	border-bottom: 1px solid #839496;
-	padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #839496;
+  padding-bottom: 2px;
 }
 
 a:hover {
-	background-color: #839496;
-	color: #000000;
+  background-color: #839496;
+  color: #000000;
 }
 
 p {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 ul,
 ol {
-	padding: 0 0 18px 30px;
+  padding: 0 0 18px 30px;
 }
 
 ol li,
 ul li {
-	margin-top: 10px;
-	margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 em,
 i {
-	font-style: italic;
+  font-style: italic;
 }
 
 strong,
 b {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 small {
-	font-size: 0.85em;
+  font-size: 0.85em;
 }
 
 sup {
-	vertical-align: super;
-	font-size: 0.85em;
+  vertical-align: super;
+  font-size: 0.85em;
 }
 
 sub {
-	vertical-align: sub;
-	font-size: 0.85em;
+  vertical-align: sub;
+  font-size: 0.85em;
 }
 
 code {
-	font: 0.85em "Atkinson Hyperlegible Mono", Monaco, Courier, Monospace;
-	font-size-adjust: 0.62;
+  font:
+    0.85em "Atkinson Hyperlegible Mono",
+    Monaco,
+    Courier,
+    Monospace;
+  font-size-adjust: 0.62;
 }
 
 blockquote {
-	margin: 22px 22px;
-	padding: 0 20px;
-	border-left: 2px solid #000000;
-	font-size: 1.2em;
-	font-style: italic;
-	line-height: 1.5em;
+  margin: 22px 22px;
+  padding: 0 20px;
+  border-left: 2px solid #000000;
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5em;
 }
 
 acronym,
 abbr {
-	cursor: help;
-	letter-spacing: 1px;
-	border-bottom: 1px dashed;
+  cursor: help;
+  letter-spacing: 1px;
+  border-bottom: 1px dashed;
 }
 
-
 h1 {
-	font-size: 20px;
-	margin: 0 0 10px 0;
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
 
 h2 {
-	font-size: 17px;
-	margin: 0 0 10px 0;
+  font-size: 17px;
+  margin: 0 0 10px 0;
 }
 
 h3 {
-	font-size: 16px;
-	margin: 0 0 10px 0;
+  font-size: 16px;
+  margin: 0 0 10px 0;
 }
-
-
 
 /*** Useful Classes ***/
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .float-left {
-	float: left;
+  float: left;
 }
 
 .float-right {
-	float: right;
+  float: right;
 }
 
 .text-left {
-	text-align: left;
+  text-align: left;
 }
 
 .text-right {
-	text-align: right;
+  text-align: right;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .text-justify {
-	text-align: justify;
+  text-align: justify;
 }
 
 .img-left {
-	float: left;
-	margin: 4px 10px 4px 0;
+  float: left;
+  margin: 4px 10px 4px 0;
 }
 
 .img-right {
-	float: right;
-	margin: 4px 0 4px 10px;
+  float: right;
+  margin: 4px 0 4px 10px;
 }
 
 .img-middle {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .nopadding {
-	padding: 0;
+  padding: 0;
 }
 
 .nounderline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
-
 
 /*** Structure ***/
 #page {
-    max-width: 65ch;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+  max-width: 65ch;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header {
-    max-width: 65ch;
-    width: 100%;
-    margin: 40px auto 50px auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  max-width: 65ch;
+  width: 100%;
+  margin: 40px auto 50px auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #header h1 {
-	font-size: 32px;
-	margin-bottom: 4px;
+  font-size: 32px;
+  margin-bottom: 4px;
 }
 
 #header h1 a {
-	border: none;
+  border: none;
 }
 
 #footer {
-    max-width: 65ch;
-    width: 100%;
-    margin: 50px auto 20px auto;
-    padding-top: 10px;
-    font-size: 0.85em;
-    border-top: 1px solid #073642;
-    padding-left: 10px;
-    padding-right: 10px;
+  max-width: 65ch;
+  width: 100%;
+  margin: 50px auto 20px auto;
+  padding-top: 10px;
+  font-size: 0.85em;
+  border-top: 1px solid #073642;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #content {
-    max-width: 65ch;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  max-width: 65ch;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #sidebar {
-	position: absolute;
-	text-align: right;
-	width: 160px;
-	top: 0;
-	left: -240px;
+  position: absolute;
+  text-align: right;
+  width: 160px;
+  top: 0;
+  left: -240px;
 }
 
 #sidebar li {
-	list-style: none;
-	margin: 2px 0;
+  list-style: none;
+  margin: 2px 0;
 }
 
 #sidebar a {
-	border: none;
-	font-family: "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
-	font-size: 1.2em;
-	padding: 2px 4px;
+  border: none;
+  font-family:
+    "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
+  font-size: 1.2em;
+  padding: 2px 4px;
 }
 
-
 #sidebar p {
-	border: none;
-	font-family: "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
-	font-size: 1.0em;
+  border: none;
+  font-family:
+    "Atkinson Hyperlegible", Arial, "Helvetica Neue", "Helvetica", serif;
+  font-size: 1em;
 }
 
 /*** Posts ***/
 article {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 article h1 {
-	font-size: 20px;
-	margin: 0 0 10px 0;
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
 
 article h1 a {
-	border: none;
+  border: none;
 }
 
 article h1 a.anchor {
-	margin-left: 8px;
+  margin-left: 8px;
 }
 
 article img {
-	display: block;
-	text-align: center;
-	margin: 0 auto 1em auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto 1em auto;
 }
 
 article .meta {
-	padding-top: 6px;
-	font-size: 0.85em;
-	font-style: italic;
+  padding-top: 6px;
+  font-size: 0.85em;
+  font-style: italic;
 }
 
 img.left {
-	float: left;
-	margin: 0 1em 1em 0;
+  float: left;
+  margin: 0 1em 1em 0;
 }
 
 img.right {
-	float: right;
-	margin: 0 0 1em 1em;
+  float: right;
+  margin: 0 0 1em 1em;
 }
 
 img.center {
-	display: block;
-	text-align: center;
-	margin: 0 auto 1em auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto 1em auto;
 }
-
-
 
 /*** Pagination ***/
 .postnavigation {
-	padding-top: 10px;
-	text-align: center;
-	font-size: 0.85em;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.85em;
 }
 
 .postnavigation .left {
-	float: left;
+  float: left;
 }
 
 .postnavigation .right {
-	float: right;
+  float: right;
 }
-
-
 
 /* Mobile menu select - hidden by default, shown on mobile via JavaScript */
 #sidebar nav select.mnav {
-	display: none;
+  display: none;
 }
 
 @media all and (max-width: 870px) {
+  #page,
+  #header,
+  #content,
+  #footer {
+    width: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-	#page,
-	#header,
-	#content,
-	#footer {
-		width: inherit;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+  #sidebar {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    left: 0;
+    margin: 10px 10px 20px 10px;
+  }
 
-	#sidebar {
-		position: relative;
-		text-align: left;
-		width: 100%;
-		left: 0;
-		margin: 10px 10px 20px 10px;
-	}
-
-	#sidebar nav select.mnav {
-		display: block;
-		margin-bottom: 15px;
-		width: 100%;
-		padding: 8px;
-		font-size: 16px;
-	}
-
+  #sidebar nav select.mnav {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
 }
 
 .responsive-img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Skip link for accessibility */
 .skip-link {
-	position: absolute;
-	top: -40px;
-	left: 0;
-	background: #073642;
-	color: #eee8d5;
-	padding: 8px;
-	text-decoration: none;
-	z-index: 100;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #073642;
+  color: #eee8d5;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
 }
 
 .skip-link:focus {
-	top: 0;
+  top: 0;
 }
 
 #content h1,
@@ -539,31 +528,31 @@ img.center {
 #content h4,
 #content h5,
 #content h6 {
-	position: relative;
-	margin-left: -1.5em;
-	padding-left: 1.5em;
+  position: relative;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
 }
 
-#content h1>a.anchor,
-#content h2>a.anchor,
-#content h3>a.anchor,
-#content h4>a.anchor,
-#content h5>a.anchor,
-#content h6>a.anchor {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	visibility: hidden;
+#content h1 > a.anchor,
+#content h2 > a.anchor,
+#content h3 > a.anchor,
+#content h4 > a.anchor,
+#content h5 > a.anchor,
+#content h6 > a.anchor {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
 }
 
-#content h1:hover>a.anchor,
-#content h2:hover>a.anchor,
-#content h3:hover>a.anchor,
-#content h4:hover>a.anchor,
-#content h5:hover>a.anchor,
-#content h6:hover>a.anchor {
-	visibility: visible;
+#content h1:hover > a.anchor,
+#content h2:hover > a.anchor,
+#content h3:hover > a.anchor,
+#content h4:hover > a.anchor,
+#content h5:hover > a.anchor,
+#content h6:hover > a.anchor {
+  visibility: visible;
 }
 
 .image-left {
@@ -578,6 +567,40 @@ img.center {
   margin-left: 1em;
   margin-bottom: 1em;
   width: 120px;
+}
+
+.flash-message {
+  border: 2px solid #cb4b16;
+  background: rgba(203, 75, 22, 0.1);
+  color: #002b36;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.flash-message strong {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.flash-message code {
+  background: rgba(0, 43, 54, 0.08);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.flash-message .flash-label {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.flash-message p {
+  margin: 0.5rem 0;
 }
 
 /*** Utility Grid ***/
@@ -634,9 +657,8 @@ img.center {
   .utility-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .utility-card {
     margin: 0;
   }
 }
-
