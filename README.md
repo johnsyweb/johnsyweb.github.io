@@ -24,3 +24,13 @@ A complete waste of cyberspace.
 - 2025-05-13: [Desert Island Discs: My Eight Tracks, Book, and Luxury Item](https://johnsy.com/blog/2025/05/13/desert-island-discs/)
 
 <!-- END TOC -->
+
+## Search
+
+This site uses [Pagefind](https://pagefind.app/) for client-side search. After adding or updating content, regenerate the search index before committing:
+
+```bash
+./scripts/update_search.sh
+```
+
+The script builds the site, runs Pagefind, and refreshes the assets in `assets/pagefind/`. If you are using a custom Ruby version manager, ensure the environment can run `bundle exec jekyll build` first.

@@ -604,6 +604,41 @@ img.center {
 }
 
 /*** Utility Grid ***/
+.pagefind-ui mark,
+.pagefind-search mark {
+  background-color: #b58900;
+  color: #fdf6e3;
+  padding: 0.05em 0.2em;
+  border-radius: 0.2em;
+}
+
+.pagefind-ui__result-title .pagefind-ui__result-link,
+.pagefind-search .pagefind-ui__result-link {
+  color: #073642;
+}
+
+.pagefind-ui__result-title .pagefind-ui__result-link:hover,
+.pagefind-search .pagefind-ui__result-link:hover {
+  color: #b58900;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pagefind-ui mark,
+  .pagefind-search mark {
+    color: #002b36;
+  }
+
+  .pagefind-ui__result-title .pagefind-ui__result-link,
+  .pagefind-search .pagefind-ui__result-link {
+    color: #93a1a1;
+  }
+
+  .pagefind-ui__result-title .pagefind-ui__result-link:hover,
+  .pagefind-search .pagefind-ui__result-link:hover {
+    color: #b58900;
+  }
+}
+
 .utility-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

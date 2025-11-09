@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    {% assign page_title_raw = page.title | default: '' %}
+    {% assign clean_title = page_title_raw | split: ' --' | first %}
     {% if page.url == '/' %}
       <title>johnsy.com</title>
     {% elsif paginator.page and paginator.page > 1 %}
-      {% assign clean_title = page.title | split: ' --' | first %}
       <title>{{ clean_title }} - Page {{ paginator.page }} | johnsy.com</title>
     {% elsif page.title %}
-      {% assign clean_title = page.title | split: ' --' | first %}
       <title>{{ clean_title }} | johnsy.com</title>
     {% else %}
       <title>johnsy.com</title>
@@ -31,6 +31,13 @@
     {% assign canonical_candidate = page.canonical_url | default: page.url %}
     {% if canonical_candidate %}
     <link rel="canonical" href="{{ canonical_candidate | absolute_url }}" />
+    {% endif %}
+    {% assign is_paginated_archive = false %}
+    {% if paginator and paginator.page and paginator.page > 1 %}
+      {% assign is_paginated_archive = true %}
+    {% endif %}
+    {% if page.pagefind_index == false or is_paginated_archive %}
+    <meta name="pagefind-index" content="false" />
     {% endif %}
 
     <!-- Default icons -->
@@ -191,11 +198,18 @@
             <li><a href="{{ site.url }}/blog" {% if page.url contains '/blog' %}aria-current="page"{% endif %}>Blog</a></li>
             <li><a href="{{ site.url }}/contact" {% if page.url contains '/contact' %}aria-current="page"{% endif %}>Contact</a></li>
             <li><a href="{{ site.url }}/parkrun-utility" {% if page.url contains '/parkrun-utility' %}aria-current="page"{% endif %}>parkrun utility</a></li>
+            <li><a href="{{ site.url }}/search" {% if page.url contains '/search' %}aria-current="page"{% endif %}>Search</a></li>
           </ul>
         </nav>
       </div>
 
-      <main id="content" role="main">
+      <main
+        id="content"
+        role="main"
+        data-pagefind-body
+        data-pagefind-title="{{ clean_title | default: site.name }}"
+      >
+        <span data-pagefind-meta="title" hidden>{{ clean_title | default: site.name }}</span>
         {% include anchor_headings.html html=content beforeHeading=true
         anchorClass="anchor" anchorBody="#" anchorTitle="link to subheading"
         h_min=2 %}
