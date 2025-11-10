@@ -6,4 +6,4 @@ group :development do
   gem "webrick", group: :development
 end
 
-gem "html-proofer", "~> 5.0"
+gem "html-proofer", "~> 5.1"
