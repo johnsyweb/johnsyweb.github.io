@@ -5,6 +5,71 @@
 (function() {
   'use strict';
 
+  function initKeyboardNavigation(navUl) {
+    if (!navUl) {
+      return;
+    }
+
+    navUl.setAttribute('role', 'menubar');
+
+    function applyRoles() {
+      const links = navUl.querySelectorAll('a');
+      links.forEach(function(link) {
+        link.setAttribute('role', 'menuitem');
+        if (link.parentElement) {
+          link.parentElement.setAttribute('role', 'none');
+        }
+      });
+    }
+
+    function getLinks() {
+      return Array.from(navUl.querySelectorAll('a'));
+    }
+
+    applyRoles();
+
+    navUl.addEventListener('keydown', function(event) {
+      const target = event.target;
+
+      if (!(target instanceof HTMLElement) || target.tagName.toLowerCase() !== 'a') {
+        return;
+      }
+
+      const links = getLinks();
+      const currentIndex = links.indexOf(target);
+
+      if (currentIndex === -1) {
+        return;
+      }
+
+      let nextIndex = null;
+
+      switch (event.key) {
+        case 'ArrowRight':
+        case 'ArrowDown':
+          nextIndex = (currentIndex + 1) % links.length;
+          break;
+        case 'ArrowLeft':
+        case 'ArrowUp':
+          nextIndex = (currentIndex - 1 + links.length) % links.length;
+          break;
+        case 'Home':
+          nextIndex = 0;
+          break;
+        case 'End':
+          nextIndex = links.length - 1;
+          break;
+        default:
+          return;
+      }
+
+      if (nextIndex !== null && links[nextIndex]) {
+        event.preventDefault();
+        links[nextIndex].focus();
+      }
+    });
+  }
+
   function createMobileMenu(navUl, options) {
     const switchWidth = options.switchWidth || 480;
     const topOptionText = options.topOptionText || 'Menu';
@@ -104,6 +169,7 @@
         prependTo: '#sidebar nav',
         switchWidth: 480
       });
+      initKeyboardNavigation(navUl);
     }
   });
 })();
