@@ -193,12 +193,54 @@
       <div id="sidebar">
         <nav aria-label="Main navigation">
           <ul class="main-nav">
-            <li><a href="{{ site.url }}/" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
-            <li><a href="{{ site.url }}/about/" {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a></li>
-            <li><a href="{{ site.url }}/blog/" {% if page.url contains '/blog' %}aria-current="page"{% endif %}>Blog</a></li>
-            <li><a href="{{ site.url }}/contact/" {% if page.url contains '/contact' %}aria-current="page"{% endif %}>Contact</a></li>
-            <li><a href="{{ site.url }}/parkrun-utility/" {% if page.url contains '/parkrun-utility' %}aria-current="page"{% endif %}>parkrun utility</a></li>
-            <li><a href="{{ site.url }}/search/" {% if page.url contains '/search' %}aria-current="page"{% endif %}>Search</a></li>
+            <li>
+              <a
+                href="{{ site.url }}/"
+                accesskey="h"
+                title="Home (Access key: Alt+Shift+H on Windows, Control+Option+H on macOS)"
+                {% if page.url == '/' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">H</span><span class="accesskey-rest">ome</span></a>
+            </li>
+            <li>
+              <a
+                href="{{ site.url }}/about/"
+                accesskey="a"
+                title="About (Access key: Alt+Shift+A on Windows, Control+Option+A on macOS)"
+                {% if page.url contains '/about' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">A</span><span class="accesskey-rest">bout</span></a>
+            </li>
+            <li>
+              <a
+                href="{{ site.url }}/blog/"
+                accesskey="b"
+                title="Blog (Access key: Alt+Shift+B on Windows, Control+Option+B on macOS)"
+                {% if page.url contains '/blog' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">B</span><span class="accesskey-rest">log</span></a>
+            </li>
+            <li>
+              <a
+                href="{{ site.url }}/contact/"
+                accesskey="c"
+                title="Contact (Access key: Alt+Shift+C on Windows, Control+Option+C on macOS)"
+                {% if page.url contains '/contact' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">C</span><span class="accesskey-rest">ontact</span></a>
+            </li>
+            <li>
+              <a
+                href="{{ site.url }}/parkrun-utility/"
+                accesskey="p"
+                title="parkrun utility (Access key: Alt+Shift+P on Windows, Control+Option+P on macOS)"
+                {% if page.url contains '/parkrun-utility' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">p</span><span class="accesskey-rest">arkrun utility</span></a>
+            </li>
+            <li>
+              <a
+                href="{{ site.url }}/search/"
+                accesskey="s"
+                title="Search (Access key: Alt+Shift+S on Windows, Control+Option+S on macOS)"
+                {% if page.url contains '/search' %}aria-current="page"{% endif %}
+              ><span class="accesskey-letter">S</span><span class="accesskey-rest">earch</span></a>
+            </li>
           </ul>
         </nav>
       </div>

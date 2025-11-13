@@ -617,6 +617,15 @@ img.center {
   color: #073642;
 }
 
+.main-nav .accesskey-letter {
+  text-decoration: underline;
+}
+
+.main-nav .accesskey-letter,
+.main-nav .accesskey-rest {
+  display: inline;
+}
+
 .pagefind-ui__result-title .pagefind-ui__result-link:hover,
 .pagefind-search .pagefind-ui__result-link:hover {
   color: #b58900;
