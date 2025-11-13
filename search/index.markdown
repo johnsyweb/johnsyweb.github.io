@@ -18,7 +18,7 @@ description: Explore the johnsy.com archives.
 <script>
   window.addEventListener("DOMContentLoaded", function () {
     if (window.PagefindUI) {
-      new PagefindUI({
+      var pagefind = new PagefindUI({
         element: "#pagefind-search",
         showImages: false,
         excerptLength: 30,
@@ -46,6 +46,13 @@ description: Explore the johnsy.com archives.
         translations: {
           placeholder: "Search johnsy.com",
         },
+      });
+
+      window.requestAnimationFrame(function () {
+        var input = document.querySelector(".pagefind-ui__search-input");
+        if (input && typeof input.focus === "function") {
+          input.focus();
+        }
       });
     } else {
       var container = document.getElementById("pagefind-search");
