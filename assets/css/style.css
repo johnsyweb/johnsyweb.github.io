@@ -612,11 +612,6 @@ img.center {
   border-radius: 0.2em;
 }
 
-.pagefind-ui__result-title .pagefind-ui__result-link,
-.pagefind-search .pagefind-ui__result-link {
-  color: #073642;
-}
-
 .main-nav .accesskey-letter {
   text-decoration: underline;
 }
@@ -626,10 +621,6 @@ img.center {
   display: inline;
 }
 
-.pagefind-ui__result-title .pagefind-ui__result-link:hover,
-.pagefind-search .pagefind-ui__result-link:hover {
-  color: #b58900;
-}
 
 @media (prefers-color-scheme: dark) {
   .pagefind-ui mark,
