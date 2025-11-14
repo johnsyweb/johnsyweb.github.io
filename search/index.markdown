@@ -15,52 +15,5 @@ description: Explore the johnsy.com archives.
 
 <link rel="stylesheet" href="{{ '/assets/pagefind/pagefind-ui.css' | relative_url }}" />
 <script src="{{ '/assets/pagefind/pagefind-ui.js' | relative_url }}" defer></script>
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    if (window.PagefindUI) {
-      var pagefind = new PagefindUI({
-        element: "#pagefind-search",
-        showImages: false,
-        excerptLength: 30,
-        bundlePath: "/assets/pagefind/",
-        baseUrl: "/",
-        debounceTimeout: 200,
-        processResult: function (result) {
-          if (!result) {
-            return null;
-          }
-
-          if (result.url && /\/blog\/page\d+\//.test(result.url)) {
-            return null;
-          }
-
-          if (result.meta && result.meta.title) {
-            var updatedTitle = result.meta.title.replace(/\s+\|\s+johnsy\.com$/i, "");
-            if (updatedTitle && updatedTitle.trim().length > 0) {
-              result.meta.title = updatedTitle;
-            }
-          }
-
-          return result;
-        },
-        translations: {
-          placeholder: "Search johnsy.com",
-        },
-      });
-
-      window.requestAnimationFrame(function () {
-        var input = document.querySelector(".pagefind-ui__search-input");
-        if (input && typeof input.focus === "function") {
-          input.focus();
-        }
-      });
-    } else {
-      var container = document.getElementById("pagefind-search");
-      var fallback = document.createElement("p");
-      fallback.textContent =
-        "Search is temporarily unavailable. Try refreshing the page or visit the blog archive.";
-      container.appendChild(fallback);
-    }
-  });
-</script>
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
 
