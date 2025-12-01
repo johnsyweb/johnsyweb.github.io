@@ -12,6 +12,7 @@ A complete waste of cyberspace.
 
 ## Recent Blog Posts
 
+- 2025-12-01: [Forty-two](https://johnsy.com/blog/2025/12/01/forty-two/)
 - 2025-11-29: [Counterpoints to "Comparison is the Thief of Joy"](https://johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
 - 2025-11-06: [Foretoken — parkrun finish tokens on your phone](https://johnsy.com/blog/2025/11/06/foretoken/)
 - 2025-11-04: [Switching to Atkinson Hyperlegible](https://johnsy.com/blog/2025/11/04/switching-to-atkinson-hyperlegible/)
@@ -21,7 +22,6 @@ A complete waste of cyberspace.
 - 2025-07-30: [Formatting iOS email signatures is a pain](https://johnsy.com/blog/2025/07/30/formatting-ios-email-signatures-is-a-pain/)
 - 2025-06-30: [Career Break Eve](https://johnsy.com/blog/2025/06/30/career-break-eve/)
 - 2025-06-01: [The First Law of Signs](https://johnsy.com/blog/2025/06/01/the-first-law-of-signs/)
-- 2025-05-17: [Defibrillators save lives!](https://johnsy.com/blog/2025/05/17/defibrillators-save-lives/)
 
 <!-- END TOC -->
 
