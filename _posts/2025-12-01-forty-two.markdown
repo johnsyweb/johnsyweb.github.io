@@ -1,0 +1,41 @@
+---
+layout: post
+category: career-break
+title: Forty-two
+date: 2025-12-01 3:03:25
+---
+
+According to a little [progress bar] I threw together recently, I am now 42% of the way through my current [career break] and I find myself reflecting on what I have done and what I have left to do.
+
+![Career break progress](/images/2025-12-01-career-break-progress.png)
+
+What have I been doing?
+
+Largely, everything has gone to plan. My [shoulder injury] has healed nicely, thank goodness. It probably healed a bit slower than it should have done with me travelling and shifting luggage around all over the place, but that's okay. The surgeon tells me I am back to a base-level risk of dislocation.
+
+I had a wonderful time in the UK, hanging out with my parents. Mum came running with me most days, which was really lovely and we got to go to a bunch of parkruns together, including [Coronation Park parkrun], which we attended with the family and friends and I crossed the finish line holding Mum's and D's hands, a very special moment. We also volunteered together at [Riversley Park junior parkrun], which is practically in my parents' back yard, and where E completed his last junior parkrun before getting too old to participate as a junior; rather than race it in pursuit of a course record (which was in grasp for him), he chose to pace his little brother to a personal best. I felt very proud standing next to Mum watching the kids running around the park together.
+
+_K_ and the kids were in the UK for the school holidays and we had a lovely time with our family and in the Lake District. There was a little mishap involving a zip-line but we won't dwell on that. We got to see Concorde at Aerospace Bristol and some very cool cars at Coventry Transport Museum.
+
+There's been plenty of culture too: books, live music across various genres, and impressionist art. There was even a rally car drive around a dirt track.
+
+On the fitness front, I've run a marathon and half-marathon, watched the kids smashing their personal bests on the track, on the athletics field, and at cross country, and seen our eldest play in a great game of Aussie rules football. As well as continuing to run with my friends most days, [I cycled a lot][gcc25].
+
+I've helped out at school events, including trips to Fitzroy Gardens, North Melbourne Football Club, as well as book sales, athletics carnivals and sausage sizzles. New parkrun courses have been measured and I attended(and spoke at) an ambassador conference.
+
+At home, there's been plenty of cooking and I repaired our oven. I have finally watched Stranger Things in time to enjoy the final series!
+
+And yes, I've written some code, because that's something I still love to do. I seem to have formed a bit of a [Minute Cryptic] habit, too. There are worse things.
+
+Am I ready to go back to work? Not yet... there's much I want to do and I am particularly looking forward to having the family around during the long Summer holidays. There are certainly days where I look forward to returning to meaningful work, to the people, and to getting important stuff done. But right now, I'm enjoying [being where my feet are][be where your feet are] with my family.
+
+<!-- links -->
+
+[be where your feet are]: https://saiditwho.com/who-said-be-where-your-feet-are/
+[career break]: {{ site.baseurl }}{% post_url 2025-05-05-career-break %}
+[Coronation Park parkrun]: https://flic.kr/p/2rjRKD9
+[gcc25]: {{ site.baseurl }}{% post_url 2025-08-04-i'm-riding-496-km... %}
+[Minute Cryptic]: https://www.minutecryptic.com/
+[progress bar]: https://johnsy.com/progression/2025-07-01/2026-06-30/Pete's%20Career%20Break
+[Riversley Park junior parkrun]: https://flic.kr/p/2rjTxMo
+[shoulder injury]: {{ site.baseurl }}{% post_url 2025-04-28-shoulder-injury %}
