@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Search
+title: Search johnsy.com - Explore Blog Posts and Archives
 permalink: /search/
 description: Explore the johnsy.com archives. Search blog posts, articles, and content about software development, parkrun, and more.
 keywords:
   - search
+  - Pete Johns
+  - paj
+  - johnsyweb
   - johnsy.com
   - blog search
   - archive

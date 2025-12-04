@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Welcome!
-description: Welcome to johnsy.com - Pete Johns' personal website. Here you'll find thoughts about life, software development, parkrun, and experiences shared with family, friends, and those I haven't met yet.
+title: Welcome to johnsy.com - Pete Johns's Personal Website
+description: Welcome to johnsy.com - Pete Johns's personal website. Here you'll find thoughts about life, software development, parkrun, and experiences shared with family and friends.
 keywords:
   - Pete Johns
+  - paj
+  - johnsyweb
   - about
   - johnsy.com
   - software development

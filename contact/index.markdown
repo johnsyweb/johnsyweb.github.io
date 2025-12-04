@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Contact
-description: Get in touch with Pete Johns via email, book a meeting on Calendly, or connect on Signal. Contact information for software development, parkrun, and general inquiries.
+title: Contact Pete Johns - Get in Touch via Email, Calendly, or Signal
+description: Get in touch with Pete Johns via email, book a meeting on Calendly, or connect on Signal. For software development, parkrun, and general inquiries.
 keywords:
   - contact
   - Pete Johns
+  - paj
+  - johnsyweb
   - email
   - calendly
   - signal
