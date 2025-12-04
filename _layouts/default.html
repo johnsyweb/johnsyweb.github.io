@@ -89,7 +89,11 @@
 
     {% assign default_image = site.url | append: '/images/banner-og-compressed.jpg' %}
     {% if page.og_image %}
-      {% assign image_url = page.og_image %}
+      {% if page.og_image contains '//' %}
+        {% assign image_url = page.og_image %}
+      {% else %}
+        {% assign image_url = site.url | append: page.og_image %}
+      {% endif %}
     {% elsif page.content contains '<img' %} {% assign first_img_block =
     page.content | split: '<img' | last %} {% assign raw_src = first_img_block |
     split:'src="' | last | split:'"' | first %} {% if raw_src contains '//' %}
