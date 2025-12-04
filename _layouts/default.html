@@ -87,7 +87,7 @@
 
     <meta property="og:description" content="{{ page_description }}" />
 
-    {% assign default_image = site.url | append: '/icons/favicon-196x196.png' %}
+    {% assign default_image = site.url | append: '/images/banner-og-compressed.jpg' %}
     {% if page.og_image %}
       {% assign image_url = page.og_image %}
     {% elsif page.content contains '<img' %} {% assign first_img_block =

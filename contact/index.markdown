@@ -1,6 +1,17 @@
 ---
 layout: default
 title: Contact
+description: Get in touch with Pete Johns via email, book a meeting on Calendly, or connect on Signal. Contact information for software development, parkrun, and general inquiries.
+keywords:
+  - contact
+  - Pete Johns
+  - email
+  - calendly
+  - signal
+  - software development
+  - parkrun
+og_image: /images/banner-og-compressed.jpg
+og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
 ## Email

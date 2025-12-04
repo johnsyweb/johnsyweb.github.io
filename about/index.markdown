@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Welcome!
+description: Welcome to johnsy.com - Pete Johns' personal website. Here you'll find thoughts about life, software development, parkrun, and experiences shared with family, friends, and those I haven't met yet.
+keywords:
+  - Pete Johns
+  - about
+  - johnsy.com
+  - software development
+  - parkrun
+  - blog
+og_image: /images/banner-og-compressed.jpg
+og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
 Hello, there. I'm Pete and I shall be publishing these pages for you and people
