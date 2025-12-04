@@ -3,13 +3,13 @@ layout: null
 permalink: /careerbreak/atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
   <title>Pete's Career Break Updates</title>
   <description>{{ site.description | xml_escape }}</description>
   <link href="{{ site.url }}/careerbreak/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.url }}/blog/" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
   {% assign posts = site.categories.careerbreak | sort: 'date' | reverse %}
-  {% assign latest_post = posts | first %}
-  <updated>{{ latest_post.date | date_to_xmlschema }}</updated>
   <icon>{{ site.url }}/icons/favicon-16x16.png</icon>
   <logo>{{ site.url }}/icons/favicon-196x196.png</logo>
   <id>{{ site.url }}/careerbreak/</id>
