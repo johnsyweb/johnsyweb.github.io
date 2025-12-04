@@ -17,12 +17,7 @@ redirect_from:
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        {% assign images_replacement = '="' | append: site.url | append: '/images/' %}
-        {% assign icons_replacement = '="' | append: site.url | append: '/icons/' %}
-        {% assign blog_replacement = '="' | append: site.url | append: '/blog/' %}
-        {% assign contact_replacement = '="' | append: site.url | append: '/contact/' %}
-        {% assign about_replacement = '="' | append: site.url | append: '/about/' %}
-        {% assign absolute_content = post.content | replace: '="/images/', images_replacement | replace: '="/icons/', icons_replacement | replace: '="/blog/', blog_replacement | replace: '="/contact/', contact_replacement | replace: '="/about/', about_replacement %}
+        {% include absolute_content.html content=post.content %}
         <description>{{ absolute_content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>

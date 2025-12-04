@@ -20,12 +20,7 @@ permalink: /careerbreak/atom.xml
       <id>{{ site.url }}{{ post.url }}</id>
       <updated>{{ post.date | date_to_xmlschema }}</updated>
       <summary>{{ post.excerpt | strip_html | xml_escape }}</summary>
-      {% assign images_replacement = '="' | append: site.url | append: '/images/' %}
-      {% assign icons_replacement = '="' | append: site.url | append: '/icons/' %}
-      {% assign blog_replacement = '="' | append: site.url | append: '/blog/' %}
-      {% assign contact_replacement = '="' | append: site.url | append: '/contact/' %}
-      {% assign about_replacement = '="' | append: site.url | append: '/about/' %}
-      {% assign absolute_content = post.content | replace: '="/images/', images_replacement | replace: '="/icons/', icons_replacement | replace: '="/blog/', blog_replacement | replace: '="/contact/', contact_replacement | replace: '="/about/', about_replacement %}
+      {% include absolute_content.html content=post.content %}
       <content type="html">{{ absolute_content | xml_escape }}</content>
       <author>
         <name>{{ site.author.name }}</name>
