@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install feedvalidator dependencies
+        run: |
+          pip install --upgrade pip
+          pip install html5lib rdflib
+
+      - name: Clone feedvalidator
+        run: |
+          git clone --depth 1 https://github.com/w3c/feedvalidator.git tmp/feedvalidator
+
+      - name: Run tests
+        env:
+          FEEDVALIDATOR_PATH: tmp/feedvalidator
+        run: bundle exec rake test
+

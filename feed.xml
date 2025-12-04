@@ -6,7 +6,7 @@ redirect_from:
 - /blog/rss2/
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.name | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
@@ -14,12 +14,16 @@ redirect_from:
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <icon>{{ site.url }}/icons/favicon-16x16.png</icon>
-    <logo>{{ site.url }}/icons/favicon-196x196.png</logo>
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
+        {% assign images_replacement = '="' | append: site.url | append: '/images/' %}
+        {% assign icons_replacement = '="' | append: site.url | append: '/icons/' %}
+        {% assign blog_replacement = '="' | append: site.url | append: '/blog/' %}
+        {% assign contact_replacement = '="' | append: site.url | append: '/contact/' %}
+        {% assign about_replacement = '="' | append: site.url | append: '/about/' %}
+        {% assign absolute_content = post.content | replace: '="/images/', images_replacement | replace: '="/icons/', icons_replacement | replace: '="/blog/', blog_replacement | replace: '="/contact/', contact_replacement | replace: '="/about/', about_replacement %}
+        <description>{{ absolute_content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
@@ -29,10 +33,6 @@ redirect_from:
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
-        <author>
-          <name>{{ site.author.name }}</name>
-          <uri>{{ site.author.url }}</uri>
-        </author>
       </item>
     {% endfor %}
   </channel>
