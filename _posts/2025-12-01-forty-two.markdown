@@ -1,6 +1,7 @@
 ---
 layout: post
-category: career-break
+categories:
+  - careerbreak
 title: Forty-two
 date: 2025-12-01 3:03:25
 ---
@@ -32,6 +33,7 @@ Am I ready to go back to work? Not yet... there's much I want to do and I am par
 <!-- links -->
 
 [be where your feet are]: https://saiditwho.com/who-said-be-where-your-feet-are/
+
 [career break]: {{ site.baseurl }}{% post_url 2025-05-05-career-break %}
 [Coronation Park parkrun]: https://flic.kr/p/2rjRKD9
 [gcc25]: {{ site.baseurl }}{% post_url 2025-08-04-i'm-riding-496-km... %}
