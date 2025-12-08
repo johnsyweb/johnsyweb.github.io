@@ -33,6 +33,6 @@ Most weekends now I'll tackle a full puzzle, and I did solve a full grid on Satu
 [crossword-day]: https://www.daysoftheyear.com/days/national-crossword-solvers-day/ "National Crossword Solvers Day"
 [minutecryptic]: https://minutecryptic.com/ "MinuteCryptic - Daily cryptic crosswords"
 [minutecryptic-book]: https://www.penguin.com.au/books/minute-cryptic-9781761355868 "Minute Cryptic: Over 160 Wordplay Puzzles to Decipher, Unlock, and Untangle"
-[rewording]: https://www.davidastle.com/rewording-the-brain "Rewording the Brain by David Astle"
+[rewording]: https://davidastle.com/published/publications/rewording-the-brain "Rewording the Brain by David Astle"
 [books-image]: /images/2025-12-08-cryptic-crossword-books.jpg "David Astle's Rewording the Brain and MinuteCryptic books"
 
