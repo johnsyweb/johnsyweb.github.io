@@ -9,7 +9,8 @@
     "lhci:styles": "pnpm run lhci:styles:light && pnpm run lhci:styles:dark"
   },
   "devDependencies": {
-    "@lhci/cli": "^0.13.0"
+    "@lhci/cli": "^0.13.0",
+    "clean-css-cli": "^5.6.3"
   },
   "packageManager": "pnpm@9.0.0"
 }

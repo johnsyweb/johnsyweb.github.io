@@ -751,6 +751,6 @@ All color and font combinations on this page must meet WCAG AA standards:
 - Focus indicators must be visible
 - Color should not be the only means of conveying information
 
-**Generated**: 2025-12-15 09:25:27 UTC  
+**Generated**: 2025-12-15 09:44:59 UTC  
 **Source**: `scripts/generate_style_test.rb`  
 **Build fails if**: Any element on this page does not meet WCAG AA accessibility standards

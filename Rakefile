@@ -43,7 +43,32 @@ task :generate_style_test do
   sh "ruby scripts/generate_style_test.rb"
 end
 
-task :build => :generate_style_test do
+desc 'Minify CSS assets for production'
+task :minify_css do
+  # Ensure pnpm is available for running clean-css
+  unless system('which pnpm > /dev/null 2>&1')
+    puts "pnpm not found. Enabling via corepack..."
+    raise "Failed to enable pnpm via corepack" unless system('corepack enable pnpm')
+  end
+
+  # Install dependencies if they are missing (cleancss comes from clean-css-cli)
+  unless File.exist?('node_modules/.bin/cleancss')
+    puts "Installing Node.js dependencies for minification..."
+    raise "Failed to install Node.js dependencies" unless system('pnpm install')
+  end
+
+  targets = {
+    'assets/css/style.css' => 'assets/css/style.min.css',
+    'assets/css/colors-light.css' => 'assets/css/colors-light.min.css',
+    'assets/css/colors-dark.css' => 'assets/css/colors-dark.min.css'
+  }
+
+  targets.each do |source, destination|
+    sh "pnpm exec cleancss -O2 --inline=none -o #{destination} #{source}"
+  end
+end
+
+task :build => [:generate_style_test, :minify_css] do
   sh "bundle exec jekyll build"
 end
 

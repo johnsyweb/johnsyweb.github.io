@@ -160,16 +160,18 @@
     <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
     <link
-      href="{{ '/assets/css/style.css' | relative_url }}"
+      href="{{ '/assets/css/style.min.css' | relative_url }}"
       rel="stylesheet"
     />
     <link
-      href="{{ '/assets/css/colors-light.css' | relative_url }}"
+      href="{{ '/assets/css/colors-light.min.css' | relative_url }}"
       rel="stylesheet"
+      media="(prefers-color-scheme: light)"
     />
     <link
-      href="{{ '/assets/css/colors-dark.css' | relative_url }}"
+      href="{{ '/assets/css/colors-dark.min.css' | relative_url }}"
       rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
     />
 
     <link rel="Start" href="{{ site.url }}/" title="Back to the start" />
