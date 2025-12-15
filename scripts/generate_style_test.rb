@@ -337,7 +337,7 @@ def generate_markdown
   light_colors.each do |selector, props|
     markdown += "\n**`#{selector}`**\n\n"
     props.each do |prop, value|
-      markdown += "- #{prop}: <span style=\"display:inline-block;width:0.9em;height:0.9em;background:#{value};border:1px solid currentColor;vertical-align:middle;margin-right:0.3em\"></span><code style=\"color: #{value}\">#{value}</code>\n"
+      markdown += "- #{prop}: <span style=\"display:inline-block;width:0.9em;height:0.9em;background:#{value};border:1px solid currentColor;vertical-align:middle;margin-right:0.3em\"></span><code>#{value}</code>\n"
     end
   end
   
@@ -345,7 +345,7 @@ def generate_markdown
   dark_colors.each do |selector, props|
     markdown += "\n**`#{selector}`**\n\n"
     props.each do |prop, value|
-      markdown += "- #{prop}: <span style=\"display:inline-block;width:0.9em;height:0.9em;background:#{value};border:1px solid currentColor;vertical-align:middle;margin-right:0.3em\"></span><code style=\"color: #{value}\">#{value}</code>\n"
+      markdown += "- #{prop}: <span style=\"display:inline-block;width:0.9em;height:0.9em;background:#{value};border:1px solid currentColor;vertical-align:middle;margin-right:0.3em\"></span><code>#{value}</code>\n"
     end
   end
   

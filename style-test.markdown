@@ -177,567 +177,567 @@ Posted on 15 December 2025 by <em><acronym title="Peter Alexander Johns">paj</ac
 
 **`@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #fafafa">#fafafa</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`a, a:visited, a:active`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BBDEFB;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BBDEFB">#BBDEFB</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BBDEFB;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BBDEFB</code>
 
 **`a:hover`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #0D47A1">#0D47A1</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#0D47A1</code>
 
 **`h1, h2, h3`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`article h1 a.anchor`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`blockquote`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BF360C">#BF360C</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BF360C</code>
 
 **`#footer`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #E0E0E0">#E0E0E0</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#E0E0E0</code>
 
 **`.utility-card`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #E0E0E0">#E0E0E0</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#E0E0E0</code>
 
 **`.utility-meta`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#757575;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #757575">#757575</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.pagefind-ui mark, .pagefind-search mark`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #fafafa">#fafafa</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
 
 **`.pagefind-ui__result-title .pagefind-ui__result-link, .pagefind-search .pagefind-ui__result-link`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.pagefind-ui__result`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #fafafa">#fafafa</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #E0E0E0">#E0E0E0</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#E0E0E0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#E0E0E0</code>
 
 **`.pagefind-ui__result-excerpt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#757575;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #757575">#757575</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.pagefind-ui button, .pagefind-search button`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #fafafa">#fafafa</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
 
 **`.pagefind-ui button:hover, .pagefind-search button:hover`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #0D47A1">#0D47A1</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#0D47A1</code>
 
 **`#pagefind-search input, .pagefind-ui input, .pagefind-search input`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#ffffff;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #ffffff">#ffffff</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BBDEFB;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BBDEFB">#BBDEFB</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#ffffff;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#ffffff</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BBDEFB;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BBDEFB</code>
 
 **`#pagefind-search input::placeholder, .pagefind-ui input::placeholder, .pagefind-search input::placeholder`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#757575;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #757575">#757575</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#f5f5f5;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #f5f5f5">#f5f5f5</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#f5f5f5;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#f5f5f5</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .c`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .cm`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .cp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .c1`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .cs`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .err`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #D32F2F">#D32F2F</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#D32F2F</code>
 
 **`.highlight .k`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .o`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .p`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .ow`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .kd`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .kn`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .kp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .kr`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .kt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BF360C">#BF360C</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BF360C</code>
 
 **`.highlight .n`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .na`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .nb`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .nc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .no`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BF360C">#BF360C</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BF360C</code>
 
 **`.highlight .nl`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .ne`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #D32F2F">#D32F2F</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#D32F2F</code>
 
 **`.highlight .nf`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .nn`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .nt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .nx`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #212121">#212121</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
 
 **`.highlight .vg`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .vi`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .nv`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .mf`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .m`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .mh`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .mi`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .mo`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .sb`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .sc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .sd`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #616161">#616161</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#616161;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#616161</code>
 
 **`.highlight .s2`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .se`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BF360C">#BF360C</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BF360C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BF360C</code>
 
 **`.highlight .sh`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .si`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .sx`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .sr`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #D32F2F">#D32F2F</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#D32F2F;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#D32F2F</code>
 
 **`.highlight .s1`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .ss`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 **`.highlight .bp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .vc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
 
 **`.highlight .il`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2E7D32">#2E7D32</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2E7D32;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2E7D32</code>
 
 ### Dark Mode Colors
 
 
 **`@media (prefers-color-scheme: dark)`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #121212">#121212</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#121212</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`a, a:visited, a:active`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1976D2;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1976D2">#1976D2</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1976D2;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1976D2</code>
 
 **`a:hover`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`h1, h2, h3`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
 
 **`article h1 a.anchor`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
 
 **`blockquote`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #FFB300">#FFB300</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#FFB300</code>
 
 **`#footer`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2C2C2C">#2C2C2C</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2C2C2C</code>
 
 **`.utility-card`**
 
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2C2C2C">#2C2C2C</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2C2C2C</code>
 
 **`.utility-meta`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BDBDBD;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BDBDBD">#BDBDBD</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BDBDBD;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BDBDBD</code>
 
 **`.pagefind-ui mark, .pagefind-search mark`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #121212">#121212</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#121212</code>
 
 **`.pagefind-ui__result-title .pagefind-ui__result-link, .pagefind-search .pagefind-ui__result-link`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
 
 **`.pagefind-ui__result-title .pagefind-ui__result-link:hover, .pagefind-search .pagefind-ui__result-link:hover`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.pagefind-ui__result`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1E1E1E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1E1E1E">#1E1E1E</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2C2C2C">#2C2C2C</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1E1E1E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1E1E1E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2C2C2C</code>
 
 **`.pagefind-ui__result-excerpt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BDBDBD;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #BDBDBD">#BDBDBD</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#BDBDBD;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#BDBDBD</code>
 
 **`.pagefind-ui button, .pagefind-search button`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1565C0">#1565C0</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #fafafa">#fafafa</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1565C0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1565C0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
 
 **`.pagefind-ui button:hover, .pagefind-search button:hover`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #0D47A1">#0D47A1</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#0D47A1;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#0D47A1</code>
 
 **`#pagefind-search input, .pagefind-ui input, .pagefind-search input`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #2C2C2C">#2C2C2C</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#3a3a3a;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #3a3a3a">#3a3a3a</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#2C2C2C;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#2C2C2C</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#3a3a3a;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#3a3a3a</code>
 
 **`#pagefind-search input::placeholder, .pagefind-ui input::placeholder, .pagefind-search input::placeholder`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`#pagefind-search button, .pagefind-ui button, .pagefind-search button`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #121212">#121212</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #64B5F6">#64B5F6</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#121212;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#121212</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#64B5F6;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#64B5F6</code>
 
 **`#pagefind-search button:hover, .pagefind-ui button:hover, .pagefind-search button:hover`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
-- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
+- border-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight`**
 
-- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1E1E1E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #1E1E1E">#1E1E1E</code>
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#1E1E1E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#1E1E1E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .c`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .cm`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .cp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .c1`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .cs`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .err`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #EF5350">#EF5350</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#EF5350</code>
 
 **`.highlight .k`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .o`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .p`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .ow`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .kd`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .kn`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .kp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .kr`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .kt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #FFB300">#FFB300</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#FFB300</code>
 
 **`.highlight .n`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .na`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .nb`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .nc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .no`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #FFB300">#FFB300</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#FFB300</code>
 
 **`.highlight .nl`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .ne`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #EF5350">#EF5350</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#EF5350</code>
 
 **`.highlight .nf`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .nn`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .nt`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .nx`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #e0e0e0">#e0e0e0</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#e0e0e0;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#e0e0e0</code>
 
 **`.highlight .vg`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .vi`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .nv`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .mf`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .m`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .mh`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .mi`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .mo`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .sb`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .sc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .sd`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #9E9E9E">#9E9E9E</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#9E9E9E;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#9E9E9E</code>
 
 **`.highlight .s2`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .se`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #FFB300">#FFB300</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#FFB300;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#FFB300</code>
 
 **`.highlight .sh`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .si`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .sx`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .sr`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #EF5350">#EF5350</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#EF5350;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#EF5350</code>
 
 **`.highlight .s1`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .ss`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 **`.highlight .bp`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .vc`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #90CAF9">#90CAF9</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#90CAF9;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#90CAF9</code>
 
 **`.highlight .il`**
 
-- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code style="color: #66BB6A">#66BB6A</code>
+- color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#66BB6A;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#66BB6A</code>
 
 ---
 
@@ -751,6 +751,6 @@ All color and font combinations on this page must meet WCAG AA standards:
 - Focus indicators must be visible
 - Color should not be the only means of conveying information
 
-**Generated**: 2025-12-15 08:56:17 UTC  
+**Generated**: 2025-12-15 09:25:27 UTC  
 **Source**: `scripts/generate_style_test.rb`  
 **Build fails if**: Any element on this page does not meet WCAG AA accessibility standards

@@ -35,7 +35,7 @@ blockquote {
 
 .utility-meta {
 	background: #E0E0E0;
-	color: #757575;
+	color: #616161;
 }
 
 .pagefind-ui mark,
@@ -56,7 +56,7 @@ blockquote {
 }
 
 .pagefind-ui__result-excerpt {
-	color: #757575;
+	color: #616161;
 }
 
 .pagefind-ui button,
@@ -81,7 +81,7 @@ blockquote {
 #pagefind-search input::placeholder,
 .pagefind-ui input::placeholder,
 .pagefind-search input::placeholder {
-	color: #757575;
+	color: #616161;
 }
 
 .highlight {
