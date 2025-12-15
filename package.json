@@ -1,0 +1,15 @@
+{
+  "name": "johnsyweb.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "johnsy.com website",
+  "scripts": {
+    "lhci:styles:light": "lhci autorun --config=.lighthouserc-styles-light.json",
+    "lhci:styles:dark": "lhci autorun --config=.lighthouserc-styles-dark.json",
+    "lhci:styles": "pnpm run lhci:styles:light && pnpm run lhci:styles:dark"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.13.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

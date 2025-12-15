@@ -14,8 +14,8 @@
       <title>johnsy.com</title>
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fdf6e3" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#002a35" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
 
     <meta http-equiv="Window-Target" content="_top" />
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
@@ -160,15 +160,15 @@
     <link rel="preload" href="{{ site.url }}/assets/fonts/Atkinson-Hyperlegible-Mono-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
     <link
-      href="{{ site.url }}/assets/css/style.css"
+      href="{{ '/assets/css/style.css' | relative_url }}"
       rel="stylesheet"
     />
     <link
-      href="{{ site.url }}/assets/css/colors-light.css"
+      href="{{ '/assets/css/colors-light.css' | relative_url }}"
       rel="stylesheet"
     />
     <link
-      href="{{ site.url }}/assets/css/colors-dark.css"
+      href="{{ '/assets/css/colors-dark.css' | relative_url }}"
       rel="stylesheet"
     />
 

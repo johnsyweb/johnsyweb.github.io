@@ -3,6 +3,8 @@
 require "html-proofer"
 require "fileutils"
 
+task :default => :test
+
 desc 'Given a title as an argument, create a new post file'
 task :write, [:title, :category] do |_t, args|
   NOW = Time.now.utc.freeze
@@ -24,7 +26,7 @@ FRONT_MATTER
   puts "Now open #{path} in an editor."
 end
 
-task :test => [:build, :validate_feeds] do
+task :test => [:build, :validate_feeds, :lighthouse_styles] do
   options = { 
     cache: 
     { 
@@ -36,7 +38,12 @@ task :test => [:build, :validate_feeds] do
   HTMLProofer.check_directory("./_site", options).run
 end
 
-task :build do
+desc 'Generate style test page from CSS'
+task :generate_style_test do
+  sh "ruby scripts/generate_style_test.rb"
+end
+
+task :build => :generate_style_test do
   sh "bundle exec jekyll build"
 end
 
@@ -100,4 +107,61 @@ task :validate_feeds => :build do
   end
   
   puts "All feeds validated successfully!"
+end
+
+desc 'Run Lighthouse CI accessibility tests on style test page (light mode)'
+task :lighthouse_styles_light => :build do
+  # Check if pnpm is available
+  unless system('which pnpm > /dev/null 2>&1')
+    puts "pnpm not found. Enabling via corepack..."
+    unless system('corepack enable pnpm')
+      raise "Failed to enable pnpm via corepack"
+    end
+  end
+  
+  # Install dependencies if needed
+  unless File.exist?('node_modules/@lhci')
+    puts "Installing Lighthouse CI dependencies..."
+    unless system('pnpm install')
+      raise "Failed to install Node.js dependencies"
+    end
+  end
+  
+  puts "Running Lighthouse CI on style test page (LIGHT MODE)..."
+  unless system('pnpm run lhci:styles:light')
+    raise "Lighthouse CI accessibility check failed (light mode) - color/font combinations do not meet WCAG standards"
+  end
+  
+  puts "✓ Light mode style accessibility checks passed!"
+end
+
+desc 'Run Lighthouse CI accessibility tests on style test page (dark mode)'
+task :lighthouse_styles_dark => :build do
+  # Check if pnpm is available
+  unless system('which pnpm > /dev/null 2>&1')
+    puts "pnpm not found. Enabling via corepack..."
+    unless system('corepack enable pnpm')
+      raise "Failed to enable pnpm via corepack"
+    end
+  end
+  
+  # Install dependencies if needed
+  unless File.exist?('node_modules/@lhci')
+    puts "Installing Lighthouse CI dependencies..."
+    unless system('pnpm install')
+      raise "Failed to install Node.js dependencies"
+    end
+  end
+  
+  puts "Running Lighthouse CI on style test page (DARK MODE)..."
+  unless system('pnpm run lhci:styles:dark')
+    raise "Lighthouse CI accessibility check failed (dark mode) - color/font combinations do not meet WCAG standards"
+  end
+  
+  puts "✓ Dark mode style accessibility checks passed!"
+end
+
+desc 'Run Lighthouse CI accessibility tests for both light and dark modes'
+task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] do
+  puts "✓ All style accessibility checks passed (light and dark modes)!"
 end

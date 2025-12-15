@@ -7,3 +7,10 @@
 /tmp/*
 
 .bundle/
+
+# Node/pnpm for Lighthouse CI
+node_modules/
+pnpm-lock.yaml
+
+# Lighthouse CI outputs
+.lighthouseci/
