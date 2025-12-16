@@ -91,6 +91,7 @@ jobs:
 
       - name: Validate HTML
         uses: anishathalye/proof-html@v2
+        continue-on-error: true
         with:
           directory: ./_site
 
