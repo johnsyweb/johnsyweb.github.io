@@ -294,7 +294,7 @@ pain-free. That Saturday I did a slow return to my home parkrun. Again,
 pain-free. I'd wanted to run the 10 km Christmas Run at Albert Park, but the
 physio advised me to stick to 5 km as a limit for now and so I ran [my best-ever
 5 km](https://www.strava.com/activities/228015874/overview) at Emma and Tom's
-[Christmas Run](Emma and Tom's Christmas Run 2014): 0:24:10.3. I did a couple
+Christmas Run 2014: 0:24:10.3. I did a couple
 more runs in Australia before heading to the UK for Christmas.
 
 On Christmas Eve I did [my first ever run on British
