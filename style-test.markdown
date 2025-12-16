@@ -115,7 +115,7 @@ def calculate_contrast(color1, color2):
 
 ## H2: Text Formatting and Special Elements
 
-Text with <abbr title="abbreviation">abbreviations</abbr> and <acronym title="Cascading Style Sheets">CSS</acronym> elements.
+Text with <abbr title="abbreviation">abbreviations</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> elements.
 
 Superscript: E = mc<sup>2</sup>, x<sup>n</sup>
 
@@ -136,7 +136,7 @@ Subscript: H<sub>2</sub>O, CO<sub>2</sub>
 ## H2: Article Meta Information
 
 <div class="meta">
-Posted on 15 December 2025 by <em><acronym title="Peter Alexander Johns">paj</acronym></em>
+Posted on 15 December 2025 by <em><abbr title="Peter Alexander Johns">paj</abbr></em>
 </div>
 
 <p><small>Meta information uses font-size: 0.85em, font-style: italic</small></p>
