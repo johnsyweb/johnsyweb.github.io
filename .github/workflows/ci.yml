@@ -27,6 +27,41 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y optipng jpegoptim
 
+      - name: Run build and pre-checks
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          bundle exec rake generate_style_test minify_css
+          bundle exec jekyll build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
+          retention-days: 1
+
+  validate-feeds:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
       - name: Install feedvalidator dependencies
         run: |
           pip install --upgrade pip
@@ -36,21 +71,41 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/w3c/feedvalidator.git tmp/feedvalidator
 
-      - name: Run tests (build, validate feeds, html proofer)
+      - name: Validate feeds
         env:
           FEEDVALIDATOR_PATH: tmp/feedvalidator
-          SKIP_IMAGE_OPTIMIZATION: "true"
-        run: |
-          bundle exec rake generate_style_test minify_css
-          bundle exec jekyll build
-          bundle exec rake validate_feeds
-          bundle exec rake html_proofer
+        run: bundle exec rake validate_feeds
 
-  lighthouse-light:
+  validate-html:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Validate HTML
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: ./_site
+
+  lighthouse-light:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
@@ -69,9 +124,16 @@ jobs:
 
   lighthouse-dark:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
