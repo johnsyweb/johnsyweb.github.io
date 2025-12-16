@@ -73,8 +73,6 @@ end
 
 desc 'Optimize images in images/ directory'
 task :optimize_images do
-  require 'image_size'
-  
   images_dir = 'images'
   unless File.directory?(images_dir)
     puts "Images directory not found"
