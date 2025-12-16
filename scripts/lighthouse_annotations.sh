@@ -49,18 +49,22 @@ else
     exit 0
   fi
   shopt -s nullglob
-  reports=("$DIR"/lhr-*.json)
+  reports=("$DIR"/lhr-*.json "$DIR"/*.report.json)
   if (( ${#reports[@]} == 0 )); then
     echo "::warning::No Lighthouse report JSON files found in $DIR"
     exit 0
   fi
+  skipped=0
   for report in "${reports[@]}"; do
     # Extract URL and category scores; tolerate missing/null fields
     if ! line=$(jq -r '"\(.finalUrl // .requestedUrl // "unknown")//\((.categories.performance.score // 0)*100|floor)//\((.categories.accessibility.score // 0)*100|floor)//\((.categories[\"best-practices\"].score // 0)*100|floor)//\((.categories.seo.score // 0)*100|floor)//\((.categories.pwa.score // 0)*100|floor)"' "$report" 2>/dev/null); then
-      echo "::warning::Failed to parse $report"
+      skipped=$((skipped+1))
       continue
     fi
     IFS='//' read -r url perf a11y bp seo pwa <<< "$line"
     annotate_line "$url" "$perf" "$a11y" "$bp" "$seo" "$pwa"
   done
+  if (( skipped > 0 )); then
+    echo "::warning::Skipped $skipped Lighthouse report(s) due to parse errors"
+  fi
 fi
