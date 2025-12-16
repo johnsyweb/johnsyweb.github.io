@@ -102,12 +102,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: jekyll-build
-          path: ./_site
-
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
         with:
@@ -117,6 +111,8 @@ jobs:
         run: bundle install --jobs 4 --retry 3
 
       - name: Run Lighthouse CI (light mode)
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
         run: bundle exec rake lighthouse_styles_light
 
       - name: Create GitHub annotations (light mode)
@@ -130,12 +126,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: jekyll-build
-          path: ./_site
-
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
         with:
@@ -145,6 +135,8 @@ jobs:
         run: bundle install --jobs 4 --retry 3
 
       - name: Run Lighthouse CI (dark mode)
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
         run: bundle exec rake lighthouse_styles_dark
 
       - name: Create GitHub annotations (dark mode)
