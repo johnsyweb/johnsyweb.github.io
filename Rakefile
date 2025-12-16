@@ -45,10 +45,10 @@ end
 
 desc 'Minify CSS assets for production'
 task :minify_css do
-  # Ensure pnpm is available for running clean-css
+  # Ensure pnpm is available (corepack should auto-enable from packageManager field)
   unless system('which pnpm > /dev/null 2>&1')
-    puts "pnpm not found. Enabling via corepack..."
-    raise "Failed to enable pnpm via corepack" unless system('corepack enable pnpm')
+    puts "pnpm not found. Enabling corepack..."
+    raise "Failed to enable corepack" unless system('corepack enable')
   end
 
   # Install dependencies if they are missing (cleancss comes from clean-css-cli)
