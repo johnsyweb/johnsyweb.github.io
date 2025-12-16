@@ -1,49 +1,66 @@
 #!/bin/bash
-# Parse Lighthouse CI manifest JSON output and create GitHub annotations
+# Parse Lighthouse CI output and create GitHub annotations
 
 set -euo pipefail
 
-MANIFEST_FILE="${1:-.lighthouse/manifest.json}"
+INPUT_PATH="${1:-.lighthouseci/manifest.json}"
 THEME="${2:-light}"
 
-if [[ ! -f "$MANIFEST_FILE" ]]; then
-  echo "::warning::Manifest file not found: $MANIFEST_FILE"
-  exit 0
+# Determine directory and manifest
+if [[ -d "$INPUT_PATH" ]]; then
+  DIR="$INPUT_PATH"
+  MANIFEST="$INPUT_PATH/manifest.json"
+else
+  DIR="$(dirname "$INPUT_PATH")"
+  MANIFEST="$INPUT_PATH"
 fi
 
-# Parse each result and create annotations
-jq -r '.[] |
-  "URL: \(.url) | " +
-  "Performance: \(.summary.performance * 100 | floor) | " +
-  "Accessibility: \(.summary.accessibility * 100 | floor) | " +
-  "Best Practices: \(.summary["best-practices"] * 100 | floor) | " +
-  "SEO: \(.summary.seo * 100 | floor) | " +
-  "PWA: \(.summary.pwa * 100 | floor)"' "$MANIFEST_FILE" 2>/dev/null | while read -r line; do
-  
-  URL=$(echo "$line" | sed 's/URL: //;s/ |.*//')
-  PERF=$(echo "$line" | grep -oP 'Performance: \K[0-9]+')
-  A11Y=$(echo "$line" | grep -oP 'Accessibility: \K[0-9]+')
-  BP=$(echo "$line" | grep -oP 'Best Practices: \K[0-9]+')
-  SEO=$(echo "$line" | grep -oP 'SEO: \K[0-9]+')
-  PWA=$(echo "$line" | grep -oP 'PWA: \K[0-9]+')
-  
-  # Build emoji indicators
-  PERF_EMOJI="✅"
-  [[ "$PERF" -lt 90 ]] && PERF_EMOJI="⚠️"
-  [[ "$PERF" -lt 75 ]] && PERF_EMOJI="❌"
-  
-  A11Y_EMOJI="✅"
-  [[ "$A11Y" -lt 100 ]] && A11Y_EMOJI="⚠️"
-  [[ "$A11Y" -lt 80 ]] && A11Y_EMOJI="❌"
-  
-  # Determine annotation level
-  LEVEL="notice"
-  [[ "$PERF" -lt 90 ]] && LEVEL="warning"
-  [[ "$A11Y" -lt 100 ]] && LEVEL="warning"
-  
-  # Create GitHub annotation
-  TITLE="Lighthouse ($THEME) • $URL"
-  MESSAGE="Perf: $PERF_EMOJI $PERF | A11y: $A11Y_EMOJI $A11Y | BP: $BP | SEO: $SEO | PWA: $PWA"
-  
+annotate_line() {
+  local url="$1" perf="$2" a11y="$3" bp="$4" seo="$5" pwa="$6"
+
+  local PERF_EMOJI="✅"
+  [[ "$perf" -lt 90 ]] && PERF_EMOJI="⚠️"
+  [[ "$perf" -lt 75 ]] && PERF_EMOJI="❌"
+
+  local A11Y_EMOJI="✅"
+  [[ "$a11y" -lt 100 ]] && A11Y_EMOJI="⚠️"
+  [[ "$a11y" -lt 80 ]] && A11Y_EMOJI="❌"
+
+  local LEVEL="notice"
+  [[ "$perf" -lt 90 ]] && LEVEL="warning"
+  [[ "$a11y" -lt 100 ]] && LEVEL="warning"
+
+  local TITLE="Lighthouse ($THEME) • $url"
+  local MESSAGE="Perf: $PERF_EMOJI $perf | A11y: $A11Y_EMOJI $a11y | BP: $bp | SEO: $seo | PWA: $pwa"
+
   echo "::$LEVEL title=$TITLE::$MESSAGE"
-done
+}
+
+if [[ -f "$MANIFEST" ]]; then
+  # Prefer manifest if present
+  jq -r '.[] | "\(.url)|\(.summary.performance*100|floor)|\(.summary.accessibility*100|floor)|\(.summary[\"best-practices\"]*100|floor)|\(.summary.seo*100|floor)|\(.summary.pwa*100|floor)"' "$MANIFEST" \
+    | while IFS='|' read -r url perf a11y bp seo pwa; do
+        annotate_line "$url" "$perf" "$a11y" "$bp" "$seo" "$pwa"
+      done
+else
+  # Fallback: parse individual Lighthouse JSON reports
+  if [[ ! -d "$DIR" ]]; then
+    echo "::warning::Lighthouse output directory not found: $DIR"
+    exit 0
+  fi
+  shopt -s nullglob
+  reports=("$DIR"/lhr-*.json)
+  if (( ${#reports[@]} == 0 )); then
+    echo "::warning::No Lighthouse report JSON files found in $DIR"
+    exit 0
+  fi
+  for report in "${reports[@]}"; do
+    # Extract URL and category scores from each report
+    if ! line=$(jq -r '"\(.finalUrl // .requestedUrl)//\(.categories.performance.score*100|floor)//\(.categories.accessibility.score*100|floor)//\(.categories[\"best-practices\"].score*100|floor)//\(.categories.seo.score*100|floor)//\(.categories.pwa.score*100|floor)"' "$report" 2>/dev/null); then
+      echo "::warning::Failed to parse $report"
+      continue
+    fi
+    IFS='//' read -r url perf a11y bp seo pwa <<< "$line"
+    annotate_line "$url" "$perf" "$a11y" "$bp" "$seo" "$pwa"
+  done
+fi

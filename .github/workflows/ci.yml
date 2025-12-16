@@ -102,6 +102,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
+      - name: Install jq (for annotations)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
         with:
@@ -126,6 +131,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Install jq (for annotations)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
