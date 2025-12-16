@@ -74,6 +74,6 @@ same jokes that we've been cracking since we first met over ten years ago and
 listening to the rain hitting the roof of our static caravan.
 
 And now I'm back home and have much catching up to do but first I have to wish
-my Irish readers a very <font color="#00FF00">Happy St. Patrick's Day</font>,
+my Irish readers a very <span style="color: #00FF00">Happy St. Patrick's Day</span>,
 and thanks once more to those of you who gave me such a great week!
 
