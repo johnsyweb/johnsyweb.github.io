@@ -1,7 +1,7 @@
 ---
 layout: post
 category: personal
-title: Counterpoints to "Comparison is the Thief of Joy"
+title: Counterpoints to &ldquo;Comparison is the Thief of Joy&rdquo;
 date: 2025-11-29  3:29:56
 ---
 
