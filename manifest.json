@@ -1,0 +1,18 @@
+{
+  "name": "johnsy.com",
+  "short_name": "johnsy",
+  "description": "Pete Johns - Human being, just like you",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fafafa",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
