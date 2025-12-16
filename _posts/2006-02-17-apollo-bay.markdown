@@ -92,7 +92,7 @@ World/Country/State/Town) is satisfied by having The Smallest Cathedral in
 Australia, which is no bigger than a village church.
 
 
-The Big Lobster in Kingston <acronym title="South-East">S.E.</acronym> is the
+The Big Lobster in Kingston <abbr title="South-East">S.E.</abbr> is the
 most colossal crustacean that we have ever seen. Possibly even bigger than
 Murray Bridge's Cathedral. There are all manner of Lobster-related souvenirs on
 offer at the adjacent gift shop/caf&eacute;, but we somehow manage to resist
@@ -136,7 +136,7 @@ himself would have been proud to have designed and just stand back and admire.
 
 Scenic stop-offs seemed to be little more than a kilometre apart and,
 thankfully, not all of them were so crowded. Progress was slow and steady and
-the <acronym title="ScanDisk">SD</acronym> Card in my camera was filling up
+the <abbr title="ScanDisk">SD</abbr> Card in my camera was filling up
 rapidly as we stopped at one beauty spot after another. The coastal views
 (London Bridge, The Arch, The Twelve Apostles, Gilbert's Steps, etc...) were all
 beautiful. The biggest surprise of the day was the rainforest walk: I've never
