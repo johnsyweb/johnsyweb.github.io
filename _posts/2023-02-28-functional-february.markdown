@@ -45,7 +45,7 @@ One more surprise from _Functional February_? I did most of the exercises in [VS
 [JSON]: https://www.json.org/
 [JavaScript January]: https://johnsy.com/blog/2023/01/31/javascript-january/
 [Month 2 of #12in23]: https://exercism.org/challenges/12in23
-[Putting the "fun" in "functional"]: https://swag.exercism.org/products/copy-of-unisex-t-shirt-fun-in-functional-logo-front-dark): https://swag.exercism.org/products/copy-of-unisex-t-shirt-fun-in-functional-logo-front-dark
+[Putting the "fun" in "functional"]: https://swag.exercism.org/products/copy-of-unisex-t-shirt-fun-in-functional-logo-front-dark
 [VS Code]: https://code.visualstudio.com/
 [Zebra Puzzle]: https://en.wikipedia.org/wiki/Zebra_Puzzle
 [`jq` track]: https://exercism.org/tracks/jq
