@@ -69,5 +69,5 @@ If you spot anything that still feels hard to read, especially in dark mode, ple
 [who-can-use]: https://www.whocanuse.com/
 [wave]: https://wave.webaim.org/
 [axe-devtools]: https://www.deque.com/axe/devtools/
-[light-comparison]: /images/2025-12-15-accessible-colours-light.png
-[dark-comparison]: /images/2025-12-15-accessible-colours-dark.png
+[light-comparison]: /images/2025-12-16-comparison-light.webp
+[dark-comparison]: /images/2025-12-16-comparison-dark.webp

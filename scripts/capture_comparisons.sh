@@ -101,4 +101,26 @@ pnpm exec node scripts/capture.mjs \
   --out-prefix "${OUT_PREFIX}" \
   --pages "${PAGES}"
 
-echo "Done. Check ${IMAGES_DIR}/${OUT_PREFIX}-light.png and ...-dark.png"
+LIGHT_PNG="${IMAGES_DIR}/${OUT_PREFIX}-light.png"
+DARK_PNG="${IMAGES_DIR}/${OUT_PREFIX}-dark.png"
+
+# Optionally emit WebP versions if tooling is available
+convert_to_webp() {
+  local src="$1"
+  local dest="${src%.png}.webp"
+  if command -v magick >/dev/null 2>&1; then
+    magick "$src" -quality 90 "$dest"
+  elif command -v cwebp >/dev/null 2>&1; then
+    cwebp -quiet "$src" -o "$dest"
+  else
+    return 1
+  fi
+}
+
+if convert_to_webp "$LIGHT_PNG" && convert_to_webp "$DARK_PNG"; then
+  echo "WebP generated: ${LIGHT_PNG%.png}.webp and ${DARK_PNG%.png}.webp"
+else
+  echo "WebP skipped: magick or cwebp not available" >&2
+fi
+
+echo "Done. Check ${LIGHT_PNG} and ${DARK_PNG}"
