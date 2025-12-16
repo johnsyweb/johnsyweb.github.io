@@ -89,11 +89,16 @@ jobs:
           name: jekyll-build
           path: ./_site
 
-      - name: Validate HTML
-        uses: anishathalye/proof-html@v2
+      - name: Run HTML validation and create annotations
         continue-on-error: true
-        with:
-          directory: ./_site
+        run: |
+          set +e
+          docker run --rm \
+            -v "${PWD}/_site:/site" \
+            ghcr.io/validator/validator:latest \
+            vnu --errors-only --skip-non-html \
+            /site 2>&1 | bash scripts/html_validation_annotations.sh
+          exit 0
 
   lighthouse-light:
     runs-on: ubuntu-latest
