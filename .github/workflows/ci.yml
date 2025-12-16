@@ -22,10 +22,45 @@ jobs:
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Install image optimization tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y optipng jpegoptim
+
+      - name: Run build and pre-checks
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          bundle exec rake generate_style_test minify_css
+          bundle exec jekyll build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
         with:
-          python-version: '3.x'
+          name: jekyll-build
+          path: ./_site
+          retention-days: 1
+
+  validate-feeds:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
 
       - name: Install feedvalidator dependencies
         run: |
@@ -36,8 +71,86 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/w3c/feedvalidator.git tmp/feedvalidator
 
-      - name: Run tests
+      - name: Validate feeds
         env:
           FEEDVALIDATOR_PATH: tmp/feedvalidator
-        run: bundle exec rake test
+        run: bundle exec rake validate_feeds
 
+  validate-html:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Validate HTML
+        uses: anishathalye/proof-html@v2
+        continue-on-error: true
+        with:
+          directory: ./_site
+
+  lighthouse-light:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Install jq (for annotations)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run Lighthouse CI (light) + annotate
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          set +e
+          bundle exec rake lighthouse_styles_light
+          LH_EXIT=$?
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json light || true
+          exit $LH_EXIT
+
+  lighthouse-dark:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Install jq (for annotations)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run Lighthouse CI (dark) + annotate
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          set +e
+          bundle exec rake lighthouse_styles_dark
+          LH_EXIT=$?
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json dark || true
+          exit $LH_EXIT

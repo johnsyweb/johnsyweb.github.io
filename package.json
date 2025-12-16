@@ -1,0 +1,19 @@
+{
+  "name": "johnsyweb.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "johnsy.com website",
+  "scripts": {
+    "lhci:styles:light": "lhci autorun --config=.lighthouserc-styles-light.json",
+    "lhci:styles:dark": "lhci autorun --config=.lighthouserc-styles-dark.json",
+    "lhci:styles": "pnpm run lhci:styles:light && pnpm run lhci:styles:dark",
+    "capture": "node scripts/capture.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.13.0",
+    "clean-css-cli": "^5.6.3",
+    "playwright": "^1.57.0"
+  },
+  "packageManager": "pnpm@10.26.0"
+}

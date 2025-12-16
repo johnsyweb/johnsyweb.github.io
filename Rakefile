@@ -3,6 +3,8 @@
 require "html-proofer"
 require "fileutils"
 
+task :default => :test
+
 desc 'Given a title as an argument, create a new post file'
 task :write, [:title, :category] do |_t, args|
   NOW = Time.now.utc.freeze
@@ -24,7 +26,7 @@ FRONT_MATTER
   puts "Now open #{path} in an editor."
 end
 
-task :test => [:build, :validate_feeds] do
+task :test => [:build, :validate_feeds, :lighthouse_styles] do
   options = { 
     cache: 
     { 
@@ -36,8 +38,101 @@ task :test => [:build, :validate_feeds] do
   HTMLProofer.check_directory("./_site", options).run
 end
 
-task :build do
+desc 'Generate style test page from CSS'
+task :generate_style_test do
+  sh "ruby scripts/generate_style_test.rb"
+end
+
+desc 'Minify CSS assets for production'
+task :minify_css do
+  # Ensure pnpm is available (managed via mise from .tool-versions)
+  unless system('which pnpm > /dev/null 2>&1')
+    raise "pnpm not found. Run 'mise install' to set up toolchain."
+  end
+
+  # Install dependencies if they are missing (cleancss comes from clean-css-cli)
+  unless File.exist?('node_modules/.bin/cleancss')
+    puts "Installing Node.js dependencies for minification..."
+    raise "Failed to install Node.js dependencies" unless system('pnpm install')
+  end
+
+  targets = {
+    'assets/css/style.css' => 'assets/css/style.min.css',
+    'assets/css/colors-light.css' => 'assets/css/colors-light.min.css',
+    'assets/css/colors-dark.css' => 'assets/css/colors-dark.min.css'
+  }
+
+  targets.each do |source, destination|
+    sh "pnpm exec cleancss -O2 --inline=none -o #{destination} #{source}"
+  end
+end
+
+task :build => [:generate_style_test, :minify_css] do
   sh "bundle exec jekyll build"
+end
+
+# Skip image optimization on CI; only do it for actual deployments/screenshots
+desc 'Optimize images in images/ directory'
+task :optimize_images do
+  if ENV['SKIP_IMAGE_OPTIMIZATION']
+    puts "Skipping image optimization (SKIP_IMAGE_OPTIMIZATION set)"
+    return
+  end
+  
+  images_dir = 'images'
+  unless File.directory?(images_dir)
+    puts "Images directory not found"
+    return
+  end
+
+  # Find all image files
+  image_files = Dir.glob(File.join(images_dir, '**/*.{jpg,jpeg,png,gif}'), File::FNM_CASEFOLD)
+  
+  if image_files.empty?
+    puts "No images found to optimize"
+    return
+  end
+
+  puts "Optimizing #{image_files.length} images..."
+  
+  optimized_count = 0
+  total_saved = 0
+  
+  image_files.each do |image|
+    next if image.include?('.min.')  # Skip already optimized files
+    
+    original_size = File.size(image)
+    
+    case File.extname(image).downcase
+    when '.png'
+      # Use pngquant if available, otherwise use built-in optimization
+      if system("which pngquant > /dev/null 2>&1")
+        `pngquant --force --speed 1 --output #{image} -- #{image}`
+      elsif system("which optipng > /dev/null 2>&1")
+        `optipng -o2 -strip all #{image}`
+      end
+    when '.jpg', '.jpeg'
+      # Use jpegoptim if available
+      if system("which jpegoptim > /dev/null 2>&1")
+        `jpegoptim --max=85 --strip-all --quiet #{image}`
+      end
+    end
+    
+    new_size = File.size(image)
+    if new_size < original_size
+      saved = original_size - new_size
+      percent = (saved.to_f / original_size * 100).round(1)
+      puts "  ✓ #{File.basename(image)}: #{percent}% reduction (#{new_size} bytes)"
+      optimized_count += 1
+      total_saved += saved
+    end
+  end
+  
+  if optimized_count > 0
+    puts "✓ Optimized #{optimized_count} images, saved #{total_saved} bytes (#{(total_saved.to_f / 1024).round(1)} KB)"
+  else
+    puts "Images are already optimized"
+  end
 end
 
 desc 'Validate XML feeds using W3C feedvalidator'
@@ -100,4 +195,61 @@ task :validate_feeds => :build do
   end
   
   puts "All feeds validated successfully!"
+end
+
+desc 'Run Lighthouse CI accessibility tests on style test page (light mode)'
+task :lighthouse_styles_light => :build do
+  # Check if pnpm is available
+  unless system('which pnpm > /dev/null 2>&1')
+    puts "pnpm not found. Enabling via corepack..."
+    unless system('corepack enable pnpm')
+      raise "Failed to enable pnpm via corepack"
+    end
+  end
+  
+  # Install dependencies if needed
+  unless File.exist?('node_modules/@lhci')
+    puts "Installing Lighthouse CI dependencies..."
+    unless system('pnpm install')
+      raise "Failed to install Node.js dependencies"
+    end
+  end
+  
+  puts "Running Lighthouse CI on style test page (LIGHT MODE)..."
+  unless system('pnpm run lhci:styles:light')
+    raise "Lighthouse CI accessibility check failed (light mode) - color/font combinations do not meet WCAG standards"
+  end
+  
+  puts "✓ Light mode style accessibility checks passed!"
+end
+
+desc 'Run Lighthouse CI accessibility tests on style test page (dark mode)'
+task :lighthouse_styles_dark => :build do
+  # Check if pnpm is available
+  unless system('which pnpm > /dev/null 2>&1')
+    puts "pnpm not found. Enabling via corepack..."
+    unless system('corepack enable pnpm')
+      raise "Failed to enable pnpm via corepack"
+    end
+  end
+  
+  # Install dependencies if needed
+  unless File.exist?('node_modules/@lhci')
+    puts "Installing Lighthouse CI dependencies..."
+    unless system('pnpm install')
+      raise "Failed to install Node.js dependencies"
+    end
+  end
+  
+  puts "Running Lighthouse CI on style test page (DARK MODE)..."
+  unless system('pnpm run lhci:styles:dark')
+    raise "Lighthouse CI accessibility check failed (dark mode) - color/font combinations do not meet WCAG standards"
+  end
+  
+  puts "✓ Dark mode style accessibility checks passed!"
+end
+
+desc 'Run Lighthouse CI accessibility tests for both light and dark modes'
+task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] do
+  puts "✓ All style accessibility checks passed (light and dark modes)!"
 end

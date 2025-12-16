@@ -57,6 +57,9 @@ exclude:
   - node_modules/
   - scripts/
   - vendor/
+  - .lighthouseci/
+  - .lighthouserc*.json
+  - pnpm-lock.yaml
 
 plugins:
   - jekyll-paginate

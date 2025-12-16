@@ -18,7 +18,8 @@ title: Blog
         {% endif %}
 
 	<p class="meta"><span class="postdate">{{ post.date | date: "%a, %e %b %Y" }}</span></p>
-        <div class="post-content">{{ post.content }}</div>
+        <div class="post-content">{{ post.excerpt }}</div>
+        <p><a href="{{ post.url }}">Continue reading "{{ post.title }}"</a></p>
 
     </article>
 

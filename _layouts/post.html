@@ -14,3 +14,11 @@ layout: default
 	<p class="meta"><span class="postdate">{{ page.date | date: "%a, %e %b %Y" }}</span></p>
 	<div class="post-content">{{ content }}</div>
 </article>
+<script>
+  // Add lazy loading to all images in post content
+  document.querySelectorAll('.post-content img').forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+</script>
