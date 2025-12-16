@@ -67,12 +67,18 @@ task :minify_css do
   end
 end
 
-task :build => [:generate_style_test, :minify_css, :optimize_images] do
+task :build => [:generate_style_test, :minify_css] do
   sh "bundle exec jekyll build"
 end
 
+# Skip image optimization on CI; only do it for actual deployments/screenshots
 desc 'Optimize images in images/ directory'
 task :optimize_images do
+  if ENV['SKIP_IMAGE_OPTIMIZATION']
+    puts "Skipping image optimization (SKIP_IMAGE_OPTIMIZATION set)"
+    return
+  end
+  
   images_dir = 'images'
   unless File.directory?(images_dir)
     puts "Images directory not found"

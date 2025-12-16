@@ -36,8 +36,54 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/w3c/feedvalidator.git tmp/feedvalidator
 
-      - name: Run tests
+      - name: Run tests (build, validate feeds, html proofer)
         env:
           FEEDVALIDATOR_PATH: tmp/feedvalidator
-        run: bundle exec rake test
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          bundle exec rake generate_style_test minify_css
+          bundle exec jekyll build
+          bundle exec rake validate_feeds
+          bundle exec rake html_proofer
 
+  lighthouse-light:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run Lighthouse CI (light mode)
+        run: bundle exec rake lighthouse_styles_light
+
+      - name: Create GitHub annotations (light mode)
+        if: always()
+        run: bash scripts/lighthouse_annotations.sh .lighthouse/manifest.json light
+
+  lighthouse-dark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run Lighthouse CI (dark mode)
+        run: bundle exec rake lighthouse_styles_dark
+
+      - name: Create GitHub annotations (dark mode)
+        if: always()
+        run: bash scripts/lighthouse_annotations.sh .lighthouse/manifest.json dark
