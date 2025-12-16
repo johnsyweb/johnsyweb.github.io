@@ -12,6 +12,7 @@ A complete waste of cyberspace.
 
 ## Recent Blog Posts
 
+- 2025-12-15: [Accessible colours beat Solarized (and why that matters)](https://johnsy.com/blog/2025/12/15/accessible-colours-over-solarized/)
 - 2025-12-08: [National Crossword Solvers Day](https://johnsy.com/blog/2025/12/08/national-crossword-solvers-day/)
 - 2025-12-01: [Forty-two](https://johnsy.com/blog/2025/12/01/forty-two/)
 - 2025-11-29: [Counterpoints to "Comparison is the Thief of Joy"](https://johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
@@ -21,7 +22,6 @@ A complete waste of cyberspace.
 - 2025-10-10: [Countdown Numbers Game Solver](https://johnsy.com/blog/2025/10/10/countdown-numbers-game-solver/)
 - 2025-08-04: [I'm riding 496 km...](https://johnsy.com/blog/2025/08/04/i'm-riding-496-km.../)
 - 2025-07-30: [Formatting iOS email signatures is a pain](https://johnsy.com/blog/2025/07/30/formatting-ios-email-signatures-is-a-pain/)
-- 2025-06-30: [Career Break Eve](https://johnsy.com/blog/2025/06/30/career-break-eve/)
 
 <!-- END TOC -->
 
