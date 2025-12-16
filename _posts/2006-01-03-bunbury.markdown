@@ -45,8 +45,8 @@ the port as we ate fish and chips at Cicerello's that lunchtime).
 
 For our evening meal, we went to The Bengal Indian Restaurant, which has an
 affiliation with a couple of the hostels in the town and is very
-reasonably-priced indeed, particularly when you <acronym title="Bring Your
-Own">BYO</acronym> bottle of fine Aussie wine from the Bottle Shop at the
+reasonably-priced indeed, particularly when you <abbr title="Bring Your
+Own">BYO</abbr> bottle of fine Aussie wine from the Bottle Shop at the
 aforementioned Sail and Anchor. The food was spot-on, and I can heartily
 recommend the restaurant to anyone visiting Freo.
 
