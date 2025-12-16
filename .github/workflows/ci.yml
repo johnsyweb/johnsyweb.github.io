@@ -114,8 +114,11 @@ jobs:
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
         run: |
+          set +e
           bundle exec rake lighthouse_styles_light
-          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json light
+          LH_EXIT=$?
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json light || true
+          exit $LH_EXIT
 
   lighthouse-dark:
     runs-on: ubuntu-latest
@@ -136,5 +139,8 @@ jobs:
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
         run: |
+          set +e
           bundle exec rake lighthouse_styles_dark
-          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json dark
+          LH_EXIT=$?
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json dark || true
+          exit $LH_EXIT
