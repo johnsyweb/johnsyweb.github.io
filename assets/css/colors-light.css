@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: light) {
 html, body {
 	background-color: #fafafa;
 	color: #212121;
