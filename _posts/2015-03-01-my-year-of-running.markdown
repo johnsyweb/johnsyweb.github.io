@@ -61,7 +61,7 @@ earphones and decided that rather than wake them up tearing the house apart to
 find the earphones, I'd try running without them. I'd heard that people run
 better without music. All I could hear as I ran along my usual route was the
 wheezing of an old bloke who'd overindulged over the long weekend. It was
-horrible and I vowed <a name="vow"></a>never to run without music again.
+horrible and I vowed <span id="vow"></span>never to run without music again.
 
 For most of the Couch to 5K, Kirsty had been on at me to sign up for a run, the
 [Mother’s Day Classic](https://www.mothersdayclassic.com.au/). The MDC includes a
