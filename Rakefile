@@ -67,8 +67,68 @@ task :minify_css do
   end
 end
 
-task :build => [:generate_style_test, :minify_css] do
+task :build => [:generate_style_test, :minify_css, :optimize_images] do
   sh "bundle exec jekyll build"
+end
+
+desc 'Optimize images in images/ directory'
+task :optimize_images do
+  require 'image_size'
+  
+  images_dir = 'images'
+  unless File.directory?(images_dir)
+    puts "Images directory not found"
+    return
+  end
+
+  # Find all image files
+  image_files = Dir.glob(File.join(images_dir, '**/*.{jpg,jpeg,png,gif}'), File::FNM_CASEFOLD)
+  
+  if image_files.empty?
+    puts "No images found to optimize"
+    return
+  end
+
+  puts "Optimizing #{image_files.length} images..."
+  
+  optimized_count = 0
+  total_saved = 0
+  
+  image_files.each do |image|
+    next if image.include?('.min.')  # Skip already optimized files
+    
+    original_size = File.size(image)
+    
+    case File.extname(image).downcase
+    when '.png'
+      # Use pngquant if available, otherwise use built-in optimization
+      if system("which pngquant > /dev/null 2>&1")
+        `pngquant --force --speed 1 --output #{image} -- #{image}`
+      elsif system("which optipng > /dev/null 2>&1")
+        `optipng -o2 -strip all #{image}`
+      end
+    when '.jpg', '.jpeg'
+      # Use jpegoptim if available
+      if system("which jpegoptim > /dev/null 2>&1")
+        `jpegoptim --max=85 --strip-all --quiet #{image}`
+      end
+    end
+    
+    new_size = File.size(image)
+    if new_size < original_size
+      saved = original_size - new_size
+      percent = (saved.to_f / original_size * 100).round(1)
+      puts "  ✓ #{File.basename(image)}: #{percent}% reduction (#{new_size} bytes)"
+      optimized_count += 1
+      total_saved += saved
+    end
+  end
+  
+  if optimized_count > 0
+    puts "✓ Optimized #{optimized_count} images, saved #{total_saved} bytes (#{(total_saved.to_f / 1024).round(1)} KB)"
+  else
+    puts "Images are already optimized"
+  end
 end
 
 desc 'Validate XML feeds using W3C feedvalidator'
