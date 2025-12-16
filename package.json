@@ -15,5 +15,5 @@
     "clean-css-cli": "^5.6.3",
     "playwright": "^1.57.0"
   },
-  "packageManager": "pnpm@9.0.0"
+  "packageManager": "pnpm@9.15.0"
 }
