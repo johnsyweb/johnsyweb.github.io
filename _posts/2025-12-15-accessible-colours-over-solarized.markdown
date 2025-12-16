@@ -59,7 +59,6 @@ If you spot anything that still feels hard to read, especially in dark mode, ple
 
 <!-- Links -->
 
-[previous-post]: {% post_url 2025-11-04-switching-to-atkinson-hyperlegible %}
 [solarized]: https://ethanschoonover.com/solarized/
 [material-colors]: https://m3.material.io/styles/color/system/overview
 [wcag-contrast]: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
@@ -71,3 +70,4 @@ If you spot anything that still feels hard to read, especially in dark mode, ple
 [axe-devtools]: https://www.deque.com/axe/devtools/
 [light-comparison]: /images/2025-12-16-comparison-light.webp
 [dark-comparison]: /images/2025-12-16-comparison-dark.webp
+[previous-post]: {% post_url 2025-11-04-switching-to-atkinson-hyperlegible %}
