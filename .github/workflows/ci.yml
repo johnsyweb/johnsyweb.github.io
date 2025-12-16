@@ -110,14 +110,12 @@ jobs:
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
 
-      - name: Run Lighthouse CI (light mode)
+      - name: Run Lighthouse CI (light) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
-        run: bundle exec rake lighthouse_styles_light
-
-      - name: Create GitHub annotations (light mode)
-        if: always()
-        run: bash scripts/lighthouse_annotations.sh .lighthouse/manifest.json light
+        run: |
+          bundle exec rake lighthouse_styles_light
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json light
 
   lighthouse-dark:
     runs-on: ubuntu-latest
@@ -134,11 +132,9 @@ jobs:
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
 
-      - name: Run Lighthouse CI (dark mode)
+      - name: Run Lighthouse CI (dark) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
-        run: bundle exec rake lighthouse_styles_dark
-
-      - name: Create GitHub annotations (dark mode)
-        if: always()
-        run: bash scripts/lighthouse_annotations.sh .lighthouse/manifest.json dark
+        run: |
+          bundle exec rake lighthouse_styles_dark
+          bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json dark
