@@ -55,8 +55,8 @@ else
     exit 0
   fi
   for report in "${reports[@]}"; do
-    # Extract URL and category scores from each report
-    if ! line=$(jq -r '"\(.finalUrl // .requestedUrl)//\(.categories.performance.score*100|floor)//\(.categories.accessibility.score*100|floor)//\(.categories[\"best-practices\"].score*100|floor)//\(.categories.seo.score*100|floor)//\(.categories.pwa.score*100|floor)"' "$report" 2>/dev/null); then
+    # Extract URL and category scores; tolerate missing/null fields
+    if ! line=$(jq -r '"\(.finalUrl // .requestedUrl // "unknown")//\((.categories.performance.score // 0)*100|floor)//\((.categories.accessibility.score // 0)*100|floor)//\((.categories[\"best-practices\"].score // 0)*100|floor)//\((.categories.seo.score // 0)*100|floor)//\((.categories.pwa.score // 0)*100|floor)"' "$report" 2>/dev/null); then
       echo "::warning::Failed to parse $report"
       continue
     fi
