@@ -63,7 +63,7 @@ Girl_.
 
 Nearly a day has passed since I started typing these words. We have just had a
 very early breakfast up above the clouds on
-<acronym title="Queensland and Northern Territory's Air Service">Qantas</acronym>
+<abbr title="Queensland and Northern Territory's Air Service">Qantas</abbr>
 flight twenty-one to Tokyo.
 
 
