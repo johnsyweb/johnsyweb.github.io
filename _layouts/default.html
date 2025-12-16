@@ -285,6 +285,25 @@
     </footer>
 
     <script src="{{ site.url }}/assets/js/mobile-menu.js"></script>
+    <script>
+      // Simple lazy loading for images with .lazy class
+      if ('IntersectionObserver' in window) {
+        const images = document.querySelectorAll('img.lazy');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.add('loaded');
+              observer.unobserve(img);
+            }
+          });
+        });
+        images.forEach(img => observer.observe(img));
+      } else {
+        // Fallback for browsers without IntersectionObserver
+        document.querySelectorAll('img.lazy').forEach(img => img.classList.add('loaded'));
+      }
+    </script>
     {% if page.url == '/blog/' %}
       <script src="{{ site.url }}/assets/js/blog-entry-flash.js"></script>
       <script>
