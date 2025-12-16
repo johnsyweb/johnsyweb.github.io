@@ -8,3 +8,5 @@ group :development do
 end
 
 gem "html-proofer", "~> 5.1"
+
+gem "bundler", "~> 4.0"
