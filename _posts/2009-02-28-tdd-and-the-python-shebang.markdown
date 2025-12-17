@@ -41,9 +41,9 @@ an error when this happens by supplying the switch '-tt' to the interpreter.
 This is why all Python code that I write now begins with the following
 [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line...
 
-{% highlight python %}
+```python
 #!/usr/bin/env python -tt -Wall
-{% endhighlight %}
+```
 
 I hope that is of some use to somebody.
 
