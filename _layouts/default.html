@@ -283,7 +283,7 @@
       </p>
     </footer>
 
-    <script src="{{ site.url }}/assets/js/mobile-menu.js"></script>
+    <script src="{{ site.url }}/assets/js/mobile-menu.min.js"></script>
     <script>
       // Simple lazy loading for images with .lazy class
       if ('IntersectionObserver' in window) {
@@ -304,11 +304,11 @@
       }
     </script>
     {% if page.url == '/blog/' %}
-      <script src="{{ site.url }}/assets/js/blog-entry-flash.js"></script>
+      <script src="{{ site.url }}/assets/js/blog-entry-flash.min.js"></script>
       <script>
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker
-            .register("/blog-entry-sw.js", { scope: "/blog/" })
+            .register("/blog-entry-sw.min.js", { scope: "/blog/" })
             .catch(function (error) {
               if (window && window.console && console.error) {
                 console.error("Service worker registration failed", error);
@@ -318,7 +318,7 @@
       </script>
     {% endif %}
     {% if page.url == '/404.html' %}
-      <script src="{{ site.url }}/assets/js/404.js"></script>
+      <script src="{{ site.url }}/assets/js/404.min.js"></script>
     {% endif %}
   </body>
 </html>

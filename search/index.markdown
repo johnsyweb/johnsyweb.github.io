@@ -25,5 +25,5 @@ og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 
 <link rel="stylesheet" href="{{ '/assets/pagefind/pagefind-ui.css' | relative_url }}" />
 <script src="{{ '/assets/pagefind/pagefind-ui.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/search.min.js' | relative_url }}" defer></script>
 
