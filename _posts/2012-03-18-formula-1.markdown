@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Formula 1
+date: 2012-03-18
+updated_at: 2025-12-17
 redirect_from:
 - "/bit.ly/pajf1x2/"
 - "/l/f1x2/"
@@ -27,7 +29,7 @@ I booked my ticket for this year's Melbourne Grand Prix back in July of last
 year and didn't give it another thought until I got a phone call from the
 Australian Grand Prix Corporation on a Friday morning in September. They told me
 that I've won a ride in the 2-seater F1 car at the 2012 Grand Prix weekend
-(subject to some Ts &amp; Cs) just for buying a ticket. I nearly fell off my
+(subject to some T&Cs) just for buying a ticket. I nearly fell off my
 chair. I couldn't believe it.
 
 
@@ -37,26 +39,26 @@ Skip forward to this weekend.
 It's dark at 6 o'clock on Saturday morning at Albert Park when I'm greeted by
 our host at the circuit and presented with a ground pass that says, "Minardi 2
 Seater Passenger" and some ear plugs. After signing my life away (gulp), I'm
-taken to the garage to have a look around the cars. There are a few photos
-[here](https://www.flickr.com/photos/johnsyweb/tags/f1x2/).
+taken to the garage to have a look around the cars. There are a few
+[F1x2 photos on Flickr][f1x2].
 
 Shortly after taking a few snaps, I'm led out to get changed into my fireproof
-outfit and am told that there are two drivers, [Cam McConville](https://en.wikipedia.org/wiki/Cameron_McConville)
+outfit and am told that there are two drivers, [Cam McConville][cam]
 and [Zsolt
-Baumgartner](https://en.wikipedia.org/wiki/Zsolt_Baumgartner). Zsolt, I am told, does not hold back with passengers and
+Baumgartner][zsolt]. Zsolt, I am told, does not hold back with passengers and
 goes full-pelt from the word "Go", whereas Cam would ease them in gently. Guess
 who was driving me!
 
 
-In pit-lane I'm taken to the car, where [Minardi](https://en.wikipedia.org/wiki/Minardi) boss [Paul Stoddart](https://en.wikipedia.org/wiki/Paul_Stoddart) explains
-to me how to get in, how I'd be strapped in and also the [Dead man's switch](https://en.wikipedia.org/wiki/Dead_man's_switch),
+In pit-lane I'm taken to the car, where [Minardi][minardi] boss [Paul Stoddart][paul-stoddart] explains
+to me how to get in, how I'd be strapped in and also the [dead man's switch][deadman],
 should I succumb to the immense g-forces to which my body would be exposed in
 the minutes ahead. Paul helped me secure my helmet and gloves and I was ready to
 go.
 
 
 Stepping into the car was a dream come true. I was absolutely thrilled to be
-there. [My visor fogged up](https://www.facebook.com/media/set/?set=a.371600602861814.85468.100000356313462&amp;type=1&amp;l=f12f31fe0c) as the team tightened the race harness around me.
+there. [My visor fogged up][visor] as the team tightened the race harness around me.
 There was no moving now, my body is now one with the car with just my lower arms
 and my head afforded any movement and my left hand was gripping the dead man's
 switch for all it was worth (if I let go, then engine would cut out).
@@ -73,7 +75,7 @@ travelling at such velocity so quickly. I wasn't forced back into my seat as I
 might have expected: the harness was that tight!
 
 
-&quot;Oh my word, I'm in a Formula 1 car!&quot; I think I said aloud as we
+"Oh my word, I'm in a Formula 1 car!" I think I said aloud as we
 reached the end of the pit lane. It was exhilarating and felt a bit like the
 initial buzz when an extreme roller-coaster sets off. But then we were out on
 track...
@@ -82,13 +84,13 @@ track...
 Zsolt Baumgartner changed up through the gears in a heartbeat. And I thought
 we'd gone quickly in the pit lane, that was _nothing_! We were
 travelling at amazing speeds along [Aughtie
-Drive](https://g.co/maps/cfkvf) and then _bam_!
+Drive][aughtie-map] and then _bam_!
 
 
 It was a bit like receiving a slap to the back of the head, followed by a thump
 to the face as my helmet hit the padding at the back of the driver's seat. We'd
-reached Turn 1 already and Zolt had applied the brakes, I suddenly realised.
-&quot;Unbelievable&quot;! We turned sharp right and then left through Turn 2
+reached Turn 1 already and Zsolt had applied the brakes, I suddenly realised.
+"Unbelievable"! We turned sharp right and then left through Turn 2
 and then the power is back on...
 
 
@@ -109,7 +111,7 @@ in a Formula 1 car!
 The three sharp corners at the Southern end of the circuit try to hurl my head
 out of the car, but my neck works hard to keep it attached to my body and before
 I have time to think any further about it, the main straight is right there and
-Zolt's heavy right foot is flat to the floor taking us back to Turn One at
+Zsolt's heavy right foot is flat to the floor taking us back to Turn One at
 Ludicrous Speed.
 
 
@@ -127,7 +129,7 @@ buzzing as the car is pushed back to its start position, jacked up and the
 engine stopped.
 
 
-&quot;Amazing!&quot;, I say to anyone who'll listen as I vacate the seat for the
+"Amazing!", I say to anyone who'll listen as I vacate the seat for the
 next lucky passenger. It took me hours to come down from that high.
 
 [![Vacating the Seat]({{ site.baseurl }}{% link /images/2012-03-18-formula-1.jpg %})](https://flic.kr/p/buDwnY)
@@ -140,10 +142,31 @@ putting together such a package!
 
 
 [The rest of the four
-days](https://www.flickr.com/photos/johnsyweb/collections/72157629253526604/) at
+days][flickr-collection] at
 the Melbourne Grand Prix were great, but somehow less significant than those few
 minutes where I _really_ got to experience Formula 1 first hand.
 
 
 I'll certainly be booking early for the 2013 Australian Formula 1 Grand Prix!
+
+[f1x2]: https://www.flickr.com/photos/johnsyweb/tags/f1x2/
+[cam]: https://en.wikipedia.org/wiki/Cameron_McConville
+[zsolt]: https://en.wikipedia.org/wiki/Zsolt_Baumgartner
+[minardi]: https://en.wikipedia.org/wiki/Minardi
+[paul-stoddart]: https://en.wikipedia.org/wiki/Paul_Stoddart
+[deadman]: https://en.wikipedia.org/wiki/Dead_man's_switch
+[visor]: https://www.facebook.com/media/set/?set=a.371600602861814.85468.100000356313462&type=1&l=f12f31fe0c
+[aughtie-map]: https://www.google.com.au/maps/place/Aughtie+Dr,+Melbourne+VIC/@-37.8468226,144.9636844,1253m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6ad6680e6a834823:0x2a47482021897ab4!8m2!3d-37.8468226!4d144.9662593!16s%2Fg%2F1tczqhmc?hl=en&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D
+[flickr-collection]: https://www.flickr.com/photos/johnsyweb/collections/72157629253526604/
+
+
+[f1x2]: https://www.flickr.com/photos/johnsyweb/tags/f1x2/
+[cam]: https://en.wikipedia.org/wiki/Cameron_McConville
+[zsolt]: https://en.wikipedia.org/wiki/Zsolt_Baumgartner
+[minardi]: https://en.wikipedia.org/wiki/Minardi
+[paul-stoddart]: https://en.wikipedia.org/wiki/Paul_Stoddart
+[deadman]: https://en.wikipedia.org/wiki/Dead_man's_switch
+[visor]: https://www.facebook.com/media/set/?set=a.371600602861814.85468.100000356313462&type=1&l=f12f31fe0c
+[aughtie-map]: https://maps.app.goo.gl/AYfguLfSin7Q5R7bA
+[flickr-collection]: https://www.flickr.com/photos/johnsyweb/collections/72157629253526604/
 
