@@ -15,7 +15,7 @@ A complete waste of cyberspace.
 - 2025-12-15: [Accessible colours beat Solarized (and why that matters)](https://johnsy.com/blog/2025/12/15/accessible-colours-over-solarized/)
 - 2025-12-08: [National Crossword Solvers Day](https://johnsy.com/blog/2025/12/08/national-crossword-solvers-day/)
 - 2025-12-01: [Forty-two](https://johnsy.com/blog/2025/12/01/forty-two/)
-- 2025-11-29: [Counterpoints to "Comparison is the Thief of Joy"](https://johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
+- 2025-11-29: [Counterpoints to &ldquo;Comparison is the Thief of Joy&rdquo;](https://johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
 - 2025-11-06: [Foretoken — parkrun finish tokens on your phone](https://johnsy.com/blog/2025/11/06/foretoken/)
 - 2025-11-04: [Switching to Atkinson Hyperlegible](https://johnsy.com/blog/2025/11/04/switching-to-atkinson-hyperlegible/)
 - 2025-10-19: [What Running 10 Marathons Taught Me About Being a Social Media Influencer](https://johnsy.com/blog/2025/10/19/what-running-10-marathons-taught-me-about-being-a-social-media-influencer/)
