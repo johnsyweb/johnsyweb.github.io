@@ -14,3 +14,9 @@ pnpm-lock.yaml
 
 # Lighthouse CI outputs
 .lighthouseci/
+
+# Auto-generated test files
+style-test.markdown
+
+# HTMLProofer cache
+html-proofer-cache.json
