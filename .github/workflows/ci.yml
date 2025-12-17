@@ -122,10 +122,9 @@ jobs:
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
 
-      - name: Run HTMLProofer to populate cache
+      - name: Run HTMLProofer validation (populate cache)
         continue-on-error: true
-        run: |
-          bundle exec htmlproofer --allow-hash-href ./_site || true
+        run: bundle exec rake test || true
 
       - name: Generate external link status report and annotations
         run: |

@@ -301,7 +301,7 @@ task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] d
 end
 
 desc 'Check external links for expiration (requires current cache)'
-task :check_external_links => :build do
+task :check_external_links => :test do
   require 'json'
   require 'time'
   
@@ -309,7 +309,7 @@ task :check_external_links => :build do
   
   unless File.exist?(cache_file)
     puts "Cache file not found at #{cache_file}"
-    puts "Run a test first to populate the cache: bundle exec rake test"
+    puts "Cache should have been populated by the :test task"
     return
   end
   
