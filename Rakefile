@@ -353,10 +353,18 @@ task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] d
   puts "✓ All style accessibility checks passed (light and dark modes)!"
 end
 
-desc 'Check external links for expiration (requires current cache)'
-task :check_external_links => :validate_html do
+desc 'Check external links for expiration (runs validate_html unless SKIP_VALIDATE_HTML=1)'
+task :check_external_links do
   require 'json'
   require 'time'
+
+  unless ENV['SKIP_VALIDATE_HTML']
+    begin
+      Rake::Task['validate_html'].invoke
+    rescue StandardError, SystemExit => e
+      puts "validate_html failed (continuing to parse cache): #{e.message}"
+    end
+  end
   
   cache_file = "./tmp/html-proofer-cache/html-proofer-cache.json"
   
@@ -367,6 +375,13 @@ task :check_external_links => :validate_html do
   end
   
   cache_data = JSON.parse(File.read(cache_file))
+
+  # html-proofer v4 nests links under "external"; older caches were flat
+  link_cache = if cache_data.key?("external") && cache_data["external"].is_a?(Hash)
+                 cache_data["external"]
+               else
+                 cache_data
+               end
   
   links_by_status = {
     ok: [],
@@ -375,39 +390,36 @@ task :check_external_links => :validate_html do
     old: []
   }
   
-  cache_data.each do |url, data|
-    next if url.include?("localhost") || url.include?("127.0.0.1")
+  link_cache.each do |url, data|
+    # Skip localhost/self-references and non-hash entries (e.g. version metadata)
+    next if url.include?("localhost") || url.include?("127.0.0.1") || !data.is_a?(Hash)
     
-    # Handle case where data is a string (URL) instead of hash
-    next unless data.is_a?(Hash)
+    # html-proofer uses status_code; fall back to legacy status
+    status = data["status_code"] || data["status"]
+    status = status.to_i if status
+    next unless data["time"] && status
+
+    check_time = Time.parse(data["time"])
+    age = [Time.now - check_time, 0].max
+    age_days = (age / 86400.0).round(1)
+
+    link_info = { url: url, status: status, age: age_days, metadata: data["metadata"] }
     
-    if data["time"]
-      check_time = Time.parse(data["time"])
-      age = Time.now - check_time
-      age_days = (age / 86400).round(1)
-      status = data["status"] || "unknown"
-      
-      case status
-      when 200
-        # Link is currently working
-        if age_days > 7
-          links_by_status[:old] << { url: url, status: status, age: age_days }
-        else
-          links_by_status[:ok] << { url: url, status: status, age: age_days }
-        end
-      when 0, 999, 999999
-        # Unknown or network error - likely expired
-        links_by_status[:expired] << { url: url, status: status, age: age_days }
-      when 301, 302, 303, 307, 308
-        # Redirects - may need updating
-        links_by_status[:error] << { url: url, status: status, age: age_days, type: "redirect" }
-      when 404, 410
-        # Not found or gone - should be removed
-        links_by_status[:error] << { url: url, status: status, age: age_days, type: "missing" }
+    case status
+    when 200
+      if age_days > 7
+        links_by_status[:old] << link_info
       else
-        # Other status codes
-        links_by_status[:error] << { url: url, status: status, age: age_days, type: "error" }
+        links_by_status[:ok] << link_info
       end
+    when 0, 999, 999999
+      links_by_status[:expired] << link_info
+    when 301, 302, 303, 307, 308
+      links_by_status[:error] << link_info.merge(type: "redirect")
+    when 404, 410
+      links_by_status[:error] << link_info.merge(type: "missing")
+    else
+      links_by_status[:error] << link_info.merge(type: "error")
     end
   end
   
@@ -428,7 +440,7 @@ task :check_external_links => :validate_html do
       }
     }
     puts JSON.generate(report)
-    return
+    next
   end
   
   # Print human-readable report
