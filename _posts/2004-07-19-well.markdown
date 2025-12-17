@@ -1,45 +1,30 @@
 ---
 layout: post
 title: Well...
+date: 2004-07-19 00:00:00
+updated_at: 2025-12-17
 ---
 
 I have left it so long since I last blogged, that I forget all of the trivial
 things that I wanted to mention. Hey, ho. Less fat, more lean.
 
-
-I shall just witter about <a href="https://www.guilfest.co.uk/2004/">GuilFest
-2004</a>, if that is alright with you. And even if it isn't. GuilFest was my
+I shall just witter about [GuilFest 2004][guilfest], if that is alright with you. And even if it isn't. GuilFest was my
 first ever music festival experience, which is odd given the amount of gigs
 that I have been to. I have to say that, despite the obvious lack of wife, I
 enjoyed every minute of the festival.
 
+Gratuitous links to the bands that to which I bore witness now follow (please
+hover over the links for my brief thought snippets):
 
-Gratuitous links to the bands that to which I bore witness now follow [please
-hover over the links for my brief thought snippets]:
-
-<ul>
-<li><a href="https://www.hotclubofcowtown.com/"
-title="[I'm not sure where Cow Town is, but these guys were good!]">Hot Club of Cowtown</a></li>
-<li><a title="[If you listen to one new track this summer, make it Average Man]"
-href="https://www.simplekid.com/">Simple Kid</a></li>
-<li><a title="[I'm afraid I was very disappointed by Ms. Harry and her band]"
-href="https://www.blondie.net/">Blondie</a></li>
-<li><a title="[Rolf is, without doubt, one of the greatest of all entertainers!]"
-href="https://www.rolfharris.com/">Rolf Harris</a> (featuring Miss
-Given, ladies and Gentlemen!)</li>
-<li><a title="[Perfect music for a Summer afternoon]"
-href="https://www.timbooth.co.uk/">Tim Booth And The
-Individuals</a></li>
-<li><a title="[If you imagine an angel singing, you will hear Katie Melua]"
-href="https://www.katiemelua.com/">Katie Melua</a></li>
-<li><a title="[I was never a huge fan. This weekend changed nothing]"
-href="https://www.simpleminds.com/">Simple Minds</a></li>
-<li><a title="[Wonderful, wonderful! I'll be seeing these guys again!]"
-href="https://www.ukuleleorchestra.com/">The Ukulele Orchestra of Great
-Britain</a></li>
-<li><a title="[Top flight Oirish entertainment]"
-href="https://sawdoctors.com/">The Saw Doctors</a></li>
-</ul>
+- [Hot Club of Cowtown][hotclub]
+- [Simple Kid][simplekid]
+- [Blondie][blondie]
+- [Rolf Harris][rolf] (featuring Miss Given, ladies and Gentlemen!)
+- [Tim Booth And The Individuals][timbooth]
+- [Katie Melua][katiemelua]
+- [Simple Minds][simpleminds]
+- [The Ukulele Orchestra of Great Britain][ukulele]
+- [The Saw Doctors][sawdoctors]
 
 I was in good company for the weekend, with oft-stars of this blog, Messrs.
 Dean and Mayes by my side. They picked us a good (if not slightly sloped)
@@ -50,19 +35,23 @@ the quality of the plumbing facilities that were on offer at GuilFest. Hats
 off to the organisers there. I should have kept my hat on, mind, the
 forehead's looking a tad red today!
 
-
 A fine variety of rapid cuisine was available all weekend. I ate some of the
 finest Jerk Chicken (with hot pickled cucumber) that I have ever eaten. The
 rest of the food was good, too!
 
-
 The highlight for me, was seeing Rolf live! That and hurtling groundwards at
-60 miles per hour on the
-<a href="https://www.wrigley.co.uk/airwaves/dropzone/">Wrigley's Airwaves Drop
-Zone</a>.
-
+60 miles per hour on the [Wrigley's Airwaves Drop Zone][airwaves].
 
 I'm quite keen that this will not have been my last music festival.
 
-
-
+[guilfest]: https://web.archive.org/web/20040604123838/http://www.guilfest.co.uk/2004/
+[hotclub]: https://www.hotclubofcowtown.com/ "I'm not sure where Cow Town is, but these guys were good!"
+[simplekid]: https://www.simplekid.com/ "If you listen to one new track this summer, make it Average Man"
+[blondie]: https://www.blondie.net/ "I'm afraid I was very disappointed by Ms. Harry and her band"
+[rolf]: https://www.rolfharris.com/ "Rolf is, without doubt, one of the greatest of all entertainers!"
+[timbooth]: https://www.timbooth.co.uk/ "Perfect music for a Summer afternoon"
+[katiemelua]: https://www.katiemelua.com/ "If you imagine an angel singing, you will hear Katie Melua"
+[simpleminds]: https://www.simpleminds.com/ "I was never a huge fan. This weekend changed nothing"
+[ukulele]: https://www.ukuleleorchestra.com/ "Wonderful, wonderful! I'll be seeing these guys again!"
+[sawdoctors]: https://sawdoctors.com/ "Top flight Oirish entertainment"
+[airwaves]: https://www.wrigley.co.uk/airwaves/dropzone/
