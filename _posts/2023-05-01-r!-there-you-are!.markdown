@@ -41,7 +41,7 @@ Test passed 🥇
 
 ## That's what I like
 
-It took me a few days to really get a feel for R. All variables being vectors takes a little getting used to when you've programmed in many languages that all have scalars by default but once you've got your head around that it's kind of nice not to have to write loops for common tasks (especially after all of the boilerplate code [in Go last month](/blog/2023/03/30/mechanical-march/)! Want to multiply everything in vector `v` by two?
+It took me a few days to really get a feel for R. All variables being vectors takes a little getting used to when you've programmed in many languages that all have scalars by default but once you've got your head around that it's kind of nice not to have to write loops for common tasks (especially after all of the boilerplate code [in Go last month]({% post_url 2023-03-30-mechanical-march %})! Want to multiply everything in vector `v` by two?
 
 ```R
 > v

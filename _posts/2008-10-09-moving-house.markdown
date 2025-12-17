@@ -5,7 +5,7 @@ title: Moving House
 
 
 
-[![Little Boxes by Johnsyweb, on Flickr](https://farm4.static.flickr.com/3037/2925582443_d8189012dc_t.jpg "Little Boxes by Johnsyweb, on Flickr")](https://www.flickr.com/photos/johnsyweb/2925582443/")
+[![Little Boxes by Johnsyweb, on Flickr](https://farm4.static.flickr.com/3037/2925582443_d8189012dc_t.jpg "Little Boxes by Johnsyweb, on Flickr")](https://www.flickr.com/photos/johnsyweb/2925582443/)
 
 Life is in boxes; about fifty boxes of purest cardboard. The removalists came
 this morning and in three hours the lovely apartment in which we have lived for

@@ -89,11 +89,48 @@ jobs:
           name: jekyll-build
           path: ./_site
 
-      - name: Validate HTML
-        uses: anishathalye/proof-html@v2
+      - name: Run HTML validation and create annotations
         continue-on-error: true
+        run: |
+          set +e
+          docker run --rm \
+            -v "${PWD}/_site:/site" \
+            ghcr.io/validator/validator:latest \
+            vnu --errors-only --skip-non-html \
+            /site 2>&1 | bash scripts/html_validation_annotations.sh
+          exit 0
+
+  check-external-links:
+    runs-on: ubuntu-latest
+    needs: test
+    continue-on-error: true
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
         with:
-          directory: ./_site
+          name: jekyll-build
+          path: ./_site
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run HTMLProofer validation (populate cache)
+        continue-on-error: true
+        run: bundle exec rake validate_html || true
+
+      - name: Generate external link status report and annotations
+        run: |
+          set +e
+          JSON_OUTPUT=1 bundle exec rake check_external_links 2>&1 | ruby scripts/external_links_annotations.rb
+          exit 0
 
   lighthouse-light:
     runs-on: ubuntu-latest
@@ -154,3 +191,87 @@ jobs:
           LH_EXIT=$?
           bash scripts/lighthouse_annotations.sh .lighthouseci/manifest.json dark || true
           exit $LH_EXIT
+
+  build-search-index:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Ensure scripts executable
+        run: chmod +x scripts/update_search.sh
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Refresh search index
+        run: ./scripts/update_search.sh
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          if git diff --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "chore: refresh search index [skip ci]"
+          git push
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [test, validate-feeds, validate-html, lighthouse-light, lighthouse-dark, build-search-index]
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Install Ruby gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Rebuild Jekyll site with updated search index
+        env:
+          SKIP_IMAGE_OPTIMIZATION: "true"
+        run: |
+          bundle exec rake generate_style_test minify_css
+          bundle exec jekyll build
+
+      - name: Upload artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

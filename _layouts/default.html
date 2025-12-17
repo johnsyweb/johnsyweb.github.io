@@ -18,8 +18,6 @@
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
     <link rel="manifest" href="/manifest.json" />
 
-    <meta http-equiv="Window-Target" content="_top" />
-    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
     {% assign page_description = page.description | default: site.description %}
     {% assign page_keywords = page.keywords %}
@@ -269,7 +267,7 @@
       <p>
         Copyright &copy; 2000-{{ site.time | date: '%Y' }}
         <a rel="author" href="{{ site.url }}/about/"
-          ><em><acronym title="Peter Alexander Johns">paj</acronym></em></a
+          ><em><abbr title="Peter Alexander Johns">paj</abbr></em></a
         >
         (<a
           rel="me"
@@ -285,7 +283,7 @@
       </p>
     </footer>
 
-    <script src="{{ site.url }}/assets/js/mobile-menu.js"></script>
+    <script src="{{ site.url }}/assets/js/mobile-menu.min.js"></script>
     <script>
       // Simple lazy loading for images with .lazy class
       if ('IntersectionObserver' in window) {
@@ -306,11 +304,11 @@
       }
     </script>
     {% if page.url == '/blog/' %}
-      <script src="{{ site.url }}/assets/js/blog-entry-flash.js"></script>
+      <script src="{{ site.url }}/assets/js/blog-entry-flash.min.js"></script>
       <script>
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker
-            .register("/blog-entry-sw.js", { scope: "/blog/" })
+            .register("/blog-entry-sw.min.js", { scope: "/blog/" })
             .catch(function (error) {
               if (window && window.console && console.error) {
                 console.error("Service worker registration failed", error);
@@ -320,7 +318,7 @@
       </script>
     {% endif %}
     {% if page.url == '/404.html' %}
-      <script src="{{ site.url }}/assets/js/404.js"></script>
+      <script src="{{ site.url }}/assets/js/404.min.js"></script>
     {% endif %}
   </body>
 </html>

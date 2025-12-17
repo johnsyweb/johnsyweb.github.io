@@ -56,6 +56,7 @@ exclude:
   - README.md
   - node_modules/
   - scripts/
+  - tmp/
   - vendor/
   - .lighthouseci/
   - .lighthouserc*.json

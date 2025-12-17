@@ -61,7 +61,7 @@ earphones and decided that rather than wake them up tearing the house apart to
 find the earphones, I'd try running without them. I'd heard that people run
 better without music. All I could hear as I ran along my usual route was the
 wheezing of an old bloke who'd overindulged over the long weekend. It was
-horrible and I vowed <a name="vow"></a>never to run without music again.
+horrible and I vowed <span id="vow"></span>never to run without music again.
 
 For most of the Couch to 5K, Kirsty had been on at me to sign up for a run, the
 [Mother’s Day Classic](https://www.mothersdayclassic.com.au/). The MDC includes a
@@ -294,7 +294,7 @@ pain-free. That Saturday I did a slow return to my home parkrun. Again,
 pain-free. I'd wanted to run the 10 km Christmas Run at Albert Park, but the
 physio advised me to stick to 5 km as a limit for now and so I ran [my best-ever
 5 km](https://www.strava.com/activities/228015874/overview) at Emma and Tom's
-[Christmas Run](Emma and Tom's Christmas Run 2014): 0:24:10.3. I did a couple
+Christmas Run 2014: 0:24:10.3. I did a couple
 more runs in Australia before heading to the UK for Christmas.
 
 On Christmas Eve I did [my first ever run on British
