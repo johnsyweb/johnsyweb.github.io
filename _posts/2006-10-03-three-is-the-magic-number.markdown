@@ -1,20 +1,19 @@
 ---
 layout: post
 title: Three is the Magic Number
-updated: 2025-11-09
+date: 2006-10-03
+updated_at: 2025-12-17
 ---
 
-Most of yesterday was spent setting up
-([virtual](https://www.vmware.com/products/server/))
-[Linux](https://www.novell.com/linux/) servers, at work. This reminded me that
-some time ago I published a list of that I couldn't live
-without on a PC. My list for Linux / Unix is much shorter:
+Most of yesterday was spent setting up ([virtual][vmware]) [Linux][linux] 
+servers, at work. This reminded me that some time ago I published a list of 
+that I couldn't live without on a PC. My list for Linux / Unix is much shorter:
 
-1. [Vim](https://vim.org/) (of course)
-1. [Zsh](https://zsh.sunsite.dk/)
-1. [GNU Screen](https://www.gnu.org/software/screen/)
-1. [w3m](https://www.w3m.org/)
-1. [Mutt](https://www.mutt.org/)
+1. [Vim][vim] (of course)
+1. [Zsh][zsh]
+1. [GNU Screen][screen]
+1. [w3m][w3m]
+1. [Mutt][mutt]
 
 That's about it.
 
@@ -34,6 +33,14 @@ responses back within minutes (presumably because you are all nosey buggers and
 wanted to see my photos). Amusingly, none of my friends who were on Ringo before
 me have uploaded any photographs whatsoever, which is fair enough because
 neither have I (except the standard profile one)! I think I shall be sticking
-with [Flickr](https://www.flickr.com/photos/johnsyweb/) for the foreseeable
-future.
+with [Flickr][flickr] for the foreseeable future.
+
+[vmware]: https://en.wikipedia.org/wiki/VMware_Server
+[linux]: https://en.wikipedia.org/wiki/SUSE_Linux
+[vim]: https://www.vim.org/
+[zsh]: https://www.zsh.org/
+[screen]: https://www.gnu.org/software/screen/
+[w3m]: https://w3m.sourceforge.net/
+[mutt]: http://www.mutt.org/
+[flickr]: https://www.flickr.com/photos/johnsyweb/
 
