@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Comments Are Lies!
+date: 2012-10-31
+updated_at: 2025-12-17
 redirect_from:
  - /blog/entry/20121031130012
 ---
@@ -19,7 +21,6 @@ friends, _Clean Code_ is what I want to see!
 
 
 [Robert C. "Uncle Bob" Martin](https://en.wikipedia.org/wiki/Robert_Cecil_Martin)
-[(more than)](https://coding.derkeiler.com/Archive/General/comp.object/2004-06/0342.html)
 once declared: [_Comments are lies_](https://agilepractices2010.blogspot.com.au/2010/06/solid-principles-of-object-oriented.html).
 He is (partially) right!
 
@@ -28,8 +29,7 @@ He is (partially) right!
 Here is some code from a project at my workplace. I've changed some of the names
 to protect the guilty but otherwise this is genuine:
 
-
-{% highlight c++ %}
+```cpp
 //  --------------------------------------------------------------------------
 //  Method Name:        CProtocolField::setValue
 //  Definition:         This method sets the value attribute of the CProtocolField.
@@ -56,7 +56,7 @@ to protect the guilty but otherwise this is genuine:
         myBuffer = NULL;
     }
 //  --------------------------------------------------------------------------
-{% endhighlight %}
+```
 
 
 Ignore the terrible formatting, variable names and call to
@@ -114,15 +114,14 @@ documents that you can execute at any time.
 
 
 
-I said that Uncle Bob was only &quot;partially&quot; right. The comments below
+I said that Uncle Bob was only "partially" right. The comments below
 (from the same code-base) tell the truth, the whole truth and nothing but the
 truth:
 
 
 {% highlight c++ %}
 //////////////////////////////////////////////////////////////////////////////
-//
-// Function Name:   ExcCxlCached::~ExcCxlCached()
+```cpp
 //
 // Definition:      Destructor for the ExcCxlCached class
 //
@@ -142,7 +141,7 @@ ExcCxlCached::~ExcCxlCached()
 {
 // Nothing to do here
 }
-{% endhighlight %}
+```
 
 
 Eighteen lines of comments for a destructor (that is _obviously_ a
@@ -165,10 +164,9 @@ _meaning_ into your identifiers. Or writing unit tests.
 
 For this reason I have the following mapping in my `.vimrc`:
 
-
-{% highlight vim %}
+```vim
 nnoremap <Leader>ic :<C-U>highlight! link Comment Ignore<CR>
-{% endhighlight %}
+```
 
 
 This makes it very easy for me to hide the lies and the noise and
@@ -177,6 +175,8 @@ concentrate on the _code_!
 
 
 Remember: Comments are a failure to express yourself clearly in your code. [Clean Code: A Handbook of Agile
-Software Craftsmanship (Robert C. Martin) ](https://tinyurl.com/CleanCodeBook) is recommended reading on the
+Software Craftsmanship (Robert C. Martin)][clean-code] is recommended reading on the
 matter.
+
+[clean-code]: https://en.wikipedia.org/wiki/Clean_Code
 
