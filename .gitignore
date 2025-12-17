@@ -20,3 +20,7 @@ style-test.markdown
 
 # HTMLProofer cache
 html-proofer-cache.json
+
+# Minified assets (generated during build)
+*.min.css
+*.min.js

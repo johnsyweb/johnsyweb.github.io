@@ -86,7 +86,34 @@ task :minify_css do
   end
 end
 
-task :build => [:generate_style_test, :minify_css] do
+desc 'Minify JavaScript assets for production'
+task :minify_js do
+  # Ensure pnpm is available (managed via mise from .tool-versions)
+  unless system('which pnpm > /dev/null 2>&1')
+    raise "pnpm not found. Run 'mise install' to set up toolchain."
+  end
+
+  # Install dependencies if they are missing (terser)
+  unless File.exist?('node_modules/.bin/terser')
+    puts "Installing Node.js dependencies for minification..."
+    raise "Failed to install Node.js dependencies" unless system('pnpm install')
+  end
+
+  js_files = [
+    'assets/js/404.js',
+    'assets/js/blog-entry-flash.js',
+    'assets/js/mobile-menu.js',
+    'assets/js/search.js',
+    'blog-entry-sw.js'
+  ]
+
+  js_files.each do |source|
+    destination = source.sub(/\.js$/, '.min.js')
+    sh "pnpm exec terser #{source} --compress --mangle -o #{destination}"
+  end
+end
+
+task :build => [:generate_style_test, :minify_css, :minify_js] do
   sh "bundle exec jekyll build"
 end
 
