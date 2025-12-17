@@ -28,15 +28,31 @@ rescue JSON::ParserError => e
   exit 0
 end
 
-summary = report['summary'] || {}
 links = report['links'] || {}
+summary = report['summary'] || {
+  'expired' => (links['expired'] || []).length,
+  'error' => (links['error'] || []).length,
+  'old' => (links['old'] || []).length
+}
+
+def emit_annotation(level, title, message, metadata)
+  location = ''
+  if metadata.is_a?(Array)
+    first = metadata.first
+    if first.is_a?(Hash) && first['filename']
+      location = " file=#{first['filename']}"
+      location += ",line=#{first['line']}" if first['line']
+    end
+  end
+  puts "::#{level}#{location} title=#{title}::#{message}"
+end
 
 # Generate annotations for expired links
 (links['expired'] || []).each do |link|
   url = link['url']
   status = link['status']
   age = link['age']
-  puts "::warning title=External Link Expired::HTTP #{status} #{url} (cached #{age} days ago)"
+  emit_annotation('warning', 'External Link Expired', "HTTP #{status} #{url} (cached #{age} days ago)", link['metadata'])
 end
 
 # Generate annotations for error links
@@ -48,11 +64,11 @@ end
   
   case type
   when 'missing'
-    puts "::error title=External Link Missing::HTTP #{status} #{url} - link should be removed (cached #{age} days ago)"
+    emit_annotation('error', 'External Link Missing', "HTTP #{status} #{url} - link should be removed (cached #{age} days ago)", link['metadata'])
   when 'redirect'
-    puts "::warning title=External Link Redirects::HTTP #{status} #{url} - may need updating (cached #{age} days ago)"
+    emit_annotation('warning', 'External Link Redirects', "HTTP #{status} #{url} - may need updating (cached #{age} days ago)", link['metadata'])
   else
-    puts "::warning title=External Link Error::HTTP #{status} #{url} (cached #{age} days ago)"
+    emit_annotation('warning', 'External Link Error', "HTTP #{status} #{url} (cached #{age} days ago)", link['metadata'])
   end
 end
 
@@ -60,13 +76,13 @@ end
 (links['old'] || []).each do |link|
   url = link['url']
   age = link['age']
-  puts "::notice title=External Link Not Rechecked::#{url} - not verified for #{age} days"
+  emit_annotation('notice', 'External Link Not Rechecked', "#{url} - not verified for #{age} days", link['metadata'])
 end
 
 # Generate summary annotation
-expired_count = (links['expired'] || []).length
-error_count = (links['error'] || []).length
-old_count = (links['old'] || []).length
+expired_count = summary['expired'] || (links['expired'] || []).length
+error_count = summary['error'] || (links['error'] || []).length
+old_count = summary['old'] || (links['old'] || []).length
 total_issues = expired_count + error_count
 
 if total_issues > 0
