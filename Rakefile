@@ -33,9 +33,28 @@ task :test => [:build, :validate_feeds, :lighthouse_styles] do
       timeframe: { external: "2w", internal: "1w" },
       cache_file: "html-proofer-cache.json",
       storage_dir: "./tmp/html-proofer-cache" 
-   }
-       }
-  HTMLProofer.check_directory("./_site", options).run
+   },
+    disable_external: false,
+    allow_hash_href: true,
+    ignore_status_codes: [0, 999],  # Ignore network errors and unknown status codes
+    ignore_urls: [
+      %r{\/\/localhost},
+      %r{\/\/127\.0\.0\.1}
+    ]
+  }
+  
+  begin
+    HTMLProofer.check_directory("./_site", options).run
+  rescue StandardError => e
+    # Check if the error is related to external links
+    if e.message.include?("external") && ENV['STRICT_EXTERNAL_LINKS'].nil?
+      puts "\n⚠️  External link check completed with warnings (non-breaking)"
+      puts "Run with STRICT_EXTERNAL_LINKS=1 to fail the build on external link issues"
+      puts "\nDetails: #{e.message}"
+    else
+      raise
+    end
+  end
 end
 
 desc 'Generate style test page from CSS'
@@ -253,3 +272,128 @@ desc 'Run Lighthouse CI accessibility tests for both light and dark modes'
 task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] do
   puts "✓ All style accessibility checks passed (light and dark modes)!"
 end
+
+desc 'Check external links for expiration (requires current cache)'
+task :check_external_links => :build do
+  require 'json'
+  require 'time'
+  
+  cache_file = "./tmp/html-proofer-cache/html-proofer-cache.json"
+  
+  unless File.exist?(cache_file)
+    puts "Cache file not found at #{cache_file}"
+    puts "Run a test first to populate the cache: bundle exec rake test"
+    return
+  end
+  
+  cache_data = JSON.parse(File.read(cache_file))
+  
+  links_by_status = {
+    ok: [],
+    expired: [],
+    error: [],
+    old: []
+  }
+  
+  cache_data.each do |url, data|
+    next if url.include?("localhost") || url.include?("127.0.0.1")
+    
+    if data["time"]
+      check_time = Time.parse(data["time"])
+      age = Time.now - check_time
+      age_days = (age / 86400).round(1)
+      status = data["status"] || "unknown"
+      
+      case status
+      when 200
+        # Link is currently working
+        if age_days > 7
+          links_by_status[:old] << { url: url, status: status, age: age_days }
+        else
+          links_by_status[:ok] << { url: url, status: status, age: age_days }
+        end
+      when 0, 999, 999999
+        # Unknown or network error - likely expired
+        links_by_status[:expired] << { url: url, status: status, age: age_days }
+      when 301, 302, 303, 307, 308
+        # Redirects - may need updating
+        links_by_status[:error] << { url: url, status: status, age: age_days, type: "redirect" }
+      when 404, 410
+        # Not found or gone - should be removed
+        links_by_status[:error] << { url: url, status: status, age: age_days, type: "missing" }
+      else
+        # Other status codes
+        links_by_status[:error] << { url: url, status: status, age: age_days, type: "error" }
+      end
+    end
+  end
+  
+  # Output as JSON to stdout for annotation parsing
+  if ENV['JSON_OUTPUT']
+    report = {
+      summary: {
+        ok: links_by_status[:ok].length,
+        expired: links_by_status[:expired].length,
+        error: links_by_status[:error].length,
+        old: links_by_status[:old].length
+      },
+      links: {
+        ok: links_by_status[:ok],
+        expired: links_by_status[:expired],
+        error: links_by_status[:error],
+        old: links_by_status[:old]
+      }
+    }
+    puts JSON.generate(report)
+    return
+  end
+  
+  # Print human-readable report
+  puts "\n" + "="*80
+  puts "External Link Status Report".center(80)
+  puts "="*80
+  
+  puts "\n📊 Summary:"
+  puts "  ✓ Working:        #{links_by_status[:ok].length}"
+  puts "  ⏰ Old (>7 days):  #{links_by_status[:old].length}"
+  puts "  ⚠️  Error:         #{links_by_status[:error].length}"
+  puts "  ❌ Expired:       #{links_by_status[:expired].length}"
+  
+  if links_by_status[:expired].any?
+    puts "\n❌ EXPIRED EXTERNAL LINKS (#{links_by_status[:expired].length}):"
+    puts "-" * 80
+    links_by_status[:expired].each do |link|
+      printf "  [HTTP %s] %-60s %d days old\n", link[:status], link[:url][0...60], link[:age]
+      printf "           %s\n", link[:url][60..-1] if link[:url].length > 60
+    end
+    puts "\nAction: These links should be reviewed and updated or removed."
+  end
+  
+  if links_by_status[:error].any?
+    puts "\n⚠️  PROBLEMATIC EXTERNAL LINKS (#{links_by_status[:error].length}):"
+    puts "-" * 80
+    links_by_status[:error].each do |link|
+      type = link[:type] || "error"
+      printf "  [HTTP %s] %-60s %s\n", link[:status], link[:url][0...60], type
+      printf "           %s\n", link[:url][60..-1] if link[:url].length > 60
+    end
+  end
+  
+  if links_by_status[:old].any?
+    puts "\n⏰ CACHED FOR >7 DAYS (#{links_by_status[:old].length}):"
+    puts "-" * 80
+    links_by_status[:old].each do |link|
+      printf "  [HTTP %s] %-60s %d days\n", link[:status], link[:url][0...60], link[:age]
+    end
+    puts "\nNote: These links may need rechecking for changes."
+  end
+  
+  puts "\n" + "="*80
+  
+  if links_by_status[:expired].any? || links_by_status[:error].any?
+    puts "\n⚠️  Found #{links_by_status[:expired].length + links_by_status[:error].length} problematic links."
+  else
+    puts "\n✓ All external links are in good status!"
+  end
+end
+

@@ -115,7 +115,7 @@ def calculate_contrast(color1, color2):
 
 ## H2: Text Formatting and Special Elements
 
-Text with <abbr title="abbreviation">abbreviations</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> elements.
+Text with <abbr title="abbreviation">abbreviations</abbr> and <acronym title="Cascading Style Sheets">CSS</acronym> elements.
 
 Superscript: E = mc<sup>2</sup>, x<sup>n</sup>
 
@@ -136,7 +136,7 @@ Subscript: H<sub>2</sub>O, CO<sub>2</sub>
 ## H2: Article Meta Information
 
 <div class="meta">
-Posted on 15 December 2025 by <em><abbr title="Peter Alexander Johns">paj</abbr></em>
+Posted on 15 December 2025 by <em><acronym title="Peter Alexander Johns">paj</acronym></em>
 </div>
 
 <p><small>Meta information uses font-size: 0.85em, font-style: italic</small></p>
@@ -175,7 +175,7 @@ Posted on 15 December 2025 by <em><abbr title="Peter Alexander Johns">paj</abbr>
 ### Light Mode Colors
 
 
-**`@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)`**
+**`@media (prefers-color-scheme: light)`**
 
 - background-color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#fafafa;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#fafafa</code>
 - color: <span style="display:inline-block;width:0.9em;height:0.9em;background:#212121;border:1px solid currentColor;vertical-align:middle;margin-right:0.3em"></span><code>#212121</code>
@@ -751,6 +751,6 @@ All color and font combinations on this page must meet WCAG AA standards:
 - Focus indicators must be visible
 - Color should not be the only means of conveying information
 
-**Generated**: 2025-12-15 09:44:59 UTC  
+**Generated**: 2025-12-17 02:25:09 UTC  
 **Source**: `scripts/generate_style_test.rb`  
 **Build fails if**: Any element on this page does not meet WCAG AA accessibility standards
