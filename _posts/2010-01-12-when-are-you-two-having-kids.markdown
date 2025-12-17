@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '"When are you two having kids?"'
+title: '&ldquo;When are you two having kids?&rdquo;'
 ---
 
 
