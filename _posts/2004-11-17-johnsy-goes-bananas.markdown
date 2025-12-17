@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Johnsy Goes Bananas
-updated: 2025-11-09
+date: 2004-11-17
+updated_at: 2025-12-17
 ---
 
 A few words, if I may (and I may), about a concert we enjoyed last night.
 
-The evening started off with bitter, bitter disappointment as we arrived at the venue shortly after the advertised door-opening time and long before the advertised showtime. It was when we were collecting our tickets that we were to discover that [Dean Howard][dean-howard] had already finished their set and that [Thunder][thunder-home] were taking to the stage. I had been looking forward to this gig for quite some time, so I was quite browned off to miss Dave's live performance.
+The evening started off with bitter, bitter disappointment as we arrived at the venue shortly after the advertised door-opening time and long before the advertised showtime. It was when we were collecting our tickets that we were to discover that [Dean Howard][dean-howard] had already finished their set and that [Thunder][thunder] were taking to the stage. I had been looking forward to this gig for quite some time, so I was quite browned off to miss Dave's live performance.
 
-Thunder's short set was very good indeed. In fact, I now quite fancy seeing them at one of [their own gigs][thunder-gigs].
+Thunder's short set was very good indeed. In fact, I now quite fancy seeing them at one of their own gigs.
 
 [Peter Frampton][peter-frampton] has never really been 'my bag', I have to say. I was quite tempted to sit in the (smoke free) bar during his set, but thought better of it. I have to say that I was really very impressed at the quality of the music. The tribute to the Men of Black Watch was touching and his encore, _While My Guitar Gently Weeps_, was absolutely superb!
 
@@ -32,5 +33,4 @@ Deep Purple are without a doubt one of the greatest rock bands of all time. Seei
 [perfect-strangers]: https://www.amazon.co.uk/exec/obidos/ASIN/B00000JBFW/johnsydotorg-21/
 [roger-glover]: https://www.rogerglover.com/
 [steve-morse]: https://www.stevemorse.com/
-[thunder-gigs]: https://www.thunderonline.com/thunder/gigs/
-[thunder-home]: https://www.thunderonline.com/
+[thunder]: https://en.wikipedia.org/wiki/Thunder_(band)
