@@ -57,6 +57,37 @@ task :test => [:build, :validate_feeds, :lighthouse_styles] do
   end
 end
 
+desc 'Run HTMLProofer validation with caching (for external link checking)'
+task :validate_html => :build do
+  require "html-proofer"
+  
+  options = { 
+    cache: 
+    { 
+      timeframe: { external: "2w", internal: "1w" },
+      cache_file: "html-proofer-cache.json",
+      storage_dir: "./tmp/html-proofer-cache" 
+   },
+    disable_external: false,
+    allow_hash_href: true,
+    ignore_status_codes: [0, 999],
+    ignore_urls: [
+      %r{\/\/localhost},
+      %r{\/\/127\.0\.0\.1}
+    ]
+  }
+  
+  begin
+    HTMLProofer.check_directory("./_site", options).run
+  rescue StandardError => e
+    if e.message.include?("external") && ENV['STRICT_EXTERNAL_LINKS'].nil?
+      puts "\n⚠️  HTML validation completed with external link warnings (non-breaking)"
+    else
+      raise
+    end
+  end
+end
+
 desc 'Generate style test page from CSS'
 task :generate_style_test do
   sh "ruby scripts/generate_style_test.rb"
@@ -301,7 +332,7 @@ task :lighthouse_styles => [:lighthouse_styles_light, :lighthouse_styles_dark] d
 end
 
 desc 'Check external links for expiration (requires current cache)'
-task :check_external_links => :test do
+task :check_external_links => :validate_html do
   require 'json'
   require 'time'
   

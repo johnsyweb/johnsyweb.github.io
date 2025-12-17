@@ -124,7 +124,7 @@ jobs:
 
       - name: Run HTMLProofer validation (populate cache)
         continue-on-error: true
-        run: bundle exec rake test || true
+        run: bundle exec rake validate_html || true
 
       - name: Generate external link status report and annotations
         run: |
