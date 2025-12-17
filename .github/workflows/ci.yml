@@ -125,8 +125,7 @@ jobs:
       - name: Run HTMLProofer to populate cache
         continue-on-error: true
         run: |
-          bundle exec htmlproofer --disable-external=false --allow-hash-href ./_site \
-            --cache '{"timeframe":{"external":"2w","internal":"1w"},"storage_dir":"./tmp/html-proofer-cache"}' || true
+          bundle exec htmlproofer --allow-hash-href ./_site || true
 
       - name: Generate external link status report and annotations
         run: |
