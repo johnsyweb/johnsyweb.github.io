@@ -30,9 +30,7 @@ jobs:
       - name: Run build and pre-checks
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
-        run: |
-          bundle exec rake generate_style_test minify_css
-          bundle exec jekyll build
+        run: bundle exec rake build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v6
@@ -195,6 +193,7 @@ jobs:
   build-search-index:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [test, validate-feeds, validate-html, check-external-links, lighthouse-light, lighthouse-dark]
     permissions:
       contents: write
     steps:
@@ -212,8 +211,8 @@ jobs:
       - name: Ensure scripts executable
         run: chmod +x scripts/update_search.sh
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      - name: Build Jekyll site (minified assets)
+        run: bundle exec rake build
 
       - name: Refresh search index
         run: ./scripts/update_search.sh
@@ -239,7 +238,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: [test, validate-feeds, validate-html, lighthouse-light, lighthouse-dark, build-search-index]
+    needs: build-search-index
     permissions:
       pages: write
       id-token: write
@@ -263,9 +262,7 @@ jobs:
       - name: Rebuild Jekyll site with updated search index
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
-        run: |
-          bundle exec rake generate_style_test minify_css
-          bundle exec jekyll build
+        run: bundle exec rake build
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
