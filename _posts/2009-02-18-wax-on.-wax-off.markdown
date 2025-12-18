@@ -28,7 +28,7 @@ Facebook][bbc].
 Frankly, I can't stand the site, as I demonstrated by [deleting my Facebook
 account][facebook-delete] last month.
 
-[shave]: {% post_url 2009-02-15-please-sponsor-me-in-world's-greatest-shave-2009 %}
+[shave]: {% post_url 2009-02-15-please-sponsor-me-in-world-s-greatest-shave-2009 %}
 [bbc]: https://www.bbc.co.uk/blogs/technology/2009/02/facebook_still_showing_growing.html
 [facebook-delete]: {% post_url 2008-12-27-facebook-no-more %}
 
