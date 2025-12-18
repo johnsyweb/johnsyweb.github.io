@@ -11,9 +11,9 @@ rather than yours), a Python one-liner for converting an ASCII string to
 hexadecimal pairs.
 
 
-{% highlight python %}
+```python
 to_hex = lambda s: ' '.join(['%02X' % ord(ch) for ch in s])
-{% endhighlight %}
+```
 
 
 As you were...

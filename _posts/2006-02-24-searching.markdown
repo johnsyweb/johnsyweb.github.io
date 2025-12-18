@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Searching
+date: 2006-02-24 00:00:00.000000000 +11:00
+updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
 
@@ -33,7 +35,7 @@ The Commonwealth Games.
 
 
 Finding potential places to live is easy. Websites like
-[RealEstate.com.au](https://www.realestate.com.au/) facilitate finding properties
+[realestate.com.au][rea] facilitate finding properties
 that match our requirements and our budget. The agents, themselves, however seem
 to be trained in preventing people renting their landlords' flats and houses.
 When we were letting out the house in Crawley, we found the market to be biased
@@ -69,7 +71,7 @@ in question, they picked someone else.
 We figured that we would probably stand a better chance of being chosen to pay
 rent if we put two incomes on the application form instead of just _K_'s. As
 such, the search for my next employer began yesterday. There are plenty of
-positions on [Seek](https://www.seek.com.au/) that I'm capable of filling and I
+positions on [SEEK][seek] that I'm capable of filling and I
 have spent some time writing to the relevant companies and recruitment agencies
 to apply for them. As nice as the idea of being a kept man in one of the World's
 most beautiful countries is, after a little under two months I found myself
@@ -89,6 +91,9 @@ arrival in Melbourne and visit a number of potential dwellings. Sunday will be,
 as the Good Lord intended, a day of rest. Now, though, the weekend has landed so
 I can leave the applications in the relevant mailboxes and concentrate on
 drinking cold beer and eating barbecued food.
+
+[rea]: https://www.realestate.com.au/
+[seek]: https://www.seek.com.au/
 
 
 

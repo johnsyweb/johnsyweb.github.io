@@ -1,42 +1,39 @@
 ---
 layout: post
 title: CIFS
+date: 2008-04-27 00:00:00.000000000 +10:00
+updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
-This weekend I have upgraded my old laptop to run Ubuntu 8.04 ([Hardy
-Heron](https://wiki.ubuntu.com/HardyHeron)). The experience was suitably
+This weekend I have upgraded my old laptop to run Ubuntu 8.04 ([Hardy Heron][hardy-heron]). The experience was suitably
 painless and Hardy is running smoothly. Since I've had my MacBook Pro, I've
-hardly opened the lid on the old laptop, it has just sat (reasonably) quietly in
-the corner of the room listening for [SSH](https://www.openssh.org/) connections
+harely opened the lid on the old laptop, it has just sat (reasonably) quietly in
+the corner of the room listening for [SSH][ssh] connections
 and performing downloads for me.
 
-Under Hardy's predecessor, [Gutsy Gibbon](https://wiki.ubuntu.com/GutsyGibbon)
-the connection to our <abbr title="Home Theatre PC">HTPC</abbr> (which is
-still running [Windows XP Media Center
-Edition](https://www.microsoft.com/windowsxp/mediacenter/default.mspx)) had been
+Under Hardy's predecessor, [Gutsy Gibbon][gutsy-gibbon]
+the connection to our Home Theatre PC (HTPC) (which is
+still running [Windows XP Media Center Edition][xp-media]) had been
 a little flaky, which meant that often I would transfer files between the two
-using an [SD
-card](https://www.sandisk.com/Products/Item(1853)-Shipping%20in%20October-SanDisk_Ultra_II_SD_Plus_USB_2GB.aspx)
-rather than simply copying them using <a title="SMB filesystem"
-href="https://samba.org/samba/smbfs/">smbfs</a>.
+using an [SD card][sd-card]
+rather than simply copying them using [smbfs][smbfs] (SMB filesystem).
 
 It turns out that smbfs has been deprecated in Hardy and the time has come for
-me to move over to <a href="https://linux-cifs.samba.org/" title="Common Internet
-File System">CIFS</a>. This was actually pretty simple, but I understand some
+me to move over to [CIFS][cifs] (Common Internet File System). This was actually pretty simple, but I understand some
 people have struggled with the conversion, so I thought I'd document what I did
 here.
 
 1. Unmount the old smbfs mounts for the last time:
 
-{% highlight sh %}
+```sh
 sudo umount -at smbfs
-{% endhighlight %}
+```
 
 1. Grant all users full access to the mount point:
 
-{% highlight sh %}
+```sh
 chmod 777 /media/<mountpoint>
-{% endhighlight %}
+```
 
 1. Update `/etc/fstab` to use `cifs` rather than `smbfs`, changing the
 _mask_s to _modes_ and ensuring that the octal modes have
@@ -44,26 +41,34 @@ leading zeros, thus.
 
 ## Before:
 
-{% highlight kconfig %}
+```kconfig
 //server/share     /media/mountpoint        smbfs
 auto,credentials=/etc/smbcredentials,workgroup=WORKGROUP,gid=smb,uid=1000,fmask=770,dmask=770,rw 
 0       0
-{% endhighlight %}
+```
 
 
 ## After:
 
-{% highlight kconfig %}
+```kconfig
 //server/share     /media/mountpoint        _cifs_
 auto,credentials=/etc/smbcredentials,workgroup=WORKGROUP,gid=smb,uid=1000,_file_mode_=_0_770,_dir_mode_=_0_770,rw
 0       0
-{% endhighlight %}
+```
 
 1. Mount the CIFS mounts:
 
-{% highlight sh %}
+```sh
 sudo mount -vat cifs
-{% endhighlight %}
+```
 
 And that's it: fast and easy!
+
+[hardy-heron]: https://wiki.ubuntu.com/HardyHeron
+[ssh]: https://www.openssh.org/
+[gutsy-gibbon]: https://wiki.ubuntu.com/GutsyGibbon
+[xp-media]: https://en.wikipedia.org/wiki/Windows_Media_Center
+[sd-card]: https://en.wikipedia.org/wiki/SD_card
+[smbfs]: https://samba.org/samba/smbfs/
+[cifs]: https://linux-cifs.samba.org/
 

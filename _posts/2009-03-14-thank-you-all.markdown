@@ -1,21 +1,20 @@
 ---
 layout: post
 title: 'Thank you, all. #wgs'
+date: 2009-03-14 00:00:00.000000000 +11:00
+updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
-I realise that I have been harping on about [Leukaemia
-Foundation](https://www.leukaemia.org.au/web/index.php)'s [World's Greatest
-Shave](https://www.worldsgreatestshave.com/) a lot over the past four weeks. It's
-all done and dusted now and so I justed wanted to wrap up with a thank you to
+I realise that I have been harping on about [Leukaemia Foundation][leukaemia] and [World's Greatest Shave][wgs] a lot over the past four weeks. It's
+all done and dusted now and so I just wanted to wrap up with a thank you to
 everyone who supported me, particularly in the past 24 hours.
 
 
 When I woke up yesterday morning, I was anxious about the day ahead. Having
 never had my legs waxed, I was concerned about the pain that lay ahead,
-particularly given the very hairy nature of my legs. At 12:30, I went to [Claire
-Fran&ccedil;oise](https://www.clairefrancoise.com.au/)'s salon and after a brief
+particularly given the very hairy nature of my legs. At 12:30, I went to [Claire Francoise][cf-salon]'s salon and after a brief
 wait was led to a little room with a couch and a bucket of hot wax.
-[_K_](https://thribble.blogspot.com.au/) came in too, to take some photographs
+[K][kirsty] came in too, to take some photographs
 for you people, which I will upload later today.
 
 
@@ -40,3 +39,7 @@ You've kindly donated $2,120 to the Leukaemia Foundation. I'm extremely grateful
 for your generosity. And now, I have to concentrate on hair growth ahead of my
 brother's wedding in Swindon, England on 12 June. Thank you very much.
 
+[wgs]: https://www.worldsgreatestshave.com/
+[leukaemia]: https://www.leukaemia.org.au/
+[cf-salon]: https://www.clairefrancoise.com.au/
+[kirsty]: https://thribble.blogspot.com.au/

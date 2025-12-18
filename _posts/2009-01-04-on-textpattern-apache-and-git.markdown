@@ -26,13 +26,13 @@ Pro, with just one AllowOverride line needed in
 `/private/etc/apache2/extra/httpd-vhosts.conf`...
 
 
-{% highlight apacheconf %}
+```apache
 <Directory "/path/to/website">
     Order Deny,Allow 
     Allow from all 
     AllowOverride FileInfo
 </Directory>
-{% endhighlight %}
+```
 
 
 Incidentally, I'm keeping both `/path/to/website` and `/private/etc/apache2`

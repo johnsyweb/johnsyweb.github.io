@@ -1,31 +1,28 @@
 ---
 layout: post
 title: World's Greatest Shave Update
+date: 2009-03-04 00:00:00.000000000 +11:00
+updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
-[<img src="https://johnsy.com/images/logo_wgs.gif"
-alt="Leukaemia Foundation World's Greatest Shave"
-title="Leukaemia Foundation World's Greatest Shave"
-height="150"
-/>](https://www.worldsgreatestshave.com/)
-
+[![Leukaemia Foundation World's Greatest Shave][wgs-logo]][wgs]
 
 Last week, after I hit the $1,000 target that would mean that I have to wax my
-legs, [I mentioned](/blog/2009/02/22/how-to-shave/) that I am dreading it. I've
+legs, [I mentioned]({% post_url 2009-02-22-how-to-shave %}) that I am dreading it. I've
 been hearing many tales of home-waxing and also have had the scene from [The 40
-Year Old Virgin](https://www.imdb.com/title/tt0405422/) recounted to me more
+Year Old Virgin][40yo-virgin] recounted to me more
 times than I would like.
 
 Yesterday evening I had a very nice email from
-[Claire Fran&ccedil;oise](https://www.clairefrancoise.com.au/),
+[Claire Francoise][cf-salon],
 telling me that her studio would love to be a part of the
-[World's Greatest Shave](https://www.worldsgreatestshave.com/) and
+[World's Greatest Shave][wgs] and
 that they would be more than happy to inflict 'pain' on me for the sake of a
 good cause.
 
-[![Claire Fran&ccedil;oise Salon](https://johnsy.com/images/logo_cfs.gif "Claire Fran&ccedil;oise Salon")](https://www.clairefrancoise.com.au/)
+[![Claire Francoise Salon][cf-logo]][cf-salon]
 
-Since the [Claire Fran&ccedil;oise Salon](https://www.clairefrancoise.com.au/) is
+Since the [Claire Francoise Salon][cf-salon] is
 only a few blocks away from my office, I can pop by in my lunch break next
 Friday for the dreaded waxing.
 
@@ -33,14 +30,16 @@ This has calmed my nerves a little, knowing that professionals are on the
 case. I promise to take some photos of the event and to blog of my first waxing
 experience. I'm sure it shall be an experience.
 
-According to the total on [my profile
-page](https://my.imisfriendraising.com.au/personalPage.aspx?SID=54895), my arms
-and chest are still safe but there are still ten days to go, so you still have
-time to [sponsor
-me](https://secure.imisfriendraising.com.au/registrant/donate.aspx?EventID=9529&amp;LangPref=en-CA&amp;SPID=1239819).
+More donations have been coming in. You can still [support men's health causes][wgs].
 
 Now I must think about how to execute the head shave... I'm open to suggestions!
 
 Thank you all, once more, for your amazing support. I really am very
 appreciative.
+
+[wgs-logo]: https://johnsy.com/images/logo_wgs.gif
+[wgs]: https://www.worldsgreatestshave.com/
+[cf-logo]: https://johnsy.com/images/logo_cfs.gif
+[cf-salon]: https://www.clairefrancoise.com.au/
+[40yo-virgin]: https://www.imdb.com/title/tt0405422/
 
