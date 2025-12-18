@@ -2,16 +2,17 @@
 layout: post
 category: running
 title: 2019 Sandy Point 10km
-date: 2019-09-08  7:27:26
+date: 2019-09-08 07:27:26.000000000 +10:00
+updated_at: 2025-12-18 00:00:00 +10:00
 ---
 
-This weekend I completed my first 10km road race since June 2016. It wasn't a [personal best time for the distance](https://en-gb.smashrun.com/johnsyweb/run/4931619) nor was it [my longest run](https://en-gb.smashrun.com/johnsyweb/run/2018/11/4), but I finished the event feeling more proud than I've felt in any running event. To understand why, I have to cast my mind back to [February 2014](https://bitly.com/my-year-of-running#february) when our then three-year-old would leave me breathless running after him around the local park. I started doing the Couch to 5K programme to give me a hope of keeping up with him as he got faster and faster.
+This weekend I completed my first 10km road race since June 2016. It wasn't a personal best time for the distance nor was it my longest run, but I finished the event feeling more proud than I've felt in any running event. To understand why, I have to cast my mind back to [February 2014]({% post_url 2015-03-01-my-year-of-running %}) when our then three-year-old would leave me breathless running after him around the local park. I started doing the Couch to 5K programme to give me a hope of keeping up with him as he got faster and faster.
 
-Five-and-a-half years later, [I've come to really enjoy running](/bit.ly/dingodash) and have completed [six official marathons](https://www.flickr.com/photos/johnsyweb/45124466135/). In 2019 I wanted to focus less on events and more on running with my family; after all, they were the reason for taking up the sport in the first place. This year I've done a couple of parkruns with D(5) and we've had plenty of parkrun adventures with him in the pram while his brother was enjoying [Little Athletics](https://www.coburglac.com.au/) over the Summer months. I've also run 16 parkruns with E(9), notably the New Year's Day double at Coburg and Darebin and his 50th parkrun at Foster (24:48). These two events were milestones as I realised that I would (again) have to start working hard to keep up with E and I started participating in track training at [my local athletics club](https://www.coburgharriers.org.au/training/) to give myself a hope of keeping him within arms' reach until he's old enough to run by himself at parkrun (eleven years old). The New Year double gave us the idea that we might run a 10km race together this year.
+ Five-and-a-half years later, [I've come to really enjoy running]({% post_url 2018-08-17-dingo-dash %}) and have completed [six official marathons][marathons]. In 2019 I wanted to focus less on events and more on running with my family; after all, they were the reason for taking up the sport in the first place. This year I've done a couple of parkruns with D(5) and we've had plenty of parkrun adventures with him in the pram while his brother was enjoying [Little Athletics][lac] over the Summer months. I've also run 16 parkruns with E(9), notably the New Year's Day double at Coburg and Darebin and his 50th parkrun at Foster (24:48). These two events were milestones as I realised that I would (again) have to start working hard to keep up with E and I started participating in track training at [my local athletics club][harriers] to give myself a hope of keeping him within arms' reach until he's old enough to run by himself at parkrun (eleven years old). The New Year double gave us the idea that we might run a 10km race together this year.
 
 And so there we are... E's first 10km race! He was excited when I woke him up. On our way to the start line he said he'd like to finish in about 1 hour 15 minutes, which I thought was easily achievable. I had said to K that I'd expect us to finish somewhere between 55 and 65 minutes.
 
-[![It's cold but we're ready to go!](https://live.staticflickr.com/65535/48697280241_e1f732b188_n.jpg)](https://flic.kr/p/2hcdhQ2).
+[![It's cold but we're ready to go!][race-start-img]][race-start]
 
 We found ourselves near the front of the starting pen. Probably a little too far forward so we kept ourselves to the left, out of the way. The race started and we found ourselves running at a very comfortable pace; we completed the first kilometre in five-and-a-half minutes. My estimated finish time didn't look unreasonable. The course was ever-so-slightly uphill from here and E found himself settling into a pace closer to six minutes per kilometre, which was great. We went with that and I checked in from time-to-time that he was comfortable. He certainly wasn't out of breath. We reached the half-way point, and turnaround, at 31 minutes. Still in the window of my prediction. At half-way E seemed to get a bit of an energy boost, perhaps from reaching the 5km marker, perhaps because we were heading back downhill, but he certainly picked up the pace a little. The 60 minute pacer passed us at about this point and I said to E to keep his head up and follow that balloon. He stopped at the drink station, as he had at the two previously and caught me up effortlessly as I kept the pace. The next few kilometres ticked by pretty easily but I could see he was starting to fade a little. 
 
@@ -19,12 +20,23 @@ As we hit 8km, I commented, "It's 8 o'clock on a Sunday morning, what does that 
 
 "8 minutes, let's go!", he replied and took off like a rocket. E's junior parkrun PB is 8:35. The ninth kilometre was our fastest of the run, 4:48. I wasn't expecting that. We had breezed past the 60 minute pacer and were on our way to the finish. E kept close to a 5 min/km pace for the last kilometre and as we approached the end I could see that the official clock was on 59 minutes something. "Push hard!" and he did, leaving nothing on the track E pushed hard to finish his first 10km run in 59:43.3.
 
-[![Pushing Hard to Cross the Line before the Hour](https://live.staticflickr.com/65535/48696939838_787739dc12_n.jpg)](https://flic.kr/p/2hcbxD1)
+[![Pushing Hard to Cross the Line before the Hour][finish-img]][finish]
 
 And that is why I have such a big grin on my face. I'm a very proud parent right now and am looking forward to sharing more runs with the kids.
 
-[![Medals](https://live.staticflickr.com/65535/48697457412_87895c7de0_n.jpg)](https://flic.kr/p/2hcecuG)
+[![Medals][medals-img]][medals]
 
-[See the details on Smashrun](https://en-gb.smashrun.com/johnsyweb/run/2019/9/8).
+[See the details on Smashrun][smashrun-race].
 
 Back in England my Mum ran her first 10km on the same day. Doubly-proud!
+
+[marathons]: https://www.flickr.com/photos/johnsyweb/45124466135/
+[lac]: https://www.coburglac.com.au/
+[harriers]: https://www.coburgharriers.org.au/coachingtraining
+[race-start-img]: https://live.staticflickr.com/65535/48697280241_e1f732b188_n.jpg
+[race-start]: https://flic.kr/p/2hcdhQ2
+[finish-img]: https://live.staticflickr.com/65535/48696939838_787739dc12_n.jpg
+[finish]: https://flic.kr/p/2hcbxD1
+[medals-img]: https://live.staticflickr.com/65535/48697457412_87895c7de0_n.jpg
+[medals]: https://flic.kr/p/2hcecuG
+[smashrun-race]: https://en-gb.smashrun.com/johnsyweb/run/2019/9/8
