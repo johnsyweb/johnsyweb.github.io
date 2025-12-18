@@ -36,7 +36,7 @@ task :test => [:build, :validate_feeds, :lighthouse_styles] do
    },
     disable_external: false,
     allow_hash_href: true,
-    ignore_status_codes: [0, 999],  # Ignore network errors and unknown status codes
+    ignore_status_codes: [0, 202, 999],  # Ignore network errors, async 202 responses, and unknown status codes
     ignore_urls: [
       %r{\/\/localhost},
       %r{\/\/127\.0\.0\.1},
@@ -72,7 +72,7 @@ task :validate_html => :build do
    },
     disable_external: false,
     allow_hash_href: true,
-    ignore_status_codes: [0, 999],
+    ignore_status_codes: [0, 202, 999],
     ignore_urls: [
       %r{\/\/localhost},
       %r{\/\/127\.0\.0\.1},
@@ -410,7 +410,7 @@ task :check_external_links do
     link_info = { url: url, status: status, age: age_days, metadata: data["metadata"] }
     
     case status
-    when 200
+    when 200, 202
       if age_days > 7
         links_by_status[:old] << link_info
       else
