@@ -3,6 +3,7 @@ layout: post
 category: running
 title: Running to Work
 date: 2019-03-25 12:29:12.000000000 +11:00
+updated_at: 2025-12-18 00:00:00 +11:00
 redirect_from:
 - "/bit.ly/running-to-work/"
 - "/l/running-to-work/"
@@ -23,23 +24,32 @@ On Thursdays I bring my clothes and toiletries to work in a holdall or small sui
 
 ## Carrying stuff
 
-I'm often on-call for work and need to keep my laptop (a [12-inch MacBook](https://www.apple.com/au/macbook/)) close by. I think I've been "paged" twice in three years of run commutes.
+I'm often on-call for work and need to keep my laptop (a [12-inch MacBook][macbook]) close by. I think I've been "paged" twice in three years of run commutes.
 
-The light but powerful MacBook sits snuggly in the place of the removable reservoir in my [Skycrane 2L hydration backpack](https://www.caribee.com/products/skycrane-2l-hydration-backpack). This backpack is absolutely ideal for my run commutes, it stays in place while I'm running and has sufficient storage space for my laptop, phone, keys, wallet, glasses and a jacket for after the run on the cooler mornings. It also has loops to which I can attach a pair of [Million Mile Light V2](https://flipbelt.com/Million-Mile-Light) units so that I can be seen by other trail and footpath users on those dark winter mornings.
+The light but powerful MacBook sits snuggly in the place of the removable reservoir in my [Skycrane 2L hydration backpack][skycrane]. This backpack is absolutely ideal for my run commutes, it stays in place while I'm running and has sufficient storage space for my laptop, phone, keys, wallet, glasses and a jacket for after the run on the cooler mornings. It also has loops to which I can attach a pair of [Million Mile Light V2][flipbelt] units so that I can be seen by other trail and footpath users on those dark winter mornings.
 
 ## Motivation
 
-It doesn't take a lot of motivation to run through the Melbourne Spring or Autumn... those mornings are the best. The hot Summer mornings can be more of a struggle and when it's freezing cold and dark through the Winter it can be very difficult to get out of bed! My motivation for these mornings is simple, I promise my [Merri Creek Running Club](https://merricreekrunning.club/) friends that I'll meet them at a pre-arranged time and place via our [WhatsApp](https://www.whatsapp.com/) group the night before and that's enough to get me out the door on time!
+It doesn't take a lot of motivation to run through the Melbourne Spring or Autumn... those mornings are the best. The hot Summer mornings can be more of a struggle and when it's freezing cold and dark through the Winter it can be very difficult to get out of bed! My motivation for these mornings is simple, I promise my [Merri Creek Running Club][merri-creek] friends that I'll meet them at a pre-arranged time and place via our [WhatsApp][whatsapp] group the night before and that's enough to get me out the door on time!
 
 Running with friends makes the commute go so much faster, which is a bonus. We often finish our run at one of Melbourne's many excellent coffee shops for a post-run coffee (or gelati if we've run 21.1km or more, but that's another story).
 
-On the rare occasion that nobody is available to run, I know that my announcement in the group will mean somebody will be watching [Strava](https://www.strava.com/clubs/merricreekrc) to hold me accountable! For these mornings there are podcasts for company (and the [Apple AirPods](https://www.apple.com/au/airpods/) are splendid for running with).
+On the rare occasion that nobody is available to run, I know that my announcement in the group will mean somebody will be watching [Strava][strava] to hold me accountable! For these mornings there are podcasts for company (and the [Apple AirPods][airpods] are splendid for running with).
 
 ## Nutrition
 
-While I prefer to run fasted, I was advised by my GP not to do this. Over the past six months or so I have been eating a slice of toast or a banana about 30 minutes before leaving home. For the long runs (anything over two hours) I've been taking [bags of honey](https://youtu.be/lPdhw8NW3Pw) -- one bag per 30 minutes is my rule-of-thumb; I typically stop at a water fountain to have one of these.
+While I prefer to run fasted, I was advised by my GP not to do this. Over the past six months or so I have been eating a slice of toast or a banana about 30 minutes before leaving home. For the long runs (anything over two hours) I've been taking [bags of honey][honey] -- one bag per 30 minutes is my rule-of-thumb; I typically stop at a water fountain to have one of these.
 
 ## End-of-trip facilities
 
 Active commuting would not be possible without suitable facilities at my workplace. I'm very grateful that not only does my employer provide on-site showers but also has a laundered towel service. When I arrive at my desk after a run commute, I feel set to start a productive day -- far more so than the days where I've squeezed onto a crowded train.
+
+[macbook]: https://www.apple.com/au/macbook/
+[skycrane]: https://www.caribee.com/products/skycrane-2l-hydration-backpack
+[flipbelt]: https://flipbeltaustralia.com/products/million-mile-light-1
+[merri-creek]: https://merricreekrunning.club/
+[whatsapp]: https://www.whatsapp.com/
+[strava]: https://www.strava.com/clubs/merricreekrc
+[airpods]: https://www.apple.com/au/airpods/
+[honey]: https://youtu.be/lPdhw8NW3Pw
 
