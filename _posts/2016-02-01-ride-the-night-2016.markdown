@@ -2,28 +2,23 @@
 layout: post
 category: cycling 
 title: Ride The Night 2016 
-date: 2016-02-01 23:26:25 
+date: 2016-02-01 23:26:25.000000000 +11:00
+updated_at: 2025-12-18 00:00:00 +11:00
 --- 
 Having spent a lot of 2015 focussed on running, I thought it might
 be nice to do my first bike-based event in 2016 — I enjoy being out on my
-bikes and have often wondered how far I could go in a single outing. [My Strava
-profile](https://www.strava.com/athletes/5507469) says, "Made for distance, not
-for speed" and this applies equally to running as cycling (and probably
-swimming, too). I've no real desire to go as fast as I can on a bike, so races
-held no appeal. Part of the beauty of cycling, for me, is taking in the
-surroundings.
+bikes and have often wondered how far I could go in a single outing. I made a note to myself: "Made for distance, not for speed" and this applies equally to running as cycling (and probably swimming, too). I've no real desire to go as fast as I can on a bike, so races held no appeal. Part of the beauty of cycling, for me, is taking in the surroundings.
 
-[Ride The Night](https://ridethenight.org.au/melbourne2016/) ticked lots of boxes
+[Ride The Night][ridethenight] ticked lots of boxes
 for me: a chance to see our fair city by night in relative safety while covering
 a greater distance than I ever had covered before. A bonus of it being overnight
 was that I'd not be giving up a significant portion of a weekend with the kids
-as I had with [last year's
-marathon](https://johnsy.com/blog/2015/11/01/my-first-marathon/) and associated
+as I had with [last year's marathon][marathon] and associated
 training. Count me in!
 
 Last night was the night and after a night out in the City with <em>K</em>, I
 pedalled down to Albert Park for the start. There were a few spots of rain on
-[the short ride](https://www.strava.com/activities/482045488) in but as I
+the short ride in but as I
 entered Albert Park there was an almighty flash of lightning and then the
 heavens opened. I met with one of my colleagues in the pouring rain and waited
 while he grabbed his rider's pack. I was soaked though to the skin and the
@@ -85,7 +80,7 @@ past the MCG and the slippery boardwalks to Yarra Boulevard.
 Yarra Boulevard was closed to traffic, which made it feel particularly eerie.
 There was very little noise and all I could see were front and rear bicycle
 lights. I was a little concerned about not spotting
-[tacks](https://www.abc.net.au/news/2016-01-08/cyclists-tacks-yarra-boulevard-kew-vicroads/7072342)
+[tacks][tacks]
 in the darkness I only had two spare tubes and two CO2 canisters with me. Would
 that be enough? Thankfully, I made it the The Kevin Bartlett Reserve unscathed
 and I took my second break of the night. It was very muddy at the rest stop, so
@@ -135,7 +130,7 @@ flashing mode to try to conserve enough energy to get me home.
 
 I followed the CCT back past where we'd been earlier in the night. The marshals
 had all finished and left. I passed [the bicycle counter in
-Carlton](https://www.instagram.com/p/BBLCtJ8igq8/) which suggested 1,620 people
+Carlton][bike-counter] which suggested 1,620 people
 had been through since midnight. I suspect this means that about 1,400 people
 bailed in the rain.
 
@@ -152,13 +147,18 @@ be an interesting ride. I met a couple of early morning runners along the way
 and the footbridge at De Chene Reserve was almost impassable due to flood
 waters. My shoes are still drying out.
 
-It was [a great ride](https://www.strava.com/activities/482045663), I am glad I
-did it. I learned a lot about cycling and about myself and I'd maybe do the
+It was a great ride, I am glad I did it. I learned a lot about cycling and about myself and I'd maybe do the
 event again. I'll almost certainly not enter a competitive [gran
-fondo](https://en.wikipedia.org/wiki/Cyclosportive) but would like to take on a
+fondo][gran-fondo] but would like to take on a
 few long distance rides either solo or with friends for fun. Exercise-wise,
 riding 100km was a lot less effort than running a marathon and while it gave me
 a sense of achievement, it was nowhere near comparable to running.
 
 And that beat the snake as my biggest surprise of the night.
+
+[ridethenight]: https://ridethenight.org.au/melbourne2016/
+[marathon]: {% post_url 2015-11-01-my-first-marathon %}
+[bike-counter]: https://www.instagram.com/p/BBLCtJ8igq8/
+[tacks]: https://www.abc.net.au/news/2016-01-08/cyclists-tacks-yarra-boulevard-kew-vicroads/7072342
+[gran-fondo]: https://en.wikipedia.org/wiki/Cyclosportive
 
