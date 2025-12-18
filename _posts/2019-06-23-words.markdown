@@ -2,7 +2,8 @@
 layout: post
 category: lexicography
 title: Words
-date: 2019-06-23  6:28:49
+date: 2019-06-23 06:28:49.000000000 +10:00
+updated_at: 2025-12-18 00:00:00 +10:00
 ---
 
 A highlight at work recently wasn't directly work-related at all but a positive
@@ -18,9 +19,8 @@ I'd successfully weaned myself off that word and onto "folks" as a more
 inclusive address. Moving away from the gendered term "guys" to folks took a
 little conscious effort, for a short time, but soon became second-nature. It was
 on that day that one of the team shared a link to a presentation entitled
-[Sidestepping Ableist
-Language](https://www.friendlyediting.com/assets/notsoableist/index.html) by
-[Ashley Bischoff](https://twitter.com/FriendlyAshley) and viewing that
+[Sidestepping Ableist Language][ableist-lang] by
+[Ashley Bischoff][ashley] and viewing that
 presentation was a watershed moment for me. I'd say it was that day that I
 started to use the word "outlandish" instead of other ableist words, which were
 more prominent in my vocabulary. Again, it didn't take much time or effort for
@@ -32,14 +32,20 @@ difference to how included a member of a group feels.
 I still wish I had a broader vocabulary. 
 
 For years now, I've been subscribed to the
-[A.Word.A.Day](https://wordsmith.org/awad/) email. I remember the moment I read
-the word [petrichor](https://wordsmith.org/words/petrichor1.html) for the first
+[A.Word.A.Day][awad] email. I remember the moment I read
+the word [petrichor][petrichor] for the first
 time and how I nearly leaped out of my chair when I discovered that my favourite
 smell had a name! This is a great source of word knowledge.
 
 More recently, I've been enjoying listening to [Something Rhymes with
-Purple](https://play.acast.com/s/somethingrhymeswithpurple/), which is hugely
+Purple][srwp], which is hugely
 entertaining as well as educational.
 
 What's _your_ favourite source of new words?
+
+[ableist-lang]: https://www.friendlyediting.com/assets/notsoableist/index.html
+[ashley]: https://twitter.com/FriendlyAshley
+[awad]: https://wordsmith.org/awad/
+[petrichor]: https://wordsmith.org/words/petrichor1.html
+[srwp]: https://youtube.com/playlist?list=PLHBS5kcmZXcqxr1X_dPp0eyGILm4SfOAg&si=Y5b6yQKX2dl0Typ8
 
