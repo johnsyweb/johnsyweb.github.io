@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Movember
+date: 2011-10-19 00:00:00.000000000 +10:00
+updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
 Hi,
@@ -17,25 +19,18 @@ Why am I so passionate about men's health?
 - This year 20,000 new cases of the disease will be diagnosed
 - 1 in 8 men will experience depression in their lifetime
 
-I'm asking you to support my _Movember_ campaign by making a donation by either:
-
-- Donating online at: [https://mobro.co/johnsyweb](https://mobro.co/johnsyweb)
-- Writing a cheque payable to 'Movember,' referencing my Registration ID:
-  1467904 and mailing it to: Movember, PO Box 60, East Melbourne, VIC, 8002
+I'm asking you to support my _Movember_ campaign by making a donation. This campaign has since concluded, but you can always support [Movember Foundation's ongoing work][movember-foundation].
 
 Funds raised will help make a tangible difference to the lives of others.
 Through the _Movember_ Foundation and its men's health partners, the Prostate
-Cancer Foundation of Australia and beyondblue &emdash; the national depression
+Cancer Foundation of Australia and beyondblue — the national depression
 initiative, they are funding world class research, educational and support
 programs which would otherwise not be possible.
 
-If you'd like to find out more about the type of work you'd be helping to fund
-by supporting Movember, take a look at the Programs We Fund section on the
-Movember website: [https://au.movember.com/about](https://au.movember.com/about)
+If you'd like to find out more about the type of work being funded
+by supporting Movember, take a look at the [Movember website][movember-about].
 
-Thank you in advance for supporting my efforts to change the face of men's
-health. All donations over $2 are tax deductible.
+Thank you to all who supported men's health awareness.
 
-_--paj_
-
-Please donate at: [https://mobro.co/johnsyweb](https://mobro.co/johnsyweb)
+[movember-foundation]: https://movember.com/
+[movember-about]: https://au.movember.com/about
