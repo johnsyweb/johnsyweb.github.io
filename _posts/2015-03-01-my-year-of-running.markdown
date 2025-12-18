@@ -3,34 +3,32 @@ layout: post
 category: running
 title: My year of running
 date: 2015-03-02 02:04:31.000000000 +11:00
+updated_at: 2025-12-17 00:00:00 +11:00
 redirect_from:
 - "/blog/2015/03/01/my_year_of_running/"
 - "/blog/2015/03/02/my_year_of_running/"
 - "/bit.ly/my-year-of-running/"
 - "/l/my-year-of-running/"
 ---
-Today, [I ran](https://www.strava.com/activities/261246096) as part of a
-[Corporate Triathlon](https://corptriseries.com.au/melbourne) relay team with my
+Today, I ran as part of a Corporate Triathlon relay team with my
 amazing colleagues. Had you told me a year ago that I would be doing this, I'm
 not sure I would have believed you. This is the story of how I got there...
 
 ## February
 
-I'd never heard of "[Couch to
-5K](https://www.nhs.uk/Livewell/c25k/Pages/get-running-with-couch-to-5k.aspx)"
+I'd never heard of [Couch to 5K][c25k-wiki]
 before and then I heard a few people talk about it in different contexts. I was
 on a tram home from work when I looked it up and wondered whether I'd be able to
 do it. I don't think I'd run more than about 100m in one go before; since my
 school days I have gravitated away from the sports field and towards the
 computer lab. Yet, I'd lost some weight at the beginning of the year through
 being more selective with my diet and I was both keen to keep that weight off
-and to do more exercise. [Eamonn](/blog/2010/07/25/eamonn/) is a very energetic
+and to do more exercise. [Eamonn]({% post_url 2010-07-25-eamonn %}) is a very energetic
 lad and keeping up with him around the local parks would often leave me
-breathless. I downloaded a [Couch to 5K
-app](https://www.active.com/mobile/couch-to-5k-app), and told
-[Kirsty](https://thribble.blogspot.com/) I was going to give it a shot. She
+breathless. I downloaded a [Couch to 5K app][c25k-app], and told
+[Kirsty][kirsty-blog] I was going to give it a shot. She
 didn't laugh. That night, armed with some tunes and an iPhone app, I set off
-towards [Merri Creek](https://en.wikipedia.org/wiki/Merri_Creek) on my first
+towards [Merri Creek][merri-creek] on my first
 jog. I was out-of-breath and ready to stop after a very short period, but just
 then the app told me to walk. It kept me going. After about a half-an-hour and 2
 km, I returned home out-of-breath and sweating profusely but felt like I had
@@ -40,7 +38,7 @@ started something...
 
 Having completed a week or so of Couch to 5K, I bought myself some running
 shoes. I told my brother about my adventures and he recommended I use
-[Endomondo](https://www.endomondo.com/profile/14938524) to track my runs. Being
+[Endomondo][endomondo] to track my runs. Being
 a data nerd and believing that you can't improve what you can't measure,
 Endomondo appealed to me. It also gave me regular feedback on a run as to how
 far I'd travelled and at what pace. By the end of March, I'm able to do 4.29 km
@@ -64,9 +62,8 @@ wheezing of an old bloke who'd overindulged over the long weekend. It was
 horrible and I vowed <span id="vow"></span>never to run without music again.
 
 For most of the Couch to 5K, Kirsty had been on at me to sign up for a run, the
-[Mother’s Day Classic](https://www.mothersdayclassic.com.au/). The MDC includes a
-4km and an 8km run around Melbourne's iconic [Tan
-Track](https://scrumage.com/blog/2011/08/the-tan/). I can comfortably run 6km, so
+[Mother’s Day Classic][mdc]. The MDC includes a
+4km and an 8km run around Melbourne's iconic [Tan Track][tan-track]. I can comfortably run 6km, so
 faced with the choice, I opt to stretch for 8km and book my place on 22 April
 for the run on 11 May. I start training the next day and the day after that, I
 rode to work from our home in Coburg for the first time (expect a cycling post
@@ -95,16 +92,15 @@ speed up when you get to the hill". Music is pumping near the start line, and
 then we're off! I ran as hard as I could and, having started near the front,
 people are absolutely whizzing past me. Before I knew it I was halfway up
 Anderson Street Hill and I feel like every blood vessel in my body is about to
-explode. I don't hear what Endomondo says my pace was at the end of the first
+explode. I don't hear what the tracker said my pace was at the end of the first
 kilometre, but it started with a five: I'd never heard that before. I took my
 right earphone out and I can hear lots of fellow runners pounding away at the
 pavement and I don't seem to be wheezing the most. I can do this! The second lap
 was much much harder. I kept as far to the left as I could manage as I climbed
 Anderson Street for the second time. It felt like Everest and I wanted to give
 other runners as much space as I could. I was struggling to put one foot in
-front of the other and was hugely relieved to reach the summit. According to
-[Endomondo's graph](https://app.endomondo.com/workouts/337722146/14938524), my
-pace dropped to 11:33 min/km... I walk faster than that! I was *so* pleased to
+front of the other and was hugely relieved to reach the summit. According to my
+data at the time, my pace dropped to 11:33 min/km... I walk faster than that! I was *so* pleased to
 reach the finish line three kilometres later.
 
 I only ran once more that month and it wasn't even 5km.
@@ -113,43 +109,38 @@ I only ran once more that month and it wasn't even 5km.
 
 For the first couple of weeks of June I'd not even put on my running shoes.
 After completing the Couch to 5km and the MDC I think I'd lost motivation. I
-went in search of some targets and found The [Run
-Melbourne](https://www.runmelbourne.com.au/) was in about a month's time and had
+went in search of some targets and found The [Run Melbourne][run-melbourne] was in about a month's time and had
 a 10 km run. If I can do 8 km, I can do 10 km, right?
 
-I'd [registered](https://www.parkrun.com.au/register/) for
-[parkrun](https://www.parkrun.com.au/) back in May but had never actually
+I'd [registered][parkrun-register] for
+[parkrun][parkrun] back in May but had never actually
 attended a run. I decided that it was time I found out what all the fuss was
 about... it would serve as good training for my next event. There are were a few
-parkruns around Melbourne but I chose [Westerfolds
-parkrun](https://www.parkrun.com.au/westerfolds/) as [my first
-run](https://www.parkrun.com.au/westerfolds/results/weeklyresults/?runSeqNumber=35).
+parkruns around Melbourne but I chose [Westerfolds parkrun][westerfolds-parkrun] as [my first
+run][westerfolds-results].
 Westerfolds parkrun was a lot more relaxed than the MDC. The organisers were
 welcoming and friendly and so were the runners. The course is lovely, too: there
 are beautiful views, flora and fauna. Sometimes I see kangaroos hopping around
 as I run there. Westerfolds Park has become my favourite place to run in
-Melbourne. Somebody recently described it to me as "The
-[Bathurst](https://en.wikipedia.org/wiki/Bathurst_1000) of running". My weekly
+Melbourne. Somebody recently described it to me as "The [Bathurst][bathurst] of running". My weekly
 parkruns have become the heartbeat of my running schedule and my fellow
 parkrunners have become good friends.
 
 ## July
 
-My friend Gary introduced me to
-[Strava](https://www.strava.com/athletes/5507469) in July. Strava is a lot like
+My friend Gary introduced me to Strava in July. Strava is a lot like
 Endomondo but has even more data (for nerds like me) and more of my friends are
 on it. I said before that parkrunners are friendly, they're also very
 encouraging; I don't think I've done a run yet where a fellow parkrunner hasn't
 given me kudos on Strava. It has become my favourite tracker (but I haven't
 locked myself into just one).
 
-The [Run Melbourne 10 km](https://www.strava.com/activities/171370359/overview)
+The Run Melbourne 10 km
 was one of my best runs of the year. It was the first time that I'd managed to
 run consistently under 6 minutes per kilometre and I finished comfortably in
 under the hour that I'd targeted. What's more, I was less tired at the end of
 this 10 km run than I had been after the 8 km one two months earlier. [Here is a
-photo that Kirsty snapped of me at about 7
-km](https://c4.staticflickr.com/4/3931/15444690895_fa99415c8f_h.jpg). I actually
+photo that Kirsty snapped of me at about 7 km][kirsty-photo]. I actually
 look like I'm enjoying myself!
 
 To keep the motivation going, I signed up for another 10 km run at the Melbourne
@@ -164,7 +155,7 @@ Eamonn's little brother Dara.
 I kept up with the parkruns, though and managed to do all five in August. Two of
 them were interesting.
 
-### [Westerfolds parkrun # 45 - 23/08/2014](https://www.strava.com/activities/184015136)
+### [Westerfolds parkrun # 45 - 23/08/2014](https://www.parkrun.com.au/westerfolds/results/45/)
 
 It was a cold morning. Eamonn and his Granny (who'd just arrived from England)
 came along with me. I brought gloves as my hands had been freezing the previous
@@ -176,7 +167,7 @@ vow](#vow) that I would carry on with them in my hands and not my ears. To my
 surprise, I wasn't as wheezy as I had been last time I ran without music. And I
 didn't have a cable bobbing around to annoy me. Perhaps this wouldn't be so bad.
 
-### [Westerfolds parkrun # 46 - 30/08/2014](https://www.strava.com/activities/187153863)
+### [Westerfolds parkrun # 46 - 30/08/2014](https://www.parkrun.com.au/westerfolds/results/46/)
 
 I left the earphones at home for this one. Eamonn stayed home, too (the lure of
 a new baby brother)! Much to my surprise I beat my personal best around
@@ -186,10 +177,9 @@ off this week's time).
 
 ## September
 
-With 10 weeks to go to the [City2Sea](https://www.thecity2sea.com.au/), the
-organisers announced a new course... a new fifteen kilometre course. [I had
-signed up for a 14 km
-event](https://twitter.com/johnsyweb/status/508483062452068353). I'd not run
+With 10 weeks to go to the [City2Sea][city2sea], the
+organisers announced a new course... a new fifteen kilometre course. I had
+signed up for a 14 km event. I'd not run
 more than 11 km before (and hadn't run more than 5 km for over a month), it was
 time to start to think seriously about how I was going to get up to that kind of
 distance. I was still on paternity leave so managed to squeeze in a couple of
@@ -204,11 +194,10 @@ km, 5 km more than I'd ever run before. I felt pretty good after that, I can
 tell you!
 
 Since I'd stopped using Endomondo, I'd missed the frequent feedback on my pace,
-distance and time, so I decided to buy [a running
-watch](https://buy.garmin.com/en-AU/AU/wearabletech/watches-wearable-technology/forerunner-620/prod122785.html).
+distance and time, so I decided to buy [a running watch][garmin-forerunner-wiki].
 I took it for its first run at the end of September and it made a huge
-difference over carrying a phone with me. On my first run with the watch, [I ran
-18 km](https://www.strava.com/activities/195952077/overview). It was a
+difference over carrying a phone with me. On my first run with the watch, I ran
+18 km. It was a
 game-changer. I would normally advocate against reading the comments on the
 Internet, but if you can read the comments on that last run on Strava, do! My
 friends Gary, Barney, and Cecilia convinced me that I should be upgrading my
@@ -216,42 +205,39 @@ Melbourne Marathon 10 km entry to a Half Marathon entry based on that run. I
 really didn't think I'd be ready for it.
 
 That weekend we were in Adelaide for a wedding. It was a good opportunity to do
-[my first tourist parkrun](https://www.strava.com/activities/196770700), which
+[my first tourist parkrun][torrens-parkrun-96], which
 was a lot of fun. One of the many things I enjoy about parkrun is the way that
 you can find one near you almost anywhere in the world. I've done four tourist
 parkruns now and they've all been enjoyable experiences.
 
 When I got back to Melbourne, it was time for another long run. I decided to see
 if my friends were right and set off at 06:00 on a Monday morning to see what
-distance I could cover in two hours. [22.6
-km](https://www.strava.com/activities/198156931) was the answer... I could do a
+distance I could cover in two hours. 22.6 km
+was the answer... I could do a
 half-marathon... I just did one! I kept a pretty consistent pace too (thanks to
 the watch). Okay, I would see if I could change my entry.
 
 That week I started what was to become a regular arrangement with some of the
 folks from work who were also in training for the 10 km event, we started to run
 from the office down to The Tan, around The Tan Track and back again. We still
-run [that course](https://www.strava.com/activities/199429574) most Wednesdays
+run that course most Wednesdays
 before work (back then it was Fridays, but we switched). That was the first time
 that I'd ever run with anybody and it's made me a better runner for sure.
 
 ## October
 
 On Sunday, 12 October 2014, having upgraded my entry on the Thursday, I ran the
-[2014 Melbourne Marathon - Half
-Marathon](https://www.strava.com/activities/206174373/overview) in 01:56:31.
+2014 Melbourne Marathon - Half Marathon in 01:56:31.
 From a guy who'd not run 100m at the beginning of the year, to run over 21 km at
 all was pretty surprising. To do it in under two hours was, I think,
 incredible. The exhaustion from such a long run was certainly surpassed by the
 sense of achievement of completing a half marathon. The cycle home afterwards
 was hard work, though!
 
-Two weeks later came an even prouder moment... Eamonn took part in his [first
-fun run](https://www.strava.com/activities/211642978): 1 km at a much faster
-pace than I could have managed back in February. He also [raised
-AU$160](https://www.mycause.com.au/page/83145/eamonnruns) for charity. Not bad
-for a four-year old. I'm not sure that [running makes me a better
-parent](https://amessagewithabottle.com/2014/07/21/how-running-makes-me-a-better-parent/),
+Two weeks later came an even prouder moment... Eamonn took part in his first
+fun run: 1 km at a much faster
+pace than I could have managed back in February. He also [raised AU$160][mycause-eamonnruns] for charity. Not bad
+for a four-year old. I'm not sure that running makes me a better parent,
 but I hope I've set a good example for my boys that exercise is "normal".
 
 ## November
@@ -292,19 +278,18 @@ The physio allowed me to ease back into running gently at the beginning of
 December. I went for a 1 km run with Eamonn to celebrate and was completely
 pain-free. That Saturday I did a slow return to my home parkrun. Again,
 pain-free. I'd wanted to run the 10 km Christmas Run at Albert Park, but the
-physio advised me to stick to 5 km as a limit for now and so I ran [my best-ever
-5 km](https://www.strava.com/activities/228015874/overview) at Emma and Tom's
+physio advised me to stick to 5 km as a limit for now and so I ran my best-ever
+5 km at Emma and Tom's
 Christmas Run 2014: 0:24:10.3. I did a couple
 more runs in Australia before heading to the UK for Christmas.
 
-On Christmas Eve I did [my first ever run on British
-soil](https://www.strava.com/activities/232346878). It was really hard work
+On Christmas Eve I did my first ever run on British soil. It was really hard work
 running in such cold, damp conditions with heavy traffic travelling quickly next
 to a narrow footpath. I returned to our holiday home feeling that I probably
 would never have taken up running had I stayed living in the UK. It's hard to
 tell, of course. I run in cold, damp conditions in Melbourne!
 
-[![](https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10832190_404710713019296_1470863339_n.jpg)](https://instagram.com/p/wtDIidCgkW/)
+![Running highlights from 2014](/images/2014-running-highlights.jpg)
 
 ## 2015
 
@@ -317,3 +302,23 @@ The goal for this year? I have bib number 800 for the Melbourne Marathon! My
 friend Adrian has helped me form a training plan and now I just have to work
 through it. Well... a half was a great achievement, but when have I _ever_ done
 anything by halves?
+
+[c25k-wiki]: https://en.wikipedia.org/wiki/Couch_to_5K
+[c25k-app]: https://www.active.com/mobile/couch-to-5k-app
+[kirsty-blog]: https://thribble.blogspot.com/
+[merri-creek]: https://en.wikipedia.org/wiki/Merri_Creek
+[endomondo]: https://en.wikipedia.org/wiki/Endomondo
+[mdc]: https://www.mothersdayclassic.com.au/
+[tan-track]: https://en.wikipedia.org/wiki/Tan_Track
+[run-melbourne]: https://www.runmelbourne.com.au/
+[parkrun-r egister]: https://www.parkrun.com.au/register/
+[parkrun]: https://www.parkrun.com.au/
+[westerfolds-parkrun]: https://www.parkrun.com.au/westerfolds/
+[westerfolds-results]: https://www.parkrun.com.au/westerfolds/results/35/
+[bathurst]: https://en.wikipedia.org/wiki/Bathurst_1000
+[kirsty-photo]: https://c4.staticflickr.com/4/3931/15444690895_fa99415c8f_h.jpg
+[city2sea]: https://www.thecity2sea.com.au/
+[garmin-forerunner-wiki]: https://en.wikipedia.org/wiki/Garmin_Forerunner
+[torrens-parkrun-96]: https://www.parkrun.com.au/torrens/results/96/
+[mycause-eamonnruns]: https://www.mycause.com.au/page/83145/eamonnruns
+
