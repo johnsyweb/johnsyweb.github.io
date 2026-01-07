@@ -29,7 +29,7 @@ def double:
 [0,2,4,6,8,10,12,14,16,18]
 ```
 
-Much like in [JavaScript January], I found myself tackling a single exercise from the [`jq` track] in a few minutes each day. I also found that I was having a lot of fun with learning the new language and some days I found myself knocking off two or more excercises of an evening just for fun. [Putting the "fun" in "functional"], as it were. Soon I found myself at the end of the track with a couple of harder exercises, an evaluator for a very simple subset of [Forth] and solving the [Zebra Puzzle]. It took me a couple of sessions to solve each of these but I was happy with how neat the solutions to these problems were in [`jq`] compared with what they might have looked like in some of the languages with which I am more familiar.
+Much like in [JavaScript January], I found myself tackling a single exercise from the [`jq` track] in a few minutes each day. I also found that I was having a lot of fun with learning the new language and some days I found myself knocking off two or more excercises of an evening just for fun. Putting the "fun" in "functional", as it were. Soon I found myself at the end of the track with a couple of harder exercises, an evaluator for a very simple subset of [Forth] and solving the [Zebra Puzzle]. It took me a couple of sessions to solve each of these but I was happy with how neat the solutions to these problems were in [`jq`] compared with what they might have looked like in some of the languages with which I am more familiar.
 
 I don't think I'll be reaching for [`jq`] as my go-to language after this month, but I'll certainly be able to use it more handily for building reusuable reports based on [JSON] responses from APIs.
 
@@ -45,7 +45,6 @@ One more surprise from _Functional February_? I did most of the exercises in [VS
 [JSON]: https://www.json.org/
 [JavaScript January]: https://johnsy.com/blog/2023/01/31/javascript-january/
 [Month 2 of #12in23]: https://exercism.org/challenges/12in23
-[Putting the "fun" in "functional"]: https://swag.exercism.org/products/copy-of-unisex-t-shirt-fun-in-functional-logo-front-dark
 [VS Code]: https://code.visualstudio.com/
 [Zebra Puzzle]: https://en.wikipedia.org/wiki/Zebra_Puzzle
 [`jq` track]: https://exercism.org/tracks/jq

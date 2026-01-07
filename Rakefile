@@ -36,7 +36,7 @@ task :test => [:build, :validate_feeds, :lighthouse_styles] do
    },
     disable_external: false,
     allow_hash_href: true,
-    ignore_status_codes: [0, 202, 999],  # Ignore network errors, async 202 responses, and unknown status codes
+    ignore_status_codes: [0, 202, 403, 417, 429, 999],  # Ignore network errors, async responses, access/booking errors, rate-limiting, unknown codes
     ignore_urls: [
       %r{\/\/localhost},
       %r{\/\/127\.0\.0\.1},
@@ -72,7 +72,7 @@ task :validate_html => :build do
    },
     disable_external: false,
     allow_hash_href: true,
-    ignore_status_codes: [0, 202, 999],
+    ignore_status_codes: [0, 202, 403, 417, 429, 999],
     ignore_urls: [
       %r{\/\/localhost},
       %r{\/\/127\.0\.0\.1},

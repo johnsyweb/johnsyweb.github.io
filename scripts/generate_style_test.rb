@@ -312,7 +312,7 @@ def generate_markdown
     ## H2: Footer Content
     
     <div style="font-size: 0.85em; padding-top: 10px; border-top: 1px solid currentColor; margin-top: 20px;">
-      <p>Copyright © 2000-2025 <a href="/about/"><em>paj</em></a>. All rights reserved.</p>
+      <p>Copyright © 2000-#{Time.now.year} <a href="/about/"><em>paj</em></a>. All rights reserved.</p>
       <p>Footer text typically uses smaller font sizes and should still maintain accessibility standards.</p>
       <p>Hosted by <a href="https://github.com">GitHub</a>, powered by <a href="https://jekyllrb.com">Jekyll</a>.</p>
     </div>
