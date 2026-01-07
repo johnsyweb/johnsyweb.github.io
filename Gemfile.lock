@@ -19,7 +19,7 @@ GEM
       public_suffix (>= 2.0.2, < 8.0)
     afm (1.0.0)
     ast (2.4.3)
-    async (2.35.0)
+    async (2.35.1)
       console (~> 1.29)
       fiber-annotation
       io-event (~> 1.11)
@@ -59,14 +59,14 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
-    ffi (1.17.2-aarch64-linux-gnu)
-    ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
-    ffi (1.17.2-arm-linux-musl)
-    ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
-    ffi (1.17.2-x86_64-linux-musl)
+    ffi (1.17.3-aarch64-linux-gnu)
+    ffi (1.17.3-aarch64-linux-musl)
+    ffi (1.17.3-arm-linux-gnu)
+    ffi (1.17.3-arm-linux-musl)
+    ffi (1.17.3-arm64-darwin)
+    ffi (1.17.3-x86_64-darwin)
+    ffi (1.17.3-x86_64-linux-gnu)
+    ffi (1.17.3-x86_64-linux-musl)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -129,7 +129,7 @@ GEM
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    html-proofer (5.1.1)
+    html-proofer (5.2.0)
       addressable (~> 2.3)
       async (~> 2.1)
       benchmark (~> 0.5)
@@ -274,21 +274,21 @@ GEM
     minitest (5.27.0)
     net-http (0.8.0)
       uri (>= 0.11.1)
-    nokogiri (1.18.10-aarch64-linux-gnu)
+    nokogiri (1.19.0-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.10-aarch64-linux-musl)
+    nokogiri (1.19.0-aarch64-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-gnu)
+    nokogiri (1.19.0-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-musl)
+    nokogiri (1.19.0-arm-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.10-arm64-darwin)
+    nokogiri (1.19.0-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.10-x86_64-darwin)
+    nokogiri (1.19.0-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.10-x86_64-linux-gnu)
+    nokogiri (1.19.0-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.10-x86_64-linux-musl)
+    nokogiri (1.19.0-x86_64-linux-musl)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -299,7 +299,7 @@ GEM
       racc
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    pdf-reader (2.15.0)
+    pdf-reader (2.15.1)
       Ascii85 (>= 1.0, < 3.0, != 2.0.0)
       afm (>= 0.2.1, < 2)
       hashery (~> 2.0)
@@ -358,7 +358,7 @@ GEM
     uri (1.1.1)
     webrick (1.9.2)
     yell (2.2.2)
-    zeitwerk (2.7.3)
+    zeitwerk (2.7.4)
 
 PLATFORMS
   aarch64-linux-gnu
@@ -373,7 +373,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 4.0)
   github-pages
-  html-proofer (~> 5.1)
+  html-proofer (~> 5.2)
   rake
   rubocop
   webrick
@@ -384,7 +384,7 @@ CHECKSUMS
   addressable (2.8.8) sha256=7c13b8f9536cf6364c03b9d417c19986019e28f7c00ac8132da4eb0fe393b057
   afm (1.0.0) sha256=5bd4d6f6241e7014ef090985ec6f4c3e9745f6de0828ddd58bc1efdd138f4545
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
-  async (2.35.0) sha256=0f792ce968023677669fb8608d0b16585332247181ed5417b4ff45900201e834
+  async (2.35.1) sha256=5232b76ed07db1b071eab1dc9e61a7db617034f37c42a5f4b59b3c5068b14145
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
   bigdecimal (3.3.1) sha256=eaa01e228be54c4f9f53bf3cc34fe3d5e845c31963e7fcc5bedb05a4e7d52218
@@ -404,14 +404,14 @@ CHECKSUMS
   execjs (2.10.0) sha256=6bcb8be8f0052ff9d370b65d1c080f2406656e150452a0abdb185a133048450d
   faraday (2.14.0) sha256=8699cfe5d97e55268f2596f9a9d5a43736808a943714e3d9a53e6110593941cd
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
-  ffi (1.17.2-aarch64-linux-gnu) sha256=c910bd3cae70b76690418cce4572b7f6c208d271f323d692a067d59116211a1a
-  ffi (1.17.2-aarch64-linux-musl) sha256=69e6556b091d45df83e6c3b19d3c54177c206910965155a6ec98de5e893c7b7c
-  ffi (1.17.2-arm-linux-gnu) sha256=d4a438f2b40224ae42ec72f293b3ebe0ba2159f7d1bd47f8417e6af2f68dbaa5
-  ffi (1.17.2-arm-linux-musl) sha256=977dfb7f3a6381206dbda9bc441d9e1f9366bf189a634559c3b7c182c497aaa3
-  ffi (1.17.2-arm64-darwin) sha256=54dd9789be1d30157782b8de42d8f887a3c3c345293b57ffb6b45b4d1165f813
-  ffi (1.17.2-x86_64-darwin) sha256=981f2d4e32ea03712beb26e55e972797c2c5a7b0257955d8667ba58f2da6440e
-  ffi (1.17.2-x86_64-linux-gnu) sha256=05d2026fc9dbb7cfd21a5934559f16293815b7ce0314846fee2ac8efbdb823ea
-  ffi (1.17.2-x86_64-linux-musl) sha256=97c0eb3981414309285a64dc4d466bd149e981c279a56371ef811395d68cb95c
+  ffi (1.17.3-aarch64-linux-gnu) sha256=28ad573df26560f0aedd8a90c3371279a0b2bd0b4e834b16a2baa10bd7a97068
+  ffi (1.17.3-aarch64-linux-musl) sha256=020b33b76775b1abacc3b7d86b287cef3251f66d747092deec592c7f5df764b2
+  ffi (1.17.3-arm-linux-gnu) sha256=5bd4cea83b68b5ec0037f99c57d5ce2dd5aa438f35decc5ef68a7d085c785668
+  ffi (1.17.3-arm-linux-musl) sha256=0d7626bb96265f9af78afa33e267d71cfef9d9a8eb8f5525344f8da6c7d76053
+  ffi (1.17.3-arm64-darwin) sha256=0c690555d4cee17a7f07c04d59df39b2fba74ec440b19da1f685c6579bb0717f
+  ffi (1.17.3-x86_64-darwin) sha256=1f211811eb5cfaa25998322cdd92ab104bfbd26d1c4c08471599c511f2c00bb5
+  ffi (1.17.3-x86_64-linux-gnu) sha256=3746b01f677aae7b16dc1acb7cb3cc17b3e35bdae7676a3f568153fb0e2c887f
+  ffi (1.17.3-x86_64-linux-musl) sha256=086b221c3a68320b7564066f46fed23449a44f7a1935f1fe5a245bd89d9aea56
   fiber-annotation (0.2.0) sha256=7abfadf1d119f508867d4103bf231c0354d019cc39a5738945dec2edadaf6c03
   fiber-local (1.1.0) sha256=c885f94f210fb9b05737de65d511136ea602e00c5105953748aa0f8793489f06
   fiber-storage (1.0.1) sha256=f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1
@@ -421,7 +421,7 @@ CHECKSUMS
   github-pages-health-check (1.18.2) sha256=df893d4f5a4161477e8525b993dbe1c1eb63fbb86fb07b6e80996fd37a18843d
   hashery (2.1.2) sha256=d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862
   html-pipeline (2.14.3) sha256=8a1d4d7128b2141913387cac0f8ba898bb6812557001acc0c2b46910f59413a0
-  html-proofer (5.1.1) sha256=f9baaae2268049918eb494b0a5b96e97f513a6b8490c185d11c371b60d9ecf86
+  html-proofer (5.2.0) sha256=9d137cc437628b4dfc1191a9f80c5329dfb0a66b895aef021bf10758d80ec69d
   http_parser.rb (0.8.0) sha256=5a0932f1fa82ce08a8516a2685d5a86031c000560f89946913c555a0697544be
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
   io-event (1.14.2) sha256=b0a069190eafe86005c22f7464f744971b5bd82f153740d34e6ab49548d4f613
@@ -475,19 +475,19 @@ CHECKSUMS
   minima (2.5.1) sha256=520e52bc631fb16cbb8100660f6caa44f97859e2fa7e397d508deb18739567be
   minitest (5.27.0) sha256=2d3b17f8a36fe7801c1adcffdbc38233b938eb0b4966e97a6739055a45fa77d5
   net-http (0.8.0) sha256=df42c47ce9f9e95ad32a317c97c12f945bc1af365288837ea4ff259876ecb46d
-  nokogiri (1.18.10-aarch64-linux-gnu) sha256=7fb87235d729c74a2be635376d82b1d459230cc17c50300f8e4fcaabc6195344
-  nokogiri (1.18.10-aarch64-linux-musl) sha256=7e74e58314297cc8a8f1b533f7212d1999dbe2639a9ee6d97b483ea2acc18944
-  nokogiri (1.18.10-arm-linux-gnu) sha256=51f4f25ab5d5ba1012d6b16aad96b840a10b067b93f35af6a55a2c104a7ee322
-  nokogiri (1.18.10-arm-linux-musl) sha256=1c6ea754e51cecc85c30ee8ab1e6aa4ce6b6e134d01717e9290e79374a9e00aa
-  nokogiri (1.18.10-arm64-darwin) sha256=c2b0de30770f50b92c9323fa34a4e1cf5a0af322afcacd239cd66ee1c1b22c85
-  nokogiri (1.18.10-x86_64-darwin) sha256=536e74bed6db2b5076769cab5e5f5af0cd1dccbbd75f1b3e1fa69d1f5c2d79e2
-  nokogiri (1.18.10-x86_64-linux-gnu) sha256=ff5ba26ba2dbce5c04b9ea200777fd225061d7a3930548806f31db907e500f72
-  nokogiri (1.18.10-x86_64-linux-musl) sha256=0651fccf8c2ebbc2475c8b1dfd7ccac3a0a6d09f8a41b72db8c21808cb483385
+  nokogiri (1.19.0-aarch64-linux-gnu) sha256=11a97ecc3c0e7e5edcf395720b10860ef493b768f6aa80c539573530bc933767
+  nokogiri (1.19.0-aarch64-linux-musl) sha256=eb70507f5e01bc23dad9b8dbec2b36ad0e61d227b42d292835020ff754fb7ba9
+  nokogiri (1.19.0-arm-linux-gnu) sha256=572a259026b2c8b7c161fdb6469fa2d0edd2b61cd599db4bbda93289abefbfe5
+  nokogiri (1.19.0-arm-linux-musl) sha256=23ed90922f1a38aed555d3de4d058e90850c731c5b756d191b3dc8055948e73c
+  nokogiri (1.19.0-arm64-darwin) sha256=0811dfd936d5f6dd3f6d32ef790568bf29b2b7bead9ba68866847b33c9cf5810
+  nokogiri (1.19.0-x86_64-darwin) sha256=1dad56220b603a8edb9750cd95798bffa2b8dd9dd9aa47f664009ee5b43e3067
+  nokogiri (1.19.0-x86_64-linux-gnu) sha256=f482b95c713d60031d48c44ce14562f8d2ce31e3a9e8dd0ccb131e9e5a68b58c
+  nokogiri (1.19.0-x86_64-linux-musl) sha256=1c4ca6b381622420073ce6043443af1d321e8ed93cc18b08e2666e5bd02ffae4
   octokit (4.25.1) sha256=c02092ee82dcdfe84db0e0ea630a70d32becc54245a4f0bacfd21c010df09b96
   parallel (1.27.0) sha256=4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130
   parser (3.3.10.0) sha256=ce3587fa5cc55a88c4ba5b2b37621b3329aadf5728f9eafa36bbd121462aabd6
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
-  pdf-reader (2.15.0) sha256=c5025750bec8de7b11cfd1d1ccc2b944d2782c3638cd15b5ee1531d1206c0886
+  pdf-reader (2.15.1) sha256=18c6a986a84a3117fa49f4279fc2de51f5d2399b71833df5d2bccd595c7068ce
   prism (1.7.0) sha256=10062f734bf7985c8424c44fac382ac04a58124ea3d220ec3ba9fe4f2da65103
   public_suffix (5.1.1) sha256=250ec74630d735194c797491c85e3c6a141d7b5d9bd0b66a3fa6268cf67066ed
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
@@ -519,7 +519,7 @@ CHECKSUMS
   uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
   yell (2.2.2) sha256=1d166f3cc3b6dc49a59778ea7156ed6d8de794c15106d48ffd6cbb061b9b26bc
-  zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
+  zeitwerk (2.7.4) sha256=2bef90f356bdafe9a6c2bd32bcd804f83a4f9b8bc27f3600fff051eb3edcec8b
 
 BUNDLED WITH
   4.0.1
