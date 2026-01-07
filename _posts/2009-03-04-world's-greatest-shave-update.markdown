@@ -37,9 +37,9 @@ Now I must think about how to execute the head shave... I'm open to suggestions!
 Thank you all, once more, for your amazing support. I really am very
 appreciative.
 
-[wgs-logo]: https://johnsy.com/images/logo_wgs.gif
+[wgs-logo]: {{ site.url }}/images/logo_wgs.gif
 [wgs]: https://www.worldsgreatestshave.com/
-[cf-logo]: https://johnsy.com/images/logo_cfs.gif
+[cf-logo]: {{ site.url }}/images/logo_cfs.gif
 [cf-salon]: https://www.clairefrancoise.com.au/
 [40yo-virgin]: https://www.imdb.com/title/tt0405422/
 

@@ -218,7 +218,7 @@ line](https://flic.kr/p/z48Mp4) and in it you can see just how overjoyed I was
 with this.
 
 It's still sinking in that in [February last
-year](https://johnsy.com/blog/2015/03/01/my_year_of_running/#february) I went for
+year]({% post_url 2015-03-01-my-year-of-running %}#february) I went for
 my first run and in October this year
 [I ran a flipping marathon](https://www.strava.com/activities/415064809)!
 

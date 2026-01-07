@@ -27,7 +27,7 @@ So now _you_ can add this app to your phone's home screen and be ready to help s
 
 [5k app]: https://www.parkrun.com/blog/news/2025/09/19/the-5k-app-joins-the-parkrun-family/
 [Bushy1000]: https://www.parkrun.org.uk/bushy/news/2024/09/03/event-report-no-1000-31-august-2024/
-[Foretoken]: https://johnsy.com/foretoken/
+[Foretoken]: {{ site.url }}/foretoken/
 [Virtual Volunteer app]: https://volunteer.parkrun.com/hc/articles/16857863282066
 
 [career break]: {% post_url 2025-05-05-career-break %}

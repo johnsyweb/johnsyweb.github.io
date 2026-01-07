@@ -1,6 +1,6 @@
 ---
 name: johnsy.com
-url: https://johnsy.com
+url: https://www.johnsy.com
 description: "Pete Johns (/piːt ʤɒnz/ - he/him/his): Human being; just like you."
 description_html: |
   Pete Johns (<a href="https://namedrop.io/petejohns"><em>/piːt ʤɒnz/</em></a> -
@@ -17,7 +17,7 @@ keywords:
 
 author:
   name: Pete Johns
-  url: https://johnsy.com/contact/
+  url: https://www.johnsy.com/contact/
 
 apple_touch_icon_sizes:
   - 57

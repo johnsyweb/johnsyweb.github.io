@@ -11,7 +11,7 @@ still love cycling. But I love *life* more.
 ### The beginning of the end
 
 In my post [How do we stop this
-happening?](https://johnsy.com/blog/2016/03/03/how-do-we-stop-this-happening/), I
+happening?]({% post_url 2016-03-03-how-do-we-stop-this-happening? %}), I
 mentioned the death of Alberto Paulon on Sydney Road, Brunswick. That was a
 turning point for me. From that day I felt far more vulnerable on my bicycle
 than ever before. The realisation that a cyclist's life could be wiped out in an

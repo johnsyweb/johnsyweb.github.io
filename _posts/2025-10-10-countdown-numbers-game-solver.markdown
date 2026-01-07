@@ -68,8 +68,8 @@ The ⭐ star icon in the solutions box indicates a "golden path" solution exists
 <!-- Links -->
 
 [bike ride]: {% post_url 2025-08-04-i'm-riding-496-km... %}
-[Countdown Numbers Game Solver]: https://johnsy.com/countdown/
-[Countdown Numbers Game Solver Image]: https://johnsy.com/countdown/og-image.png "Countdown Numbers Game Solver"
+[Countdown Numbers Game Solver]: {{ site.url }}/countdown/
+[Countdown Numbers Game Solver Image]: {{ site.url }}/countdown/og-image.png "Countdown Numbers Game Solver"
 [Countdown]: https://www.channel4.com/programmes/countdown
 [Letters and Numbers]: https://www.sbs.com.au/ondemand/tv-series/letters-and-numbers
 [Signal]: https://signal.org

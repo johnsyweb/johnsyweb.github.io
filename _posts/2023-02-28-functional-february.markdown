@@ -43,7 +43,7 @@ One more surprise from _Functional February_? I did most of the exercises in [VS
 [Exercism]: https://exercism.org/
 [Forth]: https://en.wikipedia.org/wiki/Forth_(programming_language)
 [JSON]: https://www.json.org/
-[JavaScript January]: https://johnsy.com/blog/2023/01/31/javascript-january/
+[JavaScript January]: {% post_url 2023-01-31-javascript-january %}
 [Month 2 of #12in23]: https://exercism.org/challenges/12in23
 [VS Code]: https://code.visualstudio.com/
 [Zebra Puzzle]: https://en.wikipedia.org/wiki/Zebra_Puzzle
