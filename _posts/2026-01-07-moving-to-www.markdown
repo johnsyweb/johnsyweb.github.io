@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving back to www
-date: 2026-01-07 21:30:00 +11:00
+date: 2026-01-07 21:30:00 +00:00
 categories:
  - blog
  - meta
