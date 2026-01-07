@@ -152,7 +152,7 @@ couldn't think of anything. Some friends offered very specific help such as
 cooked meals, looking after the kids and taking the eldest running: these were
 absolutely amazing.
 
-### Store you partner's work contact details in case of emergency
+### Store your partner's work contact details in case of emergency
 
 Your employer probably has your emergency contact details on file for should
 something happen to you at work, but do your family know how to contact your
