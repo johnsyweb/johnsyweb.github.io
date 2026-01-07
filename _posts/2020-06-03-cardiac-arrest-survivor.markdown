@@ -126,6 +126,8 @@ attention to in the coming months.
 There were a few other things I want to share with you that my family and I have
 learned over the past few weeks. I hope you find them useful.
 
+## Lessons learned
+
 ### Learn CPR
 
 The survival rate for out-of-hospital sudden cardiac arrests is terrifyingly
