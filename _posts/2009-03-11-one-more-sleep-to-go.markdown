@@ -31,8 +31,8 @@ the event.
 Most importantly, visit [World's Greatest Shave][wgs] to support the cause.
 Every dollar counts. Thank you for your generosity, financial or otherwise.
 
-[wgs-logo]: https://johnsy.com/images/logo_wgs.gif
+[wgs-logo]: {{ site.url }}/images/logo_wgs.gif
 [wgs]: https://www.worldsgreatestshave.com/
-[cf-logo]: https://johnsy.com/images/logo_cfs.gif
+[cf-logo]: {{ site.url }}/images/logo_cfs.gif
 [cf-salon]: https://www.clairefrancoise.com.au/
 [flickr-wgs]: https://www.flickr.com/photos/johnsyweb/sets/72157614662153533/

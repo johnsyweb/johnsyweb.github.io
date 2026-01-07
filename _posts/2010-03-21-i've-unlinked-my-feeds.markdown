@@ -46,7 +46,7 @@ yourself is getting the gist of how to find me online.
 [ghostbusters]: https://www.imdb.com/title/tt0087332/
 [streams]: https://youtu.be/VjZP7jIR40w
 [flickr]: https://flickr.com/photos/johnsyweb/
-[blog]: https://johnsy.com/blog/
+[blog]: {{ site.url }}/blog/
 [lastfm]: https://last.fm/user/johnsyweb
 [lastfm-home]: https://last.fm/
 [twitter-me]: https://twitter.com/johnsyweb/

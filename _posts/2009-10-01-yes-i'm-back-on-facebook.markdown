@@ -14,14 +14,14 @@ So that was nice.
 
 
 Unfortunately, what I hadn't reckoned on was that
-[Kirsty](https://johnsy.com/thribble/blog/) would become a Pete Proxy for many
+[Kirsty]({{ site.url }}/thribble/blog/) would become a Pete Proxy for many
 people's words and pictures and that was a bit of a pain. Neither had I counted
 on the fact that some people would discontinue their blogs and opt for Facebook
 notes instead. And I _like_ to nosey into my friends' lives in my RSS reader!
 
 
 Despite the plethora of ways to contact me electronically [(listed
-here)](https://johnsy.com/contact/), it transpired that I was an e-outcast, a
+here)]({{ site.url }}/contact/), it transpired that I was an e-outcast, a
 social e-leper without a Facebook account.
 
 

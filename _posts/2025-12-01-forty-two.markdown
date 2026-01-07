@@ -38,6 +38,6 @@ Am I ready to go back to work? Not yet... there's much I want to do and I am par
 [Coronation Park parkrun]: https://flic.kr/p/2rjRKD9
 [gcc25]: {{ site.baseurl }}{% post_url 2025-08-04-i'm-riding-496-km... %}
 [Minute Cryptic]: https://www.minutecryptic.com/
-[progress bar]: https://johnsy.com/progression/2025-07-01/2026-06-30/Pete's%20Career%20Break
+[progress bar]: {{ site.url }}/progression/2025-07-01/2026-06-30/Pete's%20Career%20Break
 [Riversley Park junior parkrun]: https://flic.kr/p/2rjTxMo
 [shoulder injury]: {{ site.baseurl }}{% post_url 2025-04-28-shoulder-injury %}
