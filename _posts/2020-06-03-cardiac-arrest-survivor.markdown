@@ -126,6 +126,8 @@ attention to in the coming months.
 There were a few other things I want to share with you that my family and I have
 learned over the past few weeks. I hope you find them useful.
 
+## Lessons learned
+
 ### Learn CPR
 
 The survival rate for out-of-hospital sudden cardiac arrests is terrifyingly
@@ -152,7 +154,7 @@ couldn't think of anything. Some friends offered very specific help such as
 cooked meals, looking after the kids and taking the eldest running: these were
 absolutely amazing.
 
-### Store you partner's work contact details in case of emergency
+### Store your partner's work contact details in case of emergency
 
 Your employer probably has your emergency contact details on file for should
 something happen to you at work, but do your family know how to contact your

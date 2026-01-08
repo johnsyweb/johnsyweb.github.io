@@ -76,7 +76,7 @@ task :validate_html => :build do
     ignore_urls: [
       %r{\/\/localhost},
       %r{\/\/127\.0\.0\.1},
-      %r{https?:\/\/johnsy\.com\/},  # Self-referential URLs fail during build
+      %r{https?:\/\/(www\.)?johnsy\.com\/},  # Self-referential URLs fail during build
       %r{https?:\/\/(www\.)?realestate\.com\.au\/},
       %r{https?:\/\/(www\.)?seek\.com\.au\/}
     ]

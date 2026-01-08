@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+export TZ=UTC
+
 echo "Building site with Jekyll..."
 bundle exec jekyll build
 

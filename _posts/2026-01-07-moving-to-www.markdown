@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving back to www
-date: 2026-01-07 21:30:00 +11:00
+date: 2026-01-07 21:30:00 +00:00
 categories:
  - blog
  - meta
@@ -26,8 +26,8 @@ Beyond the redirect behaviour, there are other benefits:
 ## What's changed?
 
 All internal links now use Jekyll's configuration and built-in linking:
-- Asset references use `{{ site.url }}` to dynamically point to the correct domain
-- Inter-post links use `{% post_url %}` for stable references regardless of URL structure
+- Asset references use `{% raw %}{{ site.url }}{% endraw %}` to dynamically point to the correct domain
+- Inter-post links use `{% raw %}{% post_url %}{% endraw %}` for stable references regardless of URL structure
 
 The DNS configuration has been updated:
 - `www.johnsy.com` now has a CNAME record pointing to `johnsyweb.github.io`
@@ -48,11 +48,11 @@ This migration involved:
 4. Setting GitHub Pages to use www as the custom domain
 5. Running full validation to ensure no broken links
 
-Using `{{ site.url }}` and `{% post_url %}` trims most hardcoded URLs on the main site. Some microsites keep their own settings, but most pages now follow the config, which should make future changes simpler.
+Using `{% raw %}{{ site.url }}{% endraw %}` and `{% raw %}{% post_url %}{% endraw %}` trims most hardcoded URLs on the main site. Some microsites keep their own settings, but most pages now follow the config, which should make future changes simpler.
 
-If you spot anything odd after the move, please drop me a note via [the contact page]({{ site.url }}/contact/) or open an issue on [the GitHub repository][repo-issues].
+If you spot anything odd after the move, please drop me a note via [the contact page] or open an issue on [the GitHub repository][repo-issues].
 
-I've also enabled uptime monitoring with UptimeRobot (great name); on the free plan it emails me if anything goes sideways during the transition.
+I've also enabled uptime monitoring with [UptimeRobot] (great name); on the free plan it emails me if anything goes sideways during the transition.
 
 Welcome to the new address!
 
@@ -61,4 +61,5 @@ Welcome to the new address!
 [gh-pages-custom-domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages
 [_config.yml]: https://github.com/johnsyweb/johnsyweb.github.io/blob/main/_config.yml
 [repo-issues]: https://github.com/johnsyweb/johnsyweb.github.io/issues
-[UptimeRobot]: https://uptimerobot.com
+[UptimeRobot]: https://stats.uptimerobot.com/gxr5mAGSYF
+[the contact page]: /contact/
