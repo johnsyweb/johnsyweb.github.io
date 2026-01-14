@@ -17,7 +17,15 @@ keywords:
 
 author:
   name: Pete Johns
+  given_name: Pete
+  family_name: Johns
+  pronunciation: /piːt ʤɒnz/
+  pronouns: he/him/his
+  bio: Human being; just like you
   url: https://www.johnsy.com/contact/
+  avatar: https://www.johnsy.com/images/johnsyweb.png
+  social_profiles:
+    - https://github.com/johnsyweb
 
 apple_touch_icon_sizes:
   - 57

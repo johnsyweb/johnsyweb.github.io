@@ -1,0 +1,80 @@
+utilities:
+  - id: ambassy
+    title: Ambassy
+    url: https://www.johnsy.com/ambassy/
+    image: https://www.johnsy.com/ambassy/ambassy-social-preview.png
+    image_alt: "Ambassy - A tool for parkrun ambassadors"
+    description: "A tool for parkrun Regional Event Ambassadors (REAs) to visualise and manage event allocations. Upload CSV files to display events on a map with Voronoi territories showing Regional Event Ambassador support areas."
+    purpose: "Visualise and manage Event Ambassador allocations"
+    features:
+      - Map visualisation
+      - Voronoi layers
+      - CSV import
+    seo:
+      keywords: "parkrun ambassador, event allocation, Voronoi map, regional event ambassador, event management"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun Regional Event Ambassadors"
+
+  - id: eventuate
+    title: Eventuate
+    url: https://www.johnsy.com/eventuate/
+    image: https://www.johnsy.com/eventuate/images/eventuate-social-preview.png
+    image_alt: "A tool for parkrun report writers"
+    description: "Extract parkrun event data for report writing. Generate summaries, milestone celebrations, volunteer acknowledgments, and community statistics automatically from parkrun results pages."
+    purpose: "Streamline parkrun report writing"
+    features:
+      - Event summaries
+      - Milestone tracking
+      - Volunteer stats
+    seo:
+      keywords: "parkrun report writer, event data extraction, parkrun statistics, volunteer recognition, community insights"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun report writers and event organisers"
+
+  - id: crashcourse
+    title: Crash Course Simulator
+    url: https://www.johnsy.com/crashcourse/
+    image: https://www.johnsy.com/crashcourse/og-image-with-course.png
+    image_alt: "Crash Course Simulator - GPS Course Planning & Simulation"
+    description: "Plan, edit, and simulate GPS courses with our powerful course simulator. Import GPX files, edit waypoints, and export your courses with full metadata support."
+    purpose: "GPS course planning and simulation"
+    features:
+      - GPX import/export
+      - Waypoint editing
+      - Course simulation
+    seo:
+      keywords: "GPS course planning, parkrun course simulator, GPX editor, waypoint management, course design"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun course planners and route designers"
+
+  - id: userscripts
+    title: parkrun Userscripts
+    url: https://www.johnsy.com/tampermonkey-parkrun/
+    image: https://www.johnsy.com/tampermonkey-parkrun/images/alphabet-challenge.png
+    image_alt: "parkrun Userscripts - Enhance your parkrun experience"
+    description: "A collection of userscripts that enhance parkrun pages with additional statistics, visualisations, and challenges for parkrun participants."
+    purpose: "Enhance parkrun page analysis"
+    features:
+      - Alphabet challenge
+      - Position bingo
+      - Walker analysis
+    seo:
+      keywords: "parkrun userscripts, Tampermonkey, parkrun stats, alphabet challenge, parkrun tools"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun participants and enthusiasts"
+
+  - id: foretoken
+    title: Foretoken
+    url: https://www.johnsy.com/foretoken/
+    image: https://www.johnsy.com/foretoken/og-image.png
+    image_alt: "Foretoken - parkrun Finish Token Generator"
+    description: "Generate parkrun finish tokens for scanning when events run out of physical tokens. Supports both 1D and 2D QR codes."
+    purpose: "Generate finish tokens when physical tokens run out"
+    features:
+      - 1D and 2D QR code support
+      - Printable format
+      - Token customisation
+    seo:
+      keywords: "parkrun finish token, QR code generator, token printing, finish scanning, parkrun equipment"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun event organisers and volunteers"
