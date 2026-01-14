@@ -1,0 +1,18 @@
+{% comment %}
+  Author Person schema.org markup.
+  Renders a JSON-LD Person schema for the site author.
+  Usage: {% include schema-author.html %}
+{% endcomment %}
+{
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "givenName": "{{ site.author.given_name }}",
+  "familyName": "{{ site.author.family_name }}"{% if site.author.pronunciation %},
+  "alternateName": "{{ site.author.name }} ({{ site.author.pronunciation }})"{% endif %}{% if site.author.pronouns %},
+  "pronouns": "{{ site.author.pronouns }}"{% endif %}{% if site.author.bio %},
+  "description": "{{ site.author.bio }}"{% endif %}{% if site.author.job_title %},
+  "jobTitle": "{{ site.author.job_title }}"{% endif %},
+  "url": "{{ site.author.url }}",
+  "image": "{{ site.author.avatar }}"{% if site.author.social_profiles %},
+  "sameAs": {{ site.author.social_profiles | jsonify }}{% endif %}
+}

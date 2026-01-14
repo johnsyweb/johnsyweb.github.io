@@ -14,6 +14,7 @@ keywords:
 og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
+{% include schema-person.html %}
 
 Hello, there. I'm Pete and I shall be publishing these pages for you and people
 like you to read. You are very welcome. If you wish to reproduce any part of

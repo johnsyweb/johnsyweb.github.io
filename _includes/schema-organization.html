@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "logo": "{{ site.url }}/icons/apple-touch-icon.png",
+  "image": "{{ site.url }}/images/banner-og-compressed.jpg",
+  "founder": {% include schema-author.html %},
+  "keywords": "{{ site.keywords | join: ', ' }}"
+}
+</script>

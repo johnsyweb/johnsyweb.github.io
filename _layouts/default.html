@@ -185,6 +185,9 @@
       title="Atom"
       href="{{ site.url }}/feed.xml"
     />
+    {% if page.url == '/' %}
+      {% include schema-organization.html %}
+    {% endif %}
   </head>
 
   <body>
