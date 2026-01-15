@@ -16,7 +16,7 @@ professional but my work involves online identity management and I find our
 community's behaviours fascinating. This blog post contains free, unsolicited
 advice, so you are guaranteed value for money but do give it some consideration.
 
-### Get a Password Manager
+## Get a Password Manager
 
 ![Password Entry]({{ site.baseurl }}{% link /images/2019-01-21-password-entry.png %})
 
@@ -55,7 +55,7 @@ illustration of this concept but _please_ don't use "correct horse battery
 staple" as your pass-phrase, [it has already been
 breached](https://haveibeenpwned.com/Passwords)!
 
-### Use Long, Unique, Random Passphrases Online
+## Use Long, Unique, Random Passphrases Online
 
 Your password manager doesn't care for the legibility of your credentials, so
 turn up the strength of your "password" to the maximum. 1Password and LastPass
@@ -69,7 +69,7 @@ to telecommunications companies will tell us that our generated passwords are
 storing our passwords in plain text and are therefore insecure. Which is the
 perfect segue to the next piece of advice.
 
-### Never Reuse Credentials
+## Never Reuse Credentials
 
 It's safe to assume that your credentials from at least one online service will
 be leaked at some point in time. See [HIBP](https://haveibeenpwned.com/), it
@@ -80,7 +80,7 @@ bad for them to impersonate you on that service but potentially far worse for
 them to impersonate you using the same credentials to log into your social media
 or email service.
 
-### Enable Two-Factor Authentication (2FA)
+## Enable Two-Factor Authentication (2FA)
 
 Multi-factor authentication (MFA) is not available everywhere but it is
 available on many major online services. The site [Two Factor Auth
@@ -106,7 +106,7 @@ or Universal 2nd Factor (U2F) devices, where available. When presented with
 backup codes, keep these safe as you would your birth certificate, passport or
 driving licence.
 
-### Conclusion
+## Conclusion
 
 _Please_ keep strong, unique pass-phrases in a password manager and secure your
 email and social media accounts with 2FA.
