@@ -21,7 +21,7 @@ I hope this little tip helps improve your productivity.
 
 What's your favourite Alfred custom search?
 
-### Addendum (2019-04-22)
+## Addendum (2019-04-22)
 
 I am glad I shared this tip. It led to Ricky sending me this knowledge upgrade:
 
