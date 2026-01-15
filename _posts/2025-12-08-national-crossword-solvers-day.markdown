@@ -23,7 +23,7 @@ For example:
 
 MinuteCryptic have also published a book, ["Minute Cryptic: Over 160 Wordplay Puzzles to Decipher, Unlock, and Untangle"][minutecryptic-book], which is a great step-by-step guide to solving cryptic crosswords.
 
-![Two books side by side: David Astle's "Rewording the Brain" (red cover) and MinuteCryptic's "Over 160 Wordplay Puzzles to Decipher, Unlock, and Untangle" (blue cover)][books-image]{: .responsive-img}
+![Two books side by side: David Astle's "Rewording the Brain" (red cover) and MinuteCryptic's "Over 160 Wordplay Puzzles to Decipher, Unlock, and Untangle" (blue cover)][books-image]
 
 I have also read David Astle's book ["Rewording the Brain"][rewording], which I recommend, not just for the guide to solving cryptic clues but also for the descriptions of the benefits of solving cryptic crosswords.
 

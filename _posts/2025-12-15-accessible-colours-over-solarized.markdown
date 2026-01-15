@@ -13,9 +13,9 @@ Ouch. I prefer light mode these days and had completely neglected dark mode duri
 
 Time to fix it properly. I researched accessible colour schemes, replaced my Solarised-inspired palette with [Material Design 3][material-colors] colours tuned to meet [WCAG AA/AAA][wcag-contrast] contrast ratios (that's a 4.5:1 ratio for normal text, 3:1 for large text, basically ensuring text is dark enough on light backgrounds, or light enough on dark ones), and added automated checks to prevent future regressions.
 
-![Side-by-side comparison of the About page in light mode: left is origin/main with the older Solarized-inspired palette; right is this branch with the new accessible palette, showing stronger contrast for body text, links, and metadata.][light-comparison]{:.responsive-img.lazy title="About page light mode: before (origin/main) vs after (accessible palette)" width="600" height="360"}
+![Side-by-side comparison of the About page in light mode: left is origin/main with the older Solarized-inspired palette; right is this branch with the new accessible palette, showing stronger contrast for body text, links, and metadata.][light-comparison]{:.lazy title="About page light mode: before (origin/main) vs after (accessible palette)" width="600" height="360"}
 
-![Side-by-side comparison of the About page in dark mode: left is origin/main with the older Solarized-inspired palette; right is this branch with the new accessible palette, showing clearer link outlines and legible muted text.][dark-comparison]{:.responsive-img.lazy title="About page dark mode: before (origin/main) vs after (accessible palette)" width="600" height="360"}
+![Side-by-side comparison of the About page in dark mode: left is origin/main with the older Solarized-inspired palette; right is this branch with the new accessible palette, showing clearer link outlines and legible muted text.][dark-comparison]{:.lazy title="About page dark mode: before (origin/main) vs after (accessible palette)" width="600" height="360"}
 
 ## What changed
 

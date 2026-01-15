@@ -430,6 +430,8 @@ article img {
   display: block;
   text-align: center;
   margin: 0 auto 1em auto;
+  max-width: 100%;
+  height: auto;
 }
 
 article .meta {

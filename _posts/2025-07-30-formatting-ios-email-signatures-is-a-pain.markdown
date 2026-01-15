@@ -12,7 +12,7 @@ Given the lack of formatting controls in the settings sheet, I figured that the 
 
 The solution is to use [Pages][pages]. When you select the text, each line should end with a paragraph break (&para;), not just a line break (&crarr;). I now have a Signature.pages file in my [iCloud Drive][icloud-drive], which has each of my signatures ready to copy and paste into iOS when I need it.
 
-![Screenshot of signature formatting in iOS][signature-image]{:.responsive-img}
+![Screenshot of signature formatting in iOS][signature-image]
 
 My signatures all start with the [standard delimiter][standard-delimiter] (exactly two hyphens, followed by a space, alone on a line), of course.
 

@@ -17,7 +17,7 @@ There are a few personal reasons that make this the right time. Our kids are gro
 
 I think a lot about this picture from Marlay parkrun back in October 2019 — it's become a reminder to me about priorities.
 
-![Marlay parkrun, October 2019](https://live-production.wcms.abc-cdn.net.au/3739bd32906cfe2ae0f55d0fbd5701c6){: .responsive-img }
+![Marlay parkrun, October 2019](https://live-production.wcms.abc-cdn.net.au/3739bd32906cfe2ae0f55d0fbd5701c6)
 _Getting active with my family in Dublin, October 2019 — also the last photo taken of Uncle Stan and me together_
 
 **Source**: [ABC News Article]

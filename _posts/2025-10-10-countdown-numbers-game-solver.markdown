@@ -60,7 +60,7 @@ Yesterday, I had a shower thought: what if I could determine whether there was a
 
 And so my new [Countdown Numbers Game Solver] was born, and it's now online for others to play with.
 
-[![Preview of Countdown Numbers Game Solver][Countdown Numbers Game Solver Image]{: style="max-width:100%; height:auto;" }][Countdown Numbers Game Solver]
+[![Preview of Countdown Numbers Game Solver][Countdown Numbers Game Solver Image]][Countdown Numbers Game Solver]
 
 
 The ⭐ star icon in the solutions box indicates a "golden path" solution exists where each result flows into the next step. Today, this indicated I had some more work to do to avoid a gentle teasing.
