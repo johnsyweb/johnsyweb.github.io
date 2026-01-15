@@ -1,25 +1,21 @@
 ---
 layout: post
 title: Vim v7.0
+date: 2006-05-10 00:00:00.000000000 +00:00
+modified: 2026-01-15 00:00:00.000000000 +00:00
 ---
 
+After some years of development, [Bram Moolenaar][1] has [released][2] version seven of [Vim][3]. I've been beta-testing it for a while now and recommend upgrading to the new version as soon as you can!
 
-After some years of development, [Bram Moolenaar](https://www.moolenaar.net/) has
-[released](https://groups.yahoo.com/group/vimannounce/message/161) version seven
-of [Vim](https://www.vim.org/). I've been beta-testing it for a while now and
-recommend upgrading to the new version as soon as you can!
+I've updated my [Primitive][4] colour-scheme (should anyone want to use it). I need to do some work on my [.vimrc][5] script (which started off life as [gjvc][6]'s .vimrc) to iron out a couple of niggles, but you're more than welcome to use it.
 
+If you like using Vim (or if you just want to help out the kids in [Uganda][7]), you can [sponsor Vim][8]. Now that Bram's got himself a job, all of the money goes to charity!
 
-I've updated my
-[Primitive](https://www.johnsy.org/dotfiles/.vim/colors/primitive.vim)
-colour-scheme (should anyone want to use it). I need to do some work on my
-[.vimrc](https://www.johnsy.org/dotfiles/.vimrc) script (which started off life
-as [gjvc](https://www.gjvc.com/)'s .vimrc) to iron out a couple of niggles, but
-you're more than welcome to use it.
-
-
-If you like using Vim (or if you just want to help out the kids in
-[Uganda](https://iccf-holland.org/)), you can [sponsor
-Vim](https://www.vim.org/sponsor/). Now that Bram's got himself a job, all of the
-money goes to charity!
-
+[1]: https://www.moolenaar.net/
+[2]: https://web.archive.org/web/20060510/groups.yahoo.com/group/vimannounce/message/161
+[3]: https://www.vim.org/
+[4]: https://github.com/johnsyweb/dotfiles/blob/main/.vim/colors/primitive.vim
+[5]: https://github.com/johnsyweb/dotfiles/blob/main/.vimrc
+[6]: https://web.archive.org/web/20060510/www.gjvc.com/
+[7]: https://iccf-holland.org/
+[8]: https://www.vim.org/sponsor/
