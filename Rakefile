@@ -74,11 +74,16 @@ task :validate_html => :build do
     allow_hash_href: true,
     ignore_status_codes: [0, 202, 403, 417, 429, 999],
     ignore_urls: [
-      %r{\/\/localhost},
-      %r{\/\/127\.0\.0\.1},
-      %r{https?:\/\/(www\.)?johnsy\.com\/},  # Self-referential URLs fail during build
-      %r{https?:\/\/(www\.)?realestate\.com\.au\/},
-      %r{https?:\/\/(www\.)?seek\.com\.au\/}
+      %r{//localhost},
+      %r{//127\.0\.0\.1},
+      %r{https?://(www\.)?johnsy\.com/},  # Self-referential URLs fail during build
+      %r{https?://(www\.)?realestate\.com\.au/},
+      %r{https?://(www\.)?seek\.com\.au/},
+      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm},  # Old HTTP BBC link - acceptable
+      %r{http://(www\.)?mutt\.org/},  # Old HTTP mutt.org link - acceptable
+      %r{https://ronjeffries\.com/xprog/articles/acsbowling},  # TODO: html-proofer reports false 301 timeout
+      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore},  # TODO: html-proofer reports false 301 timeout
+      %r{https://signal\.me/#eu/},  # Signal share URIs have app-specific hashes not on web
     ]
   }
   
@@ -94,14 +99,14 @@ task :validate_html => :build do
     end
   RUBY
   
-  # If there were failures but external link failures are non-breaking
+  # If there were failures, fail the build
   unless success
-    if ENV['STRICT_EXTERNAL_LINKS'].nil?
-      puts "\n⚠️  HTML validation completed with warnings (non-breaking)"
-      puts "Set STRICT_EXTERNAL_LINKS=1 to fail the build on external link issues"
-      # Don't fail the task
-    else
+    if ENV['ALLOW_EXTERNAL_LINK_WARNINGS'].nil?
       raise "HTML validation failed"
+    else
+      puts "\n⚠️  HTML validation completed with warnings (non-breaking)"
+      puts "Set ALLOW_EXTERNAL_LINK_WARNINGS=1 to suppress external link failures"
+      # Don't fail the task
     end
   end
 end

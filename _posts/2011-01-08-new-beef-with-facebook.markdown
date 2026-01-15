@@ -24,7 +24,7 @@ If you're a Facebook user (and the chances are very high that you are), please t
 [fb]: https://www.facebook.com/
 [my-fb]: https://thribble.blogspot.com.au/
 [mi6]: https://en.wikipedia.org/wiki/MI6
-[control]: https://en.wikipedia.org/wiki/Get_Smart#CONTROL
+[control]: https://en.wikipedia.org/wiki/Get_Smart
 [st-trinians]: https://en.wikipedia.org/wiki/St_Trinian's_School
 [sophos-fb]: https://web.archive.org/web/20110213005138/www.sophos.com/security/best-practice/facebook/
 

@@ -3,6 +3,7 @@ layout: post
 category: UX
 title: On meaningful error messages
 date: 2018-12-20  0:24:34
+updated_at: 2026-01-15 00:00:00 +11:00
 ---
 
 Today I was trying to make a simple change to a Git repository, privately hosted
@@ -61,7 +62,7 @@ Well _why didn't you say so?_
 
 It's worth noting at this point that while the SSH failure mode in this scenario
 is _slightly_ better, I use HTTPS remotes over SSH because
-[GitHub *recommend* HTTPS over SSH](https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended).
+[GitHub *recommend* HTTPS over SSH](https://help.github.com/articles/which-remote-url-should-i-use/).
 
 I understand that GitHub uses "Not Found" where it means "Forbidden" in some
 circumstances to prevent inadvertently reveling the existence of a private
@@ -71,7 +72,7 @@ repository:
 > `403 Forbidden`, in some places. This is to prevent the accidental leakage of
 > private repositories to unauthorized users.
 
---[GitHub](https://developer.github.com/v3/#authentication)
+--[GitHub](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#personal-access-tokens-and-saml-sso)
 
 This is a fairly common practice around the web, indeed it is defined:
 
@@ -82,7 +83,7 @@ This is a fairly common practice around the web, indeed it is defined:
 --[6.5.4. 404 Not Found, RFC 7231 HTTP/1.1 Semantics and Content](https://tools.ietf.org/html/rfc7231#section-6.5.4) (emphasis mine)
 
 What makes no sense to me is when I am authenticated with GitHub using a
-[credential helper](https://help.github.com/articles/caching-your-github-password-in-git/)
+[credential helper](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
 *and* I have access to that repository (having successfully cloned and fetched
 it) that GitHub would _choose_ to hide its existence from me because of missing
 write permissions. That's pretty terrible user experience and cost me a whole

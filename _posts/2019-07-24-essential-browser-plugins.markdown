@@ -3,6 +3,7 @@ layout: post
 category: technology
 title: Essential Browser Plugins
 date: 2019-07-24  9:56:59
+updated_at: 2026-01-15 00:00:00 +11:00
 ---
 
 Sometimes my add-ons in [Firefox](https://mozilla.org/firefox/) go absent
@@ -20,7 +21,7 @@ and wondered whether others would find this list useful. So I'm publishing it.
  
 Shorten, measure, and optimize your links. 
  
-[https://bitly.com/pages/tools#extension](https://bitly.com/pages/tools#extension)
+[https://bitly.com/pages/browser-extension](https://bitly.com/pages/browser-extension)
  
 ## DuckDuckGo Privacy Essentials
 
@@ -68,7 +69,7 @@ and since then I've helped to add the
 
 An efficient blocker. Easy on CPU and memory. 
 
-[https://github.com/gorhill/uBlock#ublock-origin](https://github.com/gorhill/uBlock#ublock-origin)
+[https://github.com/gorhill/uBlock?tab=readme-ov-file#installation](https://github.com/gorhill/uBlock?tab=readme-ov-file#installation)
 
 ## Video Speed Controller
 
