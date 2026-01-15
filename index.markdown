@@ -5,6 +5,8 @@ og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
+{% include schema-organization.html %}
+
 Congratulations! You have successfully found the front page of my website. Take
 ten points. I don't know what you thought you might find when you got here, but
 this is about it. Unless of course you count the stuff that can be found by
