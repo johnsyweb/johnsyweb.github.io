@@ -20,8 +20,8 @@ I first heard of Rose Tattoo on a local radio station [Gold
 104](https://www.1043fm.com.au/) about a year ago, when I used to drive to work.
 I quite liked the tracks that they played on the radio, but never saw fit to
 actually buy one of their albums. In fact I'd never even looked them up on the
-web. Only now do I see that the lead singer is [Angry
-Anderson](https://www.myspace.com/therealangryanderson), responsible for that
+web. Only now do I see that the lead singer is Angry
+Anderson, responsible for that
 wedding music in Neighbours all those years ago! Rock and roll.
 
 
