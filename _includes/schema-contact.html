@@ -5,6 +5,11 @@
   "name": "{{ page.title }}",
   "description": "{{ page.description }}",
   "url": "{{ site.url }}{{ page.url }}",
-  "mainEntity": {% include schema-author.html %}
+  "mainEntity": {% include schema-author.html %},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "General Inquiry",
+    "url": "{{ site.url }}{{ page.url }}"
+  }
 }
 </script>
