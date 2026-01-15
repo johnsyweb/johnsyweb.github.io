@@ -8,7 +8,7 @@ date: 2016-04-28 09:52:51
 It's a sad day. Today I rode to work for the last time. I still love bicycles. I
 still love cycling. But I love *life* more.
 
-### The beginning of the end
+## The beginning of the end
 
 In my post [How do we stop this
 happening?]({% post_url 2016-03-03-how-do-we-stop-this-happening? %}), I
@@ -61,7 +61,7 @@ get abuse in return.
 
 Cycling to and from work had ceased to be a pleasurable experience.
 
-### The final straw
+## The final straw
 
 This morning, as I cycled alongside Princes Park, a grey Mazda 3 swerved into
 the cycle lane ahead of me and crossed back and forth a few times. I caught the
