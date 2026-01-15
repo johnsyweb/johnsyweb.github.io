@@ -12,6 +12,12 @@ redirect_from:
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <image>
+      <url>{{ site.url }}/icons/favicon-196x196.png</url>
+      <title>{{ site.name | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+    </image>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% for post in site.posts limit:10 %}
@@ -19,6 +25,7 @@ redirect_from:
         <title>{{ post.title | xml_escape }}</title>
         {% include absolute_content.html content=post.content %}
         <description>{{ absolute_content | xml_escape }}</description>
+        <author>{{ site.author.name | xml_escape }}</author>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
