@@ -3,16 +3,51 @@ layout: default
 ---
 {% include schema-article.html %}
 <article class="post">
-	{% if page.external-url %}
-		<h1>
-			<a href="{{ page.external-url }}">{{ page.title }}</a> 
-			<a class="anchor" href="{{ page.url }}" title="Permalink to {{ page.title }}"><i class="icon-anchor"></i></a>
-		</h1>
-	{% else %}
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-	{% endif %}
+	<header>
+		{% if page.external-url %}
+			<h1>
+				<a href="{{ page.external-url }}">{{ page.title }}</a> 
+				<a class="anchor" href="{{ page.url }}" title="Permalink to {{ page.title }}"><i class="icon-anchor"></i></a>
+			</h1>
+		{% else %}
+			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		{% endif %}
 
-	<p class="meta"><span class="postdate">{{ page.date | date: "%a, %e %b %Y" }}</span></p>
+		<details class="post-metadata-details">
+			<summary class="post-metadata-summary">Posted by {{ site.author.name }} on {{ page.date | date: "%A, %e %B %Y" }}{% if page.category %} in {{ page.category }}{% endif %}</summary>
+			<dl class="post-metadata">
+				<div>
+					<dt>Published</dt>
+					<dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %e %b %Y" }}</time></dd>
+				</div>
+				{% if page.last_modified_at %}
+				<div>
+					<dt>Updated</dt>
+					<dd><time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%a, %e %b %Y" }}</time></dd>
+				</div>
+				{% endif %}
+				{% if page.category %}
+				<div>
+					<dt>Category</dt>
+					<dd><span class="category">{{ page.category }}</span></dd>
+				</div>
+				{% endif %}
+				<div>
+					<dt>Author</dt>
+					<dd><a href="{{ site.author.url }}" rel="author">{{ site.author.name }}</a></dd>
+				</div>
+				<div>
+					<dt>Reading time</dt>
+					<dd><small>{{ content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read</small></dd>
+				</div>
+				<div>
+					<dt>Length</dt>
+					<dd><small>{{ content | strip_html | number_of_words }} words</small></dd>
+				</div>
+			</dl>
+		</details>
+	</header>
+
 	<div class="post-content">{{ content }}</div>
 </article>
 <script>

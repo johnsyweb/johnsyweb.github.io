@@ -29,6 +29,10 @@ blockquote {
 	border-color: #2C2C2C;
 }
 
+.post-metadata {
+	border-left-color: #64B5F6;
+}
+
 .utility-card {
 	border-color: #2C2C2C;
 }
