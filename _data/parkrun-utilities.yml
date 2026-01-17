@@ -1,19 +1,19 @@
 utilities:
-  - id: ambassy
-    title: Ambassy
-    url: https://www.johnsy.com/ambassy/
-    image: https://www.johnsy.com/ambassy/ambassy-social-preview.png
-    image_alt: "Ambassy - A tool for parkrun ambassadors"
-    description: "A tool for parkrun Regional Event Ambassadors (REAs) to visualise and manage event allocations. Upload CSV files to display events on a map with Voronoi territories showing Regional Event Ambassador support areas."
-    purpose: "Visualise and manage Event Ambassador allocations"
+  - id: foretoken
+    title: Foretoken
+    url: https://www.johnsy.com/foretoken/
+    image: https://www.johnsy.com/foretoken/og-image.png
+    image_alt: "Foretoken - parkrun Finish Token Generator"
+    description: "Generate parkrun finish tokens for scanning when events run out of physical tokens. Supports both 1D and 2D QR codes."
+    purpose: "Generate finish tokens when physical tokens run out"
     features:
-      - Map visualisation
-      - Voronoi layers
-      - CSV import
+      - 1D and 2D QR code support
+      - Printable format
+      - Mobile optimised
     seo:
-      keywords: "parkrun ambassador, event allocation, Voronoi map, regional event ambassador, event management"
+      keywords: "parkrun finish token, QR code generator, token printing, finish scanning, parkrun equipment"
       schema_type: "SoftwareApplication"
-      audience: "parkrun Regional Event Ambassadors"
+      audience: "parkrun event organisers and volunteers"
 
   - id: eventuate
     title: Eventuate
@@ -63,18 +63,18 @@ utilities:
       schema_type: "SoftwareApplication"
       audience: "parkrun participants and enthusiasts"
 
-  - id: foretoken
-    title: Foretoken
-    url: https://www.johnsy.com/foretoken/
-    image: https://www.johnsy.com/foretoken/og-image.png
-    image_alt: "Foretoken - parkrun Finish Token Generator"
-    description: "Generate parkrun finish tokens for scanning when events run out of physical tokens. Supports both 1D and 2D QR codes."
-    purpose: "Generate finish tokens when physical tokens run out"
+  - id: ambassy
+    title: Ambassy
+    url: https://www.johnsy.com/ambassy/
+    image: https://www.johnsy.com/ambassy/ambassy-social-preview.png
+    image_alt: "Ambassy - A tool for parkrun ambassadors"
+    description: "A tool for parkrun Regional Event Ambassadors (REAs) to visualise and manage event allocations. Upload CSV files to display events on a map with Voronoi territories showing Regional Event Ambassador support areas."
+    purpose: "Visualise and manage Event Ambassador allocations"
     features:
-      - 1D and 2D QR code support
-      - Printable format
-      - Token customisation
+      - Map visualisation
+      - Voronoi layers
+      - CSV import
     seo:
-      keywords: "parkrun finish token, QR code generator, token printing, finish scanning, parkrun equipment"
+      keywords: "parkrun ambassador, event allocation, Voronoi map, regional event ambassador, event management"
       schema_type: "SoftwareApplication"
-      audience: "parkrun event organisers and volunteers"
+      audience: "parkrun Regional Event Ambassadors"
