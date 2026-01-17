@@ -27,6 +27,11 @@ author:
   avatar: https://www.johnsy.com/images/johnsyweb.png
   social_profiles:
     - https://github.com/johnsyweb
+    - https://www.flickr.com/people/johnsyweb/
+  organizations:
+    - relationship: founder
+      name: Merri Creek Running Club
+      url: https://merricreekrunning.club
 
 apple_touch_icon_sizes:
   - 57

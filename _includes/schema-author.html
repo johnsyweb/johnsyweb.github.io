@@ -14,5 +14,10 @@
   "jobTitle": "{{ site.author.job_title }}"{% endif %},
   "url": "{{ site.author.url }}",
   "image": "{{ site.author.avatar }}"{% if site.author.social_profiles %},
-  "sameAs": {{ site.author.social_profiles | jsonify }}{% endif %}
+  "sameAs": {{ site.author.social_profiles | jsonify }}{% endif %}{% if site.author.organizations %}{% for org in site.author.organizations %},
+  "{{ org.relationship }}": {
+    "@type": "Organization",
+    "name": "{{ org.name }}",
+    "url": "{{ org.url }}"
+  }{% endfor %}{% endif %}
 }
