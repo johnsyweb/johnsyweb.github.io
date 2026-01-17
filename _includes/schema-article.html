@@ -1,3 +1,4 @@
+{% include post-image-url.html %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -7,8 +8,8 @@
   "articleBody": "{{ content | strip_html | xml_escape }}",
   "url": "{{ site.url }}{{ page.url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}"{% if page.og_image %},
-  "image": "{% if page.og_image contains '//' %}{{ page.og_image }}{% else %}{{ site.url }}{{ page.og_image }}{% endif %}"{% endif %},
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "image": "{{ post_image_url }}",
   "author": {% include schema-author.html %},
   "publisher": {% include schema-author.html %},
   "inLanguage": "en",

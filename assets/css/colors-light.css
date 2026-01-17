@@ -33,6 +33,10 @@ blockquote {
 	border-left-color: #1565C0;
 }
 
+.post-listing {
+	border-bottom-color: #E0E0E0;
+}
+
 .utility-card {
 	border-color: #E0E0E0;
 }

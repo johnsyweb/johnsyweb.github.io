@@ -448,6 +448,56 @@ article .meta {
   opacity: 0.8;
 }
 
+.post-listing-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.post-listing:nth-child(even) .post-listing-content {
+  flex-direction: row-reverse;
+}
+
+.post-preview-image-link {
+  flex-shrink: 0;
+  border: none;
+}
+
+.post-preview-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.post-excerpt {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .post-listing-content {
+    flex-direction: column !important;
+  }
+  
+  .post-preview-image {
+    width: 100%;
+    max-height: 150px;
+    height: auto;
+  }
+}
+
+.post-listing {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid;
+}
+
+.post-listing:last-of-type {
+  border-bottom: none;
+}
+
 /* Post Metadata Details */
 .post-metadata-details {
   margin: 15px 0 25px 0;

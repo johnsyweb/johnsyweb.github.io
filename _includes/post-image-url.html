@@ -1,0 +1,27 @@
+{% comment %}
+  Post Image URL extraction.
+  Returns the best available image URL for a post:
+  1. og_image if explicitly set
+  2. First image in content
+  3. Author avatar as fallback
+  Usage: {% include post-image-url.html item=page %} or {% include post-image-url.html item=post %}
+  Output is assigned to: post_image_url
+{% endcomment %}
+{% assign item = include.item | default: page %}
+{% if item.og_image %}
+  {% if item.og_image contains '//' %}
+    {% assign post_image_url = item.og_image %}
+  {% else %}
+    {% assign post_image_url = site.url | append: item.og_image %}
+  {% endif %}
+{% elsif item.content contains '<img' %}
+  {% assign first_img_block = item.content | split: '<img' | last %}
+  {% assign raw_src = first_img_block | split:'src="' | last | split:'"' | first %}
+  {% if raw_src contains '//' %}
+    {% assign post_image_url = raw_src %}
+  {% else %}
+    {% assign post_image_url = site.url | append: raw_src %}
+  {% endif %}
+{% else %}
+  {% assign post_image_url = site.author.avatar %}
+{% endif %}

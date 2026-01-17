@@ -6,7 +6,7 @@ title: Blog
 <div id="blog-archives">
 {% for post in paginator.posts %}
 
-    <article class="post">
+    <article class="post post-listing">
 
         {% if post.external-url %}
             <h1>
@@ -18,8 +18,18 @@ title: Blog
         {% endif %}
 
         <p class="post-summary">Posted by {{ site.author.name }} on {{ post.date | date: "%A, %e %B %Y" }}{% if post.category %} in {{ post.category }}{% endif %}</p>
-        <div class="post-content">{{ post.excerpt }}</div>
-        <p><a href="{{ post.url }}">Continue reading "{{ post.title }}"</a></p>
+        
+        <div class="post-listing-content">
+            {% include post-image-url.html item=post %}
+            <a href="{{ post.url }}" class="post-preview-image-link">
+                <img src="{{ post_image_url }}" alt="{{ post.title }}" class="post-preview-image" loading="lazy">
+            </a>
+            
+            <div class="post-excerpt">
+                <div class="post-content">{{ post.excerpt }}</div>
+                <p><a href="{{ post.url }}">Continue reading "{{ post.title }}"</a></p>
+            </div>
+        </div>
 
     </article>
 
