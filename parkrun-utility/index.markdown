@@ -13,6 +13,6 @@ Tools I created as a software engineer who loves parkrun to help me in various v
 
 <div class="utility-grid">
   {% for utility in site.data.parkrun-utilities.utilities %}
-    {% include utility-card.html card=utility %}
+    {% include utility-card.html card=utility heading_level=3 %}
   {% endfor %}
 </div>
