@@ -1,9 +1,10 @@
 {% comment %}
   Renders a parkrun utility card with configurable content and SEO markup.
-  Usage: {% include utility-card.html card=card %}
+  Usage: {% include utility-card.html card=card heading_level=2 %}
 {% endcomment %}
+{% assign heading_level = include.heading_level | default: 2 %}
 <div class="utility-card" data-utility-id="{{ include.card.id }}">
-  <h3><a href="{{ include.card.url }}">{{ include.card.title }}</a></h3>
+  <h{{ heading_level }}><a href="{{ include.card.url }}">{{ include.card.title }}</a></h{{ heading_level }}>
   <img 
     src="{{ include.card.image }}" 
     alt="{{ include.card.image_alt }}" 
