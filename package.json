@@ -4,6 +4,10 @@
   "private": true,
   "description": "johnsy.com website",
   "scripts": {
+    "dev": "npm-run-all --parallel watch:css watch:js serve:jekyll",
+    "watch:css": "node scripts/watch-css.mjs",
+    "watch:js": "node scripts/watch-js.mjs",
+    "serve:jekyll": "bundle exec jekyll serve --livereload",
     "lhci:styles:light": "lhci autorun --config=.lighthouserc-styles-light.json",
     "lhci:styles:dark": "lhci autorun --config=.lighthouserc-styles-dark.json",
     "lhci:styles": "pnpm run lhci:styles:light && pnpm run lhci:styles:dark",
@@ -13,6 +17,7 @@
   "devDependencies": {
     "@lhci/cli": "^0.13.0",
     "clean-css-cli": "^5.6.3",
+    "npm-run-all": "^4.1.5",
     "playwright": "^1.57.0",
     "terser": "^5.44.1"
   },

@@ -1,0 +1,69 @@
+microsites:
+  - id: qrty
+    title: QRTY
+    url: https://www.johnsy.com/QRTY/
+    image: https://www.johnsy.com/QRTY/qr-code.png
+    image_alt: "QRTY - QR and barcode decoder using screen capture or image upload"
+    description: "QR and barcode decoder using screen capture or image upload. Capture a section of your screen to automatically scan codes, or upload an image file. All processing happens locally in your browser for privacy."
+    purpose: "Decode QR codes and barcodes from images"
+    features:
+      - Screen capture or image upload
+      - Multiple code detection
+      - Fully keyboard accessible
+      - Privacy-focused local processing
+    seo:
+      keywords: "QR code decoder, barcode scanner, screen capture, image upload, privacy-focused, browser-based"
+      schema_type: "WebApplication"
+      audience: "Anyone needing to scan QR codes from images or emails"
+
+  - id: countdown
+    title: Countdown Numbers Game Solver
+    url: https://www.johnsy.com/countdown/
+    image: https://www.johnsy.com/countdown/og-image.png
+    image_alt: "Countdown Numbers Game Solver - Solve the Countdown numbers game"
+    description: "A TypeScript solver for the Countdown numbers game. Given six integers and a target, find all solutions using basic arithmetic. Features keyboard navigation, step-by-step solutions, and shareable permalinks."
+    purpose: "Solve the Countdown numbers game"
+    features:
+      - Step-by-step solution display
+      - Keyboard navigation
+      - Shareable permalinks
+      - Solutions grouped by efficiency
+    seo:
+      keywords: "Countdown numbers game, solver, arithmetic puzzle, Countdown game, numbers round"
+      schema_type: "WebApplication"
+      audience: "Countdown fans and puzzle enthusiasts"
+
+  - id: progression
+    title: Progression
+    url: https://www.johnsy.com/progression/
+    image: https://www.johnsy.com/progression/assets/screenshot.png
+    image_alt: "Progression - Visual progress bar between two dates"
+    description: "A microsite that displays a visual progress bar between two dates. All elements are editable with keyboard shortcuts. Supports light and dark modes, automatically adapting to system preferences."
+    purpose: "Visualize progress between two dates"
+    features:
+      - Editable title and dates
+      - Keyboard shortcuts (Alt/Cmd + T/S/E)
+      - Light and dark mode support
+      - Automatic URL updates
+    seo:
+      keywords: "progress tracker, date progress, visual timeline, progress bar, date range"
+      schema_type: "WebApplication"
+      audience: "Anyone tracking time-based progress"
+
+  - id: speedtest-analysis
+    title: Speedtest Analysis
+    url: https://www.johnsy.com/speedtest-analysis/
+    image: https://www.johnsy.com/speedtest-analysis/screenshot.png
+    image_alt: "Speedtest Analysis - Network performance analysis and visualization"
+    description: "Monitor your internet speed over time to investigate network issues, verify ISP performance, and track changes. Includes automated data gathering scripts for continuous monitoring and interactive visualizations to analyze trends. Export results for further analysis or reporting."
+    purpose: "Track and analyze network performance over time"
+    features:
+      - Automated data collection scripts (macOS)
+      - Interactive Chart.js visualizations
+      - Drag-and-drop file upload
+      - CSV export functionality
+      - Public IP detection
+    seo:
+      keywords: "speedtest analysis, network performance, bandwidth monitoring, Chart.js visualization, speed test tracking, automated speedtest"
+      schema_type: "SoftwareApplication"
+      audience: "Network administrators and home users monitoring connection performance"

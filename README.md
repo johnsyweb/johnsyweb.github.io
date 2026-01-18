@@ -2,6 +2,78 @@
 
 A complete waste of cyberspace.
 
+## Development
+
+To start the development server with automatic CSS and JavaScript minification, plus Jekyll live reload:
+
+```bash
+pnpm run dev
+```
+
+This command runs three watch processes in parallel:
+- **CSS watcher**: Automatically minifies CSS files when they change
+- **JS watcher**: Automatically minifies JavaScript files when they change  
+- **Jekyll server**: Serves the site with live reload on http://localhost:4000
+
+All file changes are detected automatically, and your browser will refresh when Jekyll content changes.
+
+## Microsites Showcase
+
+The homepage features a showcase of microsites, similar to the parkrun utilities page. Microsites are configured in `_data/microsites.yml` and displayed using the `utility-card.html` include.
+
+### Adding a New Microsite
+
+1. Open `_data/microsites.yml`
+2. Add a new entry under the `microsites:` array with the following structure:
+
+```yaml
+- id: unique-id
+  title: Display Name
+  url: https://www.johnsy.com/path/
+  image: https://www.johnsy.com/path/og-image.png
+  image_alt: "Alt text for the preview image"
+  description: "Brief description of what the microsite does"
+  purpose: "One-line purpose statement"
+  features:
+    - Feature one
+    - Feature two
+    - Feature three
+  seo:
+    keywords: "comma, separated, keywords"
+    schema_type: "WebApplication"  # or "SoftwareApplication"
+    audience: "Target audience description"
+```
+
+3. The microsite will automatically appear on the homepage
+4. If the microsite URL is under `www.johnsy.com` and ends with `/`, its sitemap will be automatically included in `sitemap-index.xml`
+
+### Setting Up URL Redirects
+
+To create a redirect from one URL to another (e.g., `/qrty/` → `/QRTY/`):
+
+1. Create a directory with the redirect source path (e.g., `qrty/`)
+2. Add an `index.html` file with front matter:
+
+```yaml
+---
+redirect_to: https://www.johnsy.com/QRTY/
+permalink: /qrty/
+---
+```
+
+The `jekyll-redirect-from` plugin will generate a 301 redirect.
+
+## Search
+
+This site uses [Pagefind](https://pagefind.app/) for client-side search. After adding or updating content, regenerate the search index before committing:
+
+```bash
+./scripts/update_search.sh
+```
+
+The script builds the site, runs Pagefind, and refreshes the assets in `assets/pagefind/`. If you are using a custom Ruby version manager, ensure the environment can run `bundle exec jekyll build` first.
+
+
 
 <!-- BEGIN TOC -->
 ## Website Sections
@@ -24,13 +96,3 @@ A complete waste of cyberspace.
 - 2025-10-10: [Countdown Numbers Game Solver](https://www.johnsy.com/blog/2025/10/10/countdown-numbers-game-solver/)
 
 <!-- END TOC -->
-
-## Search
-
-This site uses [Pagefind](https://pagefind.app/) for client-side search. After adding or updating content, regenerate the search index before committing:
-
-```bash
-./scripts/update_search.sh
-```
-
-The script builds the site, runs Pagefind, and refreshes the assets in `assets/pagefind/`. If you are using a custom Ruby version manager, ensure the environment can run `bundle exec jekyll build` first.
