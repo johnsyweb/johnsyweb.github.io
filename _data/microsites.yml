@@ -36,7 +36,7 @@ microsites:
   - id: progression
     title: Progression
     url: https://www.johnsy.com/progression/
-    image: https://www.johnsy.com/progression/og-image.png
+    image: https://www.johnsy.com/progression/assets/screenshot.png
     image_alt: "Progression - Visual progress bar between two dates"
     description: "A microsite that displays a visual progress bar between two dates. All elements are editable with keyboard shortcuts. Supports light and dark modes, automatically adapting to system preferences."
     purpose: "Visualize progress between two dates"
@@ -53,16 +53,17 @@ microsites:
   - id: speedtest-analysis
     title: Speedtest Analysis
     url: https://www.johnsy.com/speedtest-analysis/
-    image: https://www.johnsy.com/speedtest-analysis/og-image.png
+    image: https://www.johnsy.com/speedtest-analysis/screenshot.png
     image_alt: "Speedtest Analysis - Network performance analysis and visualization"
-    description: "A TypeScript web application for analyzing and visualizing speedtest data with public IP detection, interactive charts using Chart.js, and detailed reporting. Features drag-and-drop file upload, CSV export, and responsive design."
-    purpose: "Analyze network speed test data"
+    description: "Monitor your internet speed over time to investigate network issues, verify ISP performance, and track changes. Includes automated data gathering scripts for continuous monitoring and interactive visualizations to analyze trends. Export results for further analysis or reporting."
+    purpose: "Track and analyze network performance over time"
     features:
+      - Automated data collection scripts (macOS)
       - Interactive Chart.js visualizations
       - Drag-and-drop file upload
       - CSV export functionality
       - Public IP detection
     seo:
-      keywords: "speedtest analysis, network performance, bandwidth monitoring, Chart.js visualization, speed test tracking"
+      keywords: "speedtest analysis, network performance, bandwidth monitoring, Chart.js visualization, speed test tracking, automated speedtest"
       schema_type: "SoftwareApplication"
       audience: "Network administrators and home users monitoring connection performance"
