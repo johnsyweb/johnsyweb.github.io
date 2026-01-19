@@ -151,6 +151,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
+
       - name: Install jq (for annotations)
         run: |
           sudo apt-get update
@@ -167,6 +173,7 @@ jobs:
       - name: Run Lighthouse CI (light) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
+          SKIP_BUILD: "true"
         run: |
           set +e
           bundle exec rake lighthouse_styles_light
@@ -180,6 +187,12 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Install jq (for annotations)
         run: |
@@ -197,6 +210,7 @@ jobs:
       - name: Run Lighthouse CI (dark) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
+          SKIP_BUILD: "true"
         run: |
           set +e
           bundle exec rake lighthouse_styles_dark
@@ -213,6 +227,12 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3

@@ -306,7 +306,12 @@ task :validate_feeds => :build do
 end
 
 desc 'Run Lighthouse CI accessibility tests on style test page (light mode)'
-task :lighthouse_styles_light => :build do
+task :lighthouse_styles_light do
+  # Build unless SKIP_BUILD is set (allows CI to reuse artifacts)
+  unless ENV['SKIP_BUILD'] == 'true'
+    Rake::Task[:build].invoke
+  end
+  
   # Check if pnpm is available
   unless system('which pnpm > /dev/null 2>&1')
     puts "pnpm not found. Enabling via corepack..."
@@ -332,7 +337,12 @@ task :lighthouse_styles_light => :build do
 end
 
 desc 'Run Lighthouse CI accessibility tests on style test page (dark mode)'
-task :lighthouse_styles_dark => :build do
+task :lighthouse_styles_dark do
+  # Build unless SKIP_BUILD is set (allows CI to reuse artifacts)
+  unless ENV['SKIP_BUILD'] == 'true'
+    Rake::Task[:build].invoke
+  end
+  
   # Check if pnpm is available
   unless system('which pnpm > /dev/null 2>&1')
     puts "pnpm not found. Enabling via corepack..."
