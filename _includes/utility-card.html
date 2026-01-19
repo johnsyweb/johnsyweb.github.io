@@ -1,16 +1,35 @@
 {% comment %}
   Renders a parkrun utility card with configurable content and SEO markup.
   Usage: {% include utility-card.html card=card heading_level=2 %}
+  
+  WebP images are auto-generated from utility ID:
+  - WebP path: /assets/images/webp/[id].webp
+  - Image can be external URL or local path
 {% endcomment %}
 {% assign heading_level = include.heading_level | default: 2 %}
+{% comment %} Auto-generate WebP path from utility ID (unless explicitly provided) {% endcomment %}
+{% if include.card.image_webp %}
+  {% assign webp_path = include.card.image_webp %}
+{% else %}
+  {% assign webp_path = '/assets/images/webp/' | append: include.card.id | append: '.webp' %}
+{% endif %}
 <div class="utility-card" data-utility-id="{{ include.card.id }}">
   <h{{ heading_level }}><a href="{{ include.card.url }}">{{ include.card.title }}</a></h{{ heading_level }}>
-  <img 
-    src="{{ include.card.image }}" 
-    alt="{{ include.card.image_alt }}" 
-    class="utility-preview"
-    loading="lazy"
-  />
+  <picture>
+    <source 
+      srcset="{{ webp_path }}" 
+      type="image/webp"
+    />
+    <img 
+      src="{{ include.card.image }}" 
+      alt="{{ include.card.image_alt }}"
+      {% if include.card.image_title %}title="{{ include.card.image_title }}"{% endif %}
+      {% if include.card.image_width %}width="{{ include.card.image_width }}"{% endif %}
+      {% if include.card.image_height %}height="{{ include.card.image_height }}"{% endif %}
+      class="utility-preview"
+      loading="lazy"
+    />
+  </picture>
   <p>{{ include.card.description }}</p>
   <div class="utility-meta">
     <p><strong>Purpose:</strong> {{ include.card.purpose }}</p>

@@ -3,7 +3,10 @@ microsites:
     title: QRTY
     url: https://www.johnsy.com/QRTY/
     image: https://www.johnsy.com/QRTY/qr-code.png
+    image_width: 1200
+    image_height: 630
     image_alt: "QRTY - QR and barcode decoder using screen capture or image upload"
+    image_title: "QRTY QR code"
     description: "QR and barcode decoder using screen capture or image upload. Capture a section of your screen to automatically scan codes, or upload an image file. All processing happens locally in your browser for privacy."
     purpose: "Decode QR codes and barcodes from images"
     features:
@@ -20,7 +23,10 @@ microsites:
     title: Countdown Numbers Game Solver
     url: https://www.johnsy.com/countdown/
     image: https://www.johnsy.com/countdown/og-image.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Countdown Numbers Game Solver - Solve the Countdown numbers game"
+    image_title: "Screenshot of Countdown Numbers Game Solver"
     description: "A TypeScript solver for the Countdown numbers game. Given six integers and a target, find all solutions using basic arithmetic. Features keyboard navigation, step-by-step solutions, and shareable permalinks."
     purpose: "Solve the Countdown numbers game"
     features:
@@ -37,7 +43,10 @@ microsites:
     title: Progression
     url: https://www.johnsy.com/progression/
     image: https://www.johnsy.com/progression/assets/screenshot.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Progression - Visual progress bar between two dates"
+    image_title: "Screenshot of Progression showing animated progress bar between dates"
     description: "A microsite that displays a visual progress bar between two dates. All elements are editable with keyboard shortcuts. Supports light and dark modes, automatically adapting to system preferences."
     purpose: "Visualize progress between two dates"
     features:
@@ -54,7 +63,10 @@ microsites:
     title: Speedtest Analysis
     url: https://www.johnsy.com/speedtest-analysis/
     image: https://www.johnsy.com/speedtest-analysis/screenshot.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Speedtest Analysis - Network performance analysis and visualization"
+    image_title: "Screenshot of Speedtest Analysis showing network performance charts"
     description: "Monitor your internet speed over time to investigate network issues, verify ISP performance, and track changes. Includes automated data gathering scripts for continuous monitoring and interactive visualizations to analyze trends. Export results for further analysis or reporting."
     purpose: "Track and analyze network performance over time"
     features:

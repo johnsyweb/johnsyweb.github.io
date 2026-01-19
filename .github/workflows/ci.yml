@@ -30,7 +30,13 @@ jobs:
       - name: Install image optimization tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y optipng jpegoptim
+          sudo apt-get install -y optipng jpegoptim webp
+
+      - name: Fetch and optimize utility images
+        run: pnpm run update:utility-images
+
+      - name: Optimize blog post images to WebP
+        run: pnpm run build:images
 
       - name: Run build and pre-checks
         env:
@@ -311,6 +317,15 @@ jobs:
 
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
+
+      - name: Install WebP tools for image optimization
+        run: sudo apt-get install -y webp
+
+      - name: Fetch and optimize utility images
+        run: pnpm run update:utility-images
+
+      - name: Optimize blog post images to WebP
+        run: pnpm run build:images
 
       - name: Rebuild Jekyll site with updated search index
         env:
