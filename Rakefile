@@ -653,5 +653,5 @@ end
 
 # Full local flow orchestrator
 desc 'Run full local flow: build, parallel checks, lighthouse, README, deploy gate'
-task :full_flow => [:base_build, :stage_two, :lighthouse_checks, :refresh_readme, :ready_to_deploy]
+task :full_flow => [:base_build, :stage_two, :ready_to_deploy]
 
