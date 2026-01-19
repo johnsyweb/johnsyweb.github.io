@@ -20,10 +20,7 @@ title: Blog
         <p class="post-summary">Posted by {{ site.author.name }} on {{ post.date | date: "%A, %e %B %Y" }}{% if post.category %} in {{ post.category }}{% endif %}</p>
         
         <div class="post-listing-content">
-            {% include post-image-url.html item=post %}
-            <a href="{{ post.url }}" class="post-preview-image-link">
-                <img src="{{ post_image_url }}" alt="{{ post.title }}" class="post-preview-image" loading="lazy">
-            </a>
+            {% include post-preview-image.html item=post %}
             
             <div class="post-excerpt">
                 <div class="post-content">{{ post.excerpt }}</div>

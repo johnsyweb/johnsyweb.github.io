@@ -1,0 +1,70 @@
+{% comment %}
+  Post preview image with WebP support
+  
+  Displays the best available image for a post using <picture> element with WebP.
+  Falls back to original format for older browsers.
+  
+  Usage: {% include post-preview-image.html item=post %}
+  
+  Image selection priority:
+  1. og_image if explicitly set
+  2. First image in content
+  3. Author avatar as fallback
+{% endcomment %}
+
+{% assign item = include.item | default: page %}
+
+{% comment %} Get the original image URL and track if it's local {% endcomment %}
+{% assign is_local_image = false %}
+{% if item.og_image %}
+  {% if item.og_image contains '//' %}
+    {% assign original_image = item.og_image %}
+  {% else %}
+    {% assign original_image = site.url | append: item.og_image %}
+    {% assign local_path = item.og_image %}
+    {% assign is_local_image = true %}
+  {% endif %}
+{% elsif item.content contains '<img' %}
+  {% assign first_img_block = item.content | split: '<img' | last %}
+  {% assign raw_src = first_img_block | split:'src="' | last | split:'"' | first %}
+  {% if raw_src contains '//' %}
+    {% assign original_image = raw_src %}
+  {% else %}
+    {% assign original_image = site.url | append: raw_src %}
+    {% assign local_path = raw_src %}
+    {% assign is_local_image = true %}
+  {% endif %}
+{% else %}
+  {% comment %} Fallback to author avatar {% endcomment %}
+  {% assign avatar_path = site.author.avatar %}
+  {% if avatar_path contains '//' %}
+    {% assign original_image = avatar_path %}
+  {% else %}
+    {% assign original_image = site.url | append: avatar_path %}
+    {% assign local_path = avatar_path %}
+    {% assign is_local_image = true %}
+  {% endif %}
+{% endif %}
+
+{% comment %} Generate WebP path for local images {% endcomment %}
+{% assign webp_image = nil %}
+{% if is_local_image %}
+  {% assign img_ext = local_path | split: '.' | last %}
+  {% assign img_base = local_path | remove: '.' | remove: img_ext %}
+  {% assign webp_image = img_base | append: '.webp' %}
+{% endif %}
+
+<a href="{{ item.url }}" class="post-preview-image-link">
+  <picture>
+    {% if webp_image %}
+    <source srcset="{{ webp_image }}" type="image/webp" />
+    {% endif %}
+    <img 
+      src="{{ original_image }}" 
+      alt="{{ item.title }}" 
+      title="{{ item.title }}"
+      class="post-preview-image" 
+      loading="lazy"
+    />
+  </picture>
+</a>
