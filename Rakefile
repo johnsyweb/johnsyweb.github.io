@@ -235,14 +235,41 @@ task :optimize_images do
   end
 end
 
-desc 'Validate XML feeds using W3C feedvalidator'
-task :validate_feeds => :build do
+# Helper: Perform feed validation logic
+def validate_feeds_internal
   feeds = [
     '_site/feed.xml',
     '_site/careerbreak/rss.xml',
     '_site/careerbreak/atom.xml'
   ]
   
+  validator_script = File.expand_path(File.join(File.dirname(__FILE__), 'scripts', 'validate_feed.py'))
+  raise "Validator script not found at: #{validator_script}" unless File.exist?(validator_script)
+
+  feeds.each do |feed_path|
+    unless File.exist?(feed_path)
+      puts "✗ #{feed_path} not found"
+      raise "Feed file not found: #{feed_path}"
+    end
+
+    puts "Validating #{feed_path}..."
+    result = `python3 #{validator_script} #{feed_path} 2>&1`
+    exit_code = $?.exitstatus
+
+    if exit_code == 0
+      puts "✓ #{feed_path} is valid"
+    else
+      puts "✗ #{feed_path} has validation issues:"
+      puts result
+      raise "Feed validation failed for #{feed_path}"
+    end
+  end
+  
+  puts "All feeds validated successfully!"
+end
+
+desc 'Validate XML feeds using W3C feedvalidator'
+task :validate_feeds => :build do
   # Check if feedvalidator is available
   feedvalidator_path = ENV['FEEDVALIDATOR_PATH'] || 'tmp/feedvalidator'
   feedvalidator_src = "#{feedvalidator_path}/src"
@@ -275,34 +302,7 @@ task :validate_feeds => :build do
     end
   end
   
-  validator_script = File.expand_path(File.join(File.dirname(__FILE__), 'scripts', 'validate_feed.py'))
-  unless File.exist?(validator_script)
-    raise "Validator script not found at: #{validator_script}"
-  end
-  
-  feeds.each do |feed_path|
-    unless File.exist?(feed_path)
-      puts "✗ #{feed_path} not found"
-      raise "Feed file not found: #{feed_path}"
-    end
-    
-    puts "Validating #{feed_path}..."
-    
-    # Use our wrapper script
-    result = `python3 #{validator_script} #{feed_path} 2>&1`
-    exit_code = $?.exitstatus
-    
-    # feedvalidator returns 0 for valid feeds, non-zero for invalid
-    if exit_code == 0
-      puts "✓ #{feed_path} is valid"
-    else
-      puts "✗ #{feed_path} has validation issues:"
-      puts result
-      raise "Feed validation failed for #{feed_path}"
-    end
-  end
-  
-  puts "All feeds validated successfully!"
+  validate_feeds_internal
 end
 
 # Ensure the generated style test page exists when Lighthouse runs
@@ -589,34 +589,7 @@ end
 # Feed validation (no build dependency)
 desc 'Validate XML feeds (no build)'
 task :validate_feeds_only do
-  feeds = [
-    '_site/feed.xml',
-    '_site/careerbreak/rss.xml',
-    '_site/careerbreak/atom.xml'
-  ]
-
-  validator_script = File.expand_path(File.join(File.dirname(__FILE__), 'scripts', 'validate_feed.py'))
-  raise "Validator script not found at: #{validator_script}" unless File.exist?(validator_script)
-
-  feeds.each do |feed_path|
-    unless File.exist?(feed_path)
-      puts "✗ #{feed_path} not found"
-      raise "Feed file not found: #{feed_path}"
-    end
-
-    puts "Validating #{feed_path}..."
-    result = `python3 #{validator_script} #{feed_path} 2>&1`
-    exit_code = $?.exitstatus
-
-    if exit_code == 0
-      puts "✓ #{feed_path} is valid"
-    else
-      puts "✗ #{feed_path} has validation issues:"
-      puts result
-      raise "Feed validation failed for #{feed_path}"
-    end
-  end
-  puts "All feeds validated successfully!"
+  validate_feeds_internal
 end
 
 # External links report (no implicit HTML validation)
