@@ -305,10 +305,23 @@ task :validate_feeds => :build do
   puts "All feeds validated successfully!"
 end
 
+# Ensure the generated style test page exists when Lighthouse runs
+def ensure_style_test_page
+  style_test_page = File.join('_site', 'style-test', 'index.html')
+  return if File.exist?(style_test_page)
+
+  raise <<~MSG
+    Style test page is missing at #{style_test_page}.
+    Re-run without SKIP_BUILD (or provide a prebuilt _site) so Lighthouse can scan it.
+  MSG
+end
+
 desc 'Run Lighthouse CI accessibility tests on style test page (light mode)'
 task :lighthouse_styles_light do
-  # Build unless SKIP_BUILD is set (allows CI to reuse artifacts)
-  unless ENV['SKIP_BUILD'] == 'true'
+  # Build unless SKIP_BUILD is set; if skipped, ensure the style test page exists
+  if ENV['SKIP_BUILD'] == 'true'
+    ensure_style_test_page
+  else
     Rake::Task[:build].invoke
   end
   
@@ -338,8 +351,10 @@ end
 
 desc 'Run Lighthouse CI accessibility tests on style test page (dark mode)'
 task :lighthouse_styles_dark do
-  # Build unless SKIP_BUILD is set (allows CI to reuse artifacts)
-  unless ENV['SKIP_BUILD'] == 'true'
+  # Build unless SKIP_BUILD is set; if skipped, ensure the style test page exists
+  if ENV['SKIP_BUILD'] == 'true'
+    ensure_style_test_page
+  else
     Rake::Task[:build].invoke
   end
   
@@ -510,4 +525,160 @@ task :check_external_links do
     puts "\n✓ All external links are in good status!"
   end
 end
+
+# ------------------------
+# Local orchestration tasks
+# ------------------------
+
+# Base build to produce _site
+desc 'Base build for local flow'
+task :base_build => :build
+
+# Prepare style page and incrementally rebuild to materialize _site/style-test/index.html
+desc 'Prepare style page for Lighthouse (incremental rebuild)'
+task :prepare_lighthouse_style => :generate_style_test do
+  sh "bundle exec jekyll build --incremental"
+end
+
+# HTML validation (no build dependency)
+desc 'Validate HTML (no build)'
+task :validate_html_only do
+  options = {
+    cache:
+    {
+      timeframe: { external: "2w", internal: "1w" },
+      cache_file: "html-proofer-cache.json",
+      storage_dir: "./tmp/html-proofer-cache"
+   },
+    disable_external: false,
+    allow_hash_href: true,
+    ignore_status_codes: [0, 202, 403, 417, 429, 999],
+    ignore_urls: [
+      %r{//localhost},
+      %r{//127\.0\.0\.1},
+      %r{https?://(www\.)?johnsy\.com/},
+      %r{https?://(www\.)?realestate\.com\.au/},
+      %r{https?://(www\.)?seek\.com\.au/},
+      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm},
+      %r{http://(www\.)?mutt\.org/},
+      %r{https://ronjeffries\.com/xprog/articles/acsbowling},
+      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore},
+      %r{https://signal\.me/#eu/},
+    ]
+  }
+
+  success = system("ruby", "-e", <<~RUBY)
+    require 'html-proofer'
+    options = #{options.inspect}
+    begin
+      HTMLProofer.check_directory("./_site", options).run
+    rescue SystemExit => e
+      exit(e.status)
+    end
+  RUBY
+
+  unless success
+    if ENV['ALLOW_EXTERNAL_LINK_WARNINGS'].nil?
+      raise "HTML validation failed"
+    else
+      puts "\n⚠️  HTML validation completed with warnings (non-breaking)"
+    end
+  end
+end
+
+# Feed validation (no build dependency)
+desc 'Validate XML feeds (no build)'
+task :validate_feeds_only do
+  feeds = [
+    '_site/feed.xml',
+    '_site/careerbreak/rss.xml',
+    '_site/careerbreak/atom.xml'
+  ]
+
+  validator_script = File.expand_path(File.join(File.dirname(__FILE__), 'scripts', 'validate_feed.py'))
+  raise "Validator script not found at: #{validator_script}" unless File.exist?(validator_script)
+
+  feeds.each do |feed_path|
+    unless File.exist?(feed_path)
+      puts "✗ #{feed_path} not found"
+      raise "Feed file not found: #{feed_path}"
+    end
+
+    puts "Validating #{feed_path}..."
+    result = `python3 #{validator_script} #{feed_path} 2>&1`
+    exit_code = $?.exitstatus
+
+    if exit_code == 0
+      puts "✓ #{feed_path} is valid"
+    else
+      puts "✗ #{feed_path} has validation issues:"
+      puts result
+      raise "Feed validation failed for #{feed_path}"
+    end
+  end
+  puts "All feeds validated successfully!"
+end
+
+# External links report (no implicit HTML validation)
+desc 'Check external links only (skip validate_html)'
+task :check_external_links_only do
+  ENV['SKIP_VALIDATE_HTML'] = '1'
+  Rake::Task['check_external_links'].invoke
+end
+
+# Build search index without deleting _site
+desc 'Build search index (Pagefind) without cleaning _site'
+task :build_search_index do
+  sh "npx --yes pagefind --site _site --output-path assets/pagefind --force-language en"
+end
+
+# Lighthouse wrappers respecting SKIP_BUILD and depending on style prep
+desc 'Run Lighthouse (light) without rebuild'
+task :lighthouse_styles_light_only => :prepare_lighthouse_style do
+  ENV['SKIP_BUILD'] = 'true'
+  Rake::Task[:lighthouse_styles_light].invoke
+end
+
+desc 'Run Lighthouse (dark) without rebuild'
+task :lighthouse_styles_dark_only => :prepare_lighthouse_style do
+  ENV['SKIP_BUILD'] = 'true'
+  Rake::Task[:lighthouse_styles_dark].invoke
+end
+
+# README refresh after search index
+desc 'Refresh README with TOC after search index'
+task :refresh_readme => :build_search_index do
+  sh "ruby scripts/update_readme.rb"
+end
+
+# Stage 2: run validations and preparations in parallel
+multitask :stage_two => [
+  :prepare_lighthouse_style,
+  :validate_feeds_only,
+  :validate_html_only,
+  :check_external_links_only,
+  :build_search_index
+]
+
+# Stage 3: run Lighthouse checks in parallel (each depends on style prep)
+multitask :lighthouse_checks => [
+  :lighthouse_styles_light_only,
+  :lighthouse_styles_dark_only
+]
+
+# Deploy gate: ensure all validations + README refresh done
+desc 'Ready to deploy gate'
+task :ready_to_deploy => [
+  :validate_feeds_only,
+  :validate_html_only,
+  :check_external_links_only,
+  :lighthouse_checks,
+  :refresh_readme
+] do
+  puts "✓ All validations complete and README refreshed. Ready to deploy."
+end
+
+# Full local flow orchestrator
+desc 'Run full local flow: build, parallel checks, lighthouse, README, deploy gate'
+task :full_flow => [:base_build, :stage_two, :lighthouse_checks, :refresh_readme, :ready_to_deploy]
 
