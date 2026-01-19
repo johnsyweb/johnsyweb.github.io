@@ -2,7 +2,7 @@
 layout: post
 title: I {heart} NY
 date: 2005-05-09
-updated_at: 2025-12-17
+updated_at: 2026-01-20
 ---
 
 Having survived the first day back in the office after our trip away, I figured
@@ -55,11 +55,10 @@ to the Twin Towers on that fateful day. Not a pleasant sight.
 
 
 As we wandered further North in Manhattan, the heavens opened, just as we were
-starting to think about what to do about an evening meal. Beacon-like, the
-[Heartland Brewery and Rotisserie][heartland] at the
-bottom of the tallest building around presented itself as a suitable place to
-shelter from the elements and to enjoy a meal, and perhaps a pint or two of the
-local brews.
+starting to think about what to do about an evening meal. Beacon-like, a
+brewery and rotisserie at the bottom of the tallest building around presented
+itself as a suitable place to shelter from the elements and to enjoy a meal, and
+perhaps a pint or two of the local brews.
 
 [![The Statue of Liberty](https://live.staticflickr.com/18/70593775_d163552927_t.jpg)](https://www.flickr.com/photos/johnsyweb/70593775/)
 
@@ -151,11 +150,10 @@ Onion][onion] on street corners. While we saw everything that
 we wanted to see, I still don't feel that we've seen enough. We shall have to go
 back!
 
-[heartland]: https://www.heartlandbrewery.com/
 [un]: https://www.un.org/
 [tony]: https://news.bbc.co.uk/1/hi/entertainment/arts/4533557.stm
 [spamalot]: https://en.wikipedia.org/wiki/Spamalot
-[telecharge]: https://www.telecharge.com/behindTheCurtain.aspx
+[telecharge]: https://www.telecharge.com/
 [tim-curry]: https://www.imdb.com/name/nm0000347/
 [hank-azaria]: https://www.imdb.com/name/nm0000279/
 [cake]: https://www.amazon.co.uk/exec/obidos/ASIN/B000003CKH/
@@ -165,5 +163,3 @@ back!
 [cbgb]: https://en.wikipedia.org/wiki/CBGB
 [esb]: https://www.esbnyc.com/
 [onion]: https://www.theonion.com/
-
-
