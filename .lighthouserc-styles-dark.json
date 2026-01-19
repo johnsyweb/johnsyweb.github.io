@@ -9,7 +9,7 @@
         "http://localhost:4002/contact/",
         "http://localhost:4002/style-test/"
       ],
-      "numberOfRuns": 3,
+      "numberOfRuns": 1,
       "settings": {
         "chromeFlags": "--emulated-form-factor=none --force-dark-mode"
       }
