@@ -270,7 +270,7 @@
     </footer>
 
     <script src="{{ site.url }}/assets/js/mobile-menu.min.js" defer></script>
-    <script defer>
+    <script>
       // Simple lazy loading for images with .lazy class
       if ('IntersectionObserver' in window) {
         const images = document.querySelectorAll('img.lazy');
@@ -291,7 +291,7 @@
     </script>
     {% if page.url == '/blog/' %}
       <script src="{{ site.url }}/assets/js/blog-entry-flash.min.js" defer></script>
-      <script defer>
+      <script>
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker
             .register("/blog-entry-sw.min.js", { scope: "/blog/" })
