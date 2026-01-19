@@ -27,6 +27,9 @@ jobs:
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
 
+      - name: Install Node.js dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Install image optimization tools
         run: |
           sudo apt-get update
@@ -317,6 +320,9 @@ jobs:
 
       - name: Install Ruby gems
         run: bundle install --jobs 4 --retry 3
+
+      - name: Install Node.js dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Install WebP tools for image optimization
         run: sudo apt-get install -y webp
