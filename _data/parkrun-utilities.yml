@@ -3,7 +3,10 @@ utilities:
     title: Foretoken
     url: https://www.johnsy.com/foretoken/
     image: https://www.johnsy.com/foretoken/og-image.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Foretoken - parkrun Finish Token Generator"
+    image_title: "Screenshot of Foretoken finish token generator showing token preview"
     description: "Generate parkrun finish tokens for scanning when events run out of physical tokens. Supports both 1D and 2D QR codes."
     purpose: "Generate finish tokens when physical tokens run out"
     features:
@@ -19,7 +22,10 @@ utilities:
     title: Eventuate
     url: https://www.johnsy.com/eventuate/
     image: https://www.johnsy.com/eventuate/images/eventuate-social-preview.png
+    image_width: 1200
+    image_height: 630
     image_alt: "A tool for parkrun report writers"
+    image_title: "Screenshot of Eventuate showing event statistics and milestone tracking"
     description: "Extract parkrun event data for report writing. Generate summaries, milestone celebrations, volunteer acknowledgments, and community statistics automatically from parkrun results pages."
     purpose: "Streamline parkrun report writing"
     features:
@@ -35,7 +41,10 @@ utilities:
     title: Crash Course Simulator
     url: https://www.johnsy.com/crashcourse/
     image: https://www.johnsy.com/crashcourse/og-image-with-course.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Crash Course Simulator - GPS Course Planning & Simulation"
+    image_title: "Screenshot of Crash Course Simulator showing GPS course planning interface"
     description: "Plan, edit, and simulate GPS courses with our powerful course simulator. Import GPX files, edit waypoints, and export your courses with full metadata support."
     purpose: "GPS course planning and simulation"
     features:
@@ -51,7 +60,10 @@ utilities:
     title: parkrun Userscripts
     url: https://www.johnsy.com/tampermonkey-parkrun/
     image: https://www.johnsy.com/tampermonkey-parkrun/images/alphabet-challenge.png
+    image_width: 1200
+    image_height: 630
     image_alt: "parkrun Userscripts - Enhance your parkrun experience"
+    image_title: "Screenshot of parkrun Userscripts showing the alphabet challenge"
     description: "A collection of userscripts that enhance parkrun pages with additional statistics, visualisations, and challenges for parkrun participants."
     purpose: "Enhance parkrun page analysis"
     features:
@@ -67,7 +79,10 @@ utilities:
     title: Ambassy
     url: https://www.johnsy.com/ambassy/
     image: https://www.johnsy.com/ambassy/ambassy-social-preview.png
+    image_width: 1200
+    image_height: 630
     image_alt: "Ambassy - A tool for parkrun ambassadors"
+    image_title: "Screenshot of Ambassy showing event allocation map with Voronoi territories"
     description: "A tool for parkrun Regional Event Ambassadors (REAs) to visualise and manage event allocations. Upload CSV files to display events on a map with Voronoi territories showing Regional Event Ambassador support areas."
     purpose: "Visualise and manage Event Ambassador allocations"
     features:

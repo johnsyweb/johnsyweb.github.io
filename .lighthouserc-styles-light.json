@@ -9,7 +9,7 @@
         "http://localhost:4001/contact/",
         "http://localhost:4001/style-test/"
       ],
-      "numberOfRuns": 3,
+      "numberOfRuns": 1,
       "settings": {
         "chromeFlags": "--emulated-form-factor=none"
       }
