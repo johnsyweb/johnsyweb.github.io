@@ -11,6 +11,7 @@
 # Node/pnpm for Lighthouse CI
 node_modules/
 pnpm-lock.yaml
+.pnpm-store/
 
 # Lighthouse CI outputs
 .lighthouseci/

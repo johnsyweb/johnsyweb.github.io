@@ -1,13 +1,13 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "bundle exec jekyll serve --port 4001",
+      "staticDistDir": "./_site",
       "url": [
-        "http://localhost:4001/",
-        "http://localhost:4001/about/",
-        "http://localhost:4001/blog/",
-        "http://localhost:4001/contact/",
-        "http://localhost:4001/style-test/"
+        "/style-test/",
+        "/",
+        "/about/",
+        "/blog/",
+        "/contact/"
       ],
       "numberOfRuns": 1,
       "settings": {

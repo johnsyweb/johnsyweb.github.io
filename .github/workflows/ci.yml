@@ -24,8 +24,26 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install Node.js dependencies
         run: pnpm install --no-frozen-lockfile
@@ -71,8 +89,26 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-html5lib-rdflib
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install feedvalidator dependencies
         run: |
@@ -131,8 +167,18 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
 
       - name: Run HTMLProofer validation (populate cache)
         continue-on-error: true
@@ -144,12 +190,38 @@ jobs:
           JSON_OUTPUT=1 bundle exec rake check_external_links 2>&1 | ruby scripts/external_links_annotations.rb
           exit 0
 
-  lighthouse-light:
+  prepare-lighthouse-style:
     runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Verify style test page exists
+        run: |
+          if [ ! -f _site/style-test/index.html ]; then
+            echo "Style test page missing in build artifact (_site/style-test/index.html)." >&2
+            exit 1
+          fi
+
+  lighthouse-light:
+    runs-on: ubuntu-latest
+    needs: prepare-lighthouse-style
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Install jq (for annotations)
         run: |
@@ -161,12 +233,31 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Run Lighthouse CI (light) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
+          SKIP_BUILD: "true"
         run: |
           set +e
           bundle exec rake lighthouse_styles_light
@@ -176,10 +267,16 @@ jobs:
 
   lighthouse-dark:
     runs-on: ubuntu-latest
-    needs: test
+    needs: prepare-lighthouse-style
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
 
       - name: Install jq (for annotations)
         run: |
@@ -191,12 +288,31 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Run Lighthouse CI (dark) + annotate
         env:
           SKIP_IMAGE_OPTIMIZATION: "true"
+          SKIP_BUILD: "true"
         run: |
           set +e
           bundle exec rake lighthouse_styles_dark
@@ -207,20 +323,44 @@ jobs:
   build-search-index:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
-    needs: [test, validate-feeds, validate-html, check-external-links, lighthouse-light, lighthouse-dark]
+    needs: test
     permissions:
       contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
 
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
+
       - name: Set up toolchain with mise
         uses: jdx/mise-action@v3
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Ensure scripts executable
         run: chmod +x scripts/update_search.sh
@@ -268,8 +408,18 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
 
       - name: Ensure scripts executable
         run: chmod +x scripts/update_readme.rb
@@ -300,7 +450,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
-    needs: refresh-readme
+    needs:
+      - refresh-readme
+      - validate-feeds
+      - validate-html
+      - check-external-links
+      - lighthouse-light
+      - lighthouse-dark
     permissions:
       pages: write
       id-token: write
@@ -318,8 +474,26 @@ jobs:
         with:
           install: true
 
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
       - name: Install Ruby gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install Node.js dependencies
         run: pnpm install --no-frozen-lockfile
