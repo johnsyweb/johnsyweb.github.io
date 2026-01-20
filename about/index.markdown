@@ -11,14 +11,28 @@ keywords:
   - software development
   - parkrun
   - blog
-og_image: /images/banner-og-compressed.jpg
-og_image_alt: Rainbow Lego minifigures against a colourful brick wall
+og_image: /images/johnsyweb.webp
+og_image_alt: Pete Johns
+updated_at: 2026-01-20
 ---
 {% include schema-person.html %}
 
-Hello, there. I'm Pete and I shall be publishing these pages for you and people
-like you to read. You are very welcome. If you wish to reproduce any part of
-this website, I ask that you give me credit in the reproduction. Thank you.
+<picture class="avatar">
+  <source srcset="/images/johnsyweb.webp" type="image/webp">
+  <img src="/images/johnsyweb.png" alt="Pete Johns">
+</picture>
+
+Hello, there. I'm Pete and I shall be publishing these pages for you and
+people like you to read. You are very welcome. If you wish to reproduce any
+part of this website, I ask that you give me credit in the reproduction. Thank
+you.
+
+I've been using the handle "johnsyweb" online since the mid-1990s. I like to
+use my initials, in lowercase, "paj" as my login where I can, but this username
+was often taken before I got to create an account on most sites. Some of my
+friends call me "johnsy", so I tried that as a username for a while, but that
+was also often taken. Then I added "web" as I was using it to log into
+websites. And that kind of stuck.
 
 My home, where I write most of this text and where my family enjoy life, is
 situated on the land of the [Wurundjeri Woi Wurrung People][Wurundjeri] of the
