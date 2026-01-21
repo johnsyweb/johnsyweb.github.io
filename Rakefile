@@ -602,9 +602,15 @@ task :refresh_readme => :build_search_index do
   sh "ruby scripts/update_readme.rb"
 end
 
+desc "Don't deploy broken JSON"
+task :validate_structured_data do
+  sh "bash scripts/validate-structured-data.sh"
+end
+
 # Stage 2: run validations and preparations in parallel
 multitask :stage_two => %i[
   prepare_lighthouse_style
+  validate_structured_data
   validate_feeds_only
   validate_html_only
   check_external_links_only
@@ -620,6 +626,7 @@ multitask :lighthouse_checks => %i[
 # Deploy gate: ensure all validations + README refresh done
 desc "Ready to deploy gate"
 task :ready_to_deploy => %i[
+  validate_structured_data
   validate_feeds_only
   validate_html_only
   check_external_links_only

@@ -124,6 +124,35 @@ jobs:
           FEEDVALIDATOR_PATH: tmp/feedvalidator
         run: bundle exec rake validate_feeds
 
+  validate-structured-data:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: .pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Validate structured data in generated site
+        run: bash scripts/validate-structured-data.sh
+
   validate-html:
     runs-on: ubuntu-latest
     needs: test

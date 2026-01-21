@@ -96,15 +96,15 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "{{ site.url }}/",
-      "name": "johnsy.com",
-      "description": {{ site.description | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "name": {{ site.name | default: "johnsy.com" | jsonify }},
+      "description": {{ site.description | default: "" | jsonify }},
       "publisher": {
         "@type": "Person",
-        "name": "{{ site.author.name }}",
-        "url": "{{ site.author.url }}"
+        "name": {{ site.author.name | default: "" | jsonify }},
+        "url": {{ site.author.url | default: "" | jsonify }}
       },
-      "image": "{{ image_url }}"
+      "image": {{ image_url | default: "" | jsonify }}
     }
     </script>
     
