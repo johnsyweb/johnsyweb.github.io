@@ -1,6 +1,6 @@
 ---
 title: "Automating Distraction Blocking with Pi-hole v6 and dedistracter"
-date: 2026-01-21 04:21
+date: 2026-01-21 03:21
 layout: post
 categories:
   - technology
