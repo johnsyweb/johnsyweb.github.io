@@ -84,6 +84,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-01-21: [Automating Distraction Blocking with Pi-hole v6 and dedistracter](https://www.johnsy.com/blog/2026/01/21/dedistracter-pihole-scheduler/)
 - 2026-01-20: [Can we reunite a lost AirPod with its owner?](https://www.johnsy.com/blog/2026/01/20/can-we-reunite-a-lost-airpod-with-its-owner/)
 - 2026-01-15: [Two Bays Trail Run 2026](https://www.johnsy.com/blog/2026/01/15/two-bays-trail-run-2026/)
 - 2026-01-07: [Moving back to www](https://www.johnsy.com/blog/2026/01/07/moving-to-www/)
@@ -93,6 +94,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2025-11-29: [Counterpoints to &ldquo;Comparison is the Thief of Joy&rdquo;](https://www.johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
 - 2025-11-06: [Foretoken — parkrun finish tokens on your phone](https://www.johnsy.com/blog/2025/11/06/foretoken/)
 - 2025-11-04: [Switching to Atkinson Hyperlegible](https://www.johnsy.com/blog/2025/11/04/switching-to-atkinson-hyperlegible/)
-- 2025-10-19: [What Running 10 Marathons Taught Me About Being a Social Media Influencer](https://www.johnsy.com/blog/2025/10/19/what-running-10-marathons-taught-me-about-being-a-social-media-influencer/)
 
 <!-- END TOC -->
