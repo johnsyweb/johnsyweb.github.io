@@ -86,9 +86,27 @@
 
     <meta property="og:description" content="{{ page_description }}" />
 
-    {% include post-image-url.html %}
+    {% include post-image-url.html item=page %}
     {% assign image_url = post_image_url %}
 
+    {% include schema-person.html %}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "{{ site.url }}/",
+      "name": "johnsy.com",
+      "description": {{ site.description | jsonify }},
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ site.author.name }}",
+        "url": "{{ site.author.url }}"
+      },
+      "image": "{{ image_url }}"
+    }
+    </script>
+    
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% if page.date %}
