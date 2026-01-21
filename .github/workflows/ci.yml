@@ -480,12 +480,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     needs:
+      - check-external-links
+      - lighthouse-dark
+      - lighthouse-light
       - refresh-readme
       - validate-feeds
       - validate-html
-      - check-external-links
-      - lighthouse-light
-      - lighthouse-dark
+      - validate-structured-data
     permissions:
       pages: write
       id-token: write
