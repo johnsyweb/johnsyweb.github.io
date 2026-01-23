@@ -16,7 +16,7 @@
  */
 
 import { readFile, writeFile, stat, mkdir, unlink } from 'fs/promises';
-import { join, dirname, basename, extname } from 'path';
+import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { existsSync } from 'fs';
 import { spawn } from 'child_process';
@@ -156,52 +156,49 @@ async function fetchImages() {
     { path: '_data/parkrun-utilities.yml', collection: 'utilities' },
     { path: '_data/microsites.yml', collection: 'microsites' }
   ];
-  
-  const allUrls = [];
-  
-  for (const { path, collection } of yamlFiles) {
-    try {
-      const content = await readFile(join(ROOT, path), 'utf8');
-      const data = yaml.parse(content);
-      const urls = extractImageUrls(data, collection);
-      allUrls.push(...urls);
-      console.log(`📄 Found ${urls.length} images in ${path}`);
-    } catch (error) {
-      console.error(`⚠️  Warning: Could not read ${path}: ${error.message}`);
-    }
-  }
-  
-  console.log(`\n📊 Total images to process: ${allUrls.length}\n`);
-  
-  if (allUrls.length === 0) {
-    console.log('No external image URLs found.');
-    return;
-  }
-  
-  let downloaded = 0;
-  let skipped = 0;
-  let converted = 0;
-  let deleted = 0;
-  let failed = 0;
-  
-  for (const { id, url, collection } of allUrls) {
-    const filename = getLocalFilename(id, url);
-    const localPath = join(outputDir, filename);
-    const webpPath = join(webpDir, `${id}.webp`);
-    const relativeLocal = join(OUTPUT_DIR, filename);
-    const relativeWebP = join(WEBP_DIR, `${id}.webp`);
-    
-    try {
-      // Download original image
-      if (!existsSync(localPath) || FORCE_DOWNLOAD) {
-        process.stdout.write(`⬇️  Downloading: ${id}... `);
-        await downloadFile(url, localPath);
-        console.log('✓');
-        downloaded++;
-      } else {
-        console.log(`⏭️  Skipped: ${id} (already exists)`);
-        skipped++;
-      }
+        const allUrls = [];
+
+        for (const { path, collection } of yamlFiles) {
+          try {
+            const content = await readFile(join(ROOT, path), 'utf8');
+            const data = yaml.parse(content);
+            const urls = extractImageUrls(data, collection);
+            allUrls.push(...urls);
+            console.log(`📄 Found ${urls.length} images in ${path}`);
+          } catch (error) {
+            console.error(`⚠️  Warning: Could not read ${path}: ${error.message}`);
+          }
+        }
+
+        console.log(`\n📊 Total images to process: ${allUrls.length}\n`);
+
+        if (allUrls.length === 0) {
+          console.log('No external image URLs found.');
+          return;
+        }
+
+        let downloaded = 0;
+        let skipped = 0;
+        let converted = 0;
+        let deleted = 0;
+        let failed = 0;
+
+        for (const { id, url } of allUrls) {
+          const filename = getLocalFilename(id, url);
+          const localPath = join(outputDir, filename);
+          const webpPath = join(webpDir, `${id}.webp`);
+
+          try {
+            // Download original image
+            if (!existsSync(localPath) || FORCE_DOWNLOAD) {
+              process.stdout.write(`⬇️  Downloading: ${id}... `);
+              await downloadFile(url, localPath);
+              console.log('✓');
+              downloaded++;
+            } else {
+              console.log(`⏭️  Skipped: ${id} (already exists)`);
+              skipped++;
+            }
       
       // Convert to WebP
       if (!existsSync(webpPath) || FORCE_DOWNLOAD || downloaded > 0) {

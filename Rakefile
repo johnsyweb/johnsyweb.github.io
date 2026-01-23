@@ -261,6 +261,16 @@ def validate_feeds_internal
   puts "All feeds validated successfully!"
 end
 
+desc "Fetch utility and microsite images (WebP conversion)"
+task "fetch:utility_images" do
+  script_path = File.expand_path(File.join(File.dirname(__FILE__), "scripts", "fetch-utility-images.mjs"))
+  unless File.exist?(script_path)
+    raise "Script not found: #{script_path}"
+  end
+  puts "Running fetch-utility-images.mjs..."
+  system("node", script_path) or raise "fetch-utility-images.mjs failed"
+end
+
 desc "Validate XML feeds using W3C feedvalidator"
 task :validate_feeds => :build do
   # Check if feedvalidator is available
