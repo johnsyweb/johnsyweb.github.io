@@ -25,7 +25,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -38,7 +38,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -90,7 +90,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -103,7 +103,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pip
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-html5lib-rdflib
@@ -143,7 +143,7 @@ jobs:
           install: true
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -197,7 +197,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -263,7 +263,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -276,7 +276,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -318,7 +318,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -331,7 +331,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -371,7 +371,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -384,7 +384,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -438,7 +438,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -505,7 +505,7 @@ jobs:
           install: true
 
       - name: Cache Ruby gems
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
@@ -518,7 +518,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
