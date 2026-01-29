@@ -232,12 +232,40 @@ jobs:
           name: jekyll-build
           path: ./_site
 
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
+      - name: Install Ruby gems
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
+
+      - name: Generate style test page and rebuild
+        run: bundle exec rake prepare_lighthouse_style
+
       - name: Verify style test page exists
         run: |
           if [ ! -f _site/style-test/index.html ]; then
-            echo "Style test page missing in build artifact (_site/style-test/index.html)." >&2
+            echo "Style test page missing after generation (_site/style-test/index.html)." >&2
             exit 1
           fi
+
+      - name: Upload build artifacts with style test
+        uses: actions/upload-artifact@v6
+        with:
+          name: jekyll-build-with-style-test
+          path: ./_site
+          retention-days: 1
 
   lighthouse-light:
     runs-on: ubuntu-latest
@@ -249,7 +277,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v7
         with:
-          name: jekyll-build
+          name: jekyll-build-with-style-test
           path: ./_site
 
       - name: Install jq (for annotations)
@@ -304,7 +332,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v7
         with:
-          name: jekyll-build
+          name: jekyll-build-with-style-test
           path: ./_site
 
       - name: Install jq (for annotations)

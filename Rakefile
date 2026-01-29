@@ -162,7 +162,7 @@ task :minify_js do
   end
 end
 
-task :build => %i[generate_style_test minify_css minify_js] do
+task :build => %i[minify_css minify_js] do
   sh "bundle exec jekyll build"
 end
 
