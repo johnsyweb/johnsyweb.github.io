@@ -17,15 +17,15 @@
   <h{{ heading_level }}><a href="{{ include.card.url }}">{{ include.card.title }}</a></h{{ heading_level }}>
   <picture>
     <source 
-      srcset="{{ webp_path }}" 
+      srcset="/assets/images/webp/{{ include.card.id }}.webp 1x, /assets/images/webp/{{ include.card.id }}@2x.webp 2x"
       type="image/webp"
     />
     <img 
-      src="{{ include.card.image }}" 
+      src="/assets/images/webp/{{ include.card.id }}.webp"
+      srcset="/assets/images/webp/{{ include.card.id }}.webp 1x, /assets/images/webp/{{ include.card.id }}@2x.webp 2x"
+      width="289" height="152"
       alt="{{ include.card.image_alt }}"
       {% if include.card.image_title %}title="{{ include.card.image_title }}"{% endif %}
-      {% if include.card.image_width %}width="{{ include.card.image_width }}"{% endif %}
-      {% if include.card.image_height %}height="{{ include.card.image_height }}"{% endif %}
       class="utility-preview"
       loading="lazy"
     />

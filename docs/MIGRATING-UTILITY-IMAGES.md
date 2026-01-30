@@ -24,31 +24,47 @@ curl -o assets/images/utilities/progression.png https://www.johnsy.com/progressi
 curl -o assets/images/utilities/speedtest-analysis.png https://www.johnsy.com/speedtest-analysis/screenshot.png
 ```
 
-### 2. Convert to WebP
+
+### 2. Convert and Resize to WebP (1x and 2x)
+
+The fetch-utility-images.mjs script now generates two WebP images for each utility:
+
+- 1x: `/assets/images/webp/[id].webp` (289x152)
+- 2x: `/assets/images/webp/[id]@2x.webp` (578x304)
+
+This ensures optimal performance and crisp display on retina screens.
 
 ```bash
-# Convert all utility images
-pnpm run build:images:utilities
-
-# Or manually
-node scripts/convert-to-webp.mjs assets/images/utilities 85
+# Fetch, resize, and convert all utility images (1x and 2x)
+pnpm run fetch:utility-images
 ```
 
 ### 3. Update Data Files
 
-Update the `image` and `image_webp` paths in your YAML files:
 
-```yaml
-# Before (external URLs)
-- id: foretoken
-  image: https://www.johnsy.com/foretoken/og-image.png
-  image_webp: https://www.johnsy.com/foretoken/og-image.webp
+No changes are needed to YAML for webp images; the card partial auto-generates the correct paths for 1x and 2x.
+## Responsive Usage in Templates
 
-# After (local assets)
-- id: foretoken
-  image: /assets/images/utilities/foretoken.png
-  image_webp: /assets/images/webp/foretoken.webp
+The utility card partial now uses `srcset` for responsive images:
+
+```html
+<picture>
+  <source 
+    srcset="/assets/images/webp/[id].webp 1x, /assets/images/webp/[id]@2x.webp 2x"
+    type="image/webp"
+  />
+  <img 
+    src="/assets/images/webp/[id].webp"
+    srcset="/assets/images/webp/[id].webp 1x, /assets/images/webp/[id]@2x.webp 2x"
+    width="289" height="152"
+    alt="..."
+    class="utility-preview"
+    loading="lazy"
+  />
+</picture>
 ```
+
+**Display size:** The card always displays images at 289x152px. The 2x image ensures sharpness on retina screens.
 
 ## Benefits of Local Assets
 
@@ -73,11 +89,12 @@ end
 
 ## Keeping Images Updated
 
+
 When you update a microsite's screenshot:
 
 1. Download the new image to `assets/images/utilities/`
-2. Run `pnpm run build:images:utilities`
-3. Commit both the PNG and generated WebP
+2. Run `pnpm run fetch:utility-images` (generates both 1x and 2x webp)
+3. Commit the generated WebP images
 4. Deploy
 
 The script automatically detects when source images are newer than WebP versions and reconverts them.

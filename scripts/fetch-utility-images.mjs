@@ -16,6 +16,7 @@
  */
 
 import { readFile, writeFile, stat, mkdir, unlink } from 'fs/promises';
+import sharp from 'sharp';
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { existsSync } from 'fs';
@@ -74,24 +75,16 @@ async function downloadFile(url, outputPath) {
   });
 }
 
-// Convert image to WebP
-async function convertToWebP(sourcePath, outputPath, quality = 85) {
-  return new Promise((resolve, reject) => {
-    const args = [sourcePath, '-q', quality.toString(), '-o', outputPath];
-    const convert = spawn('cwebp', args);
-    
-    convert.on('close', (code) => {
-      if (code === 0) {
-        resolve();
-      } else {
-        reject(new Error(`cwebp exited with code ${code}`));
-      }
-    });
-    
-    convert.on('error', (error) => {
-      reject(new Error(`Failed to run cwebp: ${error.message}`));
-    });
-  });
+// Convert and resize image to WebP using sharp
+async function convertToWebPResized(sourcePath, outputPath, width, height, quality = 85) {
+  try {
+    await sharp(sourcePath)
+      .resize(width, height, { fit: 'cover' })
+      .webp({ quality })
+      .toFile(outputPath);
+  } catch (error) {
+    throw new Error(`sharp conversion failed: ${error.message}`);
+  }
 }
 
 // Check if cwebp is installed
@@ -183,10 +176,15 @@ async function fetchImages() {
         let deleted = 0;
         let failed = 0;
 
+        // Target sizes for 1x and 2x (retina)
+        const SIZES = [
+          { suffix: '', width: 289, height: 152 },
+          { suffix: '@2x', width: 578, height: 304 }
+        ];
+
         for (const { id, url } of allUrls) {
           const filename = getLocalFilename(id, url);
           const localPath = join(outputDir, filename);
-          const webpPath = join(webpDir, `${id}.webp`);
 
           try {
             // Download original image
@@ -199,36 +197,35 @@ async function fetchImages() {
               console.log(`⏭️  Skipped: ${id} (already exists)`);
               skipped++;
             }
-      
-      // Convert to WebP
-      if (!existsSync(webpPath) || FORCE_DOWNLOAD || downloaded > 0) {
-        const sourceStats = await stat(localPath);
-        let needsConversion = true;
-        
-        if (existsSync(webpPath) && !FORCE_DOWNLOAD) {
-          const webpStats = await stat(webpPath);
-          needsConversion = sourceStats.mtime > webpStats.mtime;
-        }
-        
-        if (needsConversion) {
-          process.stdout.write(`🔄 Converting: ${id} to WebP... `);
-          await convertToWebP(localPath, webpPath);
-          console.log('✓');
-          converted++;
-          
-          // Delete original PNG/JPG after successful conversion
-          if (!KEEP_ORIGINALS) {
-            await unlink(localPath);
-            deleted++;
+
+            // Convert to WebP for each size
+            for (const { suffix, width, height } of SIZES) {
+              const webpPath = join(webpDir, `${id}${suffix}.webp`);
+              let needsConversion = true;
+              if (existsSync(webpPath) && !FORCE_DOWNLOAD) {
+                const sourceStats = await stat(localPath);
+                const webpStats = await stat(webpPath);
+                needsConversion = sourceStats.mtime > webpStats.mtime;
+              }
+              if (needsConversion) {
+                process.stdout.write(`🔄 Converting: ${id}${suffix} to WebP... `);
+                await convertToWebPResized(localPath, webpPath, width, height);
+                console.log('✓');
+                converted++;
+              }
+            }
+
+            // Delete original PNG/JPG after successful conversion
+            if (!KEEP_ORIGINALS) {
+              await unlink(localPath);
+              deleted++;
+            }
+
+          } catch (error) {
+            console.error(`❌ Failed: ${id} - ${error.message}`);
+            failed++;
           }
         }
-      }
-      
-    } catch (error) {
-      console.error(`❌ Failed: ${id} - ${error.message}`);
-      failed++;
-    }
-  }
   
   console.log('\n' + '='.repeat(60));
   console.log('✨ Process complete!');
