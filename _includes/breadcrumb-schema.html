@@ -1,0 +1,41 @@
+{% comment %}
+  Outputs BreadcrumbList structured data for the current page.
+  Usage: {% include breadcrumb-schema.html %}
+{% endcomment %}
+
+{%- assign nav_items = site.data.navigation -%}
+{%- assign position = 1 -%}
+{%- assign current_nav = nil -%}
+{%- for nav in nav_items -%}
+  {%- if page.url == nav.url or (nav.url != '/' and page.url contains nav.url) -%}
+    {%- assign current_nav = nav -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture breadcrumb_json -%}
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "{{ site.url }}"
+  }
+  {%- if current_nav and current_nav.url != '/' -%}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ current_nav.title | jsonify }},
+      "item": {{ site.url | append: current_nav.url | jsonify }}
+    }
+  {%- endif -%}
+{%- endcapture -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{ breadcrumb_json | strip }}
+  ]
+}
+</script>

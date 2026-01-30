@@ -209,54 +209,26 @@
       <div id="sidebar">
         <nav aria-label="Main navigation">
           <ul class="main-nav">
-            <li>
-              <a
-                href="{{ site.url }}/"
-                accesskey="h"
-                title="Home (Access key: Alt+Shift+H on Windows, Control+Option+H on macOS)"
-                {% if page.url == '/' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">H</span><span class="accesskey-rest">ome</span></a>
-            </li>
-            <li>
-              <a
-                href="{{ site.url }}/about/"
-                accesskey="a"
-                title="About (Access key: Alt+Shift+A on Windows, Control+Option+A on macOS)"
-                {% if page.url contains '/about' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">A</span><span class="accesskey-rest">bout</span></a>
-            </li>
-            <li>
-              <a
-                href="{{ site.url }}/blog/"
-                accesskey="b"
-                title="Blog (Access key: Alt+Shift+B on Windows, Control+Option+B on macOS)"
-                {% if page.url contains '/blog' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">B</span><span class="accesskey-rest">log</span></a>
-            </li>
-            <li>
-              <a
-                href="{{ site.url }}/contact/"
-                accesskey="c"
-                title="Contact (Access key: Alt+Shift+C on Windows, Control+Option+C on macOS)"
-                {% if page.url contains '/contact' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">C</span><span class="accesskey-rest">ontact</span></a>
-            </li>
-            <li>
-              <a
-                href="{{ site.url }}/parkrun-utility/"
-                accesskey="p"
-                title="parkrun utility (Access key: Alt+Shift+P on Windows, Control+Option+P on macOS)"
-                {% if page.url contains '/parkrun-utility' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">p</span><span class="accesskey-rest">arkrun utility</span></a>
-            </li>
-            <li>
-              <a
-                href="{{ site.url }}/search/"
-                accesskey="s"
-                title="Search (Access key: Alt+Shift+S on Windows, Control+Option+S on macOS)"
-                {% if page.url contains '/search' %}aria-current="page"{% endif %}
-              ><span class="accesskey-letter">S</span><span class="accesskey-rest">earch</span></a>
-            </li>
+            {% for nav in site.data.navigation %}
+              {% assign is_current = false %}
+              {% if page.url == nav.url %}
+                {% assign is_current = true %}
+              {% elsif nav.url != '/' %}
+                {% if page.url contains nav.url %}
+                  {% assign is_current = true %}
+                {% endif %}
+              {% endif %}
+              <li>
+                <a
+                  href="{{ site.url }}{{ nav.url }}"
+                  accesskey="{{ nav.accesskey }}"
+                  title="{{ nav.title }} (Access key: Alt+Shift+{{ nav.accesskey | upcase }} on Windows, Control+Option+{{ nav.accesskey | upcase }} on macOS)"
+                  {% if is_current %}aria-current="page"{% endif %}
+                >
+                  <span class="accesskey-letter">{{ nav.accesskey_label }}</span><span class="accesskey-rest">{{ nav.accesskey_rest }}</span>
+                </a>
+              </li>
+            {% endfor %}
           </ul>
         </nav>
       </div>
@@ -325,5 +297,7 @@
     {% if page.url == '/404.html' %}
       <script src="{{ site.url }}/assets/js/404.min.js"></script>
     {% endif %}
+
+    {% include breadcrumb-schema.html %}
   </body>
 </html>
