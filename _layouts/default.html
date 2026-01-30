@@ -218,14 +218,17 @@
                   {% assign is_current = true %}
                 {% endif %}
               {% endif %}
+              {% assign accesskey = nav.title | slice: 0, 1 | downcase %}
+              {% assign accesskey_label = nav.title | slice: 0, 1 | upcase %}
+              {% assign accesskey_rest = nav.title | slice: 1, nav.title.size %}
               <li>
                 <a
                   href="{{ site.url }}{{ nav.url }}"
-                  accesskey="{{ nav.accesskey }}"
-                  title="{{ nav.title }} (Access key: Alt+Shift+{{ nav.accesskey | upcase }} on Windows, Control+Option+{{ nav.accesskey | upcase }} on macOS)"
+                  accesskey="{{ accesskey }}"
+                  title="{{ nav.title }} (Access key: Alt+Shift+{{ accesskey_label }} on Windows, Control+Option+{{ accesskey_label }} on macOS)"
                   {% if is_current %}aria-current="page"{% endif %}
                 >
-                  <span class="accesskey-letter">{{ nav.accesskey_label }}</span><span class="accesskey-rest">{{ nav.accesskey_rest }}</span>
+                  <span class="accesskey-letter">{{ accesskey_label }}</span><span class="accesskey-rest">{{ accesskey_rest }}</span>
                 </a>
               </li>
             {% endfor %}

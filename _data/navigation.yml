@@ -1,30 +1,12 @@
 - title: Home
   url: /
-  accesskey: h
-  accesskey_label: H
-  accesskey_rest: ome
 - title: About
   url: /about/
-  accesskey: a
-  accesskey_label: A
-  accesskey_rest: bout
 - title: Blog
   url: /blog/
-  accesskey: b
-  accesskey_label: B
-  accesskey_rest: log
 - title: Contact
   url: /contact/
-  accesskey: c
-  accesskey_label: C
-  accesskey_rest: ontact
 - title: parkrun utility
   url: /parkrun-utility/
-  accesskey: p
-  accesskey_label: p
-  accesskey_rest: arkrun utility
 - title: Search
   url: /search/
-  accesskey: s
-  accesskey_label: S
-  accesskey_rest: earch
