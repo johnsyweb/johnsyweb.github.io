@@ -219,7 +219,7 @@
                 {% endif %}
               {% endif %}
               {% assign accesskey = nav.title | slice: 0, 1 | downcase %}
-              {% assign accesskey_label = nav.title | slice: 0, 1 | upcase %}
+              {% assign accesskey_label = nav.title | slice: 0, 1 %}
               {% assign accesskey_rest = nav.title | slice: 1, nav.title.size %}
               <li>
                 <a
