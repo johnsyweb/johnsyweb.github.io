@@ -39,9 +39,9 @@
     <meta name="pagefind-index" content="false" />
     {% endif %}
 
-    <!-- Default icons -->
+    <!-- Favicons -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="{{ site.url }}/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
     <link
       rel="apple-touch-icon"
       href="{{ site.url }}/icons/apple-touch-icon.png"
@@ -57,16 +57,6 @@
       rel="apple-touch-icon"
       sizes="{{ size }}x{{ size }}"
       href="{{ site.url }}/icons/apple-touch-icon-{{ size }}x{{ size }}.png"
-    />
-    {% endfor %}
-
-    <!-- Favicon icons -->
-    {% for size in site.favicon_sizes %}
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="{{ size }}x{{ size }}"
-      href="{{ site.url }}/icons/favicon-{{ size }}x{{ size }}.png"
     />
     {% endfor %}
 

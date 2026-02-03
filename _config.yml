@@ -50,13 +50,6 @@ apple_touch_icon_sizes:
   - 144
   - 152
 
-favicon_sizes:
-  - 16
-  - 32
-  - 96
-  - 128
-  - 196
-
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blog/page:num/"
