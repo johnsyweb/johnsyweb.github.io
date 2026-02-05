@@ -93,3 +93,22 @@ utilities:
       keywords: "parkrun ambassador, event allocation, Voronoi map, regional event ambassador, event management"
       schema_type: "SoftwareApplication"
       audience: "parkrun Regional Event Ambassadors"
+
+  - id: parkrun-by-public-transport
+    title: parkrun by Public Transport
+    url: https://www.johnsy.com/parkrun-by-public-transport/
+    image: https://www.johnsy.com/parkrun-by-public-transport/og-image.png
+    image_width: 1200
+    image_height: 630
+    image_alt: "parkrun Events Near Public Transport in Victoria"
+    image_title: "Screenshot showing parkrun events near public transport on an interactive map"
+    description: "Find parkrun events near public transport in Victoria, Australia. Interactive map showing distances to metro trains, regional trains, trams, and bus stops. Filter by distance and transport mode to plan your sustainable parkrun journey."
+    purpose: "Find parkrun events accessible by public transport"
+    features:
+      - Interactive map view
+      - Distance filtering
+      - Multiple transport modes
+    seo:
+      keywords: "parkrun public transport, Victoria parkrun, sustainable travel, public transport access, parkrun journey planner"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun participants in Victoria, Australia"
