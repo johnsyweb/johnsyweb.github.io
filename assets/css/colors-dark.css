@@ -1,4 +1,14 @@
 @media (prefers-color-scheme: dark) {
+.skip-link {
+	background-color: #1976D2;
+	color: #121212;
+}
+
+.skip-link:focus {
+	background-color: #1976D2;
+	color: #121212;
+}
+
 html, body {
 	background-color: #121212;
 	color: #e0e0e0;
@@ -25,8 +35,67 @@ blockquote {
 	border-color: #FFB300;
 }
 
+#header {
+	background-color: #64B5F6;
+	color: #121212;
+}
+
+#header .breadcrumbs {
+	background-color: rgba(18, 18, 18, 0.12);
+	color: #121212;
+}
+
+#header .breadcrumbs a {
+	color: #121212;
+}
+
+#header .breadcrumbs a:hover {
+	background-color: transparent;
+	color: #121212;
+	border-bottom-color: #121212;
+}
+
+#header h1 a,
+#header h1 a:visited,
+#header h1 a:active {
+	color: #121212;
+}
+
+#header h1 a:hover {
+	background-color: rgba(18, 18, 18, 0.1);
+	border-color: transparent;
+	color: #121212;
+}
+
+#header .header-tagline,
+#header .header-tagline a {
+	color: #121212;
+	border-color: rgba(18, 18, 18, 0.6);
+}
+
+#header .header-tagline a:hover {
+	background-color: rgba(18, 18, 18, 0.1);
+	border-bottom-color: #121212;
+}
+
 #footer {
-	border-color: #2C2C2C;
+	background-color: #64B5F6;
+	color: #121212;
+	border-top: none;
+	border-color: transparent;
+}
+
+#footer a,
+#footer a:visited,
+#footer a:active {
+	color: #121212;
+	border-color: rgba(18, 18, 18, 0.6);
+}
+
+#footer a:hover {
+	background-color: rgba(18, 18, 18, 0.1);
+	color: #121212;
+	border-bottom-color: #121212;
 }
 
 .post-metadata {

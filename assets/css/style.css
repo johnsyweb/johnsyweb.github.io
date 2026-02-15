@@ -155,6 +155,9 @@ section {
 
 body {
   line-height: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 ul {
@@ -347,6 +350,10 @@ h3 {
 }
 
 /*** Structure ***/
+#header {
+  flex-shrink: 0;
+}
+
 #page {
   max-width: 65ch;
   width: 100%;
@@ -354,34 +361,67 @@ h3 {
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
+  flex: 1 0 0;
+}
+
+#footer {
+  flex-shrink: 0;
 }
 
 #header {
+  margin-bottom: 50px;
+}
+
+.header-inner {
   max-width: 65ch;
-  width: 100%;
-  margin: 40px auto 50px auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 1rem 10px;
+}
+
+#header .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+#header .breadcrumbs a {
+  border: none;
+}
+
+#header .breadcrumbs span[aria-current="page"] {
+  font-weight: 600;
 }
 
 #header h1 {
   font-size: 32px;
-  margin-bottom: 4px;
+  margin: 0 0 4px 0;
 }
 
 #header h1 a {
   border: none;
 }
 
+#header .header-tagline {
+  margin: 0;
+  font-size: 0.95em;
+  opacity: 0.95;
+}
+
 #footer {
-  max-width: 65ch;
-  width: 100%;
-  margin: 50px auto 20px auto;
-  padding-top: 10px;
+  margin-top: 50px;
   font-size: 0.85em;
-  border-top: 1px solid #073642;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+
+.footer-inner {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 1rem 10px;
 }
 
 #content {
@@ -643,9 +683,9 @@ img.center {
 
 @media all and (max-width: 870px) {
   #page,
-  #header,
   #content,
-  #footer {
+  .header-inner,
+  .footer-inner {
     width: inherit;
     padding-left: 10px;
     padding-right: 10px;
@@ -682,13 +722,11 @@ img.center {
   opacity: 1;
 }
 
-/* Skip link for accessibility */
+/* Skip link for accessibility - colours overridden in color scheme files */
 .skip-link {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #073642;
-  color: #eee8d5;
   padding: 8px;
   text-decoration: none;
   z-index: 100;

@@ -1,0 +1,32 @@
+{% comment %}
+  Renders visible breadcrumb navigation matching progression layout.
+  Usage: {% include breadcrumbs.html %}
+{% endcomment %}
+{% assign clean_title = page.title | split: ' --' | first %}
+{% assign breadcrumb_current = clean_title | default: site.name %}
+{% if page.url == '/' %}
+  {% assign breadcrumb_current = site.name %}
+{% endif %}
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  {% if page.url == '/' %}
+  <span aria-current="page">{{ site.name }}</span>
+  {% else %}
+  <a href="{{ site.url }}/">{{ site.name }}</a>
+  <span aria-hidden="true">/</span>
+    {% assign parent_nav = nil %}
+    {% for nav in site.data.navigation %}
+      {% if nav.url != '/' and page.url contains nav.url %}
+        {% assign parent_nav = nav %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if parent_nav and page.url != parent_nav.url %}
+      <a href="{{ site.url }}{{ parent_nav.url }}">{{ parent_nav.title }}</a>
+      <span aria-hidden="true">/</span>
+    {% elsif parent_nav and page.url == parent_nav.url %}
+      {% comment %} Section page (e.g. /blog/) — current is section title {% endcomment %}
+    {% endif %}
+  <span aria-current="page">{{ breadcrumb_current }}</span>
+  {% endif %}
+</nav>

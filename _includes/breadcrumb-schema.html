@@ -1,32 +1,60 @@
 {% comment %}
   Outputs BreadcrumbList structured data for the current page.
+  Matches the visible breadcrumb trail from breadcrumbs.html.
   Usage: {% include breadcrumb-schema.html %}
 {% endcomment %}
 
 {%- assign nav_items = site.data.navigation -%}
-{%- assign position = 1 -%}
 {%- assign current_nav = nil -%}
 {%- for nav in nav_items -%}
-  {%- if page.url == nav.url or (nav.url != '/' and page.url contains nav.url) -%}
+  {%- if nav.url != '/' and page.url contains nav.url -%}
     {%- assign current_nav = nav -%}
     {%- break -%}
   {%- endif -%}
 {%- endfor -%}
 
+{%- assign clean_title = page.title | split: ' --' | first -%}
+{%- assign current_name = clean_title | default: site.name -%}
+{%- if page.url == '/' -%}
+  {%- assign current_name = site.name -%}
+{%- endif -%}
+
 {%- capture breadcrumb_json -%}
   {
     "@type": "ListItem",
     "position": 1,
-    "name": "Home",
-    "item": "{{ site.url }}"
+    "name": {{ site.name | jsonify }},
+    "item": "{{ site.url }}/"
   }
-  {%- if current_nav and current_nav.url != '/' -%}
-    ,{
-      "@type": "ListItem",
-      "position": 2,
-      "name": {{ current_nav.title | jsonify }},
-      "item": {{ site.url | append: current_nav.url | jsonify }}
-    }
+  {%- if page.url != '/' -%}
+    {%- if current_nav and page.url != current_nav.url -%}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ current_nav.title | jsonify }},
+        "item": {{ site.url | append: current_nav.url | jsonify }}
+      }
+      ,{
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ current_name | jsonify }},
+        "item": "{{ page.url | absolute_url }}"
+      }
+    {%- elsif current_nav -%}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ current_name | jsonify }},
+        "item": "{{ page.url | absolute_url }}"
+      }
+    {%- else -%}
+      ,{
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ current_name | jsonify }},
+        "item": "{{ page.url | absolute_url }}"
+      }
+    {%- endif -%}
   {%- endif -%}
 {%- endcapture -%}
 
