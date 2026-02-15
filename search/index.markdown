@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Search johnsy.com - Explore Blog Posts and Archives
+title: Search
 permalink: /search/
 description: Explore the johnsy.com archives. Search blog posts, articles, and content about software development, parkrun, and more.
 keywords:
