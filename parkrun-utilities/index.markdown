@@ -5,6 +5,7 @@ description: Tools I created as a software engineer who loves parkrun to help me
 og_image: https://www.johnsy.com/eventuate/images/eventuate-social-preview.png
 og_image_alt: parkrun utilities - Eventuate, Ambassy, Crash Course Simulator, and parkrun Userscripts
 keywords: parkrun, parkrun utility, Eventuate, Ambassy, Crash Course, parkrun userscripts, parkrun tools, running community
+redirect_from: /parkrun-utility/
 ---
 
 ## parkrun utilities
