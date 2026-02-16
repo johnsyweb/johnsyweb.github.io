@@ -4,6 +4,25 @@ require "English"
 require "html-proofer"
 require "fileutils"
 
+def mise_available?
+  system("which mise > /dev/null 2>&1")
+end
+
+def ensure_mise!
+  return if mise_available?
+  raise "mise is not on PATH. Install from https://mise.jdx.dev and run 'mise install' in this directory. Do not use system Ruby or Bundler directly."
+end
+
+def mise_exec(*cmd)
+  ensure_mise!
+  system("mise", "exec", "--", *cmd)
+end
+
+def mise_sh(cmd)
+  ensure_mise!
+  sh "mise exec -- #{cmd}"
+end
+
 task :default => :test
 
 desc "Given a title as an argument, create a new post file"
@@ -89,7 +108,7 @@ task :validate_html => :build do
 
   # Run HTMLProofer via system call to capture exit code
   # (HTMLProofer calls exit(1) directly, not raising an exception)
-  success = system("ruby", "-e", <<~RUBY)
+  success = mise_exec("ruby", "-e", <<~RUBY)
     require 'html-proofer'
     options = #{options.inspect}
     begin
@@ -112,18 +131,18 @@ end
 
 desc "Generate style test page from CSS"
 task :generate_style_test do
-  sh "ruby scripts/generate_style_test.rb"
+  mise_sh("ruby scripts/generate_style_test.rb")
 end
 
 desc "Minify CSS assets for production"
 task :minify_css do
-  # Ensure pnpm is available (managed via mise from .tool-versions)
-  raise "pnpm not found. Run 'mise install' to set up toolchain." unless system("which pnpm > /dev/null 2>&1")
+  ensure_mise!
+  raise "pnpm not found. Run 'mise install' to set up toolchain." unless mise_exec("pnpm", "--version")
 
   # Install dependencies if they are missing (cleancss comes from clean-css-cli)
   unless File.exist?("node_modules/.bin/cleancss")
     puts "Installing Node.js dependencies for minification..."
-    raise "Failed to install Node.js dependencies" unless system("pnpm install")
+    raise "Failed to install Node.js dependencies" unless mise_exec("pnpm", "install")
   end
 
   targets = {
@@ -133,19 +152,19 @@ task :minify_css do
   }
 
   targets.each do |source, destination|
-    sh "pnpm exec cleancss -O2 --inline=none -o #{destination} #{source}"
+    mise_sh("pnpm exec cleancss -O2 --inline=none -o #{destination} #{source}")
   end
 end
 
 desc "Minify JavaScript assets for production"
 task :minify_js do
-  # Ensure pnpm is available (managed via mise from .tool-versions)
-  raise "pnpm not found. Run 'mise install' to set up toolchain." unless system("which pnpm > /dev/null 2>&1")
+  ensure_mise!
+  raise "pnpm not found. Run 'mise install' to set up toolchain." unless mise_exec("pnpm", "--version")
 
   # Install dependencies if they are missing (terser)
   unless File.exist?("node_modules/.bin/terser")
     puts "Installing Node.js dependencies for minification..."
-    raise "Failed to install Node.js dependencies" unless system("pnpm install")
+    raise "Failed to install Node.js dependencies" unless mise_exec("pnpm", "install")
   end
 
   js_files = [
@@ -158,12 +177,12 @@ task :minify_js do
 
   js_files.each do |source|
     destination = source.sub(/\.js$/, ".min.js")
-    sh "pnpm exec terser #{source} --compress --mangle -o #{destination}"
+    mise_sh("pnpm exec terser #{source} --compress --mangle -o #{destination}")
   end
 end
 
 task :build => %i[minify_css minify_js] do
-  sh "bundle exec jekyll build"
+  mise_sh("bundle exec jekyll build")
 end
 
 # Skip image optimization on CI; only do it for actual deployments/screenshots
@@ -268,7 +287,7 @@ task "fetch:utility_images" do
     raise "Script not found: #{script_path}"
   end
   puts "Running fetch-utility-images.mjs..."
-  system("node", script_path) or raise "fetch-utility-images.mjs failed"
+  mise_exec("node", script_path) or raise "fetch-utility-images.mjs failed"
 end
 
 desc "Validate XML feeds using W3C feedvalidator"
@@ -326,20 +345,19 @@ task :lighthouse_styles_light do
     Rake::Task[:build].invoke
   end
 
-  # Check if pnpm is available
-  unless system("which pnpm > /dev/null 2>&1")
-    puts "pnpm not found. Enabling via corepack..."
-    raise "Failed to enable pnpm via corepack" unless system("corepack enable pnpm")
+  ensure_mise!
+  unless mise_exec("pnpm", "--version")
+    raise "pnpm not found. Run 'mise install' to set up toolchain."
   end
 
   # Install dependencies if needed
   unless File.exist?("node_modules/@lhci")
     puts "Installing Lighthouse CI dependencies..."
-    raise "Failed to install Node.js dependencies" unless system("pnpm install")
+    raise "Failed to install Node.js dependencies" unless mise_exec("pnpm", "install")
   end
 
   puts "Running Lighthouse CI on style test page (LIGHT MODE)..."
-  raise "Lighthouse CI accessibility check failed (light mode) - color/font combinations do not meet WCAG standards" unless system("pnpm run lhci:styles:light")
+  raise "Lighthouse CI accessibility check failed (light mode) - color/font combinations do not meet WCAG standards" unless mise_exec("pnpm", "run", "lhci:styles:light")
 
   puts "✓ Light mode style accessibility checks passed!"
 end
@@ -353,20 +371,19 @@ task :lighthouse_styles_dark do
     Rake::Task[:build].invoke
   end
 
-  # Check if pnpm is available
-  unless system("which pnpm > /dev/null 2>&1")
-    puts "pnpm not found. Enabling via corepack..."
-    raise "Failed to enable pnpm via corepack" unless system("corepack enable pnpm")
+  ensure_mise!
+  unless mise_exec("pnpm", "--version")
+    raise "pnpm not found. Run 'mise install' to set up toolchain."
   end
 
   # Install dependencies if needed
   unless File.exist?("node_modules/@lhci")
     puts "Installing Lighthouse CI dependencies..."
-    raise "Failed to install Node.js dependencies" unless system("pnpm install")
+    raise "Failed to install Node.js dependencies" unless mise_exec("pnpm", "install")
   end
 
   puts "Running Lighthouse CI on style test page (DARK MODE)..."
-  raise "Lighthouse CI accessibility check failed (dark mode) - color/font combinations do not meet WCAG standards" unless system("pnpm run lhci:styles:dark")
+  raise "Lighthouse CI accessibility check failed (dark mode) - color/font combinations do not meet WCAG standards" unless mise_exec("pnpm", "run", "lhci:styles:dark")
 
   puts "✓ Dark mode style accessibility checks passed!"
 end
@@ -526,7 +543,7 @@ task :base_build => :build
 # Prepare style page and incrementally rebuild to materialize _site/style-test/index.html
 desc "Prepare style page for Lighthouse (incremental rebuild)"
 task :prepare_lighthouse_style => :generate_style_test do
-  sh "bundle exec jekyll build --incremental"
+  mise_sh("bundle exec jekyll build --incremental")
 end
 
 # HTML validation (no build dependency)
@@ -556,7 +573,7 @@ task :validate_html_only do
     ]
   }
 
-  success = system("ruby", "-e", <<~RUBY)
+  success = mise_exec("ruby", "-e", <<~RUBY)
     require 'html-proofer'
     options = #{options.inspect}
     begin
@@ -590,7 +607,7 @@ end
 # Build search index without deleting _site
 desc "Build search index (Pagefind) without cleaning _site"
 task :build_search_index do
-  sh "npx --yes pagefind --site _site --output-path assets/pagefind --force-language en"
+  mise_sh("npx --yes pagefind --site _site --output-path assets/pagefind --force-language en")
 end
 
 # Lighthouse wrappers respecting SKIP_BUILD and depending on style prep
@@ -609,12 +626,12 @@ end
 # README refresh after search index
 desc "Refresh README with TOC after search index"
 task :refresh_readme => :build_search_index do
-  sh "ruby scripts/update_readme.rb"
+  mise_sh("ruby scripts/update_readme.rb")
 end
 
 desc "Don't deploy broken JSON"
 task :validate_structured_data do
-  sh "bash scripts/validate-structured-data.sh"
+  mise_sh("bash scripts/validate-structured-data.sh")
 end
 
 # Stage 2: run validations and preparations in parallel

@@ -4,11 +4,23 @@ A complete waste of cyberspace.
 
 ## Development
 
+### Toolchain (mise)
+
+This project uses [mise](https://mise.jdx.dev) for Ruby, Node, and pnpm. Do not rely on system Ruby or Bundler.
+
+1. Install mise: <https://mise.jdx.dev>
+2. In this repo run: `mise install`
+3. Use `mise exec -- rake …` (or ensure your shell has `mise activate` so `rake` and `pnpm` come from mise).
+
+All Rake tasks run subshell commands (bundle, jekyll, pnpm, node, ruby) via `mise exec`, so builds and tests use the versions in `.tool-versions`.
+
 To start the development server with automatic CSS and JavaScript minification, plus Jekyll live reload:
 
 ```bash
 pnpm run dev
 ```
+
+(This requires `pnpm` to be on PATH from mise, e.g. `mise install` then `mise exec -- pnpm run dev` or a shell with `mise activate`.)
 
 This command runs three watch processes in parallel:
 - **CSS watcher**: Automatically minifies CSS files when they change
@@ -16,6 +28,14 @@ This command runs three watch processes in parallel:
 - **Jekyll server**: Serves the site with live reload on http://localhost:4000
 
 All file changes are detected automatically, and your browser will refresh when Jekyll content changes.
+
+### Testing
+
+The full test suite is `rake test` (build, HTML/feed validation, Lighthouse style checks). Run it with mise so Ruby and Node match the project:
+
+```bash
+mise exec -- rake test
+```
 
 ## Microsites Showcase
 
