@@ -1,6 +1,9 @@
 ---
 layout: default
 title: bit.ly migration
+noindex: true
+sitemap: false
+pagefind_index: false
 ---
 
 ## bit.ly

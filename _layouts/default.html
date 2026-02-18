@@ -38,6 +38,9 @@
     {% if page.pagefind_index == false or is_paginated_archive %}
     <meta name="pagefind-index" content="false" />
     {% endif %}
+    {% if page.noindex %}
+    <meta name="robots" content="noindex" />
+    {% endif %}
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
