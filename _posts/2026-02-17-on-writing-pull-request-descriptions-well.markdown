@@ -5,7 +5,7 @@ title: "On Writing Pull Request Descriptions Well: The Five Cs"
 date: 2026-02-17  4:07:21
 ---
 
-On this week's [Merri Monday Run] I was chatting with a fellow nerd about software development, and the topic of [GitHub pull requests] (PRs) came up — particularly the importance of including a meaningful description in a PR.
+On this week's [Merri Monday Run] I was chatting with a fellow nerd about software development, and the topic of [GitHub pull requests] (PRs) came up; particularly the importance of including a meaningful description in a PR.
 
 As someone who reads a lot more code than I write (don't we all, these days?), and having spent many days acting as a code archaeologist trying to understand _why_ a codebase behaves (or misbehaves) in certain ways, I have come to really appreciate a good PR description.
 
