@@ -65,7 +65,7 @@ jobs:
         run: bundle exec rake build
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: jekyll-build
           path: ./_site
@@ -79,7 +79,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
@@ -132,7 +132,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
@@ -161,7 +161,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
@@ -186,7 +186,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
@@ -227,7 +227,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
@@ -261,7 +261,7 @@ jobs:
           fi
 
       - name: Upload build artifacts with style test
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: jekyll-build-with-style-test
           path: ./_site
@@ -275,7 +275,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build-with-style-test
           path: ./_site
@@ -330,7 +330,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build-with-style-test
           path: ./_site
@@ -388,7 +388,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: jekyll-build
           path: ./_site
