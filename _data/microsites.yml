@@ -79,3 +79,23 @@ microsites:
       keywords: "speedtest analysis, network performance, bandwidth monitoring, Chart.js visualization, speed test tracking, automated speedtest"
       schema_type: "SoftwareApplication"
       audience: "Network administrators and home users monitoring connection performance"
+
+  - id: glyptodont
+    title: Glyptodont — TODO checker for CI/CD
+    url: https://www.johnsy.com/glyptodont/
+    image: https://www.johnsy.com/glyptodont/glyptodon.png
+    image_width: 717
+    image_height: 561
+    image_alt: "Paleoart: Glyptodon, a large extinct armadillo from the Pleistocene in South America"
+    image_title: "Paleoart of Glyptodon"
+    description: "Glyptodont scans your Git repository for TODO-style comments (TODO, FIXME, HACK, XXX) and fails when they exceed your limits. Use in CI/CD or locally."
+    purpose: "Scan your repo for TODOs and fail CI when they exceed your limits"
+    features:
+      - Threshold- and age-based TODO limits
+      - CI integration for GitHub Actions and Buildkite
+      - Configurable keywords and ignore lists
+      - Free, open-source Ruby gem
+    seo:
+      keywords: "glyptodont, TODO checker, FIXME, CI, CD, GitHub Actions, Buildkite, Ruby gem, technical debt, code quality"
+      schema_type: "SoftwareApplication"
+      audience: "Software teams wanting to enforce TODO policies in CI"
