@@ -104,6 +104,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-03-17: [Copy a directory structure with rsync (and no files)](https://www.johnsy.com/blog/2026/03/17/copy-directory-structure-with-rsync/)
 - 2026-02-17: [On Writing Pull Request Descriptions Well: The Five Cs](https://www.johnsy.com/blog/2026/02/17/on-writing-pull-request-descriptions-well/)
 - 2026-01-21: [Automating Distraction Blocking with Pi-hole v6 and dedistracter](https://www.johnsy.com/blog/2026/01/21/dedistracter-pihole-scheduler/)
 - 2026-01-20: [Can we reunite a lost AirPod with its owner?](https://www.johnsy.com/blog/2026/01/20/can-we-reunite-a-lost-airpod-with-its-owner/)
@@ -113,6 +114,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2025-12-08: [National Crossword Solvers Day](https://www.johnsy.com/blog/2025/12/08/national-crossword-solvers-day/)
 - 2025-12-01: [Forty-two](https://www.johnsy.com/blog/2025/12/01/forty-two/)
 - 2025-11-29: [Counterpoints to &ldquo;Comparison is the Thief of Joy&rdquo;](https://www.johnsy.com/blog/2025/11/29/counterpoints-to-comparison-is-the-thief-of-joy/)
-- 2025-11-06: [Foretoken — parkrun finish tokens on your phone](https://www.johnsy.com/blog/2025/11/06/foretoken/)
 
 <!-- END TOC -->
