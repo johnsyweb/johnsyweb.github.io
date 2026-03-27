@@ -23,7 +23,7 @@ The headshot is also available as a high-resolution [PNG][Headshot PNG] (July 20
 
 ## Speaker bio (short)
 
-Pete Johns is a Melbourne-based software engineering leader, a parkrun event-day volunteer and participant, and a volunteer ambassador supporting other ambassadors and event teams. He is also a cardiac arrest survivor and brings a practical, human-centred perspective to talks on building, maintaining, and running reliable and resilient systems with happy teams.
+Pete Johns is a Melbourne-based software engineering leader, a parkrun event-day volunteer and participant, and a volunteer parkrun ambassador supporting other ambassadors and event teams. He is also a cardiac arrest survivor. Pete brings a practical, human-centred perspective to talks on building, maintaining, and running reliable and resilient systems with happy teams.
 
 ## Speaker bio (medium)
 
