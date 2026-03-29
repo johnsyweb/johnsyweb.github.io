@@ -119,15 +119,15 @@ utilities:
     image: https://www.johnsy.com/nominmaxable/nominmaxable-social-preview.png
     image_width: 1200
     image_height: 630
-    image_alt: "nominmaxable showing per-country longest and shortest parkrun EventLongName tables"
-    image_title: "Screenshot of nominmaxable showing longest and shortest EventLongName by series and country"
-    description: "Explore longest and shortest parkrun EventLongName values by event series and country, using cached public parkrun events data."
-    purpose: "Find shortest and longest event names in the parkrun feed"
+    image_alt: "nominmaxable showing per-country longest and shortest parkrun full event name tables"
+    image_title: "Screenshot of nominmaxable showing longest and shortest full event names by series and country"
+    description: "Explore longest and shortest parkrun full event names by series and country. Data is cached in your browser for seven days."
+    purpose: "Find shortest and longest full event names from parkrun's public listing"
     features:
       - Grouped by event series and country
       - Character-count analysis
-      - Data from images.parkrun.com/events.json
+      - Public listing data, cached in the browser for seven days
     seo:
-      keywords: "parkrun EventLongName, event name length, parkrun events feed, parkrun statistics, volunteer tools"
-      schema_type: "SoftwareApplication"
+      keywords: "parkrun full event name, parkrun events, parkrun utilities, volunteer tools, event name length, johnsy.com"
+      schema_type: "WebApplication"
       audience: "parkrun volunteers and enthusiasts"
