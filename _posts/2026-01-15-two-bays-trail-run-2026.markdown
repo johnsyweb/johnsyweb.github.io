@@ -17,7 +17,7 @@ Within the first 100m of the run on Sunday, I could feel drops of water tricklin
 _DJ_ met me towards the end of the course, gave me a big hug and ran with me towards the finish line. While not the race I was hoping to run, I finished with a huge smile on my face and a sense of satisfaction.
 
 
-![Two Bays Trail Run 2026](https://live.staticflickr.com/65535/55041126512_cadbffaa97_h.jpg)
+[![Two Bays Trail Run 2026](/images/2026-01-15-two-bays-trail-run-2026.jpg)][Two Bays Trail Run photo]
 
 *With the Merri Creek Running Club legends who all finished ahead of me 💜*
 
@@ -25,6 +25,7 @@ I look forward to returning in 2026. Maybe I'll reverse the trend of running slo
 
 <!-- Links -->
 [Two Bays Trail Run]: https://www.twobaystrailrun.com.au/
+[Two Bays Trail Run photo]: https://flic.kr/p/2s2Dua1
 [Cape Schanck]: https://en.wikipedia.org/wiki/Cape_Schanck
 [Mornington Peninsula]: https://en.wikipedia.org/wiki/Mornington_Peninsula
 [Red Hill Rail Trail parkrun]: https://www.parkrun.com.au/redhillrailtrail/
