@@ -187,12 +187,12 @@ Okay, April, what do you have in store for me?
 <!-- Bookmarks for this post -->
 [Alfred]: https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/
 [Booking up for Beauty]: https://exercism.org/tracks/go/exercises/booking-up-for-beauty/solutions/johnsyweb
-[Comments Are Lies!]: /blog/2012/10/31/comments-are-lies/
+[Comments Are Lies!]: {% post_url 2012-10-31-comments-are-lies %}
 [Dash]: https://kapeli.com/dash
 [Docker]: https://www.docker.com
 [Documenting this module]: https://exercism.org/tracks/go/exercises/weather-forecast/solutions/johnsyweb
 [Exercism's #12in23 challenge]: https://exercism.org/challenges/12in23
-[Functional February]: /blog/2023/02/28/functional-february/
+[Functional February]: {% post_url 2023-02-28-functional-february %}
 [Go Doc Comments]: https://tip.golang.org/doc/comment
 [Go maps in action]: https://go.dev/blog/maps
 [Go]: https://go.dev

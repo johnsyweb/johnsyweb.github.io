@@ -62,7 +62,7 @@ A practical migration path could look like this:
 Passwordless is a good direction. But passwordless should reduce risk and friction, not relocate them.
 
 <!-- Links -->
-[Improving Online Security]: /blog/2019/01/21/improving-online-security/
+[Improving Online Security]: {% post_url 2019-01-21-improving-online-security %}
 [CISA on SIM swapping]: https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-202a "CISA advisory mentioning SIM swapping risks"
 [FIDO on passkey phishing resistance]: https://fidoalliance.org/passkeys/ "Passkeys from the FIDO Alliance"
 [NIST Digital Identity Guidelines]: https://pages.nist.gov/800-63-3/sp800-63b.html "NIST SP 800-63B Digital Identity Guidelines"

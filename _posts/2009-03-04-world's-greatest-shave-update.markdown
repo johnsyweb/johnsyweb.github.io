@@ -1,7 +1,9 @@
 ---
 layout: post
 title: World's Greatest Shave Update
-date: 2009-03-04 00:00:00.000000000 +11:00
+date: 2009-03-04 00:00:00 +00:00
+redirect_from:
+- "/blog/2009/03/03/world's-greatest-shave-update/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

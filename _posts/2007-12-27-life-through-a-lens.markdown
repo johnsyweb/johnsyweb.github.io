@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Life Through a Lens
-date: 2007-12-27 00:00:00.000000000 +11:00
+date: 2007-12-27 00:00:00 +00:00
+redirect_from:
+- "/blog/2007/12/26/life-through-a-lens/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

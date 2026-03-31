@@ -25,7 +25,7 @@ software development the only
 I have written was in the form of a small,
 [cargo-culted](https://en.wikipedia.org/wiki/Cargo_cult_programming)
 [change](https://github.com/fraz3alpha/running-challenges/commit/a9b83c55f9e2ab87860c57a0000881c585977b0a)
-to [a parkrun-related browser plug-in](/blog/2019/07/24/essential-browser-plugins/#running-challenges). 
+to [a parkrun-related browser plug-in]({% post_url 2019-07-24-essential-browser-plugins %}#running-challenges).
 It's a language I've never really needed to touch and of which I have remained
 pretty ignorant. It was good to finally meet it head-on.
 

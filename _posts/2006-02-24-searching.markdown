@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Searching
-date: 2006-02-24 00:00:00.000000000 +11:00
+date: 2006-02-24 00:00:00 +00:00
+redirect_from:
+- "/blog/2006/02/23/searching/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

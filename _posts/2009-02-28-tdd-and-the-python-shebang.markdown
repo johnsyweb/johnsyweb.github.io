@@ -1,7 +1,9 @@
 ---
 layout: post
 title: TDD and the Python Shebang
-date: 2009-02-28 00:00:00.000000000 +11:00
+date: 2009-02-28 00:00:00 +00:00
+redirect_from:
+- "/blog/2009/02/27/tdd-and-the-python-shebang/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

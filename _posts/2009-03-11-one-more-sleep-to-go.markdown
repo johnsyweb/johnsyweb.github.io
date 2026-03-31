@@ -1,7 +1,9 @@
 ---
 layout: post
 title: One more sleep to go!
-date: 2009-03-11 00:00:00.000000000 +11:00
+date: 2009-03-11 00:00:00 +00:00
+redirect_from:
+- "/blog/2009/03/10/one-more-sleep-to-go/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

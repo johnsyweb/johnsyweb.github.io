@@ -8,7 +8,7 @@ redirect_from:
 - "/l/WhyTheseAreHere/"
 ---
 In my last blog post, [Keeping in the Development
-Loop](/blog/2022/08/04/keeping-in-the-development-loop/), I listed a bunch of
+Loop]({% post_url 2022-08-04-keeping-in-the-development-loop %}), I listed a bunch of
 email newsletters that I enjoy as a technologist. Today I want to share one more
 email newsletter that I get a lot of value out of and that's [Better Allies
 &reg;](https://betterallies.com/more-content/). Each Friday (ish, depending on

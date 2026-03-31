@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Movember
-date: 2011-10-19 00:00:00.000000000 +10:00
+date: 2011-10-19 00:00:00 +00:00
+redirect_from:
+- "/blog/2011/10/18/movember/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 

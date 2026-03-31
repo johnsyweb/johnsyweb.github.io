@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Thank you, all. #wgs'
-date: 2009-03-14 00:00:00.000000000 +11:00
+date: 2009-03-14 00:00:00 +00:00
+redirect_from:
+- "/blog/2009/03/13/thank-you-all/"
 updated_at: 2025-12-18 00:00:00 +11:00
 ---
 
