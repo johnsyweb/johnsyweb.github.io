@@ -14,6 +14,19 @@ I knew, from contributing to projects like the [Running Challenges Chrome Extens
 
 Front-end web development is not one of my core competencies (QED), but I hear delegating to coding agents is a thing these days, so I gave that a whirl and a few minutes later I had something satisfactory up and running at [parkrun by Public Transport][app].
 
+<figure class="caption-centred">
+  <a href="https://www.johnsy.com/parkrun-by-public-transport/">
+      <img
+        src="https://www.johnsy.com/parkrun-by-public-transport/og-image.png"
+        alt="Map of Victoria showing parkrun event locations and public transport stops"
+        width="578" height="304"
+        class="responsive-image"
+        loading="lazy"
+      />
+  </a>
+  <figcaption>parkrun Events Near Public Transport in Victoria</figcaption>
+</figure>
+
 Rather than trying to build a full Saturday-morning journey planner, I treated this as a neat little data demo: plot Victorian parkrun events, find the nearest public transport stop to each one, and use that distance as a rough proxy for reachability.
 
 There are over a hundred Victorian parkrun events within one kilometer of a public transport stops. That obviously misses things like service frequency, timetables, and whether the walk is actually pleasant or practical, but it is good enough to answer the question.

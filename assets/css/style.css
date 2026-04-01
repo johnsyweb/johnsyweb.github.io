@@ -506,6 +506,11 @@ article picture {
   height: auto;
 }
 
+.caption-centred figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
 article .meta {
   padding-top: 6px;
   font-size: 0.85em;
