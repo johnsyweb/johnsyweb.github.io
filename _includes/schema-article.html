@@ -1,4 +1,5 @@
 {% include post-image-url.html %}
+{% assign page_modified_at = page.last_modified_at | default: page.updated | default: page.date %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -8,7 +9,7 @@
   "articleBody": {{ content | strip_html | jsonify }},
   "url": {{ (site.url | append: page.url) | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page_modified_at | date_to_xmlschema }}",
   "image": "{{ post_image_url }}",
   "author": {% include schema-author.html %},
   "publisher": {% include schema-author.html %},

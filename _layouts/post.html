@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include schema-article.html %}
+{% assign page_modified_at = page.last_modified_at | default: page.updated %}
 <article class="post">
 	<header>
 		{% if page.external-url %}
@@ -20,10 +21,10 @@ layout: default
 					<dt>Published</dt>
 					<dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %e %b %Y" }}</time></dd>
 				</div>
-				{% if page.last_modified_at %}
+				{% if page_modified_at %}
 				<div>
 					<dt>Updated</dt>
-					<dd><time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%a, %e %b %Y" }}</time></dd>
+					<dd><time datetime="{{ page_modified_at | date_to_xmlschema }}">{{ page_modified_at | date: "%a, %e %b %Y" }}</time></dd>
 				</div>
 				{% endif %}
 				{% if page.category %}

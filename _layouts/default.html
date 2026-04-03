@@ -98,20 +98,21 @@
     {% if page.og_image_alt %}
     <meta property="og:image:alt" content="{{ page.og_image_alt }}" />
     {% endif %}
+    {% assign page_modified_at = page.last_modified_at | default: page.updated %}
 
     {% if page.date %}
     <meta
       property="article:published_time"
       content="{{ page.date | date: '%Y-%m-%d %H:%M:%S' }}"
     />
-    {% endif %} {% if page.updated %}
+    {% endif %} {% if page_modified_at %}
     <meta
       property="og:title"
-      content="{{ page.title }} (updated {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }})"
+      content="{{ page.title }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       property="article:modified_time"
-      content="{{ page.updated | date: '%Y-%m-%d %H:%M:%S' }}"
+      content="{{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %}
 
@@ -125,14 +126,14 @@
       name="twitter:data1"
       content="Published: {{ page.date | date: '%Y-%m-%d %H:%M:%S' }}"
     />
-    {% endif %} {% if page.updated %}
+    {% endif %} {% if page_modified_at %}
     <meta
       name="twitter:title"
-      content="{{ page.title }} (updated {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }})"
+      content="{{ page.title }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       name="twitter:data2"
-      content="Updated: {{ page.updated | date: '%Y-%m-%d %H:%M:%S' }}"
+      content="Updated: {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }}"
     />
     {% endif %}
 

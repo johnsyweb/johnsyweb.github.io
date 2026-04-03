@@ -2,6 +2,8 @@
 layout: default
 title: spiritrompe
 description: Coming Soon! Split, name and tag turntable recordings
+noindex: true
+sitemap: false
 keywords:
   - search
   - Pete Johns

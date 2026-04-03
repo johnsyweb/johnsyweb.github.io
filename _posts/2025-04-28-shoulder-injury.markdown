@@ -4,7 +4,7 @@ categories:
 - personal
 title: Shoulder Injury
 date: 2025-04-28 13:17:27.000000000 +10:00
-updated: 2025-06-03 12:30:00.000000000 +10:00
+last_modified_at: 2025-06-03 12:30:00.000000000 +10:00
 redirect_from:
 - "/bit.ly/WhatHaveYouDoneToYourself/"
 - "/l/WhatHaveYouDoneToYourself/"
