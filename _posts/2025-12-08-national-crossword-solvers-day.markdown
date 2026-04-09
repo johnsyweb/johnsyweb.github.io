@@ -3,7 +3,7 @@ layout: post
 title: National Crossword Solvers Day
 date: 2025-12-08 07:24:21
 categories:
-    - career break
+    - careerbreak
     - personal
 ---
 

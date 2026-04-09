@@ -1,7 +1,5 @@
 ---
 layout: null
-redirect_from:
-  - /blog/rss/
-  - /blog/rss2/
+permalink: /rss.xml
 ---
 {% include main-rss-feed.html %}

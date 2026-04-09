@@ -39,7 +39,7 @@ mise exec -- rake test
 
 ### Syndication
 
-The blog exposes **RSS 2.0** at `/feed.xml` and **Atom** at `/atom.xml` (canonical URLs on production: `https://www.johnsy.com/feed.xml` and `https://www.johnsy.com/atom.xml`). The full test run validates these feeds (and the career break feeds) after a Jekyll build.
+The blog exposes **RSS 2.0** at **`/rss.xml`** (canonical) and **`/feed.xml`** (same feed for existing subscribers), and **Atom** at `/atom.xml` (production: `https://www.johnsy.com/rss.xml`, `https://www.johnsy.com/feed.xml`, `https://www.johnsy.com/atom.xml`). The full test run validates these feeds (and the career break feeds) after a Jekyll build.
 
 ## Microsites Showcase
 

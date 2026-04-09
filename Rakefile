@@ -250,6 +250,7 @@ end
 # Helper: Perform feed validation logic
 def validate_feeds_internal
   feeds = [
+    "_site/rss.xml",
     "_site/feed.xml",
     "_site/atom.xml",
     "_site/careerbreak/rss.xml",
