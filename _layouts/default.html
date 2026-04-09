@@ -194,6 +194,7 @@
     </header>
 
     <div id="page">
+      {% unless page.hide_main_nav %}
       <div id="sidebar">
         <nav aria-label="Main navigation">
           <ul class="main-nav">
@@ -223,6 +224,7 @@
           </ul>
         </nav>
       </div>
+      {% endunless %}
 
       <main
         id="content"
