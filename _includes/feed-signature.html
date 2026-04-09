@@ -1,0 +1,11 @@
+{% comment %}
+  Appended to RSS <description> and Atom <content> after absolute_content.
+  Param: format — "rss" | "atom" (thank-you line).
+{% endcomment %}
+<p>-- </p>
+<p>{{ site.author.name }} (<a href="{{ site.author.pronunciation_url }}"><em>{{ site.author.pronunciation }}</em></a> - <a href="{{ site.author.pronouns_url }}">{{ site.author.pronouns }}</a>)</p>
+{% if include.format == 'rss' %}
+<p>Thank you for using RSS. You're awesome.</p>
+{% else %}
+<p>Thank you for using Atom. You're awesome.</p>
+{% endif %}
