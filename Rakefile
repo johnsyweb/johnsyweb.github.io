@@ -251,6 +251,7 @@ end
 def validate_feeds_internal
   feeds = [
     "_site/feed.xml",
+    "_site/atom.xml",
     "_site/careerbreak/rss.xml",
     "_site/careerbreak/atom.xml"
   ]
