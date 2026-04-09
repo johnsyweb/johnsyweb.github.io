@@ -1,0 +1,37 @@
+---
+layout: default
+title: Pete's Career Break Updates
+---
+
+<div id="blog-archives">
+{% assign posts = site.categories.careerbreak | sort: 'date' | reverse %}
+{% for post in posts %}
+
+    <article class="post post-listing">
+
+        {% if post.external-url %}
+            <h1>
+                <a href="{{ post.external-url }}">{{ post.title }}</a>
+                <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
+            </h1>
+        {% else %}
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        {% endif %}
+
+        <p class="post-summary">Posted by {{ site.author.name }} on {{ post.date | date: "%A, %e %B %Y" }}{% if post.category %} in {{ post.category }}{% endif %}</p>
+
+        <div class="post-listing-content">
+            {% include post-preview-image.html item=post %}
+
+            <div class="post-excerpt">
+                <div class="post-content">{{ post.excerpt }}</div>
+                <p><a href="{{ post.url }}">Continue reading "{{ post.title }}"</a></p>
+            </div>
+        </div>
+
+    </article>
+
+{% endfor %}
+
+{% include career-feeds-nav.html %}
+</div>

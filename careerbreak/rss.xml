@@ -9,13 +9,13 @@ permalink: /careerbreak/rss.xml
     <description>{{ site.description | xml_escape }}</description>
     {% capture managing_editor %}{{ site.author.email }} ({{ site.author.name }}){% endcapture %}
     <managingEditor>{{ managing_editor | xml_escape }}</managingEditor>
-    <link>{{ '/blog/' | absolute_url }}</link>
+    <link>{{ '/careerbreak/' | absolute_url }}</link>
     <atom:link href="{{ '/careerbreak/rss.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <image>
       <url>{{ site.url }}/icons/favicon-196x196.png</url>
       <title>Pete's Career Break Updates</title>
-      <link>{{ '/blog/' | absolute_url }}</link>
+      <link>{{ '/careerbreak/' | absolute_url }}</link>
     </image>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
