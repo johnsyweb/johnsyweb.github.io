@@ -688,6 +688,21 @@ img.center {
   float: right;
 }
 
+.blog-feeds-nav {
+  clear: both;
+  margin-top: 1.5em;
+  padding-top: 1em;
+  font-size: 0.9em;
+}
+
+.blog-feeds-nav__label {
+  margin-right: 0.35em;
+}
+
+.blog-feeds-nav__sep {
+  margin: 0 0.35em;
+}
+
 /* Mobile menu select - hidden by default, shown on mobile via JavaScript */
 #sidebar nav select.mnav {
   display: none;
