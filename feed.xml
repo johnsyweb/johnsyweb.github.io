@@ -1,7 +1,6 @@
 ---
 layout: null
 redirect_from:
-- /blog/atom/
 - /blog/rss/
 - /blog/rss2/
 ---
@@ -10,6 +9,8 @@ redirect_from:
   <channel>
     <title>{{ site.name | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
+    {% capture managing_editor %}{{ site.author.email }} ({{ site.author.name }}){% endcapture %}
+    <managingEditor>{{ managing_editor | xml_escape }}</managingEditor>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
     <language>en</language>
@@ -24,8 +25,11 @@ redirect_from:
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% include absolute_content.html content=post.content %}
-        <description>{{ absolute_content | xml_escape }}</description>
+        {% capture feed_signature_html %}{% include feed-signature.html format='rss' %}{% endcapture %}
+        {% capture item_description %}{{ absolute_content }}{{ feed_signature_html }}{% endcapture %}
+        <description>{{ item_description | xml_escape }}</description>
         <dc:creator>{{ site.author.name | xml_escape }}</dc:creator>
+        <author>{{ site.author.email | xml_escape }}</author>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
