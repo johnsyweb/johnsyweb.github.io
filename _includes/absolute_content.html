@@ -1,8 +1,3 @@
-{% comment %}
-  Converts relative URLs in post content to absolute URLs.
-  Usage: {% include absolute_content.html content=post.content %}
-  Output: absolute_content variable with converted URLs
-{% endcomment %}
 {% assign images_replacement = '="' | append: site.url | append: '/images/' %}
 {% assign icons_replacement = '="' | append: site.url | append: '/icons/' %}
 {% assign blog_replacement = '="' | append: site.url | append: '/blog/' %}
