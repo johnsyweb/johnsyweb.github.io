@@ -108,6 +108,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-04-09: [It's like podcasts, but for reading!](https://www.johnsy.com/blog/2026/04/09/it's-like-podcasts/)
 - 2026-04-01: [parkrun Events Near Public Transport in Victoria](https://www.johnsy.com/blog/2026/04/01/parkrun-events-near-public-transport-in-victoria/)
 - 2026-03-26: [Passwordless should reduce risk and friction](https://www.johnsy.com/blog/2026/03/26/passwordless-should-reduce-risk-and-friction/)
 - 2026-03-17: [Copy a directory structure with rsync (and no files)](https://www.johnsy.com/blog/2026/03/17/copy-directory-structure-with-rsync/)
@@ -117,6 +118,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-01-15: [Two Bays Trail Run 2026](https://www.johnsy.com/blog/2026/01/15/two-bays-trail-run-2026/)
 - 2026-01-07: [Moving back to www](https://www.johnsy.com/blog/2026/01/07/moving-to-www/)
 - 2025-12-15: [Accessible colours beat Solarized (and why that matters)](https://www.johnsy.com/blog/2025/12/15/accessible-colours-over-solarized/)
-- 2025-12-08: [National Crossword Solvers Day](https://www.johnsy.com/blog/2025/12/08/national-crossword-solvers-day/)
 
 <!-- END TOC -->
