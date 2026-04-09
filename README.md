@@ -37,6 +37,10 @@ The full test suite is `rake test` (build, HTML/feed validation, Lighthouse styl
 mise exec -- rake test
 ```
 
+### Syndication
+
+The blog exposes **RSS 2.0** at `/feed.xml` and **Atom** at `/atom.xml` (canonical URLs on production: `https://www.johnsy.com/feed.xml` and `https://www.johnsy.com/atom.xml`). The full test run validates these feeds (and the career break feeds) after a Jekyll build.
+
 ## Microsites Showcase
 
 The homepage features a showcase of microsites, similar to the parkrun utilities page. Microsites are configured in `_data/microsites.yml` and displayed using the `utility-card.html` include.
