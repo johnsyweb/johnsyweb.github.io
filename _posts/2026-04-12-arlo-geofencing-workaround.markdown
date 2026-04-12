@@ -27,7 +27,7 @@ Of course I accept that front-line staff do not ship the app. Still, letting a r
 
 ### What actually fixed it
 
-In the end I did not need a third-party bridge. I reset the social and device graph around geofencing, then rebuilt the rules:
+I removed almost all of the configuration, then rebuilt the rules:
 
 1. Remove _K_’s granted access from my account.
 2. Remove my phone from the geofence device list.
