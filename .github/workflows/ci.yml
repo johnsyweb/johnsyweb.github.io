@@ -167,15 +167,16 @@ jobs:
           path: ./_site
 
       - name: Run HTML validation and create annotations
-        continue-on-error: true
         run: |
           set +e
           docker run --rm \
             -v "${PWD}/_site:/site" \
             ghcr.io/validator/validator:latest \
             vnu --errors-only --skip-non-html \
-            /site 2>&1 | bash scripts/html_validation_annotations.sh
-          exit 0
+            /site > /tmp/vnu-html-validation.txt 2>&1
+          vnu_exit=$?
+          bash scripts/html_validation_annotations.sh < /tmp/vnu-html-validation.txt
+          exit "$vnu_exit"
 
   check-external-links:
     runs-on: ubuntu-latest

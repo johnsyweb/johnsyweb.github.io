@@ -31,7 +31,7 @@ All file changes are detected automatically, and your browser will refresh when 
 
 ### Testing
 
-The full test suite is `rake test` (build, HTML/feed validation, Lighthouse style checks). Run it with mise so Ruby and Node match the project:
+The full test suite is `rake test` (build, HTML/feed validation, Lighthouse style checks). On GitHub Actions, Nu Html Checker (`vnu`) runs on the built site and the workflow fails if it reports errors. Run tests with mise so Ruby and Node match the project:
 
 ```bash
 mise exec -- rake test
