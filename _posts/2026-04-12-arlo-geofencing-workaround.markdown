@@ -25,7 +25,7 @@ Who would be pleased by such a thing?
 
 Of course I accept that front-line staff do not ship the app. Still, letting a regression linger that long, while customers juggle armed away mode and false comfort, is not acceptable for a security product. Most engineers I know take [continuous delivery][continuous delivery] seriously. In [_Continuous Delivery_][continuous delivery book], Jez Humble and David Farley describe pipelines where bad change is rolled back quickly and fixed forward, rather than leaving users in limbo for months. I am unlikely to buy another Arlo device.
 
-### What actually fixed it
+## What actually fixed it
 
 I removed almost all of the configuration, then rebuilt the rules:
 
@@ -38,7 +38,7 @@ I removed almost all of the configuration, then rebuilt the rules:
 
 After that, arrive and leave both behaved. If you are stuck in a similar loop, that sequence may be worth trying before you throw the device out.
 
-### Alternatives considered
+## Alternatives considered
 
 I looked at [Shortcuts][apple shortcuts] and [IFTTT][ifttt]-style workarounds, using the phone’s own location to drive a separate action, but I wanted the vendor path to work first. Longer term, during this [career break], I am also looking at [Home Assistant][home assistant] as a place to tinker properly with home automation, on my own terms, and with tests I control.
 
