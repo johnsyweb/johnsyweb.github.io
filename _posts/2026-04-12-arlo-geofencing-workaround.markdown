@@ -21,6 +21,8 @@ Then came a line I have kept verbatim:
 
 > Also we are pleased to inform you that this is an known issue.
 
+![Dead Arlo Bird Logo](/images/2026-04-12-arlo-geofencing-workaround.png){:.float-left}
+
 Who would be pleased by such a thing?
 
 Of course I accept that front-line staff do not ship the app. Still, letting a regression linger that long, while customers juggle armed away mode and false comfort, is not acceptable for a security product. Most engineers I know take [continuous delivery][continuous delivery] seriously. In [_Continuous Delivery_][continuous delivery book], Jez Humble and David Farley describe pipelines where bad change is rolled back quickly and fixed forward, rather than leaving users in limbo for months. I am unlikely to buy another Arlo device.
