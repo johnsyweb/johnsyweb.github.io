@@ -104,12 +104,17 @@ function getChangedFiles() {
       .filter(Boolean);
   } catch (error) {
     console.log(`::warning::Unable to compute changed files for IndexNow: ${error.message}`);
-    return [];
+    return null;
   }
 }
 
 async function collectIncrementalUrls() {
   const changedFiles = getChangedFiles();
+  if (changedFiles === null) {
+    console.log('::warning::Falling back to full IndexNow submission because incremental diff could not be computed.');
+    return collectSiteUrls();
+  }
+
   if (changedFiles.length === 0) {
     return [];
   }
