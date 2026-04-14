@@ -25,7 +25,7 @@
     {% assign page_description_source = page.description | default: excerpt_text | default: site.description %}
     {% assign page_description = page_description_source | strip | truncate: description_max_length | strip %}
     {% assign page_keywords = page.keywords %}
-    <meta name="description" content="{{ page_description }}" />
+    <meta name="description" content="{{ page_description | escape }}" />
     {% if page_keywords %}
     <meta name="keywords" content="{{ page_keywords | join: ', ' }}" />
     {% elsif site.keywords %}
@@ -76,7 +76,7 @@
     />
     {% endfor %}
 
-    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:description" content="{{ page_description | escape }}" />
 
     {% include post-image-url.html item=page %}
     {% assign image_url = post_image_url %}
@@ -99,7 +99,7 @@
     }
     </script>
     
-    <meta property="og:title" content="{{ effective_title }}" />
+    <meta property="og:title" content="{{ effective_title | escape }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% if page.date %}
     <meta property="og:type" content="article" />
@@ -109,7 +109,7 @@
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:image" content="{{ image_url }}" />
     {% if page.og_image_alt %}
-    <meta property="og:image:alt" content="{{ page.og_image_alt }}" />
+    <meta property="og:image:alt" content="{{ page.og_image_alt | escape }}" />
     {% endif %}
     {% assign page_modified_at = page.last_modified_at | default: page.updated %}
 
@@ -121,7 +121,7 @@
     {% endif %} {% if page_modified_at %}
     <meta
       property="og:title"
-      content="{{ effective_title }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
+      content="{{ effective_title | escape }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       property="article:modified_time"
@@ -130,8 +130,8 @@
     {% endif %}
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ effective_title }}" />
-    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:title" content="{{ effective_title | escape }}" />
+    <meta name="twitter:description" content="{{ page_description | escape }}" />
     <meta name="twitter:image" content="{{ image_url }}" />
 
     {% if page.date %}
@@ -142,7 +142,7 @@
     {% endif %} {% if page_modified_at %}
     <meta
       name="twitter:title"
-      content="{{ effective_title }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
+      content="{{ effective_title | escape }} (updated {{ page_modified_at | date: '%Y-%m-%d %H:%M:%S' }})"
     />
     <meta
       name="twitter:data2"
