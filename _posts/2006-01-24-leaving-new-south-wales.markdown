@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Leaving New South Wales
+description: The one where we were about to re-enter the Zone of Unpredictable Connectivity upon leaving New South Wales on our big road trip.
 ---
 
 
@@ -23,5 +24,3 @@ and all that jazz?
 
 We hope not to be In The Zone for quite as long as Plurp has been. Keep your
 [RSS Reader](https://www.rssowl.org/), tuned, folks.
-
-
