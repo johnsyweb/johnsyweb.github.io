@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[pre-push] Building site..."
+bundle exec jekyll build
+
+echo "[pre-push] Validating HTML..."
+docker run --rm \
+  -v "$PWD/_site:/site" \
+  ghcr.io/validator/validator:latest \
+  vnu --errors-only --skip-non-html /site
+
+echo "[pre-push] OK"
