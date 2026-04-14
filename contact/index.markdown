@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact
+title: Contact Pete Johns
 description: Get in touch with Pete Johns via email, book a meeting on Calendly, or connect on Signal. For software development, parkrun, and general inquiries.
 keywords:
   - contact

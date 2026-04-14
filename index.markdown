@@ -1,13 +1,11 @@
 ---
 layout: default
-title: 
+title: Welcome to johnsy.com
 og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
 {% include schema-organization.html %}
-
-<h1 class="visually-hidden">Welcome to johnsy.com</h1>
 
 Congratulations! You have successfully found the front page of my website. Take
 ten points. I don't know what you thought you might find when you got here, but

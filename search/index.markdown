@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Search
+title: Search the Archive
 permalink: /search/
 description: Explore the johnsy.com archives. Search blog posts, articles, and content about software development, parkrun, and more.
 keywords:
@@ -15,7 +15,6 @@ og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
-<h1>Search</h1>
 
 <div id="pagefind-search" class="pagefind-search">
   <noscript>

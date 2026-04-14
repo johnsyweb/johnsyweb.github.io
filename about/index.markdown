@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: About Pete Johns
 description: Welcome to johnsy.com - Pete Johns's personal website. Here you'll find thoughts about life, software development, parkrun, and experiences shared with family and friends.
 keywords:
   - Pete Johns

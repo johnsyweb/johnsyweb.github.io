@@ -1,14 +1,12 @@
 ---
 layout: default
 title: Speaker Bio and Headshot
-description: Speaker biography and headshot for Pete Johns.
+description: Speaker biography options and downloadable headshots for Pete Johns, ready for event websites, programmes, and introductions.
 permalink: /about/speaker-bio/
 sitemap: false
 og_image: /images/2022-07-29-pete-johns-headshot.webp
 og_image_alt: Headshot of Pete Johns
 ---
-
-# Speaker Bio and Headshot
 
 **Event organisers:** everything on this page is for your event website, programme, or speaker introductions. Copy the bio length you need and use the headshot below.
 

@@ -8,8 +8,6 @@ keywords: parkrun, parkrun utility, Eventuate, Ambassy, Crash Course, parkrun us
 redirect_from: /parkrun-utility/
 ---
 
-## parkrun utilities
-
 Tools I created as a software engineer who loves parkrun to help me in various volunteer roles, shared for free for you to use and enjoy.
 
 <div class="utility-grid">
