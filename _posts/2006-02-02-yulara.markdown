@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Yulara
+seo_title: Yulara stop on our long Australian road trip
 ---
 
 

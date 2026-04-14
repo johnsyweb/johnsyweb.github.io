@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Pete Johns
+seo_title: "About Pete Johns: engineer, runner, writer"
 description: Pete Johns's personal website. Here you'll find thoughts about life, software development, parkrun, and experiences shared with family and friends.
 keywords:
   - Pete Johns

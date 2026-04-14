@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Eamonn
+seo_title: "Welcoming Eamonn: becoming a dad in July 2010"
 ---
 
 _Wow!_

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Search the Archive
+seo_title: "Search Pete Johns's posts on software and parkrun"
 permalink: /search/
 description: Explore the johnsy.com archives. Search blog posts, articles, and content about software development, parkrun, and more.
 keywords:

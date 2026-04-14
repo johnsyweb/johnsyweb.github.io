@@ -2,6 +2,7 @@
 layout: post
 category: running
 title: Coburg parkrun
+seo_title: Coburg parkrun and the joy of local community
 date: 2015-04-23 06:07:59.000000000 +10:00
 updated_at: 2025-12-18 00:00:00 +10:00
 redirect_from:

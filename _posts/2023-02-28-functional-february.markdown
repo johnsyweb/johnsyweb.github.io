@@ -2,6 +2,7 @@
 layout: post
 category: programming
 title: Functional February
+seo_title: Functional February with jq and Exercism
 date: 2023-02-28 20:03:19.000000000 +11:00
 redirect_from:
 - "/bit.ly/pajFunctionalFebruary/"

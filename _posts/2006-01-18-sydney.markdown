@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sydney
+seo_title: Sydney road trip update from our Australia drive
 ---
 
 

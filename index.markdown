@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome to johnsy.com
+seo_title: Pete Johns blog, projects, and parkrun notes
 description: Personal site of Pete Johns with blog posts, software projects, parkrun notes, and practical writing on engineering, running, creativity, and everyday life.
 og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
