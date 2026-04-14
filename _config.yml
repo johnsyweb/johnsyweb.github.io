@@ -66,6 +66,8 @@ exclude:
   - "package*.json"
   - LICENSE
   - README.md
+  - .mise.toml
+  - .tool-versions
   - node_modules/
   - scripts/
   - tmp/

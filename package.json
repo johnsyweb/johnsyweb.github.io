@@ -5,9 +5,10 @@
   "private": true,
   "description": "johnsy.com website",
   "scripts": {
-    "dev": "npm-run-all --parallel watch:css watch:js serve:jekyll",
+    "dev": "npm-run-all build:images --parallel watch:css watch:js watch:images serve:jekyll",
     "watch:css": "node scripts/watch-css.mjs",
     "watch:js": "node scripts/watch-js.mjs",
+    "watch:images": "node scripts/watch-images.mjs",
     "serve:jekyll": "bundle exec jekyll serve --livereload",
     "build:images": "node scripts/convert-to-webp.mjs",
     "build:images:all": "node scripts/convert-to-webp.mjs all",

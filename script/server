@@ -9,4 +9,10 @@ if ! command -v mise >/dev/null 2>&1; then
   exit 1
 fi
 
+if ! mise exec -- bundle check >/dev/null 2>&1; then
+  echo "Ruby gems missing; installing before starting server..."
+  mise exec -- bundle config set path "vendor/bundle"
+  mise exec -- bundle install --jobs 4 --retry 3
+fi
+
 mise exec -- pnpm run dev

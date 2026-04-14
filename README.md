@@ -15,9 +15,11 @@ This project uses [mise](https://mise.jdx.dev) for Ruby, Node, and pnpm. Do not 
 
 All Rake tasks run subshell commands (bundle, jekyll, pnpm, node, ruby) via `mise exec`, so builds and tests use the versions in `.mise.toml`.
 
-`mise run server` runs three watch processes in parallel:
+`mise run server` runs four processes:
+- **Initial image conversion**: Generates missing WebP assets before Jekyll starts
 - **CSS watcher**: Automatically minifies CSS files when they change
 - **JS watcher**: Automatically minifies JavaScript files when they change
+- **Image watcher**: Regenerates WebP assets when `.jpg`, `.jpeg`, or `.png` files change
 - **Jekyll server**: Serves the site with live reload on http://localhost:4000
 
 ```bash
