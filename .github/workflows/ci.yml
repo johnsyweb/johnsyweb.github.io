@@ -178,6 +178,27 @@ jobs:
           bash scripts/html_validation_annotations.sh < /tmp/vnu-html-validation.txt
           exit "$vnu_exit"
 
+  validate-seo:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        with:
+          name: jekyll-build
+          path: ./_site
+
+      - name: Set up toolchain with mise
+        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        with:
+          install: true
+
+      - name: Run SEO audit
+        run: node scripts/seo-audit.mjs
+
   check-external-links:
     runs-on: ubuntu-latest
     needs: test
@@ -515,6 +536,7 @@ jobs:
       - refresh-readme
       - validate-feeds
       - validate-html
+      - validate-seo
       - validate-structured-data
     permissions:
       pages: write
@@ -571,6 +593,16 @@ jobs:
           SKIP_IMAGE_OPTIMIZATION: "true"
         run: bundle exec rake build
 
+      - name: Publish IndexNow key file in site root
+        env:
+          INDEXNOW_KEY: ${{ secrets['INDEXNOW_KEY'] }}
+        run: |
+          if [ -n "$INDEXNOW_KEY" ]; then
+            printf '%s' "$INDEXNOW_KEY" > "./_site/${INDEXNOW_KEY}.txt"
+          else
+            echo "INDEXNOW_KEY not configured, skipping key file generation."
+          fi
+
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
@@ -579,3 +611,23 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128
+
+      - name: Submit changed URLs to IndexNow
+        if: github.event_name == 'push'
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: ${{ secrets['INDEXNOW_KEY'] }}
+          SITE_URL: https://www.johnsy.com
+          SITE_DIR: _site
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: node scripts/indexnow-submit.mjs --mode=incremental
+
+      - name: Submit full URL set to IndexNow (scheduled)
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: ${{ secrets['INDEXNOW_KEY'] }}
+          SITE_URL: https://www.johnsy.com
+          SITE_DIR: _site
+        run: node scripts/indexnow-submit.mjs --mode=full
