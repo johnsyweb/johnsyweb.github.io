@@ -398,12 +398,12 @@ h3 {
   font-weight: 600;
 }
 
-#header h1 {
+#header .site-title {
   font-size: 32px;
   margin: 0 0 4px 0;
 }
 
-#header h1 a {
+#header .site-title a {
   border: none;
 }
 

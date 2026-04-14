@@ -55,13 +55,13 @@ blockquote {
 	border-bottom-color: #fafafa;
 }
 
-#header h1 a,
-#header h1 a:visited,
-#header h1 a:active {
+#header .site-title a,
+#header .site-title a:visited,
+#header .site-title a:active {
 	color: #fafafa;
 }
 
-#header h1 a:hover {
+#header .site-title a:hover {
 	background-color: rgba(250, 250, 250, 0.15);
 	border-color: transparent;
 	color: #fafafa;

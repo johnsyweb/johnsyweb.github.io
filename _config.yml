@@ -6,6 +6,8 @@ description: "Pete Johns (/piːt ʤɒnz/ - he/him/his): Human being; just like y
 description_html: |
   Pete Johns (<a href="https://namedrop.io/petejohns"><em>/piːt ʤɒnz/</em></a> -
   <a href="https://pronouns.org/he">he/him/his</a>): Human being; just like you.
+seo:
+  description_max_length: 160
 keywords:
   - Pete Johns
   - Peter Johns

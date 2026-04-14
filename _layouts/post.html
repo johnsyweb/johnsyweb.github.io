@@ -6,12 +6,12 @@ layout: default
 <article class="post">
 	<header>
 		{% if page.external-url %}
-			<h1>
+			<h1 class="visually-hidden">
 				<a href="{{ page.external-url }}">{{ page.title }}</a> 
 				<a class="anchor" href="{{ page.url }}" title="Permalink to {{ page.title }}"><i class="icon-anchor"></i></a>
 			</h1>
 		{% else %}
-			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+			<h1 class="visually-hidden"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 		{% endif %}
 
 		<details class="post-metadata-details">
