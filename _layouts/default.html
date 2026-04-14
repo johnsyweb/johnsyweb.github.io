@@ -19,11 +19,66 @@
     <link rel="manifest" href="/manifest.json" />
 
     <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+    {% assign description_target_min_length = site.seo.description_target_min_length | default: 120 %}
     {% assign description_max_length = site.seo.description_max_length | default: 160 %}
     {% assign excerpt_source = page.excerpt | default: content | default: '' %}
     {% assign excerpt_text = excerpt_source | strip_html | strip_newlines | replace: '  ', ' ' | replace: '  ', ' ' | strip %}
-    {% assign page_description_source = page.description | default: excerpt_text | default: site.description %}
-    {% assign page_description = page_description_source | strip | truncate: description_max_length | strip %}
+    {% assign explicit_description = page.description | default: '' | strip %}
+    {% assign has_explicit_description = false %}
+    {% if explicit_description != '' %}
+      {% assign has_explicit_description = true %}
+    {% endif %}
+    {% if has_explicit_description %}
+      {% assign page_description = explicit_description %}
+    {% else %}
+      {% assign page_description = excerpt_text %}
+      {% if page_description == '' %}
+        {% assign page_description = site.description | default: '' | strip %}
+      {% endif %}
+      {% assign is_blog_post = false %}
+      {% if page.layout == 'post' or page.date %}
+        {% assign is_blog_post = true %}
+      {% endif %}
+      {% if is_blog_post %}
+        {% assign blog_prefix = site.seo.blog_description_prefix | default: 'Blog post by' | strip %}
+        {% assign blog_author = site.author.name | default: site.name | default: '' | strip %}
+        {% assign blog_date = page.date | date: '%Y-%m-%d' %}
+        {% if blog_prefix != '' and blog_author != '' and blog_date != '' %}
+          {% assign page_description = blog_prefix | append: ' ' | append: blog_author | append: ' on ' | append: blog_date | append: ': ' | append: page_description %}
+        {% endif %}
+      {% endif %}
+      {% assign site_description_text = site.description | default: '' | strip %}
+      {% if page_description.size < description_target_min_length and site_description_text != '' %}
+        {% unless page_description contains site_description_text %}
+          {% if page_description != '' %}
+            {% assign page_description = page_description | append: ' ' | append: site_description_text %}
+          {% else %}
+            {% assign page_description = site_description_text %}
+          {% endif %}
+        {% endunless %}
+      {% endif %}
+      {% assign default_description_suffix = 'Read more on johnsy.com.' %}
+      {% assign site_suffix = site.seo.description_suffix | default: default_description_suffix | strip %}
+      {% if page_description.size < description_target_min_length and site_suffix != '' %}
+        {% unless page_description contains site_suffix %}
+          {% if page_description != '' %}
+            {% assign page_description = page_description | append: ' ' | append: site_suffix %}
+          {% else %}
+            {% assign page_description = site_suffix %}
+          {% endif %}
+        {% endunless %}
+      {% endif %}
+      {% if page_description.size < description_target_min_length and excerpt_text != '' %}
+        {% unless page_description contains excerpt_text %}
+          {% if page_description != '' %}
+            {% assign page_description = page_description | append: ' ' | append: excerpt_text %}
+          {% else %}
+            {% assign page_description = excerpt_text %}
+          {% endif %}
+        {% endunless %}
+      {% endif %}
+    {% endif %}
+    {% assign page_description = page_description | truncate: description_max_length | strip %}
     {% assign page_keywords = page.keywords %}
     <meta name="description" content="{{ page_description | escape }}" />
     {% if page_keywords %}
