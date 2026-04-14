@@ -5,6 +5,7 @@ categories:
  - careerbreak
  - programming
 title: Countdown Numbers Game Solver
+description: Pete Johns built a Countdown Numbers Game Solver inspired by Summle, with a golden-path check to find neat solutions without revealing the answer.
 date: 2025-10-10  5:32:07
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 category: running
 title: Nearest Event Not Done Yet (NENDY)
+description: Pete Johns explains NENDY, shares parkrun tourism adventures around Melbourne, and recommends the Running Challenges extension to find your next event.
 date: 2019-03-09 17:01:45.000000000 +11:00
 redirect_from:
 - "/bit.ly/pajNENDY/"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Comments Are Lies!
+description: Pete Johns argues that code comments often rot into noise, and shows why clean code, clear names, and executable unit tests communicate intent better.
 date: 2012-10-31
 updated_at: 2025-12-17
 redirect_from:
