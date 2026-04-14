@@ -116,7 +116,8 @@ async function collectIncrementalUrls() {
   }
 
   if (changedFiles.length === 0) {
-    return [];
+    console.log('::warning::Falling back to full IndexNow submission because no changed files were detected.');
+    return collectSiteUrls();
   }
 
   const sharedTemplateChanged = changedFiles.some((file) =>
@@ -133,6 +134,11 @@ async function collectIncrementalUrls() {
     if (mapped) {
       urls.add(normalizeUrl(mapped));
     }
+  }
+
+  if (urls.size === 0) {
+    console.log('::warning::Falling back to full IndexNow submission because incremental mapping produced no URLs.');
+    return collectSiteUrls();
   }
 
   return [...urls];
