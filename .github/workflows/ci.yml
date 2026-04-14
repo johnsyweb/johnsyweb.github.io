@@ -618,6 +618,7 @@ jobs:
         continue-on-error: true
         env:
           INDEXNOW_KEY: ${{ secrets['INDEXNOW_KEY'] }}
+          LOG_LEVEL: debug
           SITE_URL: https://www.johnsy.com
           SITE_DIR: _site
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
@@ -629,6 +630,7 @@ jobs:
         continue-on-error: true
         env:
           INDEXNOW_KEY: ${{ secrets['INDEXNOW_KEY'] }}
+          LOG_LEVEL: debug
           SITE_URL: https://www.johnsy.com
           SITE_DIR: _site
         run: node scripts/indexnow-submit.mjs --mode=full

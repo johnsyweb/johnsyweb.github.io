@@ -9,13 +9,43 @@ const mode = modeArg ? modeArg.split('=')[1] : 'incremental';
 
 const siteDir = process.env.SITE_DIR || '_site';
 const siteUrl = (process.env.SITE_URL || 'https://www.johnsy.com').replace(/\/$/, '');
+const verifiedHost = new URL(siteUrl).host;
 const key = process.env.INDEXNOW_KEY;
+const logLevel = (process.env.LOG_LEVEL || 'info').toLowerCase();
 const beforeSha = process.env.GITHUB_EVENT_BEFORE;
 const currentSha = process.env.GITHUB_SHA;
+
+function isDebugLoggingEnabled() {
+  return logLevel === 'debug';
+}
+
+function logDebug(...messages) {
+  if (isDebugLoggingEnabled()) {
+    console.log(...messages);
+  }
+}
 
 if (!key) {
   console.log('::warning::INDEXNOW_KEY not set, skipping IndexNow submission.');
   process.exit(0);
+}
+
+function redactSecret(value) {
+  if (!value) {
+    return value;
+  }
+  if (value.length <= 8) {
+    return '***';
+  }
+  return `${value.slice(0, 4)}...${value.slice(-4)}`;
+}
+
+function toDebugPayload(payload) {
+  return {
+    ...payload,
+    key: redactSecret(payload.key),
+    keyLocation: payload.keyLocation.replace(payload.key, redactSecret(payload.key)),
+  };
 }
 
 function normalizeUrl(url) {
@@ -53,17 +83,50 @@ function extractCanonical(html) {
   return match ? match[1] : '';
 }
 
+function hasNoindex(html) {
+  return /<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html);
+}
+
+function normalizeForIndexNow(url) {
+  try {
+    const normalized = new URL(normalizeUrl(url));
+    if (normalized.protocol !== 'https:') {
+      return null;
+    }
+    if (normalized.host !== verifiedHost) {
+      return null;
+    }
+    return normalized.toString();
+  } catch {
+    return null;
+  }
+}
+
 async function collectSiteUrls() {
   const htmlFiles = await walkHtmlFiles(siteDir);
   const urls = new Set();
+  let skippedNoindex = 0;
+  let skippedInvalidCanonical = 0;
 
   for (const file of htmlFiles) {
     const html = await fs.readFile(file, 'utf8');
+    if (hasNoindex(html)) {
+      skippedNoindex += 1;
+      continue;
+    }
+
     const canonical = extractCanonical(html);
     if (canonical) {
-      urls.add(normalizeUrl(canonical));
+      const normalized = normalizeForIndexNow(canonical);
+      if (normalized) {
+        urls.add(normalized);
+      } else {
+        skippedInvalidCanonical += 1;
+      }
     }
   }
+
+  console.log(`Collected ${urls.size} eligible IndexNow URL(s); skipped ${skippedNoindex} noindex page(s) and ${skippedInvalidCanonical} out-of-scope canonical URL(s).`);
 
   return [...urls];
 }
@@ -110,14 +173,16 @@ function getChangedFiles() {
 
 async function collectIncrementalUrls() {
   const changedFiles = getChangedFiles();
+  const eligibleUrls = new Set(await collectSiteUrls());
+
   if (changedFiles === null) {
     console.log('::warning::Falling back to full IndexNow submission because incremental diff could not be computed.');
-    return collectSiteUrls();
+    return [...eligibleUrls];
   }
 
   if (changedFiles.length === 0) {
     console.log('::warning::Falling back to full IndexNow submission because no changed files were detected.');
-    return collectSiteUrls();
+    return [...eligibleUrls];
   }
 
   const sharedTemplateChanged = changedFiles.some((file) =>
@@ -125,20 +190,20 @@ async function collectIncrementalUrls() {
   );
 
   if (sharedTemplateChanged) {
-    return collectSiteUrls();
+    return [...eligibleUrls];
   }
 
   const urls = new Set();
   for (const file of changedFiles) {
     const mapped = mapPathToUrl(file);
-    if (mapped) {
+    if (mapped && eligibleUrls.has(normalizeUrl(mapped))) {
       urls.add(normalizeUrl(mapped));
     }
   }
 
   if (urls.size === 0) {
     console.log('::warning::Falling back to full IndexNow submission because incremental mapping produced no URLs.');
-    return collectSiteUrls();
+    return [...eligibleUrls];
   }
 
   return [...urls];
@@ -157,6 +222,9 @@ async function submitUrls(urls) {
     urlList: urls,
   };
 
+  logDebug('IndexNow request payload (redacted):');
+  logDebug(JSON.stringify(toDebugPayload(payload), null, 2));
+
   const response = await fetch('https://api.indexnow.org/indexnow', {
     method: 'POST',
     headers: {
@@ -165,9 +233,22 @@ async function submitUrls(urls) {
     body: JSON.stringify(payload),
   });
 
+  const responseText = await response.text();
+  const responseHeaders = {};
+  for (const [name, value] of response.headers.entries()) {
+    responseHeaders[name] = value;
+  }
+
+  logDebug('IndexNow response:');
+  logDebug(JSON.stringify({
+    status: response.status,
+    ok: response.ok,
+    headers: responseHeaders,
+    body: responseText,
+  }, null, 2));
+
   if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`IndexNow submission failed (${response.status}): ${text}`);
+    throw new Error(`IndexNow submission failed (${response.status}): ${responseText}`);
   }
 
   console.log(`Submitted ${urls.length} URL(s) to IndexNow.`);
