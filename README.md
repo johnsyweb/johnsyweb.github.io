@@ -107,6 +107,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-04-14: [Still Keeping in the Development Loop](https://www.johnsy.com/blog/2026/04/14/still-keeping-in-the-development-loop/)
 - 2026-04-12: [Making Arlo geofencing behave again](https://www.johnsy.com/blog/2026/04/12/arlo-geofencing-workaround/)
 - 2026-04-09: [It's like podcasts, but for reading!](https://www.johnsy.com/blog/2026/04/09/it's-like-podcasts/)
 - 2026-04-01: [parkrun Events Near Public Transport in Victoria](https://www.johnsy.com/blog/2026/04/01/parkrun-events-near-public-transport-in-victoria/)
@@ -116,6 +117,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-01-21: [Automating Distraction Blocking with Pi-hole v6 and dedistracter](https://www.johnsy.com/blog/2026/01/21/dedistracter-pihole-scheduler/)
 - 2026-01-20: [Can we reunite a lost AirPod with its owner?](https://www.johnsy.com/blog/2026/01/20/can-we-reunite-a-lost-airpod-with-its-owner/)
 - 2026-01-15: [Two Bays Trail Run 2026](https://www.johnsy.com/blog/2026/01/15/two-bays-trail-run-2026/)
-- 2026-01-07: [Moving back to www](https://www.johnsy.com/blog/2026/01/07/moving-to-www/)
 
 <!-- END TOC -->
