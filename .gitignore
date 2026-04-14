@@ -7,6 +7,7 @@
 /tmp/*
 
 .bundle/
+vendor/bundle/
 
 # Node/pnpm for Lighthouse CI
 node_modules/
