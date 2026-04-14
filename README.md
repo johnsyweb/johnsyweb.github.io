@@ -13,7 +13,7 @@ This project uses [mise](https://mise.jdx.dev) for Ruby, Node, and pnpm. Do not 
 3. Start local development with: `mise run server`
 4. Use `mise exec -- rake …` for ad hoc tasks (or ensure your shell has `mise activate` so `rake` and `pnpm` come from mise).
 
-All Rake tasks run subshell commands (bundle, jekyll, pnpm, node, ruby) via `mise exec`, so builds and tests use the versions in `.tool-versions`.
+All Rake tasks run subshell commands (bundle, jekyll, pnpm, node, ruby) via `mise exec`, so builds and tests use the versions in `.mise.toml`.
 
 `mise run server` runs three watch processes in parallel:
 - **CSS watcher**: Automatically minifies CSS files when they change
