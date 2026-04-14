@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    {% assign page_title_raw = page.title | default: '' %}
+    {% assign page_title_raw = page.seo_title | default: page.title | default: '' %}
     {% assign clean_title = page_title_raw | split: ' --' | first | strip %}
     {% assign base_site_title = site.name | default: 'johnsy.com' %}
     {% assign effective_title = clean_title | default: base_site_title %}
