@@ -1,0 +1,7 @@
+[tasks.bootstrap]
+description = "Install development dependencies for Ruby, Node/pnpm, and Python"
+run = "./script/bootstrap"
+
+[tasks.server]
+description = "Run the local development server with JS/CSS watchers"
+run = "./script/server"

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+if ! command -v mise >/dev/null 2>&1; then
+  echo "mise is required. Install it from https://mise.jdx.dev" >&2
+  exit 1
+fi
+
+echo "==> Installing toolchain versions"
+mise install
+
+echo "==> Installing Ruby dependencies"
+mise exec -- bundle config set path "vendor/bundle"
+mise exec -- bundle install --jobs 4 --retry 3
+
+echo "==> Installing Node.js dependencies"
+mise exec -- pnpm install
+
+echo "==> Installing Python dependencies"
+mise exec -- python -m pip install --upgrade pip
+mise exec -- python -m pip install html5lib rdflib
+
+echo "==> Bootstrap complete"
