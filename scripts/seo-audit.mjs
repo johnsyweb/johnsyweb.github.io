@@ -104,8 +104,31 @@ function canonicalPathFromHtml(content, fallbackPath) {
   }
 }
 
+async function readSiteDescriptionFallback() {
+  try {
+    const configPath = path.join(process.cwd(), '_config.yml');
+    const configText = await fs.readFile(configPath, 'utf8');
+    const match = configText.match(/^\s*description:\s*(.+)\s*$/m);
+    if (!match) {
+      return '';
+    }
+
+    let value = match[1].trim();
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+    return value;
+  } catch {
+    return '';
+  }
+}
+
 async function run() {
   const allHtmlFiles = await walkHtmlFiles(siteDir);
+  const siteDescriptionFallback = await readSiteDescriptionFallback();
   const checked = [];
   const failures = [];
   const warnings = [];
@@ -154,6 +177,8 @@ async function run() {
       } else {
         failures.push(`${urlPath}: missing meta description`);
       }
+    } else if (siteDescriptionFallback && description === siteDescriptionFallback) {
+      failures.push(`${urlPath}: meta description is the site-level fallback text`);
     } else if (description.length < minDescriptionLength) {
       if (isBlogPost) {
         warnings.push(`${urlPath}: meta description below hard floor (${description.length} < ${minDescriptionLength})`);
