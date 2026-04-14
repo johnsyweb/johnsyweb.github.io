@@ -87,6 +87,10 @@ function isRedirectStub(content) {
     /window\.location/i.test(content);
 }
 
+function isNoindexPage(content) {
+  return /<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(content);
+}
+
 function canonicalPathFromHtml(content, fallbackPath) {
   const canonicalUrl = extractFirst(content, /<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*>/i);
   if (!canonicalUrl) {
@@ -114,6 +118,10 @@ async function run() {
     const urlPath = normalizePath(canonicalPathFromHtml(html, fallbackPath));
 
     if (isRedirectStub(html)) {
+      continue;
+    }
+
+    if (isNoindexPage(html)) {
       continue;
     }
 
