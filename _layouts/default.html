@@ -106,8 +106,8 @@
     {% if page.pagefind_index == false or is_paginated_archive %}
     <meta name="pagefind-index" content="false" />
     {% endif %}
-    {% if page.noindex %}
-    <meta name="robots" content="noindex" />
+    {% if page.noindex or is_paginated_archive %}
+    <meta name="robots" content="{% if is_paginated_archive %}noindex,follow{% else %}noindex{% endif %}" />
     {% endif %}
 
     <!-- Favicons -->
