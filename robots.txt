@@ -21,6 +21,5 @@ Disallow: /
 User-agent: *
 Disallow:
 
-# Sitemap locations
+# Sitemap location
 Sitemap: https://www.johnsy.com/sitemap-index.xml
-Sitemap: https://www.johnsy.com/sitemap.xml
