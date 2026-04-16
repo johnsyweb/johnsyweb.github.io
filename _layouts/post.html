@@ -14,8 +14,9 @@ layout: default
 			<h1 class="visually-hidden"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 		{% endif %}
 
+		{% assign page_category = page.categories | first %}
 		<details class="post-metadata-details">
-			<summary class="post-metadata-summary">Posted by {{ site.author.name }} on {{ page.date | date: "%A, %e %B %Y" }}{% if page.category %} in {{ page.category }}{% endif %}</summary>
+			<summary class="post-metadata-summary">Posted by {{ site.author.name }} on {{ page.date | date: "%A, %e %B %Y" }}{% if page_category %} in {{ page_category }}{% endif %}</summary>
 			<dl class="post-metadata">
 				<div>
 					<dt>Published</dt>
@@ -27,10 +28,10 @@ layout: default
 					<dd><time datetime="{{ page_modified_at | date_to_xmlschema }}">{{ page_modified_at | date: "%a, %e %b %Y" }}</time></dd>
 				</div>
 				{% endif %}
-				{% if page.category %}
+				{% if page_category %}
 				<div>
 					<dt>Category</dt>
-					<dd><span class="category">{{ page.category }}</span></dd>
+					<dd><span class="category">{{ page_category }}</span></dd>
 				</div>
 				{% endif %}
 				<div>

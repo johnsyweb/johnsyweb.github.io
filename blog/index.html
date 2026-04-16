@@ -6,6 +6,7 @@ seo_title: Pete Johns blog on software, parkrun, and life
 
 <div id="blog-archives">
 {% for post in paginator.posts %}
+{% unless post.categories contains 'rss-club' %}
 
     <article class="post post-listing">
 
@@ -18,7 +19,8 @@ seo_title: Pete Johns blog on software, parkrun, and life
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {% endif %}
 
-        <p class="post-summary">Posted by {{ site.author.name }} on {{ post.date | date: "%A, %e %B %Y" }}{% if post.category %} in {{ post.category }}{% endif %}</p>
+        {% assign post_category = post.categories | first %}
+        <p class="post-summary">Posted by {{ site.author.name }} on {{ post.date | date: "%A, %e %B %Y" }}{% if post_category %} in {{ post_category }}{% endif %}</p>
         
         <div class="post-listing-content">
             {% include post-preview-image.html item=post %}
@@ -31,6 +33,7 @@ seo_title: Pete Johns blog on software, parkrun, and life
 
     </article>
 
+{% endunless %}
 {% endfor %}
 
 

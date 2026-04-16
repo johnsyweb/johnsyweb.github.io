@@ -103,10 +103,14 @@
     {% if paginator and paginator.page and paginator.page > 1 %}
       {% assign is_paginated_archive = true %}
     {% endif %}
-    {% if page.pagefind_index == false or is_paginated_archive %}
+    {% assign is_rss_club_page = false %}
+    {% if page.categories contains 'rss-club' %}
+      {% assign is_rss_club_page = true %}
+    {% endif %}
+    {% if page.pagefind_index == false or is_paginated_archive or is_rss_club_page %}
     <meta name="pagefind-index" content="false" />
     {% endif %}
-    {% if page.noindex or is_paginated_archive %}
+    {% if page.noindex or is_paginated_archive or is_rss_club_page %}
     <meta name="robots" content="{% if is_paginated_archive %}noindex,follow{% else %}noindex{% endif %}" />
     {% endif %}
 

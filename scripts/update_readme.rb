@@ -92,6 +92,8 @@ posts = Dir.glob("#{posts_dir}/*.{md,markdown}")
            .map do |file|
           begin
             front_matter = parse_front_matter(file)
+            categories = Array(front_matter["categories"])
+            next if categories.include?("rss-club")
             date = normalize_date(front_matter["date"]) || date_from_filename(File.basename(file))
             
             # Use permalink from front matter if available, otherwise generate from filename
@@ -100,6 +102,7 @@ posts = Dir.glob("#{posts_dir}/*.{md,markdown}")
             
             {
               title: front_matter["title"] || "Untitled",
+              categories: categories,
               date: date,
               date_str: date ? date.strftime("%Y-%m-%d") : "No date",
               url: url,

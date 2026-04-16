@@ -26,7 +26,7 @@ end
 task :default => :test
 
 desc "Given a title as an argument, create a new post file"
-task :write, [:title, :category] do |_t, args|
+task :write, [:title, :categories] do |_t, args|
   NOW = Time.now.utc.freeze
   post_date = NOW.strftime("%Y-%m-%d")
   post_title = args.title.gsub(/\s/, "-").downcase
@@ -34,11 +34,15 @@ task :write, [:title, :category] do |_t, args|
   path = File.join("_posts", filename)
   raise "Won't clobber #{path}" if File.exist?(path)
 
+  categories = args.categories.to_s.split(",").map(&:strip).reject(&:empty?)
+  categories = ["uncategorised"] if categories.empty?
+
   File.open(path, "w") do |file|
     file.write <<~FRONT_MATTER
       ---
       layout: post
-      category: #{args.category}
+      categories:
+#{categories.map { |category| "        - #{category}" }.join("\n")}
       title: #{args.title}
       date: #{NOW.strftime('%Y-%m-%d %k:%M:%S')}
       ---
@@ -47,7 +51,7 @@ task :write, [:title, :category] do |_t, args|
   puts "Now open #{path} in an editor."
 end
 
-task :test => %i[build validate_feeds lighthouse_styles] do
+task :test => %i[build validate_feeds validate_rss_club lighthouse_styles] do
   options = {
     cache:
     {
@@ -325,6 +329,28 @@ task :validate_feeds => :build do
   end
 
   validate_feeds_internal
+end
+
+desc "Validate rss-club behaviour and storage rules"
+task :validate_rss_club => :build do
+  mise_sh("ruby scripts/validate_rss_club.rb")
+end
+
+namespace :rss_club do
+  desc "Encode rss-club post bodies in ROT13"
+  task :encode do
+    mise_sh("ruby scripts/rss_club_rot13.rb encode")
+  end
+
+  desc "Decode rss-club post bodies from ROT13"
+  task :decode do
+    mise_sh("ruby scripts/rss_club_rot13.rb decode")
+  end
+
+  desc "Fail if any rss-club post body is not ROT13 encoded"
+  task :check do
+    mise_sh("ruby scripts/rss_club_rot13.rb check")
+  end
 end
 
 # Ensure the generated style test page exists when Lighthouse runs
@@ -641,6 +667,7 @@ multitask :stage_two => %i[
   prepare_lighthouse_style
   validate_structured_data
   validate_feeds_only
+  validate_rss_club
   validate_html_only
   check_external_links_only
   build_search_index
@@ -657,6 +684,7 @@ desc "Ready to deploy gate"
 task :ready_to_deploy => %i[
   validate_structured_data
   validate_feeds_only
+  validate_rss_club
   validate_html_only
   check_external_links_only
   lighthouse_checks
