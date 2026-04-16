@@ -1,12 +1,12 @@
 @media (prefers-color-scheme: dark) {
 .skip-link {
-	background-color: #1976D2;
-	color: #121212;
+	background-color: #0D47A1;
+	color: #ffffff;
 }
 
 .skip-link:focus {
-	background-color: #1976D2;
-	color: #121212;
+	background-color: #0D47A1;
+	color: #ffffff;
 }
 
 html, body {
