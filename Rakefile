@@ -23,6 +23,21 @@ def mise_sh(cmd)
   sh "mise exec -- #{cmd}"
 end
 
+# Shared by :test, :validate_html, and :validate_html_only.
+HTML_PROOFER_IGNORE_URLS = [
+  %r{//localhost},
+  %r{//127\.0\.0\.1},
+  %r{https?://(www\.)?johnsy\.com/}, # Self-referential URLs fail during build
+  %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
+  %r{https?://(www\.)?realestate\.com\.au/},
+  %r{https?://(www\.)?seek\.com\.au/},
+  %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm}, # Old HTTP BBC link - acceptable
+  %r{http://(www\.)?mutt\.org/}, # Old HTTP mutt.org link - acceptable
+  %r{https://ronjeffries\.com/xprog/articles/acsbowling}, # TODO: html-proofer reports false 301 timeout
+  %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore}, # TODO: html-proofer reports false 301 timeout
+  %r{https://signal\.me/#eu/} # Signal share URIs have app-specific hashes not on web
+].freeze
+
 task :default => :test
 
 desc "Given a title as an argument, create a new post file"
@@ -62,19 +77,7 @@ task :test => %i[build validate_feeds validate_rss_club lighthouse_styles] do
     disable_external: false,
     allow_hash_href: true,
     ignore_status_codes: [0, 202, 403, 417, 429, 999], # Ignore network errors, async responses, access/booking errors, rate-limiting, unknown codes
-    ignore_urls: [
-      %r{//localhost},
-      %r{//127\.0\.0\.1},
-      %r{https?://(www\.)?johnsy\.com/}, # Self-referential URLs fail during build
-      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
-      %r{https?://(www\.)?realestate\.com\.au/},
-      %r{https?://(www\.)?seek\.com\.au/},
-      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm}, # Old HTTP BBC link - acceptable
-      %r{http://(www\.)?mutt\.org/}, # Old HTTP mutt.org link - acceptable
-      %r{https://ronjeffries\.com/xprog/articles/acsbowling}, # TODO: html-proofer reports false 301 timeout
-      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore}, # TODO: html-proofer reports false 301 timeout
-      %r{https://signal\.me/#eu/} # Signal share URIs have app-specific hashes not on web
-    ]
+    ignore_urls: HTML_PROOFER_IGNORE_URLS
   }
 
   success = mise_exec("ruby", "-e", <<~RUBY)
@@ -110,19 +113,7 @@ task :validate_html => :build do
     disable_external: false,
     allow_hash_href: true,
     ignore_status_codes: [0, 202, 403, 417, 429, 999],
-    ignore_urls: [
-      %r{//localhost},
-      %r{//127\.0\.0\.1},
-      %r{https?://(www\.)?johnsy\.com/}, # Self-referential URLs fail during build
-      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
-      %r{https?://(www\.)?realestate\.com\.au/},
-      %r{https?://(www\.)?seek\.com\.au/},
-      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm}, # Old HTTP BBC link - acceptable
-      %r{http://(www\.)?mutt\.org/}, # Old HTTP mutt.org link - acceptable
-      %r{https://ronjeffries\.com/xprog/articles/acsbowling}, # TODO: html-proofer reports false 301 timeout
-      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore}, # TODO: html-proofer reports false 301 timeout
-      %r{https://signal\.me/#eu/} # Signal share URIs have app-specific hashes not on web
-    ]
+    ignore_urls: HTML_PROOFER_IGNORE_URLS
   }
 
   # Run HTMLProofer via system call to capture exit code
@@ -602,19 +593,7 @@ task :validate_html_only do
     disable_external: false,
     allow_hash_href: true,
     ignore_status_codes: [0, 202, 403, 417, 429, 999],
-    ignore_urls: [
-      %r{//localhost},
-      %r{//127\.0\.0\.1},
-      %r{https?://(www\.)?johnsy\.com/},
-      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
-      %r{https?://(www\.)?realestate\.com\.au/},
-      %r{https?://(www\.)?seek\.com\.au/},
-      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm},
-      %r{http://(www\.)?mutt\.org/},
-      %r{https://ronjeffries\.com/xprog/articles/acsbowling},
-      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore},
-      %r{https://signal\.me/#eu/}
-    ]
+    ignore_urls: HTML_PROOFER_IGNORE_URLS
   }
 
   success = mise_exec("ruby", "-e", <<~RUBY)
