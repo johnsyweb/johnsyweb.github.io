@@ -102,11 +102,65 @@ function normalizeForIndexNow(url) {
   }
 }
 
+function parsePostUrlFromPath(postPath) {
+  const postMatch = postPath.match(/^_posts\/(\d{4})-(\d{2})-(\d{2})-(.+)\.(markdown|md|html)$/);
+  if (!postMatch) {
+    return null;
+  }
+  const [, year, month, day, slug] = postMatch;
+  return `${siteUrl}/blog/${year}/${month}/${day}/${slug}/`;
+}
+
+function frontMatterHasRssClub(frontMatter) {
+  const compact = frontMatter.toLowerCase();
+  if (compact.match(/categories:\s*\[\s*rss-club\s*\]/)) {
+    return true;
+  }
+  if (compact.match(/categories:\s*[\r\n]+\s*-\s*rss-club\b/)) {
+    return true;
+  }
+  return false;
+}
+
+async function collectRssClubUrls() {
+  const postFiles = await fs.readdir('_posts', { withFileTypes: true });
+  const urls = new Set();
+
+  for (const entry of postFiles) {
+    if (!entry.isFile()) {
+      continue;
+    }
+    if (!entry.name.endsWith('.md') && !entry.name.endsWith('.markdown') && !entry.name.endsWith('.html')) {
+      continue;
+    }
+
+    const relPath = `_posts/${entry.name}`;
+    const fileContent = await fs.readFile(relPath, 'utf8');
+    const frontMatterMatch = fileContent.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
+    if (!frontMatterMatch) {
+      continue;
+    }
+    if (!frontMatterHasRssClub(frontMatterMatch[1])) {
+      continue;
+    }
+
+    const mapped = parsePostUrlFromPath(relPath);
+    const normalized = mapped ? normalizeForIndexNow(mapped) : null;
+    if (normalized) {
+      urls.add(normalized);
+    }
+  }
+
+  return urls;
+}
+
 async function collectSiteUrls() {
   const htmlFiles = await walkHtmlFiles(siteDir);
+  const rssClubUrls = await collectRssClubUrls();
   const urls = new Set();
   let skippedNoindex = 0;
   let skippedInvalidCanonical = 0;
+  let skippedRssClub = 0;
 
   for (const file of htmlFiles) {
     const html = await fs.readFile(file, 'utf8');
@@ -119,6 +173,10 @@ async function collectSiteUrls() {
     if (canonical) {
       const normalized = normalizeForIndexNow(canonical);
       if (normalized) {
+        if (rssClubUrls.has(normalized)) {
+          skippedRssClub += 1;
+          continue;
+        }
         urls.add(normalized);
       } else {
         skippedInvalidCanonical += 1;
@@ -126,7 +184,7 @@ async function collectSiteUrls() {
     }
   }
 
-  console.log(`Collected ${urls.size} eligible IndexNow URL(s); skipped ${skippedNoindex} noindex page(s) and ${skippedInvalidCanonical} out-of-scope canonical URL(s).`);
+  console.log(`Collected ${urls.size} eligible IndexNow URL(s); skipped ${skippedNoindex} noindex page(s), ${skippedRssClub} rss-club page(s), and ${skippedInvalidCanonical} out-of-scope canonical URL(s).`);
 
   return [...urls];
 }
