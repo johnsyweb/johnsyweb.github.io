@@ -2,7 +2,11 @@
 set -euo pipefail
 
 echo "[pre-push] Building site..."
-bundle exec jekyll build
+if command -v mise >/dev/null 2>&1; then
+  mise exec -- bundle exec jekyll build
+else
+  bundle exec jekyll build
+fi
 
 if command -v docker >/dev/null 2>&1 && docker info >/dev/null 2>&1; then
   echo "[pre-push] Validating HTML..."
