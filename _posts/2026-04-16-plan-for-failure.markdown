@@ -27,7 +27,7 @@ The response came back:
 
 > I have checked the tracking number and it says that they tried to deliver on 7th April but no-one seemed to be in. It says they have left a note about how to make further arrangements. Can you let me know if that is the case please.
 
-7 April? The very day they said they attempted delivery. We checked all around the front of the property. No note. We checked the [security camera] footage. No delivery.
+7 April? The very day I asked for a tracking ID! We checked all around the front of the property. No note. We checked the [security camera] footage. No delivery.
 
 I asked whether [Australia Post tracking] gave any further information.
 
