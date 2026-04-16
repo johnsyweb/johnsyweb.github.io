@@ -11,7 +11,7 @@ Yesterday Analytics April came to an end in the [Exercism](https://exercism.org/
 
 ## Getting started
 
-R was a bit of a pain to install, even with `asdf`. I had to [install a bunch of dependencies](https://github.com/asdf-community/asdf-r#mac) using [Homebrew](https://brew.sh) as a prerequisite:
+R was a bit of a pain to install, even with `asdf`. I had to [install a bunch of dependencies](https://github.com/asdf-community/asdf-r#macos) using [Homebrew](https://brew.sh) as a prerequisite:
 
 ```zsh
 brew install gcc xz libxt cairo pcre2 xquartz

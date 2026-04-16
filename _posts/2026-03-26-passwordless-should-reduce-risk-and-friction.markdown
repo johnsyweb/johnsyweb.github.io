@@ -63,7 +63,7 @@ Passwordless is a good direction. But passwordless should reduce risk and fricti
 
 <!-- Links -->
 [Improving Online Security]: {% post_url 2019-01-21-improving-online-security %}
-[CISA on SIM swapping]: https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-202a "CISA advisory mentioning SIM swapping risks"
+[CISA on SIM swapping]: https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a "CISA advisory describing SIM swapping as part of modern social-engineering attacks"
 [FIDO on passkey phishing resistance]: https://fidoalliance.org/passkeys/ "Passkeys from the FIDO Alliance"
 [NIST Digital Identity Guidelines]: https://pages.nist.gov/800-63-3/sp800-63b.html "NIST SP 800-63B Digital Identity Guidelines"
 [passkeys]: https://fidoalliance.org/passkeys/ "Passkeys from the FIDO Alliance"
