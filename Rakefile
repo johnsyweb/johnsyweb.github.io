@@ -65,20 +65,34 @@ task :test => %i[build validate_feeds validate_rss_club lighthouse_styles] do
     ignore_urls: [
       %r{//localhost},
       %r{//127\.0\.0\.1},
+      %r{https?://(www\.)?johnsy\.com/}, # Self-referential URLs fail during build
+      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
       %r{https?://(www\.)?realestate\.com\.au/},
-      %r{https?://(www\.)?seek\.com\.au/}
+      %r{https?://(www\.)?seek\.com\.au/},
+      %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm}, # Old HTTP BBC link - acceptable
+      %r{http://(www\.)?mutt\.org/}, # Old HTTP mutt.org link - acceptable
+      %r{https://ronjeffries\.com/xprog/articles/acsbowling}, # TODO: html-proofer reports false 301 timeout
+      %r{https://ronjeffries\.com/xprog/articles/acsbowlingproceduralframescore}, # TODO: html-proofer reports false 301 timeout
+      %r{https://signal\.me/#eu/} # Signal share URIs have app-specific hashes not on web
     ]
   }
 
-  begin
-    HTMLProofer.check_directory("./_site", options).run
-  rescue StandardError => e
-    # Check if the error is related to external links
-    raise unless e.message.include?("external") && ENV["STRICT_EXTERNAL_LINKS"].nil?
+  success = mise_exec("ruby", "-e", <<~RUBY)
+    require 'html-proofer'
+    options = #{options.inspect}
+    begin
+      HTMLProofer.check_directory("./_site", options).run
+    rescue SystemExit => e
+      exit(e.status)
+    end
+  RUBY
 
-    puts "\n⚠️  External link check completed with warnings (non-breaking)"
-    puts "Run with STRICT_EXTERNAL_LINKS=1 to fail the build on external link issues"
-    puts "\nDetails: #{e.message}"
+  unless success
+    raise "HTML validation failed" if ENV["ALLOW_EXTERNAL_LINK_WARNINGS"].nil?
+
+    puts "\n⚠️  HTML validation completed with warnings (non-breaking)"
+    puts "Set ALLOW_EXTERNAL_LINK_WARNINGS=1 to suppress external link failures"
+    puts "\nDetails: HTMLProofer reported failures during ./_site validation"
   end
 end
 
@@ -100,6 +114,7 @@ task :validate_html => :build do
       %r{//localhost},
       %r{//127\.0\.0\.1},
       %r{https?://(www\.)?johnsy\.com/}, # Self-referential URLs fail during build
+      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
       %r{https?://(www\.)?realestate\.com\.au/},
       %r{https?://(www\.)?seek\.com\.au/},
       %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm}, # Old HTTP BBC link - acceptable
@@ -591,6 +606,7 @@ task :validate_html_only do
       %r{//localhost},
       %r{//127\.0\.0\.1},
       %r{https?://(www\.)?johnsy\.com/},
+      %r{https?://([\w.-]+\.)?telecharge\.com}, # Queue-it / sale redirects are not stable for automated checks
       %r{https?://(www\.)?realestate\.com\.au/},
       %r{https?://(www\.)?seek\.com\.au/},
       %r{http://news\.bbc\.co\.uk/2/hi/europe/1098192\.stm},
