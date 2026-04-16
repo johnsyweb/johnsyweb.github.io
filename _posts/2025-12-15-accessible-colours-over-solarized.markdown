@@ -5,6 +5,8 @@ categories:
   - design
 title: Accessible colours beat Solarized (and why that matters)
 date: 2025-12-15 09:00:00
+last_modified_at: 2026-04-16 22:51:11 +0000
+
 ---
 
 A friend commented on my [recent accessibility improvements][previous-post]: "Do those tools check for color blindness accessibility too? I’m strongly colorblind and your red headings on a dark background, particularly the smaller ones, are near the edge of readability for me."
@@ -37,7 +39,7 @@ To prevent regressions, I expanded [Lighthouse CI][lhci] coverage to test both l
 
 There's more to do on a few sub-sites, but publishing the current improvements early invites feedback and keeps future fixes small. If you spot anything awkward to read, please [get in touch](/contact/).
 
-I also created a [comprehensive style test page][style-test] that exercises every CSS colour combination used across the site—headings, body text, links, code blocks, metadata, search results, and more. This page is included in the Lighthouse accessibility audits (but excluded from performance/SEO checks since it's intentionally dense). You can verify the live site's accessibility using tools like [WAVE][wave] or [axe DevTools][axe-devtools].
+I also created a comprehensive style test page that exercises every CSS colour combination used across the site—headings, body text, links, code blocks, metadata, search results, and more. This page is included in the Lighthouse accessibility audits (but excluded from performance/SEO checks since it's intentionally dense). This is only intended for testing, and is not deployed. You can verify the live site's accessibility using tools like [WAVE][wave] or [axe DevTools][axe-devtools].
 
 ## Lessons learned
 
@@ -62,7 +64,6 @@ If you spot anything that still feels hard to read, especially in dark mode, ple
 [solarized]: https://ethanschoonover.com/solarized/
 [material-colors]: https://m3.material.io/styles/color/system/overview
 [wcag-contrast]: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
-[style-test]: /style-test/
 [lhci]: https://github.com/GoogleChrome/lighthouse-ci
 [clean-css]: https://github.com/clean-css/clean-css-cli
 [who-can-use]: https://www.whocanuse.com/
