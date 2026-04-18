@@ -3,6 +3,7 @@ layout: post
 category: Security
 title: Improving Online Security
 date: 2019-01-21 11:37:00.000000000 +11:00
+updated_at: 2026-04-18
 redirect_from:
 - "/bit.ly/improving-online-security/"
 - "/l/improving-online-security/"
@@ -83,9 +84,7 @@ or email service.
 ## Enable Two-Factor Authentication (2FA)
 
 Multi-factor authentication (MFA) is not available everywhere but it is
-available on many major online services. The site [Two Factor Auth
-(2FA)](https://twofactorauth.org/) keeps a great list and provides us with ways
-to contact those who don't yet offer 2FA.
+available on many major online services.
 
 I remember reading the real life horror story
 [Hacked!](https://www.theatlantic.com/magazine/archive/2011/11/hacked/308673/?single_page=true)
