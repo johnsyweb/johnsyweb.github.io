@@ -2,7 +2,7 @@
 layout: post
 title: Well...
 date: 2004-07-19 00:00:00
-updated_at: 2025-12-17
+updated_at: 2026-04-18
 ---
 
 I have left it so long since I last blogged, that I forget all of the trivial
@@ -40,7 +40,7 @@ finest Jerk Chicken (with hot pickled cucumber) that I have ever eaten. The
 rest of the food was good, too!
 
 The highlight for me, was seeing Rolf live! That and hurtling groundwards at
-60 miles per hour on the [Wrigley's Airwaves Drop Zone][airwaves].
+60 miles per hour on the Wrigley's Airwaves Drop Zone.
 
 I'm quite keen that this will not have been my last music festival.
 
@@ -54,4 +54,3 @@ I'm quite keen that this will not have been my last music festival.
 [simpleminds]: https://www.simpleminds.com/ "I was never a huge fan. This weekend changed nothing"
 [ukulele]: https://www.ukuleleorchestra.com/ "Wonderful, wonderful! I'll be seeing these guys again!"
 [sawdoctors]: https://sawdoctors.com/ "Top flight Oirish entertainment"
-[airwaves]: https://www.wrigley.co.uk/airwaves/dropzone/
