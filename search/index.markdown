@@ -16,6 +16,11 @@ og_image: /images/banner-og-compressed.jpg
 og_image_alt: Rainbow Lego minifigures against a colourful brick wall
 ---
 
+{% assign search_asset_version = site.github.build_revision %}
+{% unless search_asset_version %}
+  {% assign search_asset_version = site.time | date: "%s" %}
+{% endunless %}
+
 
 <div id="pagefind-search" class="pagefind-search">
   <noscript>
@@ -23,7 +28,6 @@ og_image_alt: Rainbow Lego minifigures against a colourful brick wall
   </noscript>
 </div>
 
-<link rel="stylesheet" href="{{ '/assets/pagefind/pagefind-ui.css' | relative_url }}" />
-<script src="{{ '/assets/pagefind/pagefind-ui.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/search.min.js' | relative_url }}" defer></script>
-
+<link rel="stylesheet" href="{{ '/assets/pagefind/pagefind-ui.css' | relative_url }}?v={{ search_asset_version }}" />
+<script src="{{ '/assets/pagefind/pagefind-ui.js' | relative_url }}?v={{ search_asset_version }}" defer></script>
+<script src="{{ '/assets/js/search.min.js' | relative_url }}?v={{ search_asset_version }}" defer></script>
