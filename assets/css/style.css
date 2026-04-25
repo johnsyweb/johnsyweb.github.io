@@ -970,6 +970,12 @@ h1 a:hover {
 	justify-content: center;
 }
 
+.pagefind-ui .pagefind-ui__drawer {
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 8px;
+}
+
 .utility-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
