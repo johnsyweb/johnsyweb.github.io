@@ -13,6 +13,29 @@
 
     var params = new URLSearchParams(window.location.search);
     var initialTerm = params.get("q") || "";
+    var defaultDocumentTitle = document.title;
+
+    function updateSearchState(term) {
+      if (typeof term !== "string") {
+        return;
+      }
+
+      var searchTerm = term.trim();
+      var nextTitle = searchTerm
+        ? "Search: " + searchTerm + " | johnsy.com"
+        : defaultDocumentTitle;
+      document.title = nextTitle;
+
+      if (window.history && window.history.replaceState) {
+        var url = new URL(window.location.href);
+        if (searchTerm) {
+          url.searchParams.set("q", searchTerm);
+        } else {
+          url.searchParams.delete("q");
+        }
+        window.history.replaceState({ q: searchTerm }, nextTitle, url.toString());
+      }
+    }
 
     var pagefind = new PagefindUI({
       element: "#pagefind-search",
@@ -47,23 +70,12 @@
 
     if (initialTerm) {
       pagefind.triggerSearch(initialTerm);
+      updateSearchState(initialTerm);
     }
 
     window.addEventListener("pagefind-ui-search", function (event) {
       var searchTerm = event.detail && event.detail.term;
-      if (typeof searchTerm !== "string") {
-        return;
-      }
-
-      if (window.history && window.history.replaceState) {
-        var url = new URL(window.location.href);
-        if (searchTerm) {
-          url.searchParams.set("q", searchTerm);
-        } else {
-          url.searchParams.delete("q");
-        }
-        window.history.replaceState({}, "", url.toString());
-      }
+      updateSearchState(searchTerm);
     });
 
     window.requestAnimationFrame(function () {
