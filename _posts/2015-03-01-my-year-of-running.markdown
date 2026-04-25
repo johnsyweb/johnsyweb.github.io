@@ -311,7 +311,7 @@ anything by halves?
 [mdc]: https://www.mothersdayclassic.com.au/
 [tan-track]: https://en.wikipedia.org/wiki/Tan_Track
 [run-melbourne]: https://www.runmelbourne.com.au/
-[parkrun-r egister]: https://www.parkrun.com.au/register/
+[parkrun-register]: https://www.parkrun.com.au/register/
 [parkrun]: https://www.parkrun.com.au/
 [westerfolds-parkrun]: https://www.parkrun.com.au/westerfolds/
 [westerfolds-results]: https://www.parkrun.com.au/westerfolds/results/35/
