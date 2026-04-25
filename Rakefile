@@ -51,13 +51,14 @@ task :write, [:title, :categories] do |_t, args|
 
   categories = args.categories.to_s.split(",").map(&:strip).reject(&:empty?)
   categories = ["uncategorised"] if categories.empty?
+  category_lines = categories.map { |category| "  - #{category}" }.join("\n")
 
   File.open(path, "w") do |file|
     file.write <<~FRONT_MATTER
       ---
       layout: post
       categories:
-#{categories.map { |category| "        - #{category}" }.join("\n")}
+      #{category_lines}
       title: #{args.title}
       date: #{NOW.strftime('%Y-%m-%d %k:%M:%S')}
       ---
