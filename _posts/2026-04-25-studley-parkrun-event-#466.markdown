@@ -135,7 +135,7 @@ It has been fun to reminisce on these experiences. I am glad I resurrected this 
 [Brimbank parkrun]: https://www.parkrun.com.au/brimbank/
 [browser plugin]: {% post_url 2019-07-24-essential-browser-plugins %}#running-challenges
 [cardiac arrest]: {% post_url 2020-06-03-cardiac-arrest-survivor %}
-[CERES]: https://ceresfairfood.org.au/
+[CERES]: https://ceres.org.au/
 [Coburg parkrun]: https://www.parkrun.com.au/coburg/
 [contact me]: /contact/
 [Darebin parkrun]: https://www.parkrun.com.au/darebin/
