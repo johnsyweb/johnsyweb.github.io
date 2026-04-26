@@ -120,6 +120,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-04-25: [Studley parkrun event #466](https://www.johnsy.com/blog/2026/04/25/studley-parkrun-event-#466/)
 - 2026-04-25: [Radio Paradise](https://www.johnsy.com/blog/2026/04/25/radio-paradise/)
 - 2026-04-18: [Cruickshank Park parkrun event #11](https://www.johnsy.com/blog/2026/04/18/cruickshank-park-parkrun-event-#11/)
 - 2026-04-16: [Plan for Failure](https://www.johnsy.com/blog/2026/04/16/plan-for-failure/)
@@ -129,6 +130,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-04-01: [parkrun Events Near Public Transport in Victoria](https://www.johnsy.com/blog/2026/04/01/parkrun-events-near-public-transport-in-victoria/)
 - 2026-03-26: [Passwordless should reduce risk and friction](https://www.johnsy.com/blog/2026/03/26/passwordless-should-reduce-risk-and-friction/)
 - 2026-03-17: [Copy a directory structure with rsync (and no files)](https://www.johnsy.com/blog/2026/03/17/copy-directory-structure-with-rsync/)
-- 2026-02-17: [On Writing Pull Request Descriptions Well: The Five Cs](https://www.johnsy.com/blog/2026/02/17/on-writing-pull-request-descriptions-well/)
 
 <!-- END TOC -->
