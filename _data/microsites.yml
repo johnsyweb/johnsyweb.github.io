@@ -1,43 +1,43 @@
 microsites:
-  - id: qrty
-    title: QRTY
-    url: https://www.johnsy.com/QRTY/
-    image: https://www.johnsy.com/QRTY/qr-code.png
-    image_width: 1200
-    image_height: 630
-    image_alt: "QRTY - QR and barcode decoder using screen capture or image upload"
-    image_title: "QRTY QR code"
-    description: "QR and barcode decoder using screen capture or image upload. Capture a section of your screen to automatically scan codes, or upload an image file. All processing happens locally in your browser for privacy."
-    purpose: "Decode QR codes and barcodes from images"
-    features:
-      - Screen capture or image upload
-      - Multiple code detection
-      - Fully keyboard accessible
-      - Privacy-focused local processing
-    seo:
-      keywords: "QR code decoder, barcode scanner, screen capture, image upload, privacy-focused, browser-based"
-      schema_type: "WebApplication"
-      audience: "Anyone needing to scan QR codes from images or emails"
-
   - id: countdown
     title: Countdown Numbers Game Solver
     url: https://www.johnsy.com/countdown/
     image: https://www.johnsy.com/countdown/og-image.png
     image_width: 1200
     image_height: 630
-    image_alt: "Countdown Numbers Game Solver - Solve the Countdown numbers game"
+    image_alt: "Countdown Numbers Game Solver - For Countle, Summle, Additional, and Letters and Numbers"
     image_title: "Screenshot of Countdown Numbers Game Solver"
     description: "A TypeScript solver for the Countdown numbers game. Given six integers and a target, find all solutions using basic arithmetic. Features keyboard navigation, step-by-step solutions, and shareable permalinks."
-    purpose: "Solve the Countdown numbers game"
+    purpose: "Solve the Countdown numbers game, Summle, Additional, and Letters and Numbers"
     features:
       - Step-by-step solution display
       - Keyboard navigation
       - Shareable permalinks
       - Solutions grouped by efficiency
     seo:
-      keywords: "Countdown numbers game, solver, arithmetic puzzle, Countdown game, numbers round"
+      keywords: "Countdown numbers game, solver, arithmetic puzzle, Countdown game, numbers round, Summle, Additional, Letters and Numbers"
       schema_type: "WebApplication"
-      audience: "Countdown fans and puzzle enthusiasts"
+      audience: "Countdown, Summle, Additional, and Letters and Numbers fans and puzzle enthusiasts"
+
+  - id: glyptodont
+    title: Glyptodont — TODO checker for CI/CD
+    url: https://www.johnsy.com/glyptodont/
+    image: https://www.johnsy.com/glyptodont/glyptodon.png
+    image_width: 717
+    image_height: 561
+    image_alt: "Paleoart: Glyptodon, a large extinct armadillo from the Pleistocene in South America"
+    image_title: "Paleoart of Glyptodon"
+    description: "Glyptodont scans your Git repository for TODO-style comments (TODO, FIXME, HACK, XXX) and fails when they exceed your limits. Use in CI/CD or locally."
+    purpose: "Scan your repo for TODOs and fail CI when they exceed your limits"
+    features:
+      - Threshold- and age-based TODO limits
+      - CI integration for GitHub Actions and Buildkite
+      - Configurable keywords and ignore lists
+      - Free, open-source Ruby gem
+    seo:
+      keywords: "glyptodont, TODO checker, FIXME, CI, CD, GitHub Actions, Buildkite, Ruby gem, technical debt, code quality"
+      schema_type: "SoftwareApplication"
+      audience: "Software teams wanting to enforce TODO policies in CI"
 
   - id: progression
     title: Progression
@@ -59,6 +59,26 @@ microsites:
       schema_type: "WebApplication"
       audience: "Anyone tracking time-based progress"
 
+  - id: qrty
+    title: QRTY
+    url: https://www.johnsy.com/QRTY/
+    image: https://www.johnsy.com/QRTY/qr-code.png
+    image_width: 1200
+    image_height: 630
+    image_alt: "QRTY - QR and barcode decoder using screen capture or image upload"
+    image_title: "QRTY QR code"
+    description: "QR and barcode decoder using screen capture or image upload. Capture a section of your screen to automatically scan codes, or upload an image file. All processing happens locally in your browser for privacy."
+    purpose: "Decode QR codes and barcodes from images"
+    features:
+      - Screen capture or image upload
+      - Multiple code detection
+      - Fully keyboard accessible
+      - Privacy-focused local processing
+    seo:
+      keywords: "QR code decoder, barcode scanner, screen capture, image upload, privacy-focused, browser-based"
+      schema_type: "WebApplication"
+      audience: "Anyone needing to scan QR codes from images or emails"
+
   - id: speedtest-analysis
     title: Speedtest Analysis
     url: https://www.johnsy.com/speedtest-analysis/
@@ -79,23 +99,3 @@ microsites:
       keywords: "speedtest analysis, network performance, bandwidth monitoring, Chart.js visualization, speed test tracking, automated speedtest"
       schema_type: "SoftwareApplication"
       audience: "Network administrators and home users monitoring connection performance"
-
-  - id: glyptodont
-    title: Glyptodont — TODO checker for CI/CD
-    url: https://www.johnsy.com/glyptodont/
-    image: https://www.johnsy.com/glyptodont/glyptodon.png
-    image_width: 717
-    image_height: 561
-    image_alt: "Paleoart: Glyptodon, a large extinct armadillo from the Pleistocene in South America"
-    image_title: "Paleoart of Glyptodon"
-    description: "Glyptodont scans your Git repository for TODO-style comments (TODO, FIXME, HACK, XXX) and fails when they exceed your limits. Use in CI/CD or locally."
-    purpose: "Scan your repo for TODOs and fail CI when they exceed your limits"
-    features:
-      - Threshold- and age-based TODO limits
-      - CI integration for GitHub Actions and Buildkite
-      - Configurable keywords and ignore lists
-      - Free, open-source Ruby gem
-    seo:
-      keywords: "glyptodont, TODO checker, FIXME, CI, CD, GitHub Actions, Buildkite, Ruby gem, technical debt, code quality"
-      schema_type: "SoftwareApplication"
-      audience: "Software teams wanting to enforce TODO policies in CI"
