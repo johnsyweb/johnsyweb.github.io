@@ -147,7 +147,7 @@ It has been fun to reminisce on these experiences. I am glad I resurrected this 
 [Kirkdale Reserve parkrun]: https://www.parkrun.com.au/kirkdalereserve/
 [Melbourne Marathon]: {% post_url 2018-08-17-dingo-dash %}
 [Mernda parkrun]: https://www.parkrun.com.au/mernda/
-[Merri Creek Running Club]: https://merricreekrunclub.org.au/
+[Merri Creek Running Club]: https://merricreekrunning.club/
 [Nelson Club]: https://blog.parkrun.com/uk/2023/07/11/changes-to-challenges/
 [NENDY]: {% post_url 2019-03-09-nearest-event-not-done-yet-(nendy) %}
 [parkrun adventurers podcast]: https://parkrunadventurers.podbean.com/
