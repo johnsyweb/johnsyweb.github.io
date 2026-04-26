@@ -7,17 +7,17 @@ microsites:
     image_height: 630
     image_alt: "Countdown Numbers Game Solver - For Countle, Summle, Additional, and Letters and Numbers"
     image_title: "Screenshot of Countdown Numbers Game Solver"
-    description: "A TypeScript solver for the Countdown numbers game. Given six integers and a target, find all solutions using basic arithmetic. Features keyboard navigation, step-by-step solutions, and shareable permalinks."
-    purpose: "Solve the Countdown numbers game, Summle, Additional, and Letters and Numbers"
+    description: "A solver for the Countdown numbers game. Given six integers and a target, find all solutions using basic arithmetic. Features keyboard navigation, step-by-step solutions, and shareable permalinks."
+    purpose: "Solve the Countdown numbers game. Works for Countle, Summle, Additional, and Letters and Numbers"
     features:
       - Step-by-step solution display
       - Keyboard navigation
       - Shareable permalinks
       - Solutions grouped by efficiency
     seo:
-      keywords: "Countdown numbers game, solver, arithmetic puzzle, Countdown game, numbers round, Summle, Additional, Letters and Numbers"
+      keywords: "Countdown numbers game, solver, arithmetic puzzle, Countdown game, numbers round, Countle, Summle, Additional, Letters and Numbers"
       schema_type: "WebApplication"
-      audience: "Countdown, Summle, Additional, and Letters and Numbers fans and puzzle enthusiasts"
+      audience: "Countdown, Countle, Summle, Additional, and Letters and Numbers fans and puzzle enthusiasts"
 
   - id: glyptodont
     title: Glyptodont — TODO checker for CI/CD
