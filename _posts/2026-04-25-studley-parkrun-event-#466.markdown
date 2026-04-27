@@ -4,6 +4,7 @@ categories:
   - parkrun
 title: "Studley parkrun event #466"
 date: 2026-04-25  7:25:47
+updated_at: 2026-04-27 03:33
 ---
 
 One of the aspects of being a parkrun ambassador that I really enjoy is jumping in the car or on the bike on a Saturday morning and heading to a parkrun event. I have blogged before about using my [NENDY] to decide where I should go, which is all well and good, but it's not the only way I choose. Each event can only be your NENDY once. I also very much enjoy returning to events and the "p-index" is a good heuristic for deciding which event to head back to.
@@ -38,9 +39,9 @@ The concept of the p-index wasn't something I remember being aware of at this ju
 
 ### 4. [Sunbury parkrun], 13 July 2019 (+39)
 
-I became a parkrun [Event Ambassador] (EA) in January 2019 and [Sunbury parkrun] was one of the four events I was supporting along with Coburg, Darebin and Mernda parkruns. By this stage I was also using the [Running Challenges] [browser plugin], so was aware of the p-index. It would have been around this time that I started using the p-index to help me choose where to head on a Saturday morning. Clearly I had been to Coburg and Darebin parkruns more than Sunbury or Mernda. And so I set out to gain a p-index of five.
+I became a parkrun [Event Ambassador] (EA) in January 2019 and [Sunbury parkrun] was one of the four events I was supporting along with Coburg, Darebin and Mernda parkruns. By this stage I was also using the [Running Challenges][Running Challenges] [browser plugin][browser plugin], so was aware of the p-index. It would have been around this time that I started using the p-index to help me choose where to head on a Saturday morning. Clearly I had been to Coburg and Darebin parkruns more than Sunbury or Mernda. And so I set out to gain a p-index of five.
 
-Sunbury parkrun was well established when I first visited as EA in March 2019. I had been to one of their trials and, let's just say, the hill had not enticed me back! Now I endeavoured to get there about every five weeks on a cycle with the other four events I was supporting along with a weekend for adventuring.
+Sunbury parkrun was well established when I first visited as EA in March 2019. I had been to one of their trials and, let's just say, the hill had not enticed me back! Now I endeavoured to get there about every five weeks on a cycle with the other three events I was supporting along with a weekend for adventuring.
 
 Sunbury is somewhere I still like to head of a weekend. I actually managed to run the whole hill in March 2020.
 
@@ -108,7 +109,7 @@ One of my goals for 2025 was to cycle to parkrun more, which makes Kirkdale a gr
 
 ### [Studley parkrun] event #466
 
-This weekend that I found myself without plans and without a running buddy. I consulted my p-index and saw how I had been neglecting the beautiful [Studley parkrun], along the banks of the Yarra River. It's not that far from home (all of the events in my p-index are within 27km of home as the unladen swallow flies), so off I went. It was while I was enjoying running this lovely trail course on Anzac Day morning that it had occurred to me that I had recently blogged:
+This weekend I found myself without plans and without a running buddy. I consulted my p-index and saw how I had been neglecting the beautiful [Studley parkrun], along the banks of the Yarra River. It's not that far from home (all of the events in my p-index are within 27km of home as the unladen swallow flies), so off I went. It was while I was enjoying running this lovely trail course on Anzac Day morning that it had occurred to me that I had recently blogged:
 
 > [Maybe I’ll work on my _p-index_ in the mean time. More on that in another post, I am sure.][20260418]
 
