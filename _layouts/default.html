@@ -170,7 +170,7 @@
     {% if page.og_image_alt %}
     <meta property="og:image:alt" content="{{ page.og_image_alt | escape }}" />
     {% endif %}
-    {% assign page_modified_at = page.last_modified_at | default: page.updated %}
+    {% assign page_modified_at = page.updated_at %}
 
     {% if page.date %}
     <meta

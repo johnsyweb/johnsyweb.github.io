@@ -5,7 +5,7 @@ categories:
   - design
 title: Accessible colours beat Solarized (and why that matters)
 date: 2025-12-15 09:00:00
-last_modified_at: 2026-04-16 22:51:11 +0000
+updated_at: 2026-04-16 22:51:11 +0000
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Burra
-last_modified_at: 2025-11-09
+updated_at: 2025-11-09
 ---
 
 We eventually left [Mildura]({% post_url /2006-01-30-mildura %}) with

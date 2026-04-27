@@ -1,5 +1,5 @@
 {% include post-image-url.html %}
-{% assign page_modified_at = page.last_modified_at | default: page.updated | default: page.date %}
+{% assign page_modified_at = page.updated_at | default: page.date %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

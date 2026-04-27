@@ -2,7 +2,7 @@
 layout: default
 ---
 {% include schema-article.html %}
-{% assign page_modified_at = page.last_modified_at | default: page.updated %}
+{% assign page_modified_at = page.updated_at %}
 <article class="post">
 	<header>
 		{% if page.external-url %}

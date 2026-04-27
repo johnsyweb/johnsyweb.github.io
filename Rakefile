@@ -3,6 +3,7 @@
 require "English"
 require "html-proofer"
 require "fileutils"
+require "yaml"
 
 def mise_available?
   system("which mise > /dev/null 2>&1")
@@ -51,18 +52,19 @@ task :write, [:title, :categories] do |_t, args|
 
   categories = args.categories.to_s.split(",").map(&:strip).reject(&:empty?)
   categories = ["uncategorised"] if categories.empty?
-  category_lines = categories.map { |category| "  - #{category}" }.join("\n")
+  template_path = File.join("config", "post-front-matter-template.yml")
+  front_matter_template = YAML.safe_load_file(template_path)
+  front_matter = front_matter_template.merge(
+    "title" => args.title,
+    "date" => NOW.strftime("%Y-%m-%d %k:%M:%S"),
+    "categories" => categories
+  )
+  front_matter_yaml = front_matter.to_yaml(line_width: -1).sub(/\A---\s*\n/, "")
 
   File.open(path, "w") do |file|
-    file.write <<~FRONT_MATTER
-      ---
-      layout: post
-      categories:
-      #{category_lines}
-      title: #{args.title}
-      date: #{NOW.strftime('%Y-%m-%d %k:%M:%S')}
-      ---
-    FRONT_MATTER
+    file.write("---\n")
+    file.write(front_matter_yaml)
+    file.write("---\n")
   end
   puts "Now open #{path} in an editor."
 end

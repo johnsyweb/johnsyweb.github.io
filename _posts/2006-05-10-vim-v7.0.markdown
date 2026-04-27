@@ -2,7 +2,7 @@
 layout: post
 title: Vim v7.0
 date: 2006-05-10 00:00:00.000000000 +00:00
-modified: 2026-01-15 00:00:00.000000000 +00:00
+updated_at: 2026-01-15 00:00:00.000000000 +00:00
 ---
 
 After some years of development, [Bram Moolenaar][1] has [released][2] version seven of [Vim][3]. I've been beta-testing it for a while now and recommend upgrading to the new version as soon as you can!
