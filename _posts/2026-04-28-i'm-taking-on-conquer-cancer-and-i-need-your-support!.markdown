@@ -8,10 +8,10 @@ title: I'm taking on Conquer Cancer and I need your support!
 date: '2026-04-28 10:36:08'
 redirect_from:
     - /l/cc
-updated_at:
+updated_at: 2026-04-28 11:31:57
 ---
 
-I'm proud to be part of a [Guinness World Records] attempt, running in a non-stop four-week relay around [Princes Park] to help [conquer cancer]. It also happens to be the same month that [my little brother ran into the record books][tcs-london-marathon-extends-record-as-biggest-marathon-ever].
+I'm proud to be part of a [Guinness World Records] attempt, running in a non-stop four-week relay around [Princes Park] to help [conquer cancer]. It also happens that [my little brother ran into the record books][tcs-london-marathon-extends-record-as-biggest-marathon-ever] this weekend.
 
 [![Steve and me running at the Cardiff Half Marathon in 2019][conquer-cancer-hero]][Please donate if you can]
 
