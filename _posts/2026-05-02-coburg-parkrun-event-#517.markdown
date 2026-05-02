@@ -2,7 +2,7 @@
 layout: post
 categories:
     - parkrun
-title: Coburg parkrun event #517
+title: "Coburg parkrun event #517"
 date: '2026-05-02 5:02:16'
 updated_at:
 ---
