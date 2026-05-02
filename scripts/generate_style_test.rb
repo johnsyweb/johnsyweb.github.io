@@ -147,6 +147,9 @@ def generate_markdown
   
   # Get code styles
   code_style = style_props['code'] || {}
+
+  # Keyboard keycap styles (same mono stack as code; borders/shadows from style.css)
+  kbd_style = style_props['kbd'] || {}
   
   # Get blockquote styles
   blockquote_light = light_colors['blockquote'] || {}
@@ -258,6 +261,16 @@ def generate_markdown
         luminance2 = get_relative_luminance(color2)
         return (max(luminance1, luminance2) + 0.05) / (min(luminance1, luminance2) + 0.05)
     ```
+    
+    ## H2: Keyboard input (`kbd`)
+    
+    Single keys: <kbd>Esc</kbd> <kbd>Tab</kbd> <kbd>Enter</kbd>
+    
+    Platform symbols and pairs: <kbd>⌘</kbd><kbd>I</kbd> (as in Command–I), or with an explicit plus: <kbd>⌘</kbd>+<kbd>I</kbd>
+    
+    Longer chord: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>
+    
+    <p><small><code>kbd</code> uses #{describe_style('kbd', {}, {}, kbd_style)}. Dark-mode overrides are in the same stylesheet under <code>@media (prefers-color-scheme: dark)</code>.</small></p>
     
     ## H2: Blockquotes
     
