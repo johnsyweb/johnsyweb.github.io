@@ -120,6 +120,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-05-06: [Conquer Cancer - Hour One](https://www.johnsy.com/blog/2026/05/06/conquer-cancer---hour-one/)
 - 2026-05-02: [What is going on with Apple's User Interfaces?](https://www.johnsy.com/blog/2026/05/02/what-is-going-on-with-apple's-user-interfaces?/)
 - 2026-05-02: [Coburg parkrun event #517](https://www.johnsy.com/blog/2026/05/02/coburg-parkrun-event-#517/)
 - 2026-04-28: [I'm taking on Conquer Cancer and I need your support!](https://www.johnsy.com/blog/2026/04/28/i'm-taking-on-conquer-cancer-and-i-need-your-support!/)
@@ -129,6 +130,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-04-16: [Plan for Failure](https://www.johnsy.com/blog/2026/04/16/plan-for-failure/)
 - 2026-04-14: [Still Keeping in the Development Loop](https://www.johnsy.com/blog/2026/04/14/still-keeping-in-the-development-loop/)
 - 2026-04-12: [Making Arlo geofencing behave again](https://www.johnsy.com/blog/2026/04/12/arlo-geofencing-workaround/)
-- 2026-04-09: [It's like podcasts, but for reading!](https://www.johnsy.com/blog/2026/04/09/it's-like-podcasts/)
 
 <!-- END TOC -->
