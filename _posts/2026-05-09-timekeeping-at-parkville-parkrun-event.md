@@ -47,7 +47,7 @@ Maybe I'll see you there.
 [Coburg parkrun]: {% post_url 2015-04-22-coburg-parkrun %}
 [Cruickshank Park parkrun]: {% post_url 2026-04-18-cruickshank-park-parkrun-event-#11 %}
 [finishers-per-minute-graph]: /images/2026-05-09-parkville-finishers.png "Graph of finishers per minute at Parkville parkrun event #456"
-[Melbourne Writers Festival]: https://www.melbournewritersfestival.com.au/
+[Melbourne Writers Festival]: https://mwf.com.au
 [nice things]: https://www.linkedin.com/posts/volunteering-australia_we-had-a-strong-start-to-our-national-strategy-activity-7457579285722116096-ba7a
 [parkrun Virtual Volunteer app: Timing]: https://www.youtube.com/watch?v=BY3af-7Ol5A
 [parkrun-charts]: /tampermonkey-parkrun/parkrun-charts/
