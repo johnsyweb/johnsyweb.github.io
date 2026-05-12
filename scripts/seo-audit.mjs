@@ -5,7 +5,7 @@ import path from 'path';
 const siteDir = process.env.SITE_DIR || '_site';
 const minDescriptionLength = Number(process.env.SEO_DESC_MIN_HARD || 70);
 const minTitleLength = Number(process.env.SEO_TITLE_MIN_HARD || 20);
-const maxDuplicatePages = Number(process.env.SEO_DESC_DUP_MAX_PAGES || 2);
+const maxDuplicatePages = Number(process.env.SEO_DESC_DUP_MAX_PAGES || 1);
 const dupSeverity = (process.env.SEO_DESC_DUP_SEVERITY || 'error').toLowerCase();
 const includePostsInDupScan = process.env.SEO_DESC_DUP_INCLUDE_POSTS !== '0';
 

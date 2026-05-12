@@ -198,6 +198,7 @@ jobs:
 
       - name: Run SEO audit
         env:
+          # Default audit allows one URL per meta description (SEO_DESC_DUP_MAX_PAGES=1).
           # Flip to error after duplicate meta descriptions are cleared (see scripts/seo-audit.mjs).
           SEO_DESC_DUP_SEVERITY: warn
         run: node scripts/seo-audit.mjs

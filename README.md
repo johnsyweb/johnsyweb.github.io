@@ -43,7 +43,7 @@ mise exec -- bundle exec jekyll build
 node scripts/seo-audit.mjs
 ```
 
-Duplicate `<meta name="description">` values are reported across **blog posts and pages** under the audited paths. Each cluster lists every URL so you can add a unique `description` in front matter. Tune behaviour with environment variables: `SEO_DESC_DUP_SEVERITY` (`error` or `warn`, default `error`), `SEO_DESC_DUP_INCLUDE_POSTS` (set to `0` to skip posts in duplicate detection), `SEO_DESC_DUP_MAX_PAGES` (default `2`: fail when *more than* this many URLs share one description). CI currently sets `SEO_DESC_DUP_SEVERITY=warn` until duplicates are worked through.
+Duplicate `<meta name="description">` values are reported across **blog posts and pages** under the audited paths. Each cluster lists every URL so you can add a unique `description` in front matter. Tune behaviour with environment variables: `SEO_DESC_DUP_SEVERITY` (`error` or `warn`, default `error`), `SEO_DESC_DUP_INCLUDE_POSTS` (set to `0` to skip posts in duplicate detection), `SEO_DESC_DUP_MAX_PAGES` (default `1`: fail or warn when *more than* this many URLs share one description — so two URLs with the same meta string is a hit). CI currently sets `SEO_DESC_DUP_SEVERITY=warn` until duplicates are worked through.
 
 ### Pre-push HTML validation hook
 
