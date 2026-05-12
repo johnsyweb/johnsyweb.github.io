@@ -36,6 +36,15 @@ The full test suite is `rake test` (build, HTML/feed validation, Lighthouse styl
 mise exec -- rake test
 ```
 
+After a Jekyll build, you can run the SEO audit locally (same checks as the `validate-seo` CI job):
+
+```bash
+mise exec -- bundle exec jekyll build
+node scripts/seo-audit.mjs
+```
+
+Duplicate `<meta name="description">` values are reported across **blog posts and pages** under the audited paths. Each cluster lists every URL so you can add a unique `description` in front matter. Tune behaviour with environment variables: `SEO_DESC_DUP_SEVERITY` (`error` or `warn`, default `error`), `SEO_DESC_DUP_INCLUDE_POSTS` (set to `0` to skip posts in duplicate detection), `SEO_DESC_DUP_MAX_PAGES` (default `2`: fail when *more than* this many URLs share one description). CI currently sets `SEO_DESC_DUP_SEVERITY=warn` until duplicates are worked through.
+
 ### Pre-push HTML validation hook
 
 To run the same HTML validation class as CI before every push, enable the

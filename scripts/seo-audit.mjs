@@ -6,6 +6,8 @@ const siteDir = process.env.SITE_DIR || '_site';
 const minDescriptionLength = Number(process.env.SEO_DESC_MIN_HARD || 70);
 const minTitleLength = Number(process.env.SEO_TITLE_MIN_HARD || 20);
 const maxDuplicatePages = Number(process.env.SEO_DESC_DUP_MAX_PAGES || 2);
+const dupSeverity = (process.env.SEO_DESC_DUP_SEVERITY || 'error').toLowerCase();
+const includePostsInDupScan = process.env.SEO_DESC_DUP_INCLUDE_POSTS !== '0';
 
 const enforcePathPrefixes = ['/', '/about/', '/contact/', '/search/', '/blog/', '/careerbreak/', '/404.html'];
 
@@ -201,7 +203,7 @@ async function run() {
       warnings.push(`${urlPath}: title outside target range (${title.length}, target 30-60)`);
     }
 
-    if (description && !isBlogPost) {
+    if (description && (includePostsInDupScan || !isBlogPost)) {
       const existing = descriptions.get(description) || new Set();
       existing.add(urlPath);
       descriptions.set(description, existing);
@@ -209,22 +211,43 @@ async function run() {
   }
 
   for (const [description, urlSet] of descriptions.entries()) {
-    const urls = [...urlSet];
+    const urls = [...urlSet].sort((a, b) => a.localeCompare(b));
     if (urls.length > maxDuplicatePages) {
-      failures.push(`description used on ${urls.length} pages (> ${maxDuplicatePages}): "${description.slice(0, 80)}..."`);
+      const preview =
+        description.length > 100 ? `${description.slice(0, 97).trim()}…` : description;
+      const msg = [
+        `Duplicate meta description: ${urls.length} URLs share the same string (audit limit is ${maxDuplicatePages} page(s) per description).`,
+        `  Fix: add a unique \`description\` in each page's front matter (see _layouts/default.html).`,
+        `  Preview: ${preview}`,
+        `  URLs:`,
+        ...urls.map((u) => `    - ${u}`),
+      ].join('\n');
+      if (dupSeverity === 'warn') {
+        warnings.push(msg);
+      } else {
+        failures.push(msg);
+      }
     }
   }
 
   console.log(`Checked ${checked.length} core SEO pages in ${siteDir}.`);
 
   for (const warning of warnings) {
-    console.log(`WARNING: ${warning}`);
+    if (warning.includes('\n')) {
+      console.log('WARNING:\n' + warning);
+    } else {
+      console.log(`WARNING: ${warning}`);
+    }
   }
 
   if (failures.length > 0) {
     console.error('SEO audit failed:');
     for (const failure of failures) {
-      console.error(`- ${failure}`);
+      if (failure.includes('\n')) {
+        console.error(failure);
+      } else {
+        console.error(`- ${failure}`);
+      }
     }
     process.exit(1);
   }
