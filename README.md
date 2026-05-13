@@ -129,6 +129,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-05-13: [Conquer Cancer - Hour Two](https://www.johnsy.com/blog/2026/05/13/conquer-cancer-hour-two/)
 - 2026-05-12: [Minute Cryptic Crossword Workshop](https://www.johnsy.com/blog/2026/05/12/minute-cryptic-workshop/)
 - 2026-05-09: [Timekeeping at Parkville parkrun event #456](https://www.johnsy.com/blog/2026/05/09/timekeeping-at-parkville-parkrun-event/)
 - 2026-05-08: [Iron Maiden: Burning Ambition](https://www.johnsy.com/blog/2026/05/08/burning-ambition/)
@@ -138,6 +139,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-04-28: [I'm taking on Conquer Cancer and I need your support!](https://www.johnsy.com/blog/2026/04/28/i'm-taking-on-conquer-cancer-and-i-need-your-support!/)
 - 2026-04-25: [Studley parkrun event #466](https://www.johnsy.com/blog/2026/04/25/studley-parkrun-event-#466/)
 - 2026-04-25: [Radio Paradise](https://www.johnsy.com/blog/2026/04/25/radio-paradise/)
-- 2026-04-18: [Cruickshank Park parkrun event #11](https://www.johnsy.com/blog/2026/04/18/cruickshank-park-parkrun-event-#11/)
 
 <!-- END TOC -->
