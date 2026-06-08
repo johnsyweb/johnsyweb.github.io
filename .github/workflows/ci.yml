@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -85,7 +85,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -138,7 +138,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -192,7 +192,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -218,7 +218,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -259,7 +259,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -312,7 +312,7 @@ jobs:
           sudo apt-get install -y jq
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -367,7 +367,7 @@ jobs:
           sudo apt-get install -y jq
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -420,7 +420,7 @@ jobs:
           path: ./_site
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -487,7 +487,7 @@ jobs:
           ref: main
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
@@ -556,7 +556,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up toolchain with mise
-        uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151
+        uses: jdx/mise-action@dba19683ed58901619b14f395a24841710cb4925
         with:
           install: true
 
