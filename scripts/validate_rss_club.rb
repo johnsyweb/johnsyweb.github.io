@@ -1,12 +1,14 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require "set"
 require "yaml"
 require "time"
 require "uri"
 
 POST_GLOB = "_posts/*.{md,markdown}"
 FRONT_MATTER_REGEX = /\A---\s*\n(.*?)\n---\s*\n/m
+FEED_POST_LIMIT = 10
 COMMON_WORDS = %w[
   the and to of a in is it that for on with as this be are was by at from or an
   if not have has but you we they their can will about more one all
@@ -39,21 +41,56 @@ def parse_post(path)
   [front_matter, body]
 end
 
+def post_slug(path)
+  File.basename(path).sub(/\A\d{4}[-_]\d{2}[-_]\d{2}[-_]/, "").sub(/\.(md|markdown)\z/, "")
+end
+
+def built_page_for(post)
+  matches = Dir.glob(File.join("_site", "blog", "**", post_slug(post[:path]), "index.html"))
+  assert(matches.size == 1, "Expected one built page for #{post[:path]}, found #{matches.size}: #{matches.join(', ')}")
+  matches.first
+end
+
+def canonical_url_for_built_page(built_page_path)
+  built_page_path.sub(%r{\A_site}, "").sub(%r{/index\.html\z}, "/")
+end
+
 def assert(condition, message)
   raise message unless condition
 end
 
-posts = Dir.glob(POST_GLOB).sort.filter_map do |path|
+def post_date(front_matter, path)
+  raw = front_matter["date"]
+  return Time.parse(raw.to_s) if raw && !raw.to_s.strip.empty?
+
+  basename = File.basename(path)
+  match = basename.match(/\A(\d{4})[-_](\d{2})[-_](\d{2})/)
+  raise "No date for #{path}" unless match
+
+  Time.utc(match[1].to_i, match[2].to_i, match[3].to_i)
+end
+
+all_posts = Dir.glob(POST_GLOB).sort.map do |path|
   front_matter, body = parse_post(path)
-  categories = Array(front_matter["categories"])
-  next unless categories.include?("rss-club")
+  date = post_date(front_matter, path)
 
   {
     path: path,
+    date: date,
     title: front_matter["title"].to_s,
-    body: body
+    body: body,
+    categories: Array(front_matter["categories"])
   }
 end
+
+feed_post_paths = all_posts
+  .sort_by { |post| post[:date] }
+  .reverse
+  .take(FEED_POST_LIMIT)
+  .map { |post| post[:path] }
+  .to_set
+
+posts = all_posts.select { |post| post[:categories].include?("rss-club") }
 
 if posts.empty?
   puts "No rss-club posts found; validation skipped."
@@ -83,25 +120,35 @@ blog_pages = blog_listing_paths.filter_map do |path|
 end
 
 posts.each do |post|
-  title_pattern = Regexp.escape("<title>#{post[:title]}</title>")
-  rss_item = rss_content.match(/<item>\s*#{title_pattern}.*?<link>([^<]+)<\/link>/m)
-  atom_entry = atom_content.match(/<entry>\s*#{title_pattern}.*?<link href="([^"]+)"/m)
-  assert(rss_item, "rss.xml missing rss-club post title #{post[:title]}")
-  assert(atom_entry, "atom.xml missing rss-club post title #{post[:title]}")
+  in_feed = feed_post_paths.include?(post[:path])
+  built_page_path = built_page_for(post)
+  canonical_url = canonical_url_for_built_page(built_page_path)
 
-  post_url = URI(rss_item[1]).path
-  atom_url = URI(atom_entry[1]).path
-  assert(post_url == atom_url, "RSS and Atom URL mismatch for #{post[:title]}")
+  if in_feed
+    title_pattern = Regexp.escape("<title>#{post[:title]}</title>")
+    rss_item = rss_content.match(/<item>\s*#{title_pattern}.*?<link>([^<]+)<\/link>/m)
+    atom_entry = atom_content.match(/<entry>\s*#{title_pattern}.*?<link href="([^"]+)"/m)
+    assert(rss_item, "rss.xml missing rss-club post title #{post[:title]}")
+    assert(atom_entry, "atom.xml missing rss-club post title #{post[:title]}")
 
-  canonical_url = post_url.end_with?("/") ? post_url : "#{post_url}/"
-  built_page_path = File.join("_site", canonical_url, "index.html")
+    post_url = URI(rss_item[1]).path
+    atom_url = URI(atom_entry[1]).path
+    assert(post_url == atom_url, "RSS and Atom URL mismatch for #{post[:title]}")
+
+    feed_canonical_url = post_url.end_with?("/") ? post_url : "#{post_url}/"
+    assert(feed_canonical_url == canonical_url, "Feed URL mismatch for #{post[:title]}: #{feed_canonical_url} vs #{canonical_url}")
+    assert(rss_content.include?(canonical_url), "rss.xml missing rss-club post URL #{canonical_url}")
+    assert(atom_content.include?(canonical_url), "atom.xml missing rss-club post URL #{canonical_url}")
+  else
+    assert(!rss_content.include?(canonical_url), "rss-club post should not appear in rss.xml past feed limit: #{canonical_url}")
+    assert(!atom_content.include?(canonical_url), "rss-club post should not appear in atom.xml past feed limit: #{canonical_url}")
+  end
+
   assert(File.exist?(built_page_path), "Missing built page for #{post[:path]} at #{built_page_path}")
 
   built_page = File.read(built_page_path)
   assert(built_page.match?(/<meta name="robots" content="[^"]*noindex/i), "Expected noindex meta for #{post[:path]}")
   assert(!sitemap_content.include?(canonical_url), "rss-club post appears in sitemap: #{canonical_url}")
-  assert(rss_content.include?(canonical_url), "rss.xml missing rss-club post URL #{canonical_url}")
-  assert(atom_content.include?(canonical_url), "atom.xml missing rss-club post URL #{canonical_url}")
 
   blog_pages.each do |blog_page|
     assert(!blog_page.include?(canonical_url), "rss-club post appears on blog listing: #{canonical_url}")
