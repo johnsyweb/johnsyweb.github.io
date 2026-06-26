@@ -18,6 +18,25 @@ utilities:
       schema_type: "SoftwareApplication"
       audience: "parkrun event organisers and volunteers"
 
+  - id: finish-funnel
+    title: Finish Funnel
+    url: https://www.johnsy.com/finish-funnel/
+    image: https://www.johnsy.com/finish-funnel/images/screenshot.png
+    image_width: 1090
+    image_height: 1004
+    image_alt: "Finish Funnel - size a parkrun finish funnel for orderly token handover"
+    image_title: "Screenshot of Finish Funnel showing queue depth chart and finish funnel column on a parkrun results page"
+    description: "Size a parkrun finish funnel from your event results page. Model finisher arrivals and Finish Token handover to plan lane length and count, read peak queue metrics, and brief your team on the day."
+    purpose: "Plan finish funnel layout for orderly token handover"
+    features:
+      - Results-page userscript
+      - Queue depth simulation
+      - Multi-lane layout planning
+    seo:
+      keywords: "parkrun finish funnel, finish token handover, parkrun volunteers, queue depth, event results, userscript"
+      schema_type: "SoftwareApplication"
+      audience: "parkrun event organisers and Finish Token volunteers"
+
   - id: eventuate
     title: Eventuate
     url: https://www.johnsy.com/eventuate/
