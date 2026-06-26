@@ -1,0 +1,81 @@
+---
+layout: post
+categories:
+    - technology
+    - geek
+title: mise, aube, et cetera...
+date: '2026-06-26  4:55:53'
+updated_at:
+---
+
+When I was doing a lot of Ruby-on-Rails development, I really liked having [`rbenv`][rbenv] to manage which version of Ruby a project was using.
+
+I also really liked [Scripts to Rule Them All]: predictable entrypoints like `script/setup` and `script/server` so anyone cloning the repo could get started without memorising project-specific incantations.
+
+## From rbenv to asdf
+
+At some point I moved from [`rbenv`][rbenv] to [`asdf`][asdf]. It was not just easier for my bananafingers to type; it could also pin versions of Node, Python, and other tools in the same place as Ruby.
+
+That was a clear win. One tool, one `.tool-versions` file, and fewer “works on my machine” surprises when switching between projects.
+
+## mise: fast versioning and tasks
+
+These days I use [`mise`][mise]. It is fast, and it understands _tasks_: project commands declared in `.mise.toml` and run with `mise run <name>`.
+
+That brings back the spirit of _Scripts to Rule Them All_: `mise run <name>` is the stable entrypoint developers learn once.
+
+For multi-line work, I still keep a bash script in `script/` and invoke it from the task. That is better than stuffing shell logic into `.mise.toml`.
+
+On this blog, for example, `mise run bootstrap` installs Ruby, Node, and package dependencies, and `mise run server` starts Jekyll with the CSS and JavaScript watchers. The config is short:
+
+```toml
+[tools]
+ruby = "3.4.7"
+node = "25.2.1"
+
+[tasks.bootstrap]
+description = "Install development dependencies"
+run = "./script/bootstrap"
+
+[tasks.server]
+description = "Run the local development server"
+run = "./script/server"
+```
+
+This project is mostly for me. I touch it rarely, so it helps to have a couple of go-to commands rather than re-remembering the setup every time. When I `cd` into the directory, `mise` reads `.mise.toml`, and the tool versions I need are already pinned.
+
+## aube: pnpm with better security defaults
+
+Jeff Dickey ([@jdx]), who wrote `mise`, has recently published [`aube`][aube], a Node.js package manager I am using as a pretty much drop-in replacement for [`pnpm`][pnpm].
+
+The CLI feels familiar if you already know `pnpm add` and `pnpm install`.
+
+Where it shines is supply-chain hygiene. Lifecycle scripts on dependencies are denied by default until you explicitly approve them.
+
+In _paranoid_ mode, a single line turns on the [strict security bundle][security defaults]: jailed builds, trust downgrade blocking, mandatory advisory checks, and more:
+
+```yaml
+# aube-workspace.yaml
+paranoid: true
+allowBuilds:
+  esbuild: true
+  sharp: true
+```
+
+That default-deny posture looks more appealing after a brutal stretch on npm. The [Shai-Hulud] worm spread through hundreds of packages in 2025. In May, [TanStack's CI pipeline was compromised] and dozens of `@tanstack/*` packages were republished with malicious install hooks. Fresh waves have since abused [`binding.gyp`][Phantom Gyp] to run code at install time without a `postinstall` script in sight.
+
+I am not suggesting you rip out your existing package manager on a whim. If you write JavaScript or TypeScript, though, I think both `mise` and `aube` are worth a look, particularly if recent npm supply-chain attacks have you rethinking what `npm install` is allowed to do on your laptop.
+
+<!-- Links -->
+
+[@jdx]: https://jdx.dev/
+[asdf]: https://asdf-vm.com/
+[aube]: https://aube.jdx.dev/
+[security defaults]: https://aube.jdx.dev/security.html
+[rbenv]: https://rbenv.org/
+[mise]: https://mise.jdx.dev/
+[pnpm]: https://pnpm.io/
+[Scripts to Rule Them All]: https://github.blog/engineering/scripts-to-rule-them-all/
+[Shai-Hulud]: https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/
+[TanStack's CI pipeline was compromised]: https://tanstack.com/blog/npm-supply-chain-compromise-postmortem
+[Phantom Gyp]: https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/
