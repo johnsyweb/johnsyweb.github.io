@@ -129,6 +129,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-06-28: [Why don't you use WhatsApp?](https://www.johnsy.com/blog/2026/06/28/why-dont-you-use-whatsapp/)
 - 2026-06-27: [A little everyday sexism](https://www.johnsy.com/blog/2026/06/27/a-little-everyday-sexism/)
 - 2026-06-26: [mise, aube, et cetera...](https://www.johnsy.com/blog/2026/06/26/mise/)
 - 2026-06-26: [2026 FIFA World Cup](https://www.johnsy.com/blog/2026/06/26/2026-fifa-world-cup/)
@@ -138,6 +139,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-05-12: [Minute Cryptic Crossword Workshop](https://www.johnsy.com/blog/2026/05/12/minute-cryptic-workshop/)
 - 2026-05-09: [Timekeeping at Parkville parkrun event #456](https://www.johnsy.com/blog/2026/05/09/timekeeping-at-parkville-parkrun-event/)
 - 2026-05-08: [Iron Maiden: Burning Ambition](https://www.johnsy.com/blog/2026/05/08/burning-ambition/)
-- 2026-05-06: [Conquer Cancer - Hour One](https://www.johnsy.com/blog/2026/05/06/conquer-cancer---hour-one/)
 
 <!-- END TOC -->
