@@ -5,7 +5,9 @@ categories:
 title: "Why don't you use WhatsApp?"
 date: '2026-06-28  7:10:13'
 updated_at:
-redirect_from: /l/NotsApp
+redirect_from:
+    - /l/NotsApp
+    - /l/notsapp
 ---
 
 ## “Why don't you use WhatsApp?”
