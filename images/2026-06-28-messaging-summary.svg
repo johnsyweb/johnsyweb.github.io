@@ -17,33 +17,52 @@
         text-anchor: start;
         dominant-baseline: middle;
       }
-      .emoji {
-        font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-        font-size: 64px;
-        text-anchor: start;
-        dominant-baseline: middle;
-      }
       .avoid {
         fill: #616161;
       }
       .prefer {
         fill: #1565c0;
       }
+      .link-footer {
+        font-family: "Atkinson Hyperlegible", Arial, Verdana, serif;
+        font-weight: 700;
+        font-size: 56px;
+        fill: #757575;
+        text-anchor: start;
+        dominant-baseline: middle;
+      }
     </style>
+    <symbol id="icon-avoid" viewBox="0 0 64 64">
+      <path d="M18 18 L46 46 M46 18 L18 46" stroke="#e53935" stroke-width="7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-prefer" viewBox="0 0 64 64">
+      <rect x="4" y="4" width="56" height="56" rx="12" fill="#43a047"/>
+      <path d="M18 33 L28 43 L46 23" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-link" viewBox="0 0 64 64">
+      <path d="M25 39a10 10 0 0 0 14 0l8-8a10 10 0 0 0-14-14l-2 2" fill="none" stroke="#757575" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M39 25a10 10 0 0 0-14 0l-8 8a10 10 0 0 0 14 14l2-2" fill="none" stroke="#757575" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
   <rect width="2048" height="2048" fill="#fafafa"/>
   <g id="summary-block" transform="translate(623 729)">
-    <text class="emoji" x="0" y="50">&#x274C;</text>
+    <use href="#icon-avoid" x="0" y="18" width="64" height="64"/>
     <text class="label avoid" x="88" y="50">Facebook Messenger</text>
-    <text class="emoji" x="0" y="150">&#x274C;</text>
+    <use href="#icon-avoid" x="0" y="118" width="64" height="64"/>
     <text class="label avoid" x="88" y="150">Instagram</text>
-    <text class="emoji" x="0" y="250">&#x274C;</text>
+    <use href="#icon-avoid" x="0" y="218" width="64" height="64"/>
     <text class="label avoid" x="88" y="250">WhatsApp</text>
-    <text class="emoji" x="0" y="350">&#x2705;</text>
+    <use href="#icon-prefer" x="0" y="318" width="64" height="64"/>
     <text class="label prefer" x="88" y="350">Email</text>
-    <text class="emoji" x="0" y="450">&#x2705;</text>
+    <use href="#icon-prefer" x="0" y="418" width="64" height="64"/>
     <text class="label prefer" x="88" y="450">iMessage</text>
-    <text class="emoji" x="0" y="550">&#x2705;</text>
+    <use href="#icon-prefer" x="0" y="518" width="64" height="64"/>
     <text class="label prefer" x="88" y="550">Signal</text>
   </g>
+  <a href="https://www.johnsy.com/l/NotsApp" aria-label="Read more at johnsy.com/l/NotsApp">
+    <g id="link-footer" transform="translate(700 1900)">
+      <use href="#icon-link" x="0" y="-26" width="52" height="52"/>
+      <text class="link-footer" x="72" y="0">johnsy.com/l/NotsApp</text>
+    </g>
+  </a>
 </svg>
