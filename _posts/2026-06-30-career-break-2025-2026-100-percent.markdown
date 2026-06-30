@@ -1,0 +1,125 @@
+---
+layout: post
+categories:
+  - careerbreak
+  - personal
+title: "Career Break (2025-2026): 100%"
+date: '2026-06-30 00:00:00'
+---
+
+In December I wrote [*Forty-two*][forty-two] about being forty-two percent of the way through my [career break][career-break]. Time has flown since then. Today the [progress bar][progress-bar] reads one hundred percent.
+
+![Career break progress at 100%](/images/2026-07-01-career-break-progress.png)
+
+## What I said I would do
+
+When I [announced the break][career-break] in May last year, the plan was straightforward: a seven-week trip through the UK (with many parkruns), Portugal for a family wedding, and Spain with my parents; then stay-at-home dad life and saying yes to our kids more often; train for my seventh [Melbourne Marathon][melbourne-marathon]; brush up on tech skills; learn a few new songs on the bass. I hoped to return refreshed, to a workplace that would probably look different. The family had their own predictions: backpacking, trampolining, audiobooks, proper cooking, and they turned out to be reasonably accurate.
+
+So how did it go?
+
+Most of this year was home with my family, exactly as I had hoped. I got to spend plenty of time at _D_'s school, watching him participate in athletics and netball, and helping with excursions and sausage-sizzles. It has gone absolutely wonderfully.
+
+## The big trip
+
+July began with a trip back to the motherland. I enjoyed runs with Mum, Dad's freshly grown salads and vegetables (I've not inherited his green fingers), [Concorde at Aerospace Bristol][concorde-bristol], family time in the Lake District, a family wedding in Portugal, more family time in Spain, and parkruns wherever I could find them (of course). _K_ and the kids joined for the school holidays, and _E_'s "backpacking" prediction wasn't far off. I even had a quick trip to Dublin before returning home in August, adjusting to the change in time and season with _D_ on a school trip to [Cooks' Cottage][cooks-cottage].
+
+[![Standing Underneath Concorde!][july-img]][july-photo]
+
+[![Inside Cooks' Cottage: first school trip of the year][august-img]][august-photo]
+
+## Switching off
+
+Being back in Melbourne, with _K_ at work, and the kids at school afforded me some time to relax. I made the most of this with the occasional float in a sensory deprivation tank. Time away from screens is very welcome. I have found myself reading more physical books, too.
+
+[![Off: time off means time to switch off in a floatation tank][september-img]][september-photo]
+
+## Running
+
+The marathon was the focal point of my running for the first few months off work. I had been following a training plan since May, and in October it delivered: my seventh [Melbourne Marathon][melbourne-marathon], my tenth official marathon. [Two Bays Trail Run][two-bays] came in January, a great way to start a year, and it is always good to be down on the peninsula with the family. I am already looking forward to 2027.
+
+[![Ten Marathon Medals][october-img]][october-photo]
+
+[![We Finished Two Bays Trail Run!][january-img]][january-photo]
+
+There were other running events, too. I got to be a spectator at the [Maurie Plant Meet][maurie-plant] in March and the [Stawell Gift][april-photo] in April.
+
+In May I took part in the [Conquer Cancer Australia][conquer-cancer] relay, including a shift with our eleven-year-old running beside me. That was a great experience that I will not forget.
+
+[![Passing on the baton: Conquer Cancer Australia relay][may-img]][may-photo]
+
+## Building things
+
+I had loosely planned to "brush up on tech skills." I have certainly kept my hand in and released [Foretoken][foretoken] in November, scratching an itch. Foretoken was [used at a record-breaking Australian parkrun event](https://www.facebook.com/reel/1626035418809433), which felt better than brushing up. It turns out I still love to build software regardless of whether it's for work, and it's still something I do when left to my own devices.
+
+I also built a Lego Concorde on the dining table, harking back to July's visit to the real thing. Magnificent!
+
+[![Completed Lego Concorde][december-img]][december-photo]
+
+## parkrun
+
+The [parkrun Victoria Ambassador Conference][ambassador-conference] in Geelong in November brought together a bunch of parkrun ambassadors from across Victoria as well as some staff from parkrun Australia. I gave a talk about welcoming volunteers whatever their motivations, which seemed to go down well.
+
+[![parkrun 2025 Victoria Ambassador Conference in Geelong, with my people][november-img]][november-photo]
+
+[Cruickshank Park parkrun][cruickshank] launched in February, an event I had been helping develop for about a year. I volunteered as timekeeper at the launch, and got to run there myself at event number eleven. It is such a great feeling to see a new parkrun community thriving.
+
+Then there was a presentation I gave at a webinar for Volunteering Australia: [Community-Led Volunteering with parkrun](https://www.youtube.com/watch?v=QgzuVJeKYWY).
+
+[![Cruickshank Park parkrun, event number 1][february-img]][february-photo]
+
+## Wrapping up
+
+I was lucky enough to have a holiday at the end of my year off. I "popped back" to the UK and dropped in on my parents unannounced, where I spent a happy week. While I was there I got to catch up with some of my old school friends, including one whom I'd not seen since the day we left school. That was a very joy-filled day.
+
+Another real highlight from this trip, indeed the year, was the trip to the [Monaco Grand Prix][monaco-gp], with my brother and a couple of friends from Melbourne. I've been to quite a number of F1 GP events over the years but this was something else. Is it the most exciting race on the calendar? No. But when I think of "Formula 1", I picture cars racing around the Fairmont Hairpin. It was fantastic to be there. A trip of a lifetime.
+
+[![A first glimpse of the Monaco Grand Prix circuit in action][june-img]][june-photo]
+
+## One hundred percent
+
+Today the progress bar reads one hundred percent. And tomorrow I return to work, as planned. So how do I feel?
+
+**Grateful**, certainly, for a year that gave me time with my family, here in Melbourne, and abroad.
+
+I did most, but not everything, of what I set out to do.
+
+I am returning to work refreshed and excited for what's next.
+
+Would I have another career break? Absolutely! I think it may be _K_'s turn next, though.
+
+<!-- links -->
+
+[ambassador-conference]: https://www.flickr.com/photos/johnsyweb/54956758348/
+[april-photo]: https://www.flickr.com/photos/johnsyweb/55351889524 "Stawell Gift Racing"
+[august-img]: /images/2026-07-01-career-break-august.jpg
+[august-photo]: https://www.flickr.com/photos/johnsyweb/54755016272 "Inside Cook's Cottage"
+[career-break]: {% post_url 2025-05-05-career-break %}
+[concorde-bristol]: https://aerospacebristol.org/
+[conquer-cancer]: {% post_url 2026-04-28-i'm-taking-on-conquer-cancer-and-i-need-your-support! %}
+[cooks-cottage]: https://en.wikipedia.org/wiki/Cooks%27_Cottage
+[cruickshank]: {% post_url 2026-04-18-cruickshank-park-parkrun-event-#11 %}
+[december-img]: /images/2026-07-01-career-break-december.jpg
+[december-photo]: https://www.flickr.com/photos/johnsyweb/55128171929 "Completed Lego Concorde"
+[february-img]: /images/2026-07-01-career-break-february.jpg
+[february-photo]: https://www.flickr.com/photos/johnsyweb/55154465123 "Cruickshank Park parkrun 7 February 2026, event number 1"
+[foretoken]: {% post_url 2025-11-06-foretoken %}
+[forty-two]: {% post_url 2025-12-01-forty-two %}
+[january-img]: /images/2026-07-01-career-break-january.jpg
+[january-photo]: https://www.flickr.com/photos/johnsyweb/55152598866 "We Finished Two Bays Trail Run!"
+[july-img]: /images/2026-07-01-career-break-july.jpg
+[july-photo]: https://www.flickr.com/photos/johnsyweb/54691006655 "Standing Underneath Concorde!"
+[maurie-plant]: https://worldathletics.org/competitions/world-athletics-continental-tour/calendar-results
+[may-img]: /images/2026-07-01-career-break-may.jpg
+[may-photo]: https://www.flickr.com/photos/johnsyweb/55266346507 "Passing on the baton"
+[melbourne-marathon]: {% post_url 2025-10-19-what-running-10-marathons-taught-me-about-being-a-social-media-influencer %}
+[monaco-gp]: https://www.formula1.com/en/racing/2026/monaco
+[november-img]: /images/2026-07-01-career-break-november.jpg
+[november-photo]: https://www.flickr.com/photos/johnsyweb/54956758348 "parkrun Victoria Ambassador Conference in Geelong"
+[october-img]: /images/2026-07-01-career-break-october.jpg
+[october-photo]: https://www.flickr.com/photos/johnsyweb/54864391523 "Ten Marathon Medals"
+[progress-bar]: {{ site.url }}/progression/2025-07-01/2026-06-30/Pete's%20Career%20Break
+[september-img]: /images/2026-07-01-career-break-september.jpg
+[september-photo]: https://www.flickr.com/photos/johnsyweb/54833382038 "Off"
+[june-img]: /images/2026-07-01-career-break-june.jpg
+[june-photo]: https://www.flickr.com/photos/johnsyweb/55364162687 "Monaco Grand Prix circuit in action"
+[two-bays]: {% post_url 2026-01-15-two-bays-trail-run-2026 %}
