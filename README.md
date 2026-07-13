@@ -129,6 +129,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-07-13: [The Ultimate Principle of Simplicity](https://www.johnsy.com/blog/2026/07/13/the-ultimate-principle-of-simplicity/)
 - 2026-06-30: [Career Break (2025-2026): 100%](https://www.johnsy.com/blog/2026/06/30/career-break-2025-2026-100-percent/)
 - 2026-06-28: [Why don't you use WhatsApp?](https://www.johnsy.com/blog/2026/06/28/why-dont-you-use-whatsapp/)
 - 2026-06-27: [A little everyday sexism](https://www.johnsy.com/blog/2026/06/27/a-little-everyday-sexism/)
@@ -138,6 +139,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-05-16: [16 May 2026 Anniversaries](https://www.johnsy.com/blog/2026/05/16/16-may-anniversary/)
 - 2026-05-13: [Conquer Cancer - Hour Two](https://www.johnsy.com/blog/2026/05/13/conquer-cancer-hour-two/)
 - 2026-05-12: [Minute Cryptic Crossword Workshop](https://www.johnsy.com/blog/2026/05/12/minute-cryptic-workshop/)
-- 2026-05-09: [Timekeeping at Parkville parkrun event #456](https://www.johnsy.com/blog/2026/05/09/timekeeping-at-parkville-parkrun-event/)
 
 <!-- END TOC -->
