@@ -129,6 +129,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-07-14: [Foretoken when replacement finish tokens fail](https://www.johnsy.com/blog/2026/07/14/foretoken-when-replacement-tokens-fail/)
 - 2026-07-13: [The Ultimate Principle of Simplicity](https://www.johnsy.com/blog/2026/07/13/the-ultimate-principle-of-simplicity/)
 - 2026-06-30: [Career Break (2025-2026): 100%](https://www.johnsy.com/blog/2026/06/30/career-break-2025-2026-100-percent/)
 - 2026-06-28: [Why don't you use WhatsApp?](https://www.johnsy.com/blog/2026/06/28/why-dont-you-use-whatsapp/)
@@ -138,6 +139,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-05-21: [Conquer Cancer - Hour Three](https://www.johnsy.com/blog/2026/05/21/conquer-cancer---hour-three/)
 - 2026-05-16: [16 May 2026 Anniversaries](https://www.johnsy.com/blog/2026/05/16/16-may-anniversary/)
 - 2026-05-13: [Conquer Cancer - Hour Two](https://www.johnsy.com/blog/2026/05/13/conquer-cancer-hour-two/)
-- 2026-05-12: [Minute Cryptic Crossword Workshop](https://www.johnsy.com/blog/2026/05/12/minute-cryptic-workshop/)
 
 <!-- END TOC -->
