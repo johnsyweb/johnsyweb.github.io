@@ -20,6 +20,7 @@
     "lhci:styles:dark": "lhci autorun --config=.lighthouserc-styles-dark.json",
     "lhci:styles": "pnpm run lhci:styles:light && pnpm run lhci:styles:dark",
     "capture": "node scripts/capture.mjs",
+    "test:scripts": "node --test scripts/lib/*.test.mjs",
     "postinstall": "playwright install chromium"
   },
   "devDependencies": {

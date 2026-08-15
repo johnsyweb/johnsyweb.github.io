@@ -36,6 +36,12 @@ The full test suite is `rake test` (build, HTML/feed validation, Lighthouse styl
 mise exec -- rake test
 ```
 
+Node helpers under `scripts/lib/` have unit tests:
+
+```bash
+mise exec -- pnpm run test:scripts
+```
+
 After a Jekyll build, you can run the SEO audit locally (same checks as the `validate-seo` CI job):
 
 ```bash

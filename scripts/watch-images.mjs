@@ -4,12 +4,12 @@ import { watch } from 'fs';
 import { spawn } from 'child_process';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import { resolveWatchDirs } from './lib/image-watch-dirs.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT = join(__dirname, '..');
 
-const WATCH_DIRS = ['images', 'assets/images/utilities'];
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png']);
 
 let timer = null;
@@ -50,10 +50,12 @@ function scheduleConvert() {
   timer = setTimeout(runConvertAll, 300);
 }
 
+const watchDirs = resolveWatchDirs(ROOT);
+
 console.log('Watching image directories for WebP conversion:');
-for (const dir of WATCH_DIRS) {
+for (const { dir, fullPath } of watchDirs) {
   console.log(`  - ${dir}`);
-  watch(join(ROOT, dir), { recursive: true }, (_eventType, filename) => {
+  watch(fullPath, { recursive: true }, (_eventType, filename) => {
     if (shouldHandle(filename)) {
       scheduleConvert();
     }
