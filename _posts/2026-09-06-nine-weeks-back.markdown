@@ -3,7 +3,7 @@ layout: post
 categories:
   - careerbreak
 title: Nine weeks back
-date: '2026-09-06 14:49:00'
+date: '2026-09-06 04:49:00'
 ---
 
 Nine weeks ago I [returned to work][one-hundred-percent], as planned, after a [twelve-month career break][career-break]. People have been asking how it feels, so this is both a public answer and a note for Future Pete.
