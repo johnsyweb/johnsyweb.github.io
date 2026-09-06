@@ -135,6 +135,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-09-06: [Nine weeks back](https://www.johnsy.com/blog/2026/09/06/nine-weeks-back/)
 - 2026-08-15: [Kirkdale Reserve parkrun event #220](https://www.johnsy.com/blog/2026/08/15/kirkdale-reserve-parkrun-event-#220/)
 - 2026-07-14: [Foretoken when replacement finish tokens fail](https://www.johnsy.com/blog/2026/07/14/foretoken-when-replacement-tokens-fail/)
 - 2026-07-13: [The Ultimate Principle of Simplicity](https://www.johnsy.com/blog/2026/07/13/the-ultimate-principle-of-simplicity/)
@@ -144,6 +145,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-06-26: [mise, aube, et cetera...](https://www.johnsy.com/blog/2026/06/26/mise/)
 - 2026-06-26: [2026 FIFA World Cup](https://www.johnsy.com/blog/2026/06/26/2026-fifa-world-cup/)
 - 2026-05-21: [Conquer Cancer - Hour Three](https://www.johnsy.com/blog/2026/05/21/conquer-cancer---hour-three/)
-- 2026-05-16: [16 May 2026 Anniversaries](https://www.johnsy.com/blog/2026/05/16/16-may-anniversary/)
 
 <!-- END TOC -->
