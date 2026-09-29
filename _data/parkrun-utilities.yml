@@ -116,9 +116,9 @@ utilities:
   - id: parkrun-by-public-transport
     title: parkrun by Public Transport
     url: https://www.johnsy.com/parkrun-by-public-transport/
-    image: https://www.johnsy.com/parkrun-by-public-transport/og-image.png
-    image_width: 1200
-    image_height: 630
+    image: https://www.johnsy.com/parkrun-by-public-transport/screenshot-desktop.png
+    image_width: 1280
+    image_height: 720
     image_alt: "parkrun Events Near Public Transport in Victoria"
     image_title: "Screenshot showing parkrun events near public transport on an interactive map"
     description: "Find parkrun events near public transport in Victoria, Australia. Interactive map showing distances to metro trains, regional trains, trams, and bus stops. Filter by distance and transport mode to plan your sustainable parkrun journey."

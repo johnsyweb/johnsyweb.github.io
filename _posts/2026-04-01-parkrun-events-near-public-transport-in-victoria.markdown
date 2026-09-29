@@ -17,9 +17,9 @@ Front-end web development is not one of my core competencies (QED), but I hear d
 <figure class="caption-centred">
   <a href="https://www.johnsy.com/parkrun-by-public-transport/">
       <img
-        src="https://www.johnsy.com/parkrun-by-public-transport/og-image.png"
+        src="https://www.johnsy.com/parkrun-by-public-transport/screenshot-desktop.png"
         alt="Map of Victoria showing parkrun event locations and public transport stops"
-        width="578" height="304"
+        width="640" height="360"
         class="responsive-image"
         loading="lazy"
       />
