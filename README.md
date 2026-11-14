@@ -51,18 +51,32 @@ node scripts/seo-audit.mjs
 
 Duplicate `<meta name="description">` values are reported across **blog posts and pages** under the audited paths. Each cluster lists every URL so you can add a unique `description` in front matter. Tune behaviour with environment variables: `SEO_DESC_DUP_SEVERITY` (`error` or `warn`, default `error`), `SEO_DESC_DUP_INCLUDE_POSTS` (set to `0` to skip posts in duplicate detection), `SEO_DESC_DUP_MAX_PAGES` (default `1`: fail or warn when *more than* this many URLs share one description — so two URLs with the same meta string is a hit). CI currently sets `SEO_DESC_DUP_SEVERITY=warn` until duplicates are worked through.
 
-### Pre-push HTML validation hook
+### Blog post timestamps
 
-To run the same HTML validation class as CI before every push, enable the
-repository-managed hooks path once per clone:
+Post `date` (and non-empty `updated_at`) values must be UTC with an explicit
+`+0000` offset, matching `timezone: Etc/UTC` in `_config.yml`:
+
+```yaml
+date: '2026-11-14 09:45:00 +0000'
+```
+
+Generate a stamp with `date -u '+%Y-%m-%d %H:%M:%S +0000'`, or use
+`mise exec -- rake "write[Post title]"` which writes UTC automatically.
+
+### Git hooks
+
+Enable the repository-managed hooks path once per clone:
 
 ```bash
 git config core.hooksPath .githooks
-chmod +x .githooks/pre-push
+chmod +x .githooks/pre-commit .githooks/pre-push
 ```
 
-If Docker is running, the hook also runs `vnu` (the same HTML validator class
-used in CI). If Docker is unavailable, the hook warns and skips `vnu`.
+**pre-commit** checks staged `_posts` files for UTC (`+0000`) timestamps.
+
+**pre-push** builds the site. If Docker is running, it also runs `vnu` (the same
+HTML validator class used in CI). If Docker is unavailable, the hook warns and
+skips `vnu`.
 
 ### Syndication
 
