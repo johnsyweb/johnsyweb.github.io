@@ -62,6 +62,7 @@ apple_touch_icon_sizes:
 permalink: /blog/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blog/page:num/"
+timezone: Etc/UTC
 hilighter: pygments
 
 exclude:
