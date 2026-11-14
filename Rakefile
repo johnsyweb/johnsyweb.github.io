@@ -3,6 +3,7 @@
 require "English"
 require "html-proofer"
 require "fileutils"
+require "shellwords"
 require "yaml"
 
 def mise_available?
@@ -343,6 +344,23 @@ end
 desc "Validate rss-club behaviour and storage rules"
 task :validate_rss_club => :build do
   mise_sh("ruby scripts/validate_rss_club.rb")
+end
+
+desc "Require UTC (+0000) date/updated_at on given posts (defaults to staged _posts)"
+task :validate_post_utc_dates, [:paths] do |_t, args|
+  paths =
+    if args.paths && !args.paths.empty?
+      args.paths.split(",")
+    else
+      `git diff --cached --name-only --diff-filter=ACM`.split("\n").grep(%r{\A_posts/.*\.(md|markdown)\z})
+    end
+
+  if paths.empty?
+    puts "No posts to check"
+    next
+  end
+
+  mise_sh("ruby scripts/validate_post_utc_dates.rb #{paths.shelljoin}")
 end
 
 namespace :rss_club do

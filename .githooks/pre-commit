@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+posts=()
+while IFS= read -r file; do
+  posts+=("$file")
+done < <(
+  git diff --cached --name-only --diff-filter=ACM |
+    grep -E '^_posts/.*\.(md|markdown)$' || true
+)
+
+if [[ ${#posts[@]} -eq 0 ]]; then
+  exit 0
+fi
+
+echo "[pre-commit] Checking UTC timestamps on ${#posts[@]} post(s)..."
+if command -v mise >/dev/null 2>&1; then
+  mise exec -- ruby scripts/validate_post_utc_dates.rb "${posts[@]}"
+else
+  ruby scripts/validate_post_utc_dates.rb "${posts[@]}"
+fi
