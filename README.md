@@ -135,6 +135,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-11-14: [Run for Your Lives](https://www.johnsy.com/blog/2026/11/14/run-for-your-lives/)
 - 2026-11-07: [Kane's Bridge and a p-index of 12](https://www.johnsy.com/blog/2026/11/07/kanes-bridge-and-a-p-index-of-12/)
 - 2026-10-18: [noreply@ considered harmful](https://www.johnsy.com/blog/2026/10/18/noreply-considered-harmful/)
 - 2026-09-06: [Nine weeks back](https://www.johnsy.com/blog/2026/09/06/nine-weeks-back/)
@@ -144,6 +145,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-06-30: [Career Break (2025-2026): 100%](https://www.johnsy.com/blog/2026/06/30/career-break-2025-2026-100-percent/)
 - 2026-06-28: [Why don't you use WhatsApp?](https://www.johnsy.com/blog/2026/06/28/why-dont-you-use-whatsapp/)
 - 2026-06-27: [A little everyday sexism](https://www.johnsy.com/blog/2026/06/27/a-little-everyday-sexism/)
-- 2026-06-26: [mise, aube, et cetera...](https://www.johnsy.com/blog/2026/06/26/mise/)
 
 <!-- END TOC -->
