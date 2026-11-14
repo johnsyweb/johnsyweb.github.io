@@ -41,7 +41,7 @@ HTML_PROOFER_IGNORE_URLS = [
 
 task :default => :test
 
-desc "Given a title as an argument, create a new post file"
+desc "Create a new post under _posts with a UTC (+0000) date stamp"
 task :write, [:title, :categories] do |_t, args|
   NOW = Time.now.utc.freeze
   post_date = NOW.strftime("%Y-%m-%d")
@@ -56,7 +56,7 @@ task :write, [:title, :categories] do |_t, args|
   front_matter_template = YAML.safe_load_file(template_path)
   front_matter = front_matter_template.merge(
     "title" => args.title,
-    "date" => NOW.strftime("%Y-%m-%d %k:%M:%S"),
+    "date" => NOW.strftime("%Y-%m-%d %H:%M:%S +0000"),
     "categories" => categories
   )
   front_matter_yaml = front_matter.to_yaml(line_width: -1).sub(/\A---\s*\n/, "")
