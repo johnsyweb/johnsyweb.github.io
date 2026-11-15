@@ -305,7 +305,7 @@
         data-pagefind-title="{{ clean_title | default: site.name }}"
       >
         {% assign auto_h1_text = page.heading | default: clean_title %}
-        {% if page.layout != 'post' and page.auto_h1 != false and auto_h1_text != '' %}
+        {% if page.layout != 'post' and page.layout != 'review' and page.auto_h1 != false and auto_h1_text != '' %}
         <h1 class="visually-hidden">{{ auto_h1_text }}</h1>
         {% endif %}
         <span data-pagefind-meta="title" hidden>{{ clean_title | default: site.name }}</span>
