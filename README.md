@@ -51,6 +51,23 @@ node scripts/seo-audit.mjs
 
 Duplicate `<meta name="description">` values are reported across **blog posts and pages** under the audited paths. Each cluster lists every URL so you can add a unique `description` in front matter. Tune behaviour with environment variables: `SEO_DESC_DUP_SEVERITY` (`error` or `warn`, default `error`), `SEO_DESC_DUP_INCLUDE_POSTS` (set to `0` to skip posts in duplicate detection), `SEO_DESC_DUP_MAX_PAGES` (default `1`: fail or warn when *more than* this many URLs share one description — so two URLs with the same meta string is a hit). CI currently sets `SEO_DESC_DUP_SEVERITY=warn` until duplicates are worked through.
 
+### Book reviews
+
+Book reviews use `layout: review` and `categories: [books]`. They render
+bibliographic chrome (cover, rating, notable quotable, where-to-get links) via
+`_includes/book-review.html`, and are listed at [`/books/`](https://www.johnsy.com/books/).
+Start from `config/review-front-matter-template.yml`.
+
+Require `book_title`, `book_author`, and a valid **ISBN-13** in `isbn13`
+(13 digits, `978`/`979`, correct check digit; hyphens allowed). The page `title` is always derived as
+`Book review: {book_title} by {book_author}`
+(`_plugins/book_review_defaults.rb`); omit `title` from front matter.
+`og_image` defaults to `cover` when omitted. Optional `isbn_audio` uses the same ISBN
+rules for Libro.fm. Where-to-get links are generated in order: Author
+(`author_url`) → Booko → Libro.fm → Bookshop.org → optional `buy_links`
+(e.g. indie) → Library (WorldCat). Pre-commit runs
+`scripts/validate_book_reviews.rb` on staged posts.
+
 ### Blog post timestamps
 
 Post `date` (and non-empty `updated_at`) values must be UTC with an explicit

@@ -1,0 +1,19 @@
+layout: review
+categories:
+  - books
+date: "YYYY-MM-DD HH:MM:SS +0000"
+updated_at:
+description:
+book_title:
+book_author:
+author_url:
+isbn13: "978XXXXXXXXXX"
+isbn_audio:
+year:
+rating: 5
+verdict:
+quotation:
+cover: /images/YYYY-MM-DD-slug.jpg
+buy_links:
+  - label: Indie bookshop
+    url:
