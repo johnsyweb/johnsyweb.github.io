@@ -346,13 +346,17 @@ task :validate_rss_club => :build do
   mise_sh("ruby scripts/validate_rss_club.rb")
 end
 
+def staged_post_paths
+  `git diff --cached --name-only --diff-filter=ACM`.split("\n").grep(%r{\A_posts/.*\.(md|markdown)\z})
+end
+
 desc "Require UTC (+0000) date/updated_at on given posts (defaults to staged _posts)"
 task :validate_post_utc_dates, [:paths] do |_t, args|
   paths =
     if args.paths && !args.paths.empty?
       args.paths.split(",")
     else
-      `git diff --cached --name-only --diff-filter=ACM`.split("\n").grep(%r{\A_posts/.*\.(md|markdown)\z})
+      staged_post_paths
     end
 
   if paths.empty?
@@ -361,6 +365,23 @@ task :validate_post_utc_dates, [:paths] do |_t, args|
   end
 
   mise_sh("ruby scripts/validate_post_utc_dates.rb #{paths.shelljoin}")
+end
+
+desc "Validate isbn13 / isbn_audio on book reviews (defaults to staged _posts)"
+task :validate_book_reviews, [:paths] do |_t, args|
+  paths =
+    if args.paths && !args.paths.empty?
+      args.paths.split(",")
+    else
+      staged_post_paths
+    end
+
+  if paths.empty?
+    puts "No posts to check"
+    next
+  end
+
+  mise_sh("ruby scripts/validate_book_reviews.rb #{paths.shelljoin}")
 end
 
 namespace :rss_club do

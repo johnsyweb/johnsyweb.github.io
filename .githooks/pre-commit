@@ -16,6 +16,10 @@ fi
 echo "[pre-commit] Checking UTC timestamps on ${#posts[@]} post(s)..."
 if command -v mise >/dev/null 2>&1; then
   mise exec -- ruby scripts/validate_post_utc_dates.rb "${posts[@]}"
+  echo "[pre-commit] Checking book-review ISBN-13 fields..."
+  mise exec -- ruby scripts/validate_book_reviews.rb "${posts[@]}"
 else
   ruby scripts/validate_post_utc_dates.rb "${posts[@]}"
+  echo "[pre-commit] Checking book-review ISBN-13 fields..."
+  ruby scripts/validate_book_reviews.rb "${posts[@]}"
 fi
