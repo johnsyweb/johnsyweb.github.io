@@ -1,0 +1,124 @@
+{% comment %}
+  Book review chrome: cover, bibliographic details, rating, notable quotable, where to get.
+  Expects: book_title, book_author, rating (1–5), verdict, isbn13 (required for buy links),
+  optional isbn_audio, author_url, year, cover, quotation,
+  buy_links (extras such as indie bookshops).
+  Quotation attribution is derived from book_author + book_title.
+
+  Generated where-to-get order: Author → Booko → Libro.fm → Bookshop.org → buy_links → Library.
+{% endcomment %}
+
+{% assign rating = page.rating | plus: 0 %}
+{% assign isbn13 = page.isbn13 | append: '' | replace: '-', '' | replace: ' ', '' %}
+{% assign isbn_audio = page.isbn_audio | append: '' | replace: '-', '' | replace: ' ', '' %}
+{% assign has_buy_extras = false %}
+{% if page.buy_links and page.buy_links.size > 0 %}
+  {% assign has_buy_extras = true %}
+{% endif %}
+{% assign show_where_to_get = false %}
+{% if page.author_url or isbn13 != '' or isbn_audio != '' or has_buy_extras %}
+  {% assign show_where_to_get = true %}
+{% endif %}
+
+<section class="book-review" aria-label="Book review details">
+  <div class="book-review-header">
+    {% if page.cover %}
+    <div class="book-review-cover">
+      {% assign cover_ext = page.cover | split: '.' | last %}
+      {% assign cover_base = page.cover | remove: '.' | remove: cover_ext %}
+      {% assign cover_webp = cover_base | append: '.webp' %}
+      <picture>
+        <source srcset="{{ cover_webp }}" type="image/webp" />
+        <img
+          src="{{ page.cover }}"
+          alt="Cover of {{ page.book_title | default: page.title }}"
+          width="240"
+          height="240"
+          loading="eager"
+        />
+      </picture>
+    </div>
+    {% endif %}
+
+    <div class="book-review-meta">
+      <h2 class="book-review-title">{{ page.book_title }}</h2>
+      {% if page.book_author %}
+      <p class="book-review-author">by {{ page.book_author }}</p>
+      {% endif %}
+
+      <dl class="book-review-details">
+        {% if page.year %}
+        <div>
+          <dt>Year</dt>
+          <dd>{{ page.year }}</dd>
+        </div>
+        {% endif %}
+        {% if isbn13 != '' %}
+        <div>
+          <dt>ISBN-13</dt>
+          <dd>{{ isbn13 }}</dd>
+        </div>
+        {% endif %}
+      </dl>
+
+      {% if rating > 0 %}
+      <p class="book-review-verdict">
+        <span class="book-rating" role="img" aria-label="{{ rating }} out of 5 stars">
+          {% for i in (1..5) %}
+            {% if i <= rating %}★{% else %}☆{% endif %}
+          {% endfor %}
+        </span>
+        {% if page.verdict %}
+        <span class="book-verdict-text">{{ page.verdict }}</span>
+        {% endif %}
+      </p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.quotation %}
+  <figure class="book-review-quotation">
+    <figcaption>Notable quotable</figcaption>
+    <blockquote>
+      <p>{{ page.quotation }}</p>
+      {% if page.book_author and page.book_title %}
+      <footer>{{ page.book_author }}, <cite>{{ page.book_title }}</cite></footer>
+      {% elsif page.book_author %}
+      <footer>{{ page.book_author }}</footer>
+      {% elsif page.book_title %}
+      <footer><cite>{{ page.book_title }}</cite></footer>
+      {% endif %}
+    </blockquote>
+  </figure>
+  {% endif %}
+
+  {% if show_where_to_get %}
+  <nav class="book-review-links" aria-label="Where to get this book">
+    <h3>Where to get it</h3>
+    <ul>
+      {% if page.author_url %}
+      <li><a href="{{ page.author_url }}">Author</a></li>
+      {% endif %}
+      {% if isbn13 != '' %}
+      <li><a href="https://booko.au/{{ isbn13 }}">Booko</a></li>
+      {% endif %}
+      {% if isbn_audio != '' %}
+      <li><a href="https://libro.fm/search?q={{ isbn_audio }}">Libro.fm</a></li>
+      {% endif %}
+      {% if isbn13 != '' %}
+      <li><a href="https://bookshop.org/search?keywords={{ isbn13 }}">Bookshop.org</a></li>
+      {% endif %}
+      {% if has_buy_extras %}
+        {% for link in page.buy_links %}
+          {% if link.url and link.label %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if isbn13 != '' %}
+      <li><a href="https://search.worldcat.org/isbn/{{ isbn13 }}">Library (WorldCat)</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
+</section>

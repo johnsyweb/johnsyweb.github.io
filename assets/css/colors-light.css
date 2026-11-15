@@ -102,6 +102,15 @@ blockquote {
 	border-left-color: #1565C0;
 }
 
+.book-review {
+	border-color: #E0E0E0;
+	background: rgba(21, 101, 192, 0.04);
+}
+
+.book-review-quotation > figcaption {
+	color: #1565C0;
+}
+
 .post-listing {
 	border-bottom-color: #E0E0E0;
 }

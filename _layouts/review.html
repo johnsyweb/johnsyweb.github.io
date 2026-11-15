@@ -1,0 +1,69 @@
+---
+layout: default
+---
+{% include schema-article.html %}
+{% assign page_modified_at = page.updated_at %}
+<article class="post review">
+	<header>
+		{% if page.external-url %}
+			<h1 class="visually-hidden">
+				<a href="{{ page.external-url }}">{{ page.title }}</a>
+				<a class="anchor" href="{{ page.url }}" title="Permalink to {{ page.title }}"><i class="icon-anchor"></i></a>
+			</h1>
+		{% else %}
+			<h1 class="visually-hidden"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		{% endif %}
+
+		{% assign page_category = page.categories | first %}
+		<details class="post-metadata-details">
+			<summary class="post-metadata-summary">Posted by {{ site.author.name }} on {{ page.date | date: "%A, %e %B %Y" }}{% if page_category %} in {{ page_category }}{% endif %}</summary>
+			<dl class="post-metadata">
+				<div>
+					<dt>Published</dt>
+					<dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %e %b %Y" }}</time></dd>
+				</div>
+				{% if page_modified_at %}
+				<div>
+					<dt>Updated</dt>
+					<dd><time datetime="{{ page_modified_at | date_to_xmlschema }}">{{ page_modified_at | date: "%a, %e %b %Y" }}</time></dd>
+				</div>
+				{% endif %}
+				{% if page_category %}
+				<div>
+					<dt>Category</dt>
+					<dd>
+						{% if page_category == 'books' %}
+						<a class="category" href="{{ '/books/' | relative_url }}">{{ page_category }}</a>
+						{% else %}
+						<span class="category">{{ page_category }}</span>
+						{% endif %}
+					</dd>
+				</div>
+				{% endif %}
+				<div>
+					<dt>Author</dt>
+					<dd><a href="{{ site.author.url }}" rel="author">{{ site.author.name }}</a></dd>
+				</div>
+				<div>
+					<dt>Reading time</dt>
+					<dd><small>{{ content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read</small></dd>
+				</div>
+				<div>
+					<dt>Length</dt>
+					<dd><small>{{ content | strip_html | number_of_words }} words</small></dd>
+				</div>
+			</dl>
+		</details>
+	</header>
+
+	{% include book-review.html %}
+
+	<div class="post-content">{{ content }}</div>
+</article>
+<script>
+  document.querySelectorAll('.post-content img').forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+</script>
