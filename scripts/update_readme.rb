@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require "yaml"
 require "date"
+require_relative "lib/post_title"
 
 posts_dir = "_posts"
 readme_path = "README.md"
@@ -101,7 +103,7 @@ posts = Dir.glob("#{posts_dir}/*.{md,markdown}")
             url = permalink ? "#{site_url}#{permalink}" : format_jekyll_url(file, site_url, permalink_format)
             
             {
-              title: front_matter["title"] || "Untitled",
+              title: PostTitle.resolve(front_matter) || "Untitled",
               categories: categories,
               date: date,
               date_str: date ? date.strftime("%Y-%m-%d") : "No date",
