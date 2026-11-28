@@ -166,6 +166,7 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 
 ## Recent Blog Posts
 
+- 2026-11-28: [Grow the connections: parkrun APAC Ambassador Conference 2026](https://www.johnsy.com/blog/2026/11/28/grow-the-connections-parkrun-apac-ambassador-conference-2026/)
 - 2026-11-15: [Book review: Theo of Golden by Allen Levi](https://www.johnsy.com/blog/2026/11/15/theo-of-golden/)
 - 2026-11-14: [Run for Your Lives](https://www.johnsy.com/blog/2026/11/14/run-for-your-lives/)
 - 2026-11-07: [Kane's Bridge and a p-index of 12](https://www.johnsy.com/blog/2026/11/07/kanes-bridge-and-a-p-index-of-12/)
@@ -175,6 +176,5 @@ The script builds the site, runs Pagefind, and refreshes the assets in `assets/p
 - 2026-07-14: [Foretoken when replacement finish tokens fail](https://www.johnsy.com/blog/2026/07/14/foretoken-when-replacement-tokens-fail/)
 - 2026-07-13: [The Ultimate Principle of Simplicity](https://www.johnsy.com/blog/2026/07/13/the-ultimate-principle-of-simplicity/)
 - 2026-06-30: [Career Break (2025-2026): 100%](https://www.johnsy.com/blog/2026/06/30/career-break-2025-2026-100-percent/)
-- 2026-06-28: [Why don't you use WhatsApp?](https://www.johnsy.com/blog/2026/06/28/why-dont-you-use-whatsapp/)
 
 <!-- END TOC -->
